@@ -1,0 +1,178 @@
+docker-slim: message='join the Gitter channel to ask questions or to share your feedback' info='https://gitter.im/docker-slim/community'
+docker-slim: message='join the Discord server to ask questions or to share your feedback' info='https://discord.gg/9tDyxYS'
+docker-slim: message='Github discussions' info='https://github.com/docker-slim/docker-slim/discussions'
+cmd=build info=param.http.probe message='using default probe' 
+cmd=build state=started
+cmd=build info=params keep.perms='true' tags='' target.type='image' target='rabbitmq:3.6.8' continue.mode='probe' rt.as.user='true' 
+cmd=build state=image.inspection.start
+cmd=build info=image size.bytes='179449238' size.human='179 MB' id='sha256:8cdcbee37f622c52f2b8a572577c4aa94daed06ffe8c3292c93141ed50bef248' 
+cmd=build info=image.stack id='sha256:8cdcbee37f622c52f2b8a572577c4aa94daed06ffe8c3292c93141ed50bef248' index='0' name='rabbitmq:3.6.8' 
+cmd=build info=image.exposed_ports list='25672/tcp 4369/tcp 5671/tcp 5672/tcp' 
+cmd=build state=image.inspection.done
+cmd=build state=container.inspection.start
+cmd=build info=container status='created' name='dockerslimk_23497_20210927054504' id='bbb5d0b8121dad27b0cd4f2ce70662ebca35edb49f603b1d67a3eef8bdcfb386' 
+cmd=build info=cmd.startmonitor status='sent' 
+cmd=build info=event.startmonitor.done status='received' 
+cmd=build info=container id='bbb5d0b8121dad27b0cd4f2ce70662ebca35edb49f603b1d67a3eef8bdcfb386' target.port.list='49214,49217,49216,49215' target.port.info='25672/tcp => 0.0.0.0:49214,4369/tcp => 0.0.0.0:49217,5671/tcp => 0.0.0.0:49216,5672/tcp => 0.0.0.0:49215' message='YOU CAN USE THESE PORTS TO INTERACT WITH THE CONTAINER' name='dockerslimk_23497_20210927054504' 
+cmd=build state=http.probe.starting message=WAIT FOR HTTP PROBE TO FINISH 
+cmd=build info=continue.after mode='probe' message='no input required, execution will resume when HTTP probing is completed' 
+cmd=build prompt='waiting for the HTTP probe to finish'
+cmd=build state=http.probe.running
+cmd=build info=http.probe.ports count='4' targets='49214,49217,49216,49215' 
+cmd=build info=http.probe.commands count='1' commands='GET /' 
+cmd=build info=http.probe.call target='http://127.0.0.1:49214/' attempt='1' error='Get "http://127.0.0.1:49214/": read tcp 127.0.0.1:58528->127.0.0.1:49214: read: connection reset by peer' time='2021-09-27T05:45:16Z' status='error' method='GET' 
+cmd=build info=http.probe.call error='Get "http://127.0.0.1:49214/": read tcp 127.0.0.1:58532->127.0.0.1:49214: read: connection reset by peer' time='2021-09-27T05:45:24Z' status='error' method='GET' target='http://127.0.0.1:49214/' attempt='2' 
+cmd=build info=http.probe.call status='error' method='GET' target='http://127.0.0.1:49214/' attempt='3' error='Get "http://127.0.0.1:49214/": read tcp 127.0.0.1:58536->127.0.0.1:49214: read: connection reset by peer' time='2021-09-27T05:45:32Z' 
+cmd=build info=http.probe.call attempt='4' error='Get "http://127.0.0.1:49214/": read tcp 127.0.0.1:58540->127.0.0.1:49214: read: connection reset by peer' time='2021-09-27T05:45:40Z' status='error' method='GET' target='http://127.0.0.1:49214/' 
+cmd=build info=http.probe.call time='2021-09-27T05:45:48Z' status='error' method='GET' target='http://127.0.0.1:49214/' attempt='5' error='Get "http://127.0.0.1:49214/": read tcp 127.0.0.1:58546->127.0.0.1:49214: read: connection reset by peer' 
+cmd=build info=http.probe.call method='GET' target='http://127.0.0.1:49217/' attempt='1' error='Get "http://127.0.0.1:49217/": EOF' time='2021-09-27T05:45:56Z' status='error' 
+cmd=build info=http.probe.call attempt='2' error='Get "http://127.0.0.1:49217/": EOF' time='2021-09-27T05:46:12Z' status='error' method='GET' target='http://127.0.0.1:49217/' 
+cmd=build info=http.probe.call method='GET' target='http://127.0.0.1:49217/' attempt='3' error='Get "http://127.0.0.1:49217/": EOF' time='2021-09-27T05:46:28Z' status='error' 
+cmd=build info=http.probe.call attempt='4' error='Get "http://127.0.0.1:49217/": EOF' time='2021-09-27T05:46:44Z' status='error' method='GET' target='http://127.0.0.1:49217/' 
+cmd=build info=http.probe.call status='error' method='GET' target='http://127.0.0.1:49217/' attempt='5' error='Get "http://127.0.0.1:49217/": EOF' time='2021-09-27T05:47:00Z' 
+cmd=build info=http.probe.call error='Get "http://127.0.0.1:49216/": read tcp 127.0.0.1:47196->127.0.0.1:49216: read: connection reset by peer' time='2021-09-27T05:47:16Z' status='error' method='GET' target='http://127.0.0.1:49216/' attempt='1' 
+cmd=build info=http.probe.call error='Get "http://127.0.0.1:49216/": read tcp 127.0.0.1:47200->127.0.0.1:49216: read: connection reset by peer' time='2021-09-27T05:47:24Z' status='error' method='GET' target='http://127.0.0.1:49216/' attempt='2' 
+cmd=build info=http.probe.call target='http://127.0.0.1:49216/' attempt='3' error='Get "http://127.0.0.1:49216/": read tcp 127.0.0.1:47204->127.0.0.1:49216: read: connection reset by peer' time='2021-09-27T05:47:32Z' status='error' method='GET' 
+cmd=build info=http.probe.call error='Get "http://127.0.0.1:49216/": read tcp 127.0.0.1:47208->127.0.0.1:49216: read: connection reset by peer' time='2021-09-27T05:47:40Z' status='error' method='GET' target='http://127.0.0.1:49216/' attempt='4' 
+cmd=build info=http.probe.call target='http://127.0.0.1:49216/' attempt='5' error='Get "http://127.0.0.1:49216/": read tcp 127.0.0.1:47212->127.0.0.1:49216: read: connection reset by peer' time='2021-09-27T05:47:48Z' status='error' method='GET' 
+cmd=build info=http.probe.call target='http://127.0.0.1:49215/' attempt='1' error='Get "http://127.0.0.1:49215/": net/http: HTTP/1.x transport connection broken: malformed HTTP response "AMQP\x00\x00\t\x01"' time='2021-09-27T05:47:56Z' status='error' method='GET' 
+cmd=build info=http.probe.call time='2021-09-27T05:48:04Z' status='error' method='GET' target='http://127.0.0.1:49215/' attempt='2' error='Get "http://127.0.0.1:49215/": net/http: HTTP/1.x transport connection broken: malformed HTTP response "AMQP\x00\x00\t\x01"' 
+cmd=build info=http.probe.call attempt='3' error='Get "http://127.0.0.1:49215/": net/http: HTTP/1.x transport connection broken: malformed HTTP response "AMQP\x00\x00\t\x01"' time='2021-09-27T05:48:12Z' status='error' method='GET' target='http://127.0.0.1:49215/' 
+cmd=build info=http.probe.call error='Get "http://127.0.0.1:49215/": net/http: HTTP/1.x transport connection broken: malformed HTTP response "AMQP\x00\x00\t\x01"' time='2021-09-27T05:48:20Z' status='error' method='GET' target='http://127.0.0.1:49215/' attempt='4' 
+cmd=build info=http.probe.call attempt='5' error='Get "http://127.0.0.1:49215/": net/http: HTTP/1.x transport connection broken: malformed HTTP response "AMQP\x00\x00\t\x01"' time='2021-09-27T05:48:28Z' status='error' method='GET' target='http://127.0.0.1:49215/' 
+cmd=build info=http.probe.summary total='20' failures='20' successful='0' 
+cmd=build state=http.probe.done warning=no.successful.calls 
+cmd=build error=probe.error message='no.successful.calls'
+docker-slim: container stdout:
+
+              RabbitMQ 3.6.8. Copyright (C) 2007-2016 Pivotal Software, Inc.
+  ##  ##      Licensed under the MPL.  See http://www.rabbitmq.com/
+  ##  ##
+  ##########  Logs: tty
+  ######  ##        tty
+  ##########
+              Starting broker...
+
+=INFO REPORT==== 27-Sep-2021::05:46:16 ===
+Starting RabbitMQ 3.6.8 on Erlang 19.3
+Copyright (C) 2007-2016 Pivotal Software, Inc.
+Licensed under the MPL.  See http://www.rabbitmq.com/
+
+=INFO REPORT==== 27-Sep-2021::05:46:16 ===
+node           : rabbit@bbb5d0b8121d
+home dir       : /var/lib/rabbitmq
+config file(s) : /etc/rabbitmq/rabbitmq.config
+cookie hash    : YQvn+Hh31Jw8JLTbmpjeYw==
+log            : tty
+sasl log       : tty
+database dir   : /var/lib/rabbitmq/mnesia/rabbit@bbb5d0b8121d
+
+=INFO REPORT==== 27-Sep-2021::05:46:21 ===
+Memory limit set to 6368MB of 15921MB total.
+
+=INFO REPORT==== 27-Sep-2021::05:46:21 ===
+Disk free limit set to 50MB
+
+=INFO REPORT==== 27-Sep-2021::05:46:21 ===
+Limiting to approx 1048476 file handles (943626 sockets)
+
+=INFO REPORT==== 27-Sep-2021::05:46:21 ===
+FHC read buffering:  OFF
+FHC write buffering: ON
+
+=INFO REPORT==== 27-Sep-2021::05:46:21 ===
+Database directory at /var/lib/rabbitmq/mnesia/rabbit@bbb5d0b8121d is empty. Initialising from scratch...
+
+=INFO REPORT==== 27-Sep-2021::05:46:21 ===
+    application: mnesia
+    exited: stopped
+    type: temporary
+
+=INFO REPORT==== 27-Sep-2021::05:46:21 ===
+Waiting for Mnesia tables for 30000 ms, 9 retries left
+
+=INFO REPORT==== 27-Sep-2021::05:46:21 ===
+Waiting for Mnesia tables for 30000 ms, 9 retries left
+
+=INFO REPORT==== 27-Sep-2021::05:46:21 ===
+Waiting for Mnesia tables for 30000 ms, 9 retries left
+
+=INFO REPORT==== 27-Sep-2021::05:46:21 ===
+Priority queues enabled, real BQ is rabbit_variable_queue
+
+=INFO REPORT==== 27-Sep-2021::05:46:21 ===
+Starting rabbit_node_monitor
+
+=INFO REPORT==== 27-Sep-2021::05:46:21 ===
+Adding vhost '/'
+
+=INFO REPORT==== 27-Sep-2021::05:46:21 ===
+Creating user 'guest'
+
+=INFO REPORT==== 27-Sep-2021::05:46:21 ===
+Setting user tags for user 'guest' to [administrator]
+
+=INFO REPORT==== 27-Sep-2021::05:46:21 ===
+Setting permissions for 'guest' in '/' to '.*', '.*', '.*'
+
+=INFO REPORT==== 27-Sep-2021::05:46:21 ===
+msg_store_transient: using rabbit_msg_store_ets_index to provide index
+
+=INFO REPORT==== 27-Sep-2021::05:46:21 ===
+msg_store_persistent: using rabbit_msg_store_ets_index to provide index
+
+=WARNING REPORT==== 27-Sep-2021::05:46:21 ===
+msg_store_persistent: rebuilding indices from scratch
+
+=INFO REPORT==== 27-Sep-2021::05:46:21 ===
+started TCP Listener on [::]:5672
+ completed with 0 plugins.
+
+=INFO REPORT==== 27-Sep-2021::05:46:21 ===
+Server startup complete; 0 plugins started.
+
+=INFO REPORT==== 27-Sep-2021::05:47:56 ===
+accepting AMQP connection <0.378.0> (172.17.0.1:42912 -> 172.17.0.2:5672)
+
+=ERROR REPORT==== 27-Sep-2021::05:47:56 ===
+closing AMQP connection <0.378.0> (172.17.0.1:42912 -> 172.17.0.2:5672):
+{bad_header,<<"GET / HT">>}
+
+=INFO REPORT==== 27-Sep-2021::05:48:04 ===
+accepting AMQP connection <0.383.0> (172.17.0.1:42916 -> 172.17.0.2:5672)
+
+=ERROR REPORT==== 27-Sep-2021::05:48:04 ===
+closing AMQP connection <0.383.0> (172.17.0.1:42916 -> 172.17.0.2:5672):
+{bad_header,<<"GET / HT">>}
+
+=INFO REPORT==== 27-Sep-2021::05:48:12 ===
+accepting AMQP connection <0.386.0> (172.17.0.1:42920 -> 172.17.0.2:5672)
+
+=ERROR REPORT==== 27-Sep-2021::05:48:12 ===
+closing AMQP connection <0.386.0> (172.17.0.1:42920 -> 172.17.0.2:5672):
+{bad_header,<<"GET / HT">>}
+
+=INFO REPORT==== 27-Sep-2021::05:48:20 ===
+accepting AMQP connection <0.390.0> (172.17.0.1:42924 -> 172.17.0.2:5672)
+
+=ERROR REPORT==== 27-Sep-2021::05:48:20 ===
+closing AMQP connection <0.390.0> (172.17.0.1:42924 -> 172.17.0.2:5672):
+{bad_header,<<"GET / HT">>}
+
+=INFO REPORT==== 27-Sep-2021::05:48:28 ===
+accepting AMQP connection <0.393.0> (172.17.0.1:42928 -> 172.17.0.2:5672)
+
+=ERROR REPORT==== 27-Sep-2021::05:48:28 ===
+closing AMQP connection <0.393.0> (172.17.0.1:42928 -> 172.17.0.2:5672):
+{bad_header,<<"GET / HT">>}
+docker-slim: container stderr:
+time="2021-09-27T05:45:04Z" level=info msg="sensor: args => []string{\"/opt/dockerslim/bin/docker-slim-sensor\"}"
+time="2021-09-27T05:45:04Z" level=info msg="sensor: waiting for commands..."
+time="2021-09-27T05:45:04Z" level=info msg="sensor: monitor starting..."
+time="2021-09-27T05:45:04Z" level=info msg="fanmon: Run"
+time="2021-09-27T05:45:04Z" level=info msg="ptmon: Run"
+time="2021-09-27T05:45:07Z" level=info msg="sensor: waiting for monitor to complete startup..."
+time="2021-09-27T05:45:07Z" level=info msg="sensor: monitor started (true)..."
+docker-slim: end of container logs =============
+cmd=build state=exited code=-1
+

@@ -1,0 +1,4689 @@
+{
+  "version": "1.2",
+  "engine": "linux|Transformer|1.37.0|70cc8acfcb733161ce7e685b81ad6c172643c222|2021-09-23_09:23:43AM",
+  "containerized": false,
+  "host_distro": {
+    "name": "Ubuntu",
+    "version": "20.04",
+    "display_name": "Ubuntu 20.04.3 LTS"
+  },
+  "type": "xray",
+  "state": "done",
+  "target_reference": "mongo:3.4",
+  "source_image": {
+    "identity": {
+      "id": "sha256:f76f959b2a4947330df7b5878e81dc268f19f3fa4cef9d1ac8a992d2776eab73",
+      "tags": [
+        "3.4"
+      ],
+      "names": [
+        "mongo:3.4"
+      ],
+      "digests": [
+        "sha256:d314f7eca9d3f825d091b77c40d2f3c9d6fff4de88dde2962527353476f107ba"
+      ],
+      "full_digests": [
+        "mongo@sha256:d314f7eca9d3f825d091b77c40d2f3c9d6fff4de88dde2962527353476f107ba"
+      ]
+    },
+    "size": 431228981,
+    "size_human": "431 MB",
+    "create_time": "2020-01-25T02:28:07Z",
+    "docker_version": "18.06.1-ce",
+    "architecture": "amd64",
+    "exposed_ports": [
+      "27017/tcp"
+    ],
+    "os": "linux",
+    "volumes": [
+      "/data/db",
+      "/data/configdb"
+    ],
+    "env_vars": [
+      "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+      "GOSU_VERSION=1.11",
+      "JSYAML_VERSION=3.13.0",
+      "GPG_KEYS=0C49F3730359A14518585931BC711F9BA15703C6",
+      "MONGO_PACKAGE=mongodb-org",
+      "MONGO_REPO=repo.mongodb.org",
+      "MONGO_MAJOR=3.4",
+      "MONGO_VERSION=3.4.24"
+    ],
+    "distro": {
+      "name": "Ubuntu",
+      "version": "16.04",
+      "display_name": "Ubuntu 16.04.6 LTS"
+    },
+    "container_entry": {
+      "entrypoint": [
+        "docker-entrypoint.sh"
+      ],
+      "cmd": [
+        "mongod"
+      ],
+      "exe_path": "docker-entrypoint.sh",
+      "full_exe_path": {
+        "name": "/usr/local/bin/docker-entrypoint.sh",
+        "layer": 12
+      },
+      "exe_args": [
+        "mongod"
+      ]
+    }
+  },
+  "artifact_location": "/tmp/docker-slim-state/.docker-slim-state/images/f76f959b2a4947330df7b5878e81dc268f19f3fa4cef9d1ac8a992d2776eab73/artifacts",
+  "image_report": {
+    "stats": {
+      "duplicate_file_count": 0,
+      "duplicate_file_total_count": 0,
+      "duplicate_file_size": 0,
+      "duplicate_file_total_size": 0,
+      "duplicate_file_wasted_size": 0,
+      "deleted_count": 17,
+      "deleted_dir_content_count": 0,
+      "deleted_dir_count": 0,
+      "deleted_file_count": 17,
+      "deleted_link_count": 0,
+      "deleted_file_size": 37713637,
+      "setuid_count": 8,
+      "setgid_count": 5,
+      "sticky_count": 7
+    },
+    "special_perms": {
+      "setuid": [
+        "/bin/umount",
+        "/usr/bin/chfn",
+        "/usr/bin/chsh",
+        "/usr/bin/gpasswd",
+        "/usr/bin/newgrp",
+        "/usr/bin/passwd",
+        "/bin/mount",
+        "/bin/su"
+      ],
+      "setgid": [
+        "/usr/bin/wall",
+        "/sbin/pam_extrausers_chkpwd",
+        "/sbin/unix_chkpwd",
+        "/usr/bin/chage",
+        "/usr/bin/expiry"
+      ],
+      "sticky": [
+        "/run/lock",
+        "/var/tmp",
+        "/tmp"
+      ]
+    },
+    "shells": [
+      {
+        "full_name": "Bourne shell",
+        "short_name": "sh",
+        "exe_path": "/bin/sh",
+        "link_path": "dash",
+        "verified": true
+      },
+      {
+        "full_name": "Dash shell",
+        "short_name": "dash",
+        "exe_path": "/bin/dash",
+        "verified": true
+      },
+      {
+        "full_name": "Bash shell",
+        "short_name": "bash",
+        "exe_path": "/bin/bash",
+        "verified": true
+      },
+      {
+        "full_name": "Bash shell",
+        "short_name": "bash",
+        "exe_path": "/bin/bash",
+        "reference": "/bin/rbash",
+        "verified": true
+      }
+    ],
+    "certs": {
+      "bundles": [
+        "/etc/ssl/certs/ca-certificates.crt"
+      ],
+      "links": {
+        "/etc/ssl/certs/ACCVRAIZ1.pem": "/usr/share/ca-certificates/mozilla/ACCVRAIZ1.crt",
+        "/etc/ssl/certs/ACEDICOM_Root.pem": "/usr/share/ca-certificates/mozilla/ACEDICOM_Root.crt",
+        "/etc/ssl/certs/AC_RAIZ_FNMT-RCM.pem": "/usr/share/ca-certificates/mozilla/AC_RAIZ_FNMT-RCM.crt",
+        "/etc/ssl/certs/Actalis_Authentication_Root_CA.pem": "/usr/share/ca-certificates/mozilla/Actalis_Authentication_Root_CA.crt",
+        "/etc/ssl/certs/AddTrust_External_Root.pem": "/usr/share/ca-certificates/mozilla/AddTrust_External_Root.crt",
+        "/etc/ssl/certs/AddTrust_Low-Value_Services_Root.pem": "/usr/share/ca-certificates/mozilla/AddTrust_Low-Value_Services_Root.crt",
+        "/etc/ssl/certs/AddTrust_Public_Services_Root.pem": "/usr/share/ca-certificates/mozilla/AddTrust_Public_Services_Root.crt",
+        "/etc/ssl/certs/AddTrust_Qualified_Certificates_Root.pem": "/usr/share/ca-certificates/mozilla/AddTrust_Qualified_Certificates_Root.crt",
+        "/etc/ssl/certs/AffirmTrust_Commercial.pem": "/usr/share/ca-certificates/mozilla/AffirmTrust_Commercial.crt",
+        "/etc/ssl/certs/AffirmTrust_Networking.pem": "/usr/share/ca-certificates/mozilla/AffirmTrust_Networking.crt",
+        "/etc/ssl/certs/AffirmTrust_Premium.pem": "/usr/share/ca-certificates/mozilla/AffirmTrust_Premium.crt",
+        "/etc/ssl/certs/AffirmTrust_Premium_ECC.pem": "/usr/share/ca-certificates/mozilla/AffirmTrust_Premium_ECC.crt",
+        "/etc/ssl/certs/Amazon_Root_CA_1.pem": "/usr/share/ca-certificates/mozilla/Amazon_Root_CA_1.crt",
+        "/etc/ssl/certs/Amazon_Root_CA_2.pem": "/usr/share/ca-certificates/mozilla/Amazon_Root_CA_2.crt",
+        "/etc/ssl/certs/Amazon_Root_CA_3.pem": "/usr/share/ca-certificates/mozilla/Amazon_Root_CA_3.crt",
+        "/etc/ssl/certs/Amazon_Root_CA_4.pem": "/usr/share/ca-certificates/mozilla/Amazon_Root_CA_4.crt",
+        "/etc/ssl/certs/Atos_TrustedRoot_2011.pem": "/usr/share/ca-certificates/mozilla/Atos_TrustedRoot_2011.crt",
+        "/etc/ssl/certs/Autoridad_de_Certificacion_Firmaprofesional_CIF_A62634068.pem": "/usr/share/ca-certificates/mozilla/Autoridad_de_Certificacion_Firmaprofesional_CIF_A62634068.crt",
+        "/etc/ssl/certs/Baltimore_CyberTrust_Root.pem": "/usr/share/ca-certificates/mozilla/Baltimore_CyberTrust_Root.crt",
+        "/etc/ssl/certs/Buypass_Class_2_Root_CA.pem": "/usr/share/ca-certificates/mozilla/Buypass_Class_2_Root_CA.crt",
+        "/etc/ssl/certs/Buypass_Class_3_Root_CA.pem": "/usr/share/ca-certificates/mozilla/Buypass_Class_3_Root_CA.crt",
+        "/etc/ssl/certs/CA_Disig_Root_R1.pem": "/usr/share/ca-certificates/mozilla/CA_Disig_Root_R1.crt",
+        "/etc/ssl/certs/CA_Disig_Root_R2.pem": "/usr/share/ca-certificates/mozilla/CA_Disig_Root_R2.crt",
+        "/etc/ssl/certs/CFCA_EV_ROOT.pem": "/usr/share/ca-certificates/mozilla/CFCA_EV_ROOT.crt",
+        "/etc/ssl/certs/CNNIC_ROOT.pem": "/usr/share/ca-certificates/mozilla/CNNIC_ROOT.crt",
+        "/etc/ssl/certs/COMODO_Certification_Authority.pem": "/usr/share/ca-certificates/mozilla/COMODO_Certification_Authority.crt",
+        "/etc/ssl/certs/COMODO_ECC_Certification_Authority.pem": "/usr/share/ca-certificates/mozilla/COMODO_ECC_Certification_Authority.crt",
+        "/etc/ssl/certs/COMODO_RSA_Certification_Authority.pem": "/usr/share/ca-certificates/mozilla/COMODO_RSA_Certification_Authority.crt",
+        "/etc/ssl/certs/Camerfirma_Chambers_of_Commerce_Root.pem": "/usr/share/ca-certificates/mozilla/Camerfirma_Chambers_of_Commerce_Root.crt",
+        "/etc/ssl/certs/Camerfirma_Global_Chambersign_Root.pem": "/usr/share/ca-certificates/mozilla/Camerfirma_Global_Chambersign_Root.crt",
+        "/etc/ssl/certs/Certigna.pem": "/usr/share/ca-certificates/mozilla/Certigna.crt",
+        "/etc/ssl/certs/Certinomis_-_Autorité_Racine.pem": "/usr/share/ca-certificates/mozilla/Certinomis_-_Autorité_Racine.crt",
+        "/etc/ssl/certs/Certinomis_-_Root_CA.pem": "/usr/share/ca-certificates/mozilla/Certinomis_-_Root_CA.crt",
+        "/etc/ssl/certs/Certplus_Class_2_Primary_CA.pem": "/usr/share/ca-certificates/mozilla/Certplus_Class_2_Primary_CA.crt",
+        "/etc/ssl/certs/Certplus_Root_CA_G1.pem": "/usr/share/ca-certificates/mozilla/Certplus_Root_CA_G1.crt",
+        "/etc/ssl/certs/Certplus_Root_CA_G2.pem": "/usr/share/ca-certificates/mozilla/Certplus_Root_CA_G2.crt",
+        "/etc/ssl/certs/Certum_Root_CA.pem": "/usr/share/ca-certificates/mozilla/Certum_Root_CA.crt",
+        "/etc/ssl/certs/Certum_Trusted_Network_CA.pem": "/usr/share/ca-certificates/mozilla/Certum_Trusted_Network_CA.crt",
+        "/etc/ssl/certs/Certum_Trusted_Network_CA_2.pem": "/usr/share/ca-certificates/mozilla/Certum_Trusted_Network_CA_2.crt",
+        "/etc/ssl/certs/Chambers_of_Commerce_Root_-_2008.pem": "/usr/share/ca-certificates/mozilla/Chambers_of_Commerce_Root_-_2008.crt",
+        "/etc/ssl/certs/China_Internet_Network_Information_Center_EV_Certificates_Root.pem": "/usr/share/ca-certificates/mozilla/China_Internet_Network_Information_Center_EV_Certificates_Root.crt",
+        "/etc/ssl/certs/Comodo_AAA_Services_root.pem": "/usr/share/ca-certificates/mozilla/Comodo_AAA_Services_root.crt",
+        "/etc/ssl/certs/Comodo_Secure_Services_root.pem": "/usr/share/ca-certificates/mozilla/Comodo_Secure_Services_root.crt",
+        "/etc/ssl/certs/Comodo_Trusted_Services_root.pem": "/usr/share/ca-certificates/mozilla/Comodo_Trusted_Services_root.crt",
+        "/etc/ssl/certs/Cybertrust_Global_Root.pem": "/usr/share/ca-certificates/mozilla/Cybertrust_Global_Root.crt",
+        "/etc/ssl/certs/D-TRUST_Root_Class_3_CA_2_2009.pem": "/usr/share/ca-certificates/mozilla/D-TRUST_Root_Class_3_CA_2_2009.crt",
+        "/etc/ssl/certs/D-TRUST_Root_Class_3_CA_2_EV_2009.pem": "/usr/share/ca-certificates/mozilla/D-TRUST_Root_Class_3_CA_2_EV_2009.crt",
+        "/etc/ssl/certs/DST_ACES_CA_X6.pem": "/usr/share/ca-certificates/mozilla/DST_ACES_CA_X6.crt",
+        "/etc/ssl/certs/DST_Root_CA_X3.pem": "/usr/share/ca-certificates/mozilla/DST_Root_CA_X3.crt",
+        "/etc/ssl/certs/Deutsche_Telekom_Root_CA_2.pem": "/usr/share/ca-certificates/mozilla/Deutsche_Telekom_Root_CA_2.crt",
+        "/etc/ssl/certs/DigiCert_Assured_ID_Root_CA.pem": "/usr/share/ca-certificates/mozilla/DigiCert_Assured_ID_Root_CA.crt",
+        "/etc/ssl/certs/DigiCert_Assured_ID_Root_G2.pem": "/usr/share/ca-certificates/mozilla/DigiCert_Assured_ID_Root_G2.crt",
+        "/etc/ssl/certs/DigiCert_Assured_ID_Root_G3.pem": "/usr/share/ca-certificates/mozilla/DigiCert_Assured_ID_Root_G3.crt",
+        "/etc/ssl/certs/DigiCert_Global_Root_CA.pem": "/usr/share/ca-certificates/mozilla/DigiCert_Global_Root_CA.crt",
+        "/etc/ssl/certs/DigiCert_Global_Root_G2.pem": "/usr/share/ca-certificates/mozilla/DigiCert_Global_Root_G2.crt",
+        "/etc/ssl/certs/DigiCert_Global_Root_G3.pem": "/usr/share/ca-certificates/mozilla/DigiCert_Global_Root_G3.crt",
+        "/etc/ssl/certs/DigiCert_High_Assurance_EV_Root_CA.pem": "/usr/share/ca-certificates/mozilla/DigiCert_High_Assurance_EV_Root_CA.crt",
+        "/etc/ssl/certs/DigiCert_Trusted_Root_G4.pem": "/usr/share/ca-certificates/mozilla/DigiCert_Trusted_Root_G4.crt",
+        "/etc/ssl/certs/E-Tugra_Certification_Authority.pem": "/usr/share/ca-certificates/mozilla/E-Tugra_Certification_Authority.crt",
+        "/etc/ssl/certs/EC-ACC.pem": "/usr/share/ca-certificates/mozilla/EC-ACC.crt",
+        "/etc/ssl/certs/EE_Certification_Centre_Root_CA.pem": "/usr/share/ca-certificates/mozilla/EE_Certification_Centre_Root_CA.crt",
+        "/etc/ssl/certs/Entrust.net_Premium_2048_Secure_Server_CA.pem": "/usr/share/ca-certificates/mozilla/Entrust.net_Premium_2048_Secure_Server_CA.crt",
+        "/etc/ssl/certs/Entrust_Root_Certification_Authority.pem": "/usr/share/ca-certificates/mozilla/Entrust_Root_Certification_Authority.crt",
+        "/etc/ssl/certs/Entrust_Root_Certification_Authority_-_EC1.pem": "/usr/share/ca-certificates/mozilla/Entrust_Root_Certification_Authority_-_EC1.crt",
+        "/etc/ssl/certs/Entrust_Root_Certification_Authority_-_G2.pem": "/usr/share/ca-certificates/mozilla/Entrust_Root_Certification_Authority_-_G2.crt",
+        "/etc/ssl/certs/GeoTrust_Global_CA.pem": "/usr/share/ca-certificates/mozilla/GeoTrust_Global_CA.crt",
+        "/etc/ssl/certs/GeoTrust_Global_CA_2.pem": "/usr/share/ca-certificates/mozilla/GeoTrust_Global_CA_2.crt",
+        "/etc/ssl/certs/GeoTrust_Primary_Certification_Authority.pem": "/usr/share/ca-certificates/mozilla/GeoTrust_Primary_Certification_Authority.crt",
+        "/etc/ssl/certs/GeoTrust_Primary_Certification_Authority_-_G2.pem": "/usr/share/ca-certificates/mozilla/GeoTrust_Primary_Certification_Authority_-_G2.crt",
+        "/etc/ssl/certs/GeoTrust_Primary_Certification_Authority_-_G3.pem": "/usr/share/ca-certificates/mozilla/GeoTrust_Primary_Certification_Authority_-_G3.crt",
+        "/etc/ssl/certs/GeoTrust_Universal_CA.pem": "/usr/share/ca-certificates/mozilla/GeoTrust_Universal_CA.crt",
+        "/etc/ssl/certs/GeoTrust_Universal_CA_2.pem": "/usr/share/ca-certificates/mozilla/GeoTrust_Universal_CA_2.crt",
+        "/etc/ssl/certs/GlobalSign_ECC_Root_CA_-_R4.pem": "/usr/share/ca-certificates/mozilla/GlobalSign_ECC_Root_CA_-_R4.crt",
+        "/etc/ssl/certs/GlobalSign_ECC_Root_CA_-_R5.pem": "/usr/share/ca-certificates/mozilla/GlobalSign_ECC_Root_CA_-_R5.crt",
+        "/etc/ssl/certs/GlobalSign_Root_CA.pem": "/usr/share/ca-certificates/mozilla/GlobalSign_Root_CA.crt",
+        "/etc/ssl/certs/GlobalSign_Root_CA_-_R2.pem": "/usr/share/ca-certificates/mozilla/GlobalSign_Root_CA_-_R2.crt",
+        "/etc/ssl/certs/GlobalSign_Root_CA_-_R3.pem": "/usr/share/ca-certificates/mozilla/GlobalSign_Root_CA_-_R3.crt",
+        "/etc/ssl/certs/Global_Chambersign_Root_-_2008.pem": "/usr/share/ca-certificates/mozilla/Global_Chambersign_Root_-_2008.crt",
+        "/etc/ssl/certs/Go_Daddy_Class_2_CA.pem": "/usr/share/ca-certificates/mozilla/Go_Daddy_Class_2_CA.crt",
+        "/etc/ssl/certs/Go_Daddy_Root_Certificate_Authority_-_G2.pem": "/usr/share/ca-certificates/mozilla/Go_Daddy_Root_Certificate_Authority_-_G2.crt",
+        "/etc/ssl/certs/Hellenic_Academic_and_Research_Institutions_ECC_RootCA_2015.pem": "/usr/share/ca-certificates/mozilla/Hellenic_Academic_and_Research_Institutions_ECC_RootCA_2015.crt",
+        "/etc/ssl/certs/Hellenic_Academic_and_Research_Institutions_RootCA_2011.pem": "/usr/share/ca-certificates/mozilla/Hellenic_Academic_and_Research_Institutions_RootCA_2011.crt",
+        "/etc/ssl/certs/Hellenic_Academic_and_Research_Institutions_RootCA_2015.pem": "/usr/share/ca-certificates/mozilla/Hellenic_Academic_and_Research_Institutions_RootCA_2015.crt",
+        "/etc/ssl/certs/Hongkong_Post_Root_CA_1.pem": "/usr/share/ca-certificates/mozilla/Hongkong_Post_Root_CA_1.crt",
+        "/etc/ssl/certs/ISRG_Root_X1.pem": "/usr/share/ca-certificates/mozilla/ISRG_Root_X1.crt",
+        "/etc/ssl/certs/IdenTrust_Commercial_Root_CA_1.pem": "/usr/share/ca-certificates/mozilla/IdenTrust_Commercial_Root_CA_1.crt",
+        "/etc/ssl/certs/IdenTrust_Public_Sector_Root_CA_1.pem": "/usr/share/ca-certificates/mozilla/IdenTrust_Public_Sector_Root_CA_1.crt",
+        "/etc/ssl/certs/Izenpe.com.pem": "/usr/share/ca-certificates/mozilla/Izenpe.com.crt",
+        "/etc/ssl/certs/LuxTrust_Global_Root_2.pem": "/usr/share/ca-certificates/mozilla/LuxTrust_Global_Root_2.crt",
+        "/etc/ssl/certs/Microsec_e-Szigno_Root_CA_2009.pem": "/usr/share/ca-certificates/mozilla/Microsec_e-Szigno_Root_CA_2009.crt",
+        "/etc/ssl/certs/NetLock_Arany_=Class_Gold=_Főtanúsítvány.pem": "/usr/share/ca-certificates/mozilla/NetLock_Arany_=Class_Gold=_Főtanúsítvány.crt",
+        "/etc/ssl/certs/Network_Solutions_Certificate_Authority.pem": "/usr/share/ca-certificates/mozilla/Network_Solutions_Certificate_Authority.crt",
+        "/etc/ssl/certs/OISTE_WISeKey_Global_Root_GA_CA.pem": "/usr/share/ca-certificates/mozilla/OISTE_WISeKey_Global_Root_GA_CA.crt",
+        "/etc/ssl/certs/OISTE_WISeKey_Global_Root_GB_CA.pem": "/usr/share/ca-certificates/mozilla/OISTE_WISeKey_Global_Root_GB_CA.crt",
+        "/etc/ssl/certs/OpenTrust_Root_CA_G1.pem": "/usr/share/ca-certificates/mozilla/OpenTrust_Root_CA_G1.crt",
+        "/etc/ssl/certs/OpenTrust_Root_CA_G2.pem": "/usr/share/ca-certificates/mozilla/OpenTrust_Root_CA_G2.crt",
+        "/etc/ssl/certs/OpenTrust_Root_CA_G3.pem": "/usr/share/ca-certificates/mozilla/OpenTrust_Root_CA_G3.crt",
+        "/etc/ssl/certs/PSCProcert.pem": "/usr/share/ca-certificates/mozilla/PSCProcert.crt",
+        "/etc/ssl/certs/QuoVadis_Root_CA.pem": "/usr/share/ca-certificates/mozilla/QuoVadis_Root_CA.crt",
+        "/etc/ssl/certs/QuoVadis_Root_CA_1_G3.pem": "/usr/share/ca-certificates/mozilla/QuoVadis_Root_CA_1_G3.crt",
+        "/etc/ssl/certs/QuoVadis_Root_CA_2.pem": "/usr/share/ca-certificates/mozilla/QuoVadis_Root_CA_2.crt",
+        "/etc/ssl/certs/QuoVadis_Root_CA_2_G3.pem": "/usr/share/ca-certificates/mozilla/QuoVadis_Root_CA_2_G3.crt",
+        "/etc/ssl/certs/QuoVadis_Root_CA_3.pem": "/usr/share/ca-certificates/mozilla/QuoVadis_Root_CA_3.crt",
+        "/etc/ssl/certs/QuoVadis_Root_CA_3_G3.pem": "/usr/share/ca-certificates/mozilla/QuoVadis_Root_CA_3_G3.crt",
+        "/etc/ssl/certs/SZAFIR_ROOT_CA2.pem": "/usr/share/ca-certificates/mozilla/SZAFIR_ROOT_CA2.crt",
+        "/etc/ssl/certs/SecureSign_RootCA11.pem": "/usr/share/ca-certificates/mozilla/SecureSign_RootCA11.crt",
+        "/etc/ssl/certs/SecureTrust_CA.pem": "/usr/share/ca-certificates/mozilla/SecureTrust_CA.crt",
+        "/etc/ssl/certs/Secure_Global_CA.pem": "/usr/share/ca-certificates/mozilla/Secure_Global_CA.crt",
+        "/etc/ssl/certs/Security_Communication_EV_RootCA1.pem": "/usr/share/ca-certificates/mozilla/Security_Communication_EV_RootCA1.crt",
+        "/etc/ssl/certs/Security_Communication_RootCA2.pem": "/usr/share/ca-certificates/mozilla/Security_Communication_RootCA2.crt",
+        "/etc/ssl/certs/Security_Communication_Root_CA.pem": "/usr/share/ca-certificates/mozilla/Security_Communication_Root_CA.crt",
+        "/etc/ssl/certs/Sonera_Class_2_Root_CA.pem": "/usr/share/ca-certificates/mozilla/Sonera_Class_2_Root_CA.crt",
+        "/etc/ssl/certs/Staat_der_Nederlanden_EV_Root_CA.pem": "/usr/share/ca-certificates/mozilla/Staat_der_Nederlanden_EV_Root_CA.crt",
+        "/etc/ssl/certs/Staat_der_Nederlanden_Root_CA_-_G2.pem": "/usr/share/ca-certificates/mozilla/Staat_der_Nederlanden_Root_CA_-_G2.crt",
+        "/etc/ssl/certs/Staat_der_Nederlanden_Root_CA_-_G3.pem": "/usr/share/ca-certificates/mozilla/Staat_der_Nederlanden_Root_CA_-_G3.crt",
+        "/etc/ssl/certs/Starfield_Class_2_CA.pem": "/usr/share/ca-certificates/mozilla/Starfield_Class_2_CA.crt",
+        "/etc/ssl/certs/Starfield_Root_Certificate_Authority_-_G2.pem": "/usr/share/ca-certificates/mozilla/Starfield_Root_Certificate_Authority_-_G2.crt",
+        "/etc/ssl/certs/Starfield_Services_Root_Certificate_Authority_-_G2.pem": "/usr/share/ca-certificates/mozilla/Starfield_Services_Root_Certificate_Authority_-_G2.crt",
+        "/etc/ssl/certs/SwissSign_Gold_CA_-_G2.pem": "/usr/share/ca-certificates/mozilla/SwissSign_Gold_CA_-_G2.crt",
+        "/etc/ssl/certs/SwissSign_Silver_CA_-_G2.pem": "/usr/share/ca-certificates/mozilla/SwissSign_Silver_CA_-_G2.crt",
+        "/etc/ssl/certs/Swisscom_Root_CA_1.pem": "/usr/share/ca-certificates/mozilla/Swisscom_Root_CA_1.crt",
+        "/etc/ssl/certs/Swisscom_Root_CA_2.pem": "/usr/share/ca-certificates/mozilla/Swisscom_Root_CA_2.crt",
+        "/etc/ssl/certs/Swisscom_Root_EV_CA_2.pem": "/usr/share/ca-certificates/mozilla/Swisscom_Root_EV_CA_2.crt",
+        "/etc/ssl/certs/T-TeleSec_GlobalRoot_Class_2.pem": "/usr/share/ca-certificates/mozilla/T-TeleSec_GlobalRoot_Class_2.crt",
+        "/etc/ssl/certs/T-TeleSec_GlobalRoot_Class_3.pem": "/usr/share/ca-certificates/mozilla/T-TeleSec_GlobalRoot_Class_3.crt",
+        "/etc/ssl/certs/TUBITAK_Kamu_SM_SSL_Kok_Sertifikasi_-_Surum_1.pem": "/usr/share/ca-certificates/mozilla/TUBITAK_Kamu_SM_SSL_Kok_Sertifikasi_-_Surum_1.crt",
+        "/etc/ssl/certs/TURKTRUST_Certificate_Services_Provider_Root_2007.pem": "/usr/share/ca-certificates/mozilla/TURKTRUST_Certificate_Services_Provider_Root_2007.crt",
+        "/etc/ssl/certs/TWCA_Global_Root_CA.pem": "/usr/share/ca-certificates/mozilla/TWCA_Global_Root_CA.crt",
+        "/etc/ssl/certs/TWCA_Root_Certification_Authority.pem": "/usr/share/ca-certificates/mozilla/TWCA_Root_Certification_Authority.crt",
+        "/etc/ssl/certs/Taiwan_GRCA.pem": "/usr/share/ca-certificates/mozilla/Taiwan_GRCA.crt",
+        "/etc/ssl/certs/TeliaSonera_Root_CA_v1.pem": "/usr/share/ca-certificates/mozilla/TeliaSonera_Root_CA_v1.crt",
+        "/etc/ssl/certs/Trustis_FPS_Root_CA.pem": "/usr/share/ca-certificates/mozilla/Trustis_FPS_Root_CA.crt",
+        "/etc/ssl/certs/TÜBİTAK_UEKAE_Kök_Sertifika_Hizmet_Sağlayıcısı_-_Sürüm_3.pem": "/usr/share/ca-certificates/mozilla/TÜBİTAK_UEKAE_Kök_Sertifika_Hizmet_Sağlayıcısı_-_Sürüm_3.crt",
+        "/etc/ssl/certs/TÜRKTRUST_Elektronik_Sertifika_Hizmet_Sağlayıcısı_H5.pem": "/usr/share/ca-certificates/mozilla/TÜRKTRUST_Elektronik_Sertifika_Hizmet_Sağlayıcısı_H5.crt",
+        "/etc/ssl/certs/USERTrust_ECC_Certification_Authority.pem": "/usr/share/ca-certificates/mozilla/USERTrust_ECC_Certification_Authority.crt",
+        "/etc/ssl/certs/USERTrust_RSA_Certification_Authority.pem": "/usr/share/ca-certificates/mozilla/USERTrust_RSA_Certification_Authority.crt",
+        "/etc/ssl/certs/UTN_USERFirst_Hardware_Root_CA.pem": "/usr/share/ca-certificates/mozilla/UTN_USERFirst_Hardware_Root_CA.crt",
+        "/etc/ssl/certs/VeriSign_Class_3_Public_Primary_Certification_Authority_-_G4.pem": "/usr/share/ca-certificates/mozilla/VeriSign_Class_3_Public_Primary_Certification_Authority_-_G4.crt",
+        "/etc/ssl/certs/VeriSign_Class_3_Public_Primary_Certification_Authority_-_G5.pem": "/usr/share/ca-certificates/mozilla/VeriSign_Class_3_Public_Primary_Certification_Authority_-_G5.crt",
+        "/etc/ssl/certs/VeriSign_Universal_Root_Certification_Authority.pem": "/usr/share/ca-certificates/mozilla/VeriSign_Universal_Root_Certification_Authority.crt",
+        "/etc/ssl/certs/Verisign_Class_3_Public_Primary_Certification_Authority_-_G3.pem": "/usr/share/ca-certificates/mozilla/Verisign_Class_3_Public_Primary_Certification_Authority_-_G3.crt",
+        "/etc/ssl/certs/Visa_eCommerce_Root.pem": "/usr/share/ca-certificates/mozilla/Visa_eCommerce_Root.crt",
+        "/etc/ssl/certs/XRamp_Global_CA_Root.pem": "/usr/share/ca-certificates/mozilla/XRamp_Global_CA_Root.crt",
+        "/etc/ssl/certs/certSIGN_ROOT_CA.pem": "/usr/share/ca-certificates/mozilla/certSIGN_ROOT_CA.crt",
+        "/etc/ssl/certs/ePKI_Root_Certification_Authority.pem": "/usr/share/ca-certificates/mozilla/ePKI_Root_Certification_Authority.crt",
+        "/etc/ssl/certs/thawte_Primary_Root_CA.pem": "/usr/share/ca-certificates/mozilla/thawte_Primary_Root_CA.crt",
+        "/etc/ssl/certs/thawte_Primary_Root_CA_-_G2.pem": "/usr/share/ca-certificates/mozilla/thawte_Primary_Root_CA_-_G2.crt",
+        "/etc/ssl/certs/thawte_Primary_Root_CA_-_G3.pem": "/usr/share/ca-certificates/mozilla/thawte_Primary_Root_CA_-_G3.crt",
+        "/usr/lib/ssl/certs": "/etc/ssl/certs"
+      },
+      "hashes": {
+        "/etc/ssl/certs/00673b5b.0": "thawte_Primary_Root_CA.pem",
+        "/etc/ssl/certs/02265526.0": "Entrust_Root_Certification_Authority_-_G2.pem",
+        "/etc/ssl/certs/02756ea4.0": "Certplus_Root_CA_G1.pem",
+        "/etc/ssl/certs/02b73561.0": "Comodo_Secure_Services_root.pem",
+        "/etc/ssl/certs/03179a64.0": "Staat_der_Nederlanden_EV_Root_CA.pem",
+        "/etc/ssl/certs/034868d6.0": "Swisscom_Root_EV_CA_2.pem",
+        "/etc/ssl/certs/04f60c28.0": "USERTrust_ECC_Certification_Authority.pem",
+        "/etc/ssl/certs/052e396b.0": "AddTrust_Qualified_Certificates_Root.pem",
+        "/etc/ssl/certs/062cdee6.0": "GlobalSign_Root_CA_-_R3.pem",
+        "/etc/ssl/certs/064e0aa9.0": "QuoVadis_Root_CA_2_G3.pem",
+        "/etc/ssl/certs/080911ac.0": "QuoVadis_Root_CA.pem",
+        "/etc/ssl/certs/09789157.0": "Starfield_Services_Root_Certificate_Authority_-_G2.pem",
+        "/etc/ssl/certs/0b1b94ef.0": "CFCA_EV_ROOT.pem",
+        "/etc/ssl/certs/0c4c9b6c.0": "Global_Chambersign_Root_-_2008.pem",
+        "/etc/ssl/certs/0d5a4e1c.0": "TÜRKTRUST_Elektronik_Sertifika_Hizmet_Sağlayıcısı_H5.pem",
+        "/etc/ssl/certs/0d69c7e1.0": "GlobalSign_ECC_Root_CA_-_R4.pem",
+        "/etc/ssl/certs/10531352.0": "Starfield_Services_Root_Certificate_Authority_-_G2.pem",
+        "/etc/ssl/certs/106f3e4d.0": "Entrust_Root_Certification_Authority_-_EC1.pem",
+        "/etc/ssl/certs/111e6273.0": "GlobalSign_Root_CA_-_R2.pem",
+        "/etc/ssl/certs/116bf586.0": "GeoTrust_Primary_Certification_Authority_-_G2.pem",
+        "/etc/ssl/certs/124bbd54.0": "Comodo_Trusted_Services_root.pem",
+        "/etc/ssl/certs/128805a3.0": "EE_Certification_Centre_Root_CA.pem",
+        "/etc/ssl/certs/12d55845.0": "DST_Root_CA_X3.pem",
+        "/etc/ssl/certs/157753a5.0": "AddTrust_External_Root.pem",
+        "/etc/ssl/certs/1636090b.0": "Hellenic_Academic_and_Research_Institutions_RootCA_2011.pem",
+        "/etc/ssl/certs/1676090a.0": "China_Internet_Network_Information_Center_EV_Certificates_Root.pem",
+        "/etc/ssl/certs/17b51fe6.0": "Certplus_Class_2_Primary_CA.pem",
+        "/etc/ssl/certs/1874d4aa.0": "China_Internet_Network_Information_Center_EV_Certificates_Root.pem",
+        "/etc/ssl/certs/18856ac4.0": "SecureSign_RootCA11.pem",
+        "/etc/ssl/certs/1d3472b9.0": "GlobalSign_ECC_Root_CA_-_R5.pem",
+        "/etc/ssl/certs/1dac3003.0": "DST_ACES_CA_X6.pem",
+        "/etc/ssl/certs/1dcd6f4c.0": "Taiwan_GRCA.pem",
+        "/etc/ssl/certs/1df5a75f.0": "D-TRUST_Root_Class_3_CA_2_2009.pem",
+        "/etc/ssl/certs/1e08bfd1.0": "IdenTrust_Public_Sector_Root_CA_1.pem",
+        "/etc/ssl/certs/1e09d511.0": "T-TeleSec_GlobalRoot_Class_2.pem",
+        "/etc/ssl/certs/1e1eab7c.0": "T-TeleSec_GlobalRoot_Class_3.pem",
+        "/etc/ssl/certs/1e8e7201.0": "GlobalSign_Root_CA_-_R3.pem",
+        "/etc/ssl/certs/1eb37bdf.0": "Chambers_of_Commerce_Root_-_2008.pem",
+        "/etc/ssl/certs/1f58a078.0": "QuoVadis_Root_CA_2_G3.pem",
+        "/etc/ssl/certs/21855f49.0": "CA_Disig_Root_R1.pem",
+        "/etc/ssl/certs/219d9499.0": "Go_Daddy_Class_2_CA.pem",
+        "/etc/ssl/certs/23f4c490.0": "Starfield_Class_2_CA.pem",
+        "/etc/ssl/certs/244b5494.0": "DigiCert_High_Assurance_EV_Root_CA.pem",
+        "/etc/ssl/certs/27af790d.0": "GeoTrust_Primary_Certification_Authority_-_G2.pem",
+        "/etc/ssl/certs/2add47b6.0": "GlobalSign_ECC_Root_CA_-_R5.pem",
+        "/etc/ssl/certs/2ae6433e.0": "CA_Disig_Root_R2.pem",
+        "/etc/ssl/certs/2b349938.0": "AffirmTrust_Commercial.pem",
+        "/etc/ssl/certs/2c11d503.0": "OpenTrust_Root_CA_G3.pem",
+        "/etc/ssl/certs/2c543cd1.0": "GeoTrust_Global_CA.pem",
+        "/etc/ssl/certs/2d9dafe4.0": "Buypass_Class_3_Root_CA.pem",
+        "/etc/ssl/certs/2e4eed3c.0": "thawte_Primary_Root_CA.pem",
+        "/etc/ssl/certs/2e5ac55d.0": "DST_Root_CA_X3.pem",
+        "/etc/ssl/certs/2fa87019.0": "Network_Solutions_Certificate_Authority.pem",
+        "/etc/ssl/certs/31188b5e.0": "TUBITAK_Kamu_SM_SSL_Kok_Sertifikasi_-_Surum_1.pem",
+        "/etc/ssl/certs/32888f65.0": "Hellenic_Academic_and_Research_Institutions_RootCA_2015.pem",
+        "/etc/ssl/certs/343eb6cb.0": "Cybertrust_Global_Root.pem",
+        "/etc/ssl/certs/349f2832.0": "EC-ACC.pem",
+        "/etc/ssl/certs/35105088.0": "USERTrust_RSA_Certification_Authority.pem",
+        "/etc/ssl/certs/3513523f.0": "DigiCert_Global_Root_CA.pem",
+        "/etc/ssl/certs/381ce4dd.0": "ACEDICOM_Root.pem",
+        "/etc/ssl/certs/3929ec9f.0": "OpenTrust_Root_CA_G2.pem",
+        "/etc/ssl/certs/399e7759.0": "DigiCert_Global_Root_CA.pem",
+        "/etc/ssl/certs/3a3b02ce.0": "OISTE_WISeKey_Global_Root_GA_CA.pem",
+        "/etc/ssl/certs/3ad48a91.0": "Baltimore_CyberTrust_Root.pem",
+        "/etc/ssl/certs/3bde41ac.0": "Autoridad_de_Certificacion_Firmaprofesional_CIF_A62634068.pem",
+        "/etc/ssl/certs/3c58f906.0": "AddTrust_External_Root.pem",
+        "/etc/ssl/certs/3c6676aa.0": "Staat_der_Nederlanden_EV_Root_CA.pem",
+        "/etc/ssl/certs/3c860d51.0": "SwissSign_Gold_CA_-_G2.pem",
+        "/etc/ssl/certs/3c9a4d3b.0": "ACCVRAIZ1.pem",
+        "/etc/ssl/certs/3d441de8.0": "Staat_der_Nederlanden_Root_CA_-_G2.pem",
+        "/etc/ssl/certs/3e45d192.0": "Hongkong_Post_Root_CA_1.pem",
+        "/etc/ssl/certs/3e7271e8.0": "Entrust.net_Premium_2048_Secure_Server_CA.pem",
+        "/etc/ssl/certs/3efd4dc0.0": "Swisscom_Root_CA_2.pem",
+        "/etc/ssl/certs/40193066.0": "Certum_Trusted_Network_CA_2.pem",
+        "/etc/ssl/certs/4042bcee.0": "ISRG_Root_X1.pem",
+        "/etc/ssl/certs/40547a79.0": "COMODO_Certification_Authority.pem",
+        "/etc/ssl/certs/40dc992e.0": "Hellenic_Academic_and_Research_Institutions_RootCA_2011.pem",
+        "/etc/ssl/certs/418595b9.0": "TÜBİTAK_UEKAE_Kök_Sertifika_Hizmet_Sağlayıcısı_-_Sürüm_3.pem",
+        "/etc/ssl/certs/4304c5e5.0": "Network_Solutions_Certificate_Authority.pem",
+        "/etc/ssl/certs/442adcac.0": "Certum_Root_CA.pem",
+        "/etc/ssl/certs/450c6e38.0": "Swisscom_Root_CA_2.pem",
+        "/etc/ssl/certs/451b5485.0": "Certplus_Root_CA_G2.pem",
+        "/etc/ssl/certs/455f1b52.0": "Entrust_Root_Certification_Authority_-_G2.pem",
+        "/etc/ssl/certs/480720ec.0": "GeoTrust_Primary_Certification_Authority.pem",
+        "/etc/ssl/certs/48a195d8.0": "Izenpe.com.pem",
+        "/etc/ssl/certs/48bec511.0": "Certum_Trusted_Network_CA.pem",
+        "/etc/ssl/certs/4a6481c9.0": "GlobalSign_Root_CA_-_R2.pem",
+        "/etc/ssl/certs/4be590e0.0": "IdenTrust_Public_Sector_Root_CA_1.pem",
+        "/etc/ssl/certs/4bfab552.0": "Starfield_Root_Certificate_Authority_-_G2.pem",
+        "/etc/ssl/certs/4e18c148.0": "Deutsche_Telekom_Root_CA_2.pem",
+        "/etc/ssl/certs/4f316efb.0": "SwissSign_Gold_CA_-_G2.pem",
+        "/etc/ssl/certs/5046c355.0": "SwissSign_Silver_CA_-_G2.pem",
+        "/etc/ssl/certs/524d9b43.0": "VeriSign_Universal_Root_Certification_Authority.pem",
+        "/etc/ssl/certs/5273a94c.0": "E-Tugra_Certification_Authority.pem",
+        "/etc/ssl/certs/52b525c7.0": "QuoVadis_Root_CA_1_G3.pem",
+        "/etc/ssl/certs/5443e9e3.0": "T-TeleSec_GlobalRoot_Class_3.pem",
+        "/etc/ssl/certs/54657681.0": "Buypass_Class_2_Root_CA.pem",
+        "/etc/ssl/certs/559f7c71.0": "OpenTrust_Root_CA_G3.pem",
+        "/etc/ssl/certs/56657bde.0": "Comodo_Trusted_Services_root.pem",
+        "/etc/ssl/certs/57692373.0": "GeoTrust_Global_CA_2.pem",
+        "/etc/ssl/certs/57bcb2da.0": "SwissSign_Silver_CA_-_G2.pem",
+        "/etc/ssl/certs/592c0a9a.0": "TURKTRUST_Certificate_Services_Provider_Root_2007.pem",
+        "/etc/ssl/certs/5a250ea7.0": "Staat_der_Nederlanden_Root_CA_-_G3.pem",
+        "/etc/ssl/certs/5a3f0ff8.0": "COMODO_Certification_Authority.pem",
+        "/etc/ssl/certs/5a4d6896.0": "Staat_der_Nederlanden_Root_CA_-_G3.pem",
+        "/etc/ssl/certs/5ad8a5d6.0": "GlobalSign_Root_CA.pem",
+        "/etc/ssl/certs/5c44d531.0": "Staat_der_Nederlanden_Root_CA_-_G2.pem",
+        "/etc/ssl/certs/5cd81ad7.0": "TeliaSonera_Root_CA_v1.pem",
+        "/etc/ssl/certs/5cf9d536.0": "QuoVadis_Root_CA.pem",
+        "/etc/ssl/certs/5e4e69e7.0": "VeriSign_Class_3_Public_Primary_Certification_Authority_-_G4.pem",
+        "/etc/ssl/certs/5f15c80c.0": "TWCA_Global_Root_CA.pem",
+        "/etc/ssl/certs/5f47b495.0": "Actalis_Authentication_Root_CA.pem",
+        "/etc/ssl/certs/607986c7.0": "DigiCert_Global_Root_G2.pem",
+        "/etc/ssl/certs/608a55ad.0": "OpenTrust_Root_CA_G2.pem",
+        "/etc/ssl/certs/60afe812.0": "NetLock_Arany_=Class_Gold=_Főtanúsítvány.pem",
+        "/etc/ssl/certs/6187b673.0": "ISRG_Root_X1.pem",
+        "/etc/ssl/certs/63a2c897.0": "TeliaSonera_Root_CA_v1.pem",
+        "/etc/ssl/certs/6410666e.0": "Taiwan_GRCA.pem",
+        "/etc/ssl/certs/653b494a.0": "Baltimore_CyberTrust_Root.pem",
+        "/etc/ssl/certs/65b876bd.0": "TÜBİTAK_UEKAE_Kök_Sertifika_Hizmet_Sağlayıcısı_-_Sürüm_3.pem",
+        "/etc/ssl/certs/667c66d4.0": "Swisscom_Root_CA_1.pem",
+        "/etc/ssl/certs/67495436.0": "thawte_Primary_Root_CA_-_G3.pem",
+        "/etc/ssl/certs/69105f4f.0": "DigiCert_Assured_ID_Root_CA.pem",
+        "/etc/ssl/certs/6b99d060.0": "Entrust_Root_Certification_Authority.pem",
+        "/etc/ssl/certs/6d41d539.0": "Amazon_Root_CA_2.pem",
+        "/etc/ssl/certs/6e8bf996.0": "Certum_Root_CA.pem",
+        "/etc/ssl/certs/6fcc125d.0": "Visa_eCommerce_Root.pem",
+        "/etc/ssl/certs/706f604c.0": "XRamp_Global_CA_Root.pem",
+        "/etc/ssl/certs/749e9e03.0": "QuoVadis_Root_CA_1_G3.pem",
+        "/etc/ssl/certs/75680d2e.0": "Comodo_AAA_Services_root.pem",
+        "/etc/ssl/certs/75d1b2ed.0": "DigiCert_Trusted_Root_G4.pem",
+        "/etc/ssl/certs/76579174.0": "XRamp_Global_CA_Root.pem",
+        "/etc/ssl/certs/7672ac4b.0": "Certinomis_-_Autorité_Racine.pem",
+        "/etc/ssl/certs/76cb8f92.0": "Cybertrust_Global_Root.pem",
+        "/etc/ssl/certs/76faf6c0.0": "QuoVadis_Root_CA_3.pem",
+        "/etc/ssl/certs/7719f463.0": "Hellenic_Academic_and_Research_Institutions_ECC_RootCA_2015.pem",
+        "/etc/ssl/certs/790a7190.0": "DST_ACES_CA_X6.pem",
+        "/etc/ssl/certs/7992b8bb.0": "TÜRKTRUST_Elektronik_Sertifika_Hizmet_Sağlayıcısı_H5.pem",
+        "/etc/ssl/certs/7999be0d.0": "GeoTrust_Global_CA.pem",
+        "/etc/ssl/certs/7a7c655d.0": "Amazon_Root_CA_3.pem",
+        "/etc/ssl/certs/7a819ef2.0": "QuoVadis_Root_CA_2.pem",
+        "/etc/ssl/certs/7d0b38bd.0": "VeriSign_Class_3_Public_Primary_Certification_Authority_-_G4.pem",
+        "/etc/ssl/certs/7d453d8f.0": "Verisign_Class_3_Public_Primary_Certification_Authority_-_G3.pem",
+        "/etc/ssl/certs/7f3d5d1d.0": "DigiCert_Assured_ID_Root_G3.pem",
+        "/etc/ssl/certs/812e17de.0": "Deutsche_Telekom_Root_CA_2.pem",
+        "/etc/ssl/certs/8160b96c.0": "Microsec_e-Szigno_Root_CA_2009.pem",
+        "/etc/ssl/certs/81b9768f.0": "DigiCert_High_Assurance_EV_Root_CA.pem",
+        "/etc/ssl/certs/82223c44.0": "Buypass_Class_2_Root_CA.pem",
+        "/etc/ssl/certs/85cde254.0": "Starfield_Root_Certificate_Authority_-_G2.pem",
+        "/etc/ssl/certs/861a399d.0": "AddTrust_Low-Value_Services_Root.pem",
+        "/etc/ssl/certs/86212b19.0": "AffirmTrust_Networking.pem",
+        "/etc/ssl/certs/87229d21.0": "OpenTrust_Root_CA_G1.pem",
+        "/etc/ssl/certs/87753b0d.0": "GeoTrust_Universal_CA_2.pem",
+        "/etc/ssl/certs/882de061.0": "certSIGN_ROOT_CA.pem",
+        "/etc/ssl/certs/8867006a.0": "GeoTrust_Universal_CA_2.pem",
+        "/etc/ssl/certs/895cad1a.0": "CNNIC_ROOT.pem",
+        "/etc/ssl/certs/89c02a45.0": "COMODO_ECC_Certification_Authority.pem",
+        "/etc/ssl/certs/8b59b1ad.0": "AddTrust_Public_Services_Root.pem",
+        "/etc/ssl/certs/8c24b137.0": "PSCProcert.pem",
+        "/etc/ssl/certs/8cb5ee0f.0": "Amazon_Root_CA_3.pem",
+        "/etc/ssl/certs/8d6437c3.0": "DigiCert_Assured_ID_Root_G2.pem",
+        "/etc/ssl/certs/8d86cdd1.0": "certSIGN_ROOT_CA.pem",
+        "/etc/ssl/certs/9007ae68.0": "CA_Disig_Root_R1.pem",
+        "/etc/ssl/certs/9168f543.0": "Certplus_Root_CA_G1.pem",
+        "/etc/ssl/certs/91739615.0": "EE_Certification_Centre_Root_CA.pem",
+        "/etc/ssl/certs/9282e51c.0": "CFCA_EV_ROOT.pem",
+        "/etc/ssl/certs/930ac5d2.0": "Actalis_Authentication_Root_CA.pem",
+        "/etc/ssl/certs/9339512a.0": "QuoVadis_Root_CA_3.pem",
+        "/etc/ssl/certs/93bc0acc.0": "AffirmTrust_Networking.pem",
+        "/etc/ssl/certs/9479c8c3.0": "Hellenic_Academic_and_Research_Institutions_ECC_RootCA_2015.pem",
+        "/etc/ssl/certs/9576d26b.0": "CA_Disig_Root_R2.pem",
+        "/etc/ssl/certs/95aff9e3.0": "Certum_Trusted_Network_CA.pem",
+        "/etc/ssl/certs/9685a493.0": "Hongkong_Post_Root_CA_1.pem",
+        "/etc/ssl/certs/9772ca32.0": "GeoTrust_Primary_Certification_Authority.pem",
+        "/etc/ssl/certs/988a38cb.0": "NetLock_Arany_=Class_Gold=_Főtanúsítvány.pem",
+        "/etc/ssl/certs/9ab62355.0": "Swisscom_Root_EV_CA_2.pem",
+        "/etc/ssl/certs/9c2e7d30.0": "Sonera_Class_2_Root_CA.pem",
+        "/etc/ssl/certs/9c3323d4.0": "OpenTrust_Root_CA_G1.pem",
+        "/etc/ssl/certs/9c8dfbd4.0": "AffirmTrust_Premium_ECC.pem",
+        "/etc/ssl/certs/9d04f354.0": "DigiCert_Assured_ID_Root_G2.pem",
+        "/etc/ssl/certs/9d520b32.0": "Security_Communication_EV_RootCA1.pem",
+        "/etc/ssl/certs/9d6523ce.0": "ePKI_Root_Certification_Authority.pem",
+        "/etc/ssl/certs/9dbefe7b.0": "Security_Communication_EV_RootCA1.pem",
+        "/etc/ssl/certs/9f0f5fd6.0": "Certinomis_-_Root_CA.pem",
+        "/etc/ssl/certs/9f533518.0": "Global_Chambersign_Root_-_2008.pem",
+        "/etc/ssl/certs/a0bc6fbb.0": "Camerfirma_Global_Chambersign_Root.pem",
+        "/etc/ssl/certs/a2c66da8.0": "DigiCert_Trusted_Root_G4.pem",
+        "/etc/ssl/certs/a2df7ad7.0": "AddTrust_Public_Services_Root.pem",
+        "/etc/ssl/certs/a3896b44.0": "Security_Communication_Root_CA.pem",
+        "/etc/ssl/certs/a7605362.0": "Sonera_Class_2_Root_CA.pem",
+        "/etc/ssl/certs/a760e1bd.0": "Visa_eCommerce_Root.pem",
+        "/etc/ssl/certs/a7d2cf64.0": "thawte_Primary_Root_CA_-_G2.pem",
+        "/etc/ssl/certs/a81e292b.0": "SZAFIR_ROOT_CA2.pem",
+        "/etc/ssl/certs/a94d09e5.0": "ACCVRAIZ1.pem",
+        "/etc/ssl/certs/ab5346f4.0": "SecureSign_RootCA11.pem",
+        "/etc/ssl/certs/ad088e1d.0": "GeoTrust_Universal_CA.pem",
+        "/etc/ssl/certs/aeb67534.0": "EC-ACC.pem",
+        "/etc/ssl/certs/aee5f10d.0": "Entrust.net_Premium_2048_Secure_Server_CA.pem",
+        "/etc/ssl/certs/b0e59380.0": "GlobalSign_ECC_Root_CA_-_R4.pem",
+        "/etc/ssl/certs/b0ed035a.0": "TWCA_Global_Root_CA.pem",
+        "/etc/ssl/certs/b0f3e76e.0": "GlobalSign_Root_CA.pem",
+        "/etc/ssl/certs/b1159c4c.0": "DigiCert_Assured_ID_Root_CA.pem",
+        "/etc/ssl/certs/b13cc6df.0": "UTN_USERFirst_Hardware_Root_CA.pem",
+        "/etc/ssl/certs/b1b8a7f3.0": "OISTE_WISeKey_Global_Root_GA_CA.pem",
+        "/etc/ssl/certs/b204d74a.0": "VeriSign_Class_3_Public_Primary_Certification_Authority_-_G5.pem",
+        "/etc/ssl/certs/b3fb433b.0": "Entrust_Root_Certification_Authority_-_EC1.pem",
+        "/etc/ssl/certs/b66938e9.0": "Secure_Global_CA.pem",
+        "/etc/ssl/certs/b727005e.0": "AffirmTrust_Premium.pem",
+        "/etc/ssl/certs/b7a5b843.0": "TWCA_Root_Certification_Authority.pem",
+        "/etc/ssl/certs/b7db1890.0": "TWCA_Root_Certification_Authority.pem",
+        "/etc/ssl/certs/b872f2b4.0": "Atos_TrustedRoot_2011.pem",
+        "/etc/ssl/certs/b936d1c6.0": "AC_RAIZ_FNMT-RCM.pem",
+        "/etc/ssl/certs/ba89ed3b.0": "thawte_Primary_Root_CA_-_G3.pem",
+        "/etc/ssl/certs/bc3f2570.0": "Go_Daddy_Root_Certificate_Authority_-_G2.pem",
+        "/etc/ssl/certs/bd1910d4.0": "CNNIC_ROOT.pem",
+        "/etc/ssl/certs/bdacca6f.0": "Secure_Global_CA.pem",
+        "/etc/ssl/certs/bf64f35b.0": "Entrust_Root_Certification_Authority.pem",
+        "/etc/ssl/certs/c01cdfa2.0": "VeriSign_Universal_Root_Certification_Authority.pem",
+        "/etc/ssl/certs/c089bbbd.0": "thawte_Primary_Root_CA_-_G2.pem",
+        "/etc/ssl/certs/c0ff1f52.0": "Verisign_Class_3_Public_Primary_Certification_Authority_-_G3.pem",
+        "/etc/ssl/certs/c28a8a30.0": "D-TRUST_Root_Class_3_CA_2_2009.pem",
+        "/etc/ssl/certs/c47d9980.0": "Chambers_of_Commerce_Root_-_2008.pem",
+        "/etc/ssl/certs/c491639e.0": "DigiCert_Assured_ID_Root_G3.pem",
+        "/etc/ssl/certs/c51c224c.0": "Trustis_FPS_Root_CA.pem",
+        "/etc/ssl/certs/c5d3212a.0": "PSCProcert.pem",
+        "/etc/ssl/certs/c7e2a638.0": "GeoTrust_Primary_Certification_Authority_-_G3.pem",
+        "/etc/ssl/certs/c907e29b.0": "LuxTrust_Global_Root_2.pem",
+        "/etc/ssl/certs/c90bc37d.0": "DigiCert_Global_Root_G2.pem",
+        "/etc/ssl/certs/c9f83a1c.0": "Comodo_Secure_Services_root.pem",
+        "/etc/ssl/certs/ca6e4ad9.0": "ePKI_Root_Certification_Authority.pem",
+        "/etc/ssl/certs/cb156124.0": "E-Tugra_Certification_Authority.pem",
+        "/etc/ssl/certs/cb1c3204.0": "Certum_Trusted_Network_CA_2.pem",
+        "/etc/ssl/certs/cb59f961.0": "Camerfirma_Global_Chambersign_Root.pem",
+        "/etc/ssl/certs/cbeee9e2.0": "GeoTrust_Global_CA_2.pem",
+        "/etc/ssl/certs/cbf06781.0": "Go_Daddy_Root_Certificate_Authority_-_G2.pem",
+        "/etc/ssl/certs/cc450945.0": "Izenpe.com.pem",
+        "/etc/ssl/certs/ccc52f49.0": "AffirmTrust_Premium_ECC.pem",
+        "/etc/ssl/certs/cd58d51e.0": "Security_Communication_RootCA2.pem",
+        "/etc/ssl/certs/cd8c0d63.0": "AC_RAIZ_FNMT-RCM.pem",
+        "/etc/ssl/certs/ce5e74ef.0": "Amazon_Root_CA_1.pem",
+        "/etc/ssl/certs/cf701eeb.0": "SecureTrust_CA.pem",
+        "/etc/ssl/certs/d06393bb.0": "T-TeleSec_GlobalRoot_Class_2.pem",
+        "/etc/ssl/certs/d16a5865.0": "Autoridad_de_Certificacion_Firmaprofesional_CIF_A62634068.pem",
+        "/etc/ssl/certs/d18e9066.0": "IdenTrust_Commercial_Root_CA_1.pem",
+        "/etc/ssl/certs/d41b5e2a.0": "Amazon_Root_CA_4.pem",
+        "/etc/ssl/certs/d4c339cb.0": "COMODO_RSA_Certification_Authority.pem",
+        "/etc/ssl/certs/d4dae3dd.0": "D-TRUST_Root_Class_3_CA_2_EV_2009.pem",
+        "/etc/ssl/certs/d59297b8.0": "Security_Communication_RootCA2.pem",
+        "/etc/ssl/certs/d6325660.0": "COMODO_RSA_Certification_Authority.pem",
+        "/etc/ssl/certs/d66b55d9.0": "TURKTRUST_Certificate_Services_Provider_Root_2007.pem",
+        "/etc/ssl/certs/d6e6eab9.0": "Certinomis_-_Root_CA.pem",
+        "/etc/ssl/certs/d7746a63.0": "D-TRUST_Root_Class_3_CA_2_EV_2009.pem",
+        "/etc/ssl/certs/d7e8dc79.0": "QuoVadis_Root_CA_2.pem",
+        "/etc/ssl/certs/d8317ada.0": "Certplus_Root_CA_G2.pem",
+        "/etc/ssl/certs/d853d49e.0": "Trustis_FPS_Root_CA.pem",
+        "/etc/ssl/certs/d957f522.0": "Certinomis_-_Autorité_Racine.pem",
+        "/etc/ssl/certs/dbc54cab.0": "AffirmTrust_Premium.pem",
+        "/etc/ssl/certs/dc99f41e.0": "Hellenic_Academic_and_Research_Institutions_RootCA_2015.pem",
+        "/etc/ssl/certs/dd8e9d41.0": "DigiCert_Global_Root_G3.pem",
+        "/etc/ssl/certs/de6d66f3.0": "Amazon_Root_CA_4.pem",
+        "/etc/ssl/certs/def36a68.0": "LuxTrust_Global_Root_2.pem",
+        "/etc/ssl/certs/dfc0fe80.0": "OISTE_WISeKey_Global_Root_GB_CA.pem",
+        "/etc/ssl/certs/e113c810.0": "Certigna.pem",
+        "/etc/ssl/certs/e18bfb83.0": "QuoVadis_Root_CA_3_G3.pem",
+        "/etc/ssl/certs/e268a4c5.0": "AddTrust_Low-Value_Services_Root.pem",
+        "/etc/ssl/certs/e2799e36.0": "GeoTrust_Primary_Certification_Authority_-_G3.pem",
+        "/etc/ssl/certs/e36a6752.0": "Atos_TrustedRoot_2011.pem",
+        "/etc/ssl/certs/e442e424.0": "QuoVadis_Root_CA_3_G3.pem",
+        "/etc/ssl/certs/e48193cf.0": "AffirmTrust_Commercial.pem",
+        "/etc/ssl/certs/e536d871.0": "AddTrust_Qualified_Certificates_Root.pem",
+        "/etc/ssl/certs/e60bf0c0.0": "Swisscom_Root_CA_1.pem",
+        "/etc/ssl/certs/e73d606e.0": "OISTE_WISeKey_Global_Root_GB_CA.pem",
+        "/etc/ssl/certs/e775ed2d.0": "GeoTrust_Universal_CA.pem",
+        "/etc/ssl/certs/e8651083.0": "Microsec_e-Szigno_Root_CA_2009.pem",
+        "/etc/ssl/certs/e8de2f56.0": "Buypass_Class_3_Root_CA.pem",
+        "/etc/ssl/certs/ea169617.0": "ACEDICOM_Root.pem",
+        "/etc/ssl/certs/ed39abd0.0": "DigiCert_Global_Root_G3.pem",
+        "/etc/ssl/certs/ee64a828.0": "Comodo_AAA_Services_root.pem",
+        "/etc/ssl/certs/ee7cd6fb.0": "Camerfirma_Chambers_of_Commerce_Root.pem",
+        "/etc/ssl/certs/eed8c118.0": "COMODO_ECC_Certification_Authority.pem",
+        "/etc/ssl/certs/ef954a4e.0": "IdenTrust_Commercial_Root_CA_1.pem",
+        "/etc/ssl/certs/f060240e.0": "Certplus_Class_2_Primary_CA.pem",
+        "/etc/ssl/certs/f081611a.0": "Go_Daddy_Class_2_CA.pem",
+        "/etc/ssl/certs/f30dd6ad.0": "USERTrust_ECC_Certification_Authority.pem",
+        "/etc/ssl/certs/f3377b1b.0": "Security_Communication_Root_CA.pem",
+        "/etc/ssl/certs/f387163d.0": "Starfield_Class_2_CA.pem",
+        "/etc/ssl/certs/f39fc864.0": "SecureTrust_CA.pem",
+        "/etc/ssl/certs/f90208f7.0": "Camerfirma_Chambers_of_Commerce_Root.pem",
+        "/etc/ssl/certs/facacbc6.0": "VeriSign_Class_3_Public_Primary_Certification_Authority_-_G5.pem",
+        "/etc/ssl/certs/fb5fa911.0": "Amazon_Root_CA_2.pem",
+        "/etc/ssl/certs/fc5a8f99.0": "USERTrust_RSA_Certification_Authority.pem",
+        "/etc/ssl/certs/fd08c599.0": "Amazon_Root_CA_1.pem",
+        "/etc/ssl/certs/fde84897.0": "Certigna.pem",
+        "/etc/ssl/certs/fe8a2cd8.0": "SZAFIR_ROOT_CA2.pem",
+        "/etc/ssl/certs/ff34af3f.0": "TUBITAK_Kamu_SM_SSL_Kok_Sertifikasi_-_Surum_1.pem",
+        "/etc/ssl/certs/ff783690.0": "UTN_USERFirst_Hardware_Root_CA.pem"
+      },
+      "private_key_links": {
+        "/usr/lib/ssl/private": "/etc/ssl/private"
+      }
+    },
+    "ca_certs": {}
+  },
+  "image_stack": [
+    {
+      "is_top_image": true,
+      "id": "sha256:f76f959b2a4947330df7b5878e81dc268f19f3fa4cef9d1ac8a992d2776eab73",
+      "full_name": "mongo:3.4",
+      "repo_name": "mongo",
+      "version_tag": "3.4",
+      "raw_tags": [
+        "mongo:3.4"
+      ],
+      "create_time": "2020-01-25T02:28:07Z",
+      "new_size": 431228981,
+      "new_size_human": "431 MB",
+      "instructions": [
+        {
+          "type": "ADD",
+          "time": "2020-01-16T01:21:30Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "layer_id": "c6753eee05fc07429305ee1bff808a6050fc17f10967cd067f4015163e8d807a",
+          "layer_fsdiff_id": "sha256:96eda0f553ba9988a216cea7cf016d18d5f036677d411883b642c4c8c70e301b",
+          "size": 123586254,
+          "size_human": "124 MB",
+          "params": "file:4b2eb5cd0b37ca0154f3c5ad9212f5bc7244a35806395a9c76a96723d708b83a in /",
+          "command_snippet": "ADD file:4b2eb5cd0b37ca0154f3c5ad9212f5bc724...",
+          "command_all": "ADD file:4b2eb5cd0b37ca0154f3c5ad9212f5bc7244a35806395a9c76a96723d708b83a /",
+          "target": "/",
+          "source_type": "file"
+        },
+        {
+          "type": "RUN",
+          "time": "2020-01-16T01:21:31Z",
+          "is_nop": false,
+          "local_image_exists": false,
+          "layer_index": 1,
+          "layer_id": "62bfdab4ffc1423346f28c00dbb4c5b4fef66626c7d473a7721a3b89dfa668ac",
+          "layer_fsdiff_id": "sha256:bd95983a8d99e89ec7c7558839a72a79e92ce8c5a6697ad704e341d0d3c43cd5",
+          "size": 0,
+          "command_snippet": "RUN rm -rf /var/lib/apt/lists/*",
+          "command_all": "RUN rm -rf /var/lib/apt/lists/*",
+          "system_commands": [
+            "rm -rf /var/lib/apt/lists/*"
+          ]
+        },
+        {
+          "type": "RUN",
+          "time": "2020-01-16T01:21:31Z",
+          "is_nop": false,
+          "local_image_exists": false,
+          "layer_index": 2,
+          "layer_id": "2e45020bd464de80621986a0a16ec65048501adbaa35dd0eb0d571eb13c1eede",
+          "layer_fsdiff_id": "sha256:293b479c17a5448de0814a3c614ac15a0d192a7c2c56f53478f6e3d5cc5cb345",
+          "size": 745,
+          "size_human": "745 B",
+          "command_snippet": "RUN set -xe && \\\n\techo '#!/bin/sh' > /usr/sb...",
+          "command_all": "RUN set -xe && \\\n\techo '#!/bin/sh' > /usr/sbin/policy-rc.d && \\\n\techo 'exit 101' >> /usr/sbin/policy-rc.d && \\\n\tchmod +x /usr/sbin/policy-rc.d && \\\n\tdpkg-divert --local --rename --add /sbin/initctl && \\\n\tcp -a /usr/sbin/policy-rc.d /sbin/initctl && \\\n\tsed -i 's/^exit.*/exit 0/' /sbin/initctl && \\\n\techo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup && \\\n\techo 'DPkg::Post-Invoke { \"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\"; };' > /etc/apt/apt.conf.d/docker-clean && \\\n\techo 'APT::Update::Post-Invoke { \"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\"; };' >> /etc/apt/apt.conf.d/docker-clean && \\\n\techo 'Dir::Cache::pkgcache \"\"; Dir::Cache::srcpkgcache \"\";' >> /etc/apt/apt.conf.d/docker-clean && \\\n\techo 'Acquire::Languages \"none\";' > /etc/apt/apt.conf.d/docker-no-languages && \\\n\techo 'Acquire::GzipIndexes \"true\"; Acquire::CompressionTypes::Order:: \"gz\";' > /etc/apt/apt.conf.d/docker-gzip-indexes && \\\n\techo 'Apt::AutoRemove::SuggestsImportant \"false\";' > /etc/apt/apt.conf.d/docker-autoremove-suggests",
+          "system_commands": [
+            "set -xe",
+            "echo '#!/bin/sh' > /usr/sbin/policy-rc.d",
+            "echo 'exit 101' >> /usr/sbin/policy-rc.d",
+            "chmod +x /usr/sbin/policy-rc.d",
+            "dpkg-divert --local --rename --add /sbin/initctl",
+            "cp -a /usr/sbin/policy-rc.d /sbin/initctl",
+            "sed -i 's/^exit.*/exit 0/' /sbin/initctl",
+            "echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup",
+            "echo 'DPkg::Post-Invoke { \"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\"; };' > /etc/apt/apt.conf.d/docker-clean",
+            "echo 'APT::Update::Post-Invoke { \"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\"; };' >> /etc/apt/apt.conf.d/docker-clean",
+            "echo 'Dir::Cache::pkgcache \"\"; Dir::Cache::srcpkgcache \"\";' >> /etc/apt/apt.conf.d/docker-clean",
+            "echo 'Acquire::Languages \"none\";' > /etc/apt/apt.conf.d/docker-no-languages",
+            "echo 'Acquire::GzipIndexes \"true\"; Acquire::CompressionTypes::Order:: \"gz\";' > /etc/apt/apt.conf.d/docker-gzip-indexes",
+            "echo 'Apt::AutoRemove::SuggestsImportant \"false\";' > /etc/apt/apt.conf.d/docker-autoremove-suggests"
+          ]
+        },
+        {
+          "type": "RUN",
+          "time": "2020-01-16T01:21:32Z",
+          "is_nop": false,
+          "local_image_exists": false,
+          "layer_index": 3,
+          "layer_id": "8da83f9406f8a7fc35f8bbe795327e2d19613068e60dff44d7de5b131e32bfc1",
+          "layer_fsdiff_id": "sha256:fa1693d66d0b743e6ef621392026f411dad99750ec16926ffd78104a82a123e7",
+          "size": 7,
+          "size_human": "7 B",
+          "command_snippet": "RUN mkdir -p /run/systemd && \\\n\techo 'docker...",
+          "command_all": "RUN mkdir -p /run/systemd && \\\n\techo 'docker' > /run/systemd/container",
+          "system_commands": [
+            "mkdir -p /run/systemd",
+            "echo 'docker' > /run/systemd/container"
+          ]
+        },
+        {
+          "type": "CMD",
+          "time": "2020-01-16T01:21:32Z",
+          "is_nop": true,
+          "is_exec_form": true,
+          "local_image_exists": false,
+          "layer_index": 3,
+          "layer_id": "8da83f9406f8a7fc35f8bbe795327e2d19613068e60dff44d7de5b131e32bfc1",
+          "layer_fsdiff_id": "sha256:fa1693d66d0b743e6ef621392026f411dad99750ec16926ffd78104a82a123e7",
+          "size": 0,
+          "params": "[\"/bin/bash\"]",
+          "command_snippet": "CMD [\"/bin/bash\"]",
+          "command_all": "CMD [\"/bin/bash\"]",
+          "empty_layer": true
+        },
+        {
+          "type": "RUN",
+          "time": "2020-01-16T03:22:27Z",
+          "is_nop": false,
+          "local_image_exists": false,
+          "layer_index": 4,
+          "layer_id": "3348fe72414a3cd14417d248e0fc6ee1f9a802536aef306d01cda10b5bebed2c",
+          "layer_fsdiff_id": "sha256:57a3677d6b9d8c30c5b33294df4671ff2e2ea15ea8a51913cc581252c26f1e54",
+          "size": 329947,
+          "size_human": "330 kB",
+          "command_snippet": "RUN groupadd -r mongodb && \\\n\tuseradd -r -g ...",
+          "command_all": "RUN groupadd -r mongodb && \\\n\tuseradd -r -g mongodb mongodb",
+          "system_commands": [
+            "groupadd -r mongodb",
+            "useradd -r -g mongodb mongodb"
+          ]
+        },
+        {
+          "type": "RUN",
+          "time": "2020-01-16T03:22:35Z",
+          "is_nop": false,
+          "local_image_exists": false,
+          "layer_index": 5,
+          "layer_id": "d19accf312faa3e38b5f4253866c19944902ca046581d6a5f4a68a6acc1ba738",
+          "layer_fsdiff_id": "sha256:d7c4c69a27151657561a611055f7150bb5d2c769eaeaec9afa510819ad9ba5d2",
+          "size": 7025275,
+          "size_human": "7.0 MB",
+          "command_snippet": "RUN set -eux; \tapt-get update; \tapt-get inst...",
+          "command_all": "RUN set -eux; \tapt-get update; \tapt-get install -y --no-install-recommends \t\tca-certificates \t\tjq \t\tnumactl \t; \tif ! command -v ps > /dev/null; then \t\tapt-get install -y --no-install-recommends procps; \tfi; \trm -rf /var/lib/apt/lists/*",
+          "system_commands": [
+            "set -eux",
+            "apt-get update",
+            "apt-get install -y --no-install-recommends ca-certificates jq numactl",
+            "if ! command -v ps > /dev/null",
+            "then apt-get install -y --no-install-recommends procps",
+            "fi",
+            "rm -rf /var/lib/apt/lists/*"
+          ]
+        },
+        {
+          "type": "ENV",
+          "time": "2020-01-16T03:22:36Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 5,
+          "layer_id": "d19accf312faa3e38b5f4253866c19944902ca046581d6a5f4a68a6acc1ba738",
+          "layer_fsdiff_id": "sha256:d7c4c69a27151657561a611055f7150bb5d2c769eaeaec9afa510819ad9ba5d2",
+          "size": 0,
+          "params": "GOSU_VERSION=1.11",
+          "command_snippet": "ENV GOSU_VERSION=1.11",
+          "command_all": "ENV GOSU_VERSION=1.11",
+          "empty_layer": true
+        },
+        {
+          "type": "ENV",
+          "time": "2020-01-16T03:22:36Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 5,
+          "layer_id": "d19accf312faa3e38b5f4253866c19944902ca046581d6a5f4a68a6acc1ba738",
+          "layer_fsdiff_id": "sha256:d7c4c69a27151657561a611055f7150bb5d2c769eaeaec9afa510819ad9ba5d2",
+          "size": 0,
+          "params": "JSYAML_VERSION=3.13.0",
+          "command_snippet": "ENV JSYAML_VERSION=3.13.0",
+          "command_all": "ENV JSYAML_VERSION=3.13.0",
+          "empty_layer": true
+        },
+        {
+          "type": "RUN",
+          "time": "2020-01-16T03:22:47Z",
+          "is_nop": false,
+          "local_image_exists": false,
+          "layer_index": 6,
+          "layer_id": "2290b6724e73d567651997153ed4d4705e6c164ac722a8858336957d3ce8d3b7",
+          "layer_fsdiff_id": "sha256:b05527db08e47b5e8ba7c9c9b2f0d6c4dbccd24d53e4dac60a90828fda7d8da2",
+          "size": 3535319,
+          "size_human": "3.5 MB",
+          "command_snippet": "RUN set -ex; \t\tsavedAptMark=\"$(apt-mark show...",
+          "command_all": "RUN set -ex; \t\tsavedAptMark=\"$(apt-mark showmanual)\"; \tapt-get update; \tapt-get install -y --no-install-recommends \t\twget \t; \tif ! command -v gpg > /dev/null; then \t\tapt-get install -y --no-install-recommends gnupg dirmngr; \t\tsavedAptMark=\"$savedAptMark gnupg dirmngr\"; \telif gpg --version | grep -q '^gpg (GnuPG) 1\\.'; then \t\tapt-get install -y --no-install-recommends gnupg-curl; \tfi; \trm -rf /var/lib/apt/lists/*; \t\tdpkgArch=\"$(dpkg --print-architecture | awk -F- '{ print $NF }')\"; \twget -O /usr/local/bin/gosu \"https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch\"; \twget -O /usr/local/bin/gosu.asc \"https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc\"; \texport GNUPGHOME=\"$(mktemp -d)\"; \tgpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; \tgpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; \tcommand -v gpgconf && \\\n\tgpgconf --kill all || :; \trm -r \"$GNUPGHOME\" /usr/local/bin/gosu.asc; \tchmod +x /usr/local/bin/gosu; \tgosu --version; \tgosu nobody true; \t\twget -O /js-yaml.js \"https://github.com/nodeca/js-yaml/raw/${JSYAML_VERSION}/dist/js-yaml.js\"; \t\tapt-mark auto '.*' > /dev/null; \tapt-mark manual $savedAptMark > /dev/null; \tapt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false",
+          "system_commands": [
+            "set -ex; savedAptMark=\"$(apt-mark showmanual)\"; apt-get update; apt-get install -y --no-install-recommends wget ; if ! command -v gpg > /dev/null; then apt-get install -y --no-install-recommends gnupg dirmngr; savedAptMark=\"$savedAptMark gnupg dirmngr\"; elif gpg --version | grep -q '^gpg (GnuPG) 1.'; then apt-get install -y --no-install-recommends gnupg-curl; fi; rm -rf /var/lib/apt/lists/*; dpkgArch=\"$(dpkg --print-architecture | awk -F- '{ print $NF }')\"; wget -O /usr/local/bin/gosu \"https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch\"; wget -O /usr/local/bin/gosu.asc \"https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc\"; export GNUPGHOME=\"$(mktemp -d)\"; gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; command -v gpgconf",
+            "gpgconf --kill all || :; rm -r \"$GNUPGHOME\" /usr/local/bin/gosu.asc; chmod +x /usr/local/bin/gosu; gosu --version; gosu nobody true; wget -O /js-yaml.js \"https://github.com/nodeca/js-yaml/raw/${JSYAML_VERSION}/dist/js-yaml.js\"; apt-mark auto '.*' > /dev/null; apt-mark manual $savedAptMark > /dev/null; apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false"
+          ]
+        },
+        {
+          "type": "RUN",
+          "time": "2020-01-16T03:22:48Z",
+          "is_nop": false,
+          "local_image_exists": false,
+          "layer_index": 7,
+          "layer_id": "05059b2ec0f7422cff6942e30b51334abd29af6fa82a200876eabcf828ae9bbb",
+          "layer_fsdiff_id": "sha256:49c1d54e8f00d7c15a6fc290685ad2025c92209e72a30fddb045c748ce93d542",
+          "size": 0,
+          "command_snippet": "RUN mkdir /docker-entrypoint-initdb.d",
+          "command_all": "RUN mkdir /docker-entrypoint-initdb.d",
+          "system_commands": [
+            "mkdir /docker-entrypoint-initdb.d"
+          ]
+        },
+        {
+          "type": "ENV",
+          "time": "2020-01-16T03:22:48Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 7,
+          "layer_id": "05059b2ec0f7422cff6942e30b51334abd29af6fa82a200876eabcf828ae9bbb",
+          "layer_fsdiff_id": "sha256:49c1d54e8f00d7c15a6fc290685ad2025c92209e72a30fddb045c748ce93d542",
+          "size": 0,
+          "params": "GPG_KEYS=0C49F3730359A14518585931BC711F9BA15703C6",
+          "command_snippet": "ENV GPG_KEYS=0C49F3730359A14518585931BC711F9...",
+          "command_all": "ENV GPG_KEYS=0C49F3730359A14518585931BC711F9BA15703C6",
+          "empty_layer": true
+        },
+        {
+          "type": "RUN",
+          "time": "2020-01-16T03:22:49Z",
+          "is_nop": false,
+          "local_image_exists": false,
+          "layer_index": 8,
+          "layer_id": "157156e2ef7575fffbf13c79a8435376ced0ad069cc3c77963cbc5d8f72c35f8",
+          "layer_fsdiff_id": "sha256:e732b6f03772c1f08e9a05bf5bc3e8fdf08ea83b041f2a4db3e988c9a08bd9ee",
+          "size": 2316,
+          "size_human": "2.3 kB",
+          "command_snippet": "RUN set -ex; \texport GNUPGHOME=\"$(mktemp -d)...",
+          "command_all": "RUN set -ex; \texport GNUPGHOME=\"$(mktemp -d)\"; \tfor key in $GPG_KEYS; do \t\tgpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys \"$key\"; \tdone; \tgpg --batch --export $GPG_KEYS > /etc/apt/trusted.gpg.d/mongodb.gpg; \tcommand -v gpgconf && \\\n\tgpgconf --kill all || :; \trm -r \"$GNUPGHOME\"; \tapt-key list",
+          "system_commands": [
+            "set -ex; export GNUPGHOME=\"$(mktemp -d)\"; for key in $GPG_KEYS; do gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys \"$key\"; done; gpg --batch --export $GPG_KEYS > /etc/apt/trusted.gpg.d/mongodb.gpg; command -v gpgconf",
+            "gpgconf --kill all || :; rm -r \"$GNUPGHOME\"; apt-key list"
+          ]
+        },
+        {
+          "type": "ARG",
+          "time": "2020-01-16T03:22:49Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 8,
+          "layer_id": "157156e2ef7575fffbf13c79a8435376ced0ad069cc3c77963cbc5d8f72c35f8",
+          "layer_fsdiff_id": "sha256:e732b6f03772c1f08e9a05bf5bc3e8fdf08ea83b041f2a4db3e988c9a08bd9ee",
+          "size": 0,
+          "params": "MONGO_PACKAGE=mongodb-org",
+          "command_snippet": "ARG MONGO_PACKAGE=mongodb-org",
+          "command_all": "ARG MONGO_PACKAGE=mongodb-org",
+          "empty_layer": true
+        },
+        {
+          "type": "ARG",
+          "time": "2020-01-16T03:22:49Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 8,
+          "layer_id": "157156e2ef7575fffbf13c79a8435376ced0ad069cc3c77963cbc5d8f72c35f8",
+          "layer_fsdiff_id": "sha256:e732b6f03772c1f08e9a05bf5bc3e8fdf08ea83b041f2a4db3e988c9a08bd9ee",
+          "size": 0,
+          "params": "MONGO_REPO=repo.mongodb.org",
+          "command_snippet": "ARG MONGO_REPO=repo.mongodb.org",
+          "command_all": "ARG MONGO_REPO=repo.mongodb.org",
+          "empty_layer": true
+        },
+        {
+          "type": "ENV",
+          "time": "2020-01-16T03:22:49Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 8,
+          "layer_id": "157156e2ef7575fffbf13c79a8435376ced0ad069cc3c77963cbc5d8f72c35f8",
+          "layer_fsdiff_id": "sha256:e732b6f03772c1f08e9a05bf5bc3e8fdf08ea83b041f2a4db3e988c9a08bd9ee",
+          "size": 0,
+          "params": "MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org",
+          "command_snippet": "ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=rep...",
+          "command_all": "ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org",
+          "empty_layer": true
+        },
+        {
+          "type": "ENV",
+          "time": "2020-01-16T03:22:49Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 8,
+          "layer_id": "157156e2ef7575fffbf13c79a8435376ced0ad069cc3c77963cbc5d8f72c35f8",
+          "layer_fsdiff_id": "sha256:e732b6f03772c1f08e9a05bf5bc3e8fdf08ea83b041f2a4db3e988c9a08bd9ee",
+          "size": 0,
+          "params": "MONGO_MAJOR=3.4",
+          "command_snippet": "ENV MONGO_MAJOR=3.4",
+          "command_all": "ENV MONGO_MAJOR=3.4",
+          "empty_layer": true
+        },
+        {
+          "type": "ENV",
+          "time": "2020-01-25T02:27:43Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 8,
+          "layer_id": "157156e2ef7575fffbf13c79a8435376ced0ad069cc3c77963cbc5d8f72c35f8",
+          "layer_fsdiff_id": "sha256:e732b6f03772c1f08e9a05bf5bc3e8fdf08ea83b041f2a4db3e988c9a08bd9ee",
+          "size": 0,
+          "params": "MONGO_VERSION=3.4.24",
+          "command_snippet": "ENV MONGO_VERSION=3.4.24",
+          "command_all": "ENV MONGO_VERSION=3.4.24",
+          "empty_layer": true
+        },
+        {
+          "type": "RUN",
+          "time": "2020-01-25T02:27:43Z",
+          "is_nop": false,
+          "local_image_exists": false,
+          "layer_index": 9,
+          "layer_id": "63365e1b69488aaacd5965928551d8a7ef513ff86c20a6e59b71eb615ad55381",
+          "layer_fsdiff_id": "sha256:1e4df39006a78db406e0cbfd622e546aca7d38dab2fa2763587d91d51d059b9d",
+          "size": 73,
+          "size_human": "73 B",
+          "command_snippet": "RUN echo \"deb http://$MONGO_REPO/apt/ubuntu ...",
+          "command_all": "RUN echo \"deb http://$MONGO_REPO/apt/ubuntu xenial/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse\" | tee \"/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list\"",
+          "system_commands": [
+            "echo \"deb http://$MONGO_REPO/apt/ubuntu xenial/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse\" | tee \"/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list\""
+          ]
+        },
+        {
+          "type": "RUN",
+          "time": "2020-01-25T02:28:05Z",
+          "is_nop": false,
+          "local_image_exists": false,
+          "layer_index": 10,
+          "layer_id": "3cace9d24c9aee069ab692f794ca2eb50f66065b0934385c9d8c871165f4ee08",
+          "layer_fsdiff_id": "sha256:19986ace6d4a02016e180e5f8eefa9ac7c8f1cbec1bc0bc1fc19f353120b1c12",
+          "size": 296737697,
+          "size_human": "297 MB",
+          "command_snippet": "RUN set -x && \\\n\texport DEBIAN_FRONTEND=noni...",
+          "command_all": "RUN set -x && \\\n\texport DEBIAN_FRONTEND=noninteractive && \\\n\tapt-get update && \\\n\tapt-get install -y \t\t${MONGO_PACKAGE}=$MONGO_VERSION \t\t${MONGO_PACKAGE}-server=$MONGO_VERSION \t\t${MONGO_PACKAGE}-shell=$MONGO_VERSION \t\t${MONGO_PACKAGE}-mongos=$MONGO_VERSION \t\t${MONGO_PACKAGE}-tools=$MONGO_VERSION && \\\n\trm -rf /var/lib/apt/lists/* && \\\n\trm -rf /var/lib/mongodb && \\\n\tmv /etc/mongod.conf /etc/mongod.conf.orig",
+          "system_commands": [
+            "set -x",
+            "export DEBIAN_FRONTEND=noninteractive",
+            "apt-get update",
+            "apt-get install -y ${MONGO_PACKAGE}=$MONGO_VERSION ${MONGO_PACKAGE}-server=$MONGO_VERSION ${MONGO_PACKAGE}-shell=$MONGO_VERSION ${MONGO_PACKAGE}-mongos=$MONGO_VERSION ${MONGO_PACKAGE}-tools=$MONGO_VERSION",
+            "rm -rf /var/lib/apt/lists/*",
+            "rm -rf /var/lib/mongodb",
+            "mv /etc/mongod.conf /etc/mongod.conf.orig"
+          ]
+        },
+        {
+          "type": "RUN",
+          "time": "2020-01-25T02:28:06Z",
+          "is_nop": false,
+          "local_image_exists": false,
+          "layer_index": 11,
+          "layer_id": "537ec36ec20e4591632e3a4830d1a0c8d80efbfd1b8e1182db635be4294b47a0",
+          "layer_fsdiff_id": "sha256:1a3f11390cd84f88ddb0796125f893cadd7218f71228c3754c2967199fcd1e8e",
+          "size": 0,
+          "command_snippet": "RUN mkdir -p /data/db /data/configdb && \\\n\tc...",
+          "command_all": "RUN mkdir -p /data/db /data/configdb && \\\n\tchown -R mongodb:mongodb /data/db /data/configdb",
+          "system_commands": [
+            "mkdir -p /data/db /data/configdb",
+            "chown -R mongodb:mongodb /data/db /data/configdb"
+          ]
+        },
+        {
+          "type": "VOLUME",
+          "time": "2020-01-25T02:28:06Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 11,
+          "layer_id": "537ec36ec20e4591632e3a4830d1a0c8d80efbfd1b8e1182db635be4294b47a0",
+          "layer_fsdiff_id": "sha256:1a3f11390cd84f88ddb0796125f893cadd7218f71228c3754c2967199fcd1e8e",
+          "size": 0,
+          "params": "[/data/db /data/configdb]",
+          "command_snippet": "VOLUME [/data/db /data/configdb]",
+          "command_all": "VOLUME [/data/db /data/configdb]",
+          "empty_layer": true
+        },
+        {
+          "type": "COPY",
+          "time": "2020-01-25T02:28:06Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 12,
+          "layer_id": "320e292cdec680682f1d8a03e741bf239dab1b8f0250192f082e9feb287441ec",
+          "layer_fsdiff_id": "sha256:c363b53010e49e444dfc4924fc811566c8384487c984b1160e6742e13287a967",
+          "size": 11314,
+          "size_human": "11 kB",
+          "params": "file:021686a669d0d1d1cbb99d6ca84ff8de10577b78ea985b8cdab9d75b347a3bd0 in /usr/local/bin/",
+          "command_snippet": "COPY file:021686a669d0d1d1cbb99d6ca84ff8de10...",
+          "command_all": "COPY file:021686a669d0d1d1cbb99d6ca84ff8de10577b78ea985b8cdab9d75b347a3bd0 /usr/local/bin/",
+          "target": "/usr/local/bin/",
+          "source_type": "file"
+        },
+        {
+          "type": "RUN",
+          "time": "2020-01-25T02:28:07Z",
+          "is_nop": false,
+          "local_image_exists": false,
+          "layer_index": 13,
+          "layer_id": "34435232724ed2a623a8e01911043d3e4312a2f301844718b978b3f965449ee3",
+          "layer_fsdiff_id": "sha256:712ebe3b2c448b08700befdb05195457e95b16816b65e282a320a20b06276b0f",
+          "size": 34,
+          "size_human": "34 B",
+          "command_snippet": "RUN ln -s usr/local/bin/docker-entrypoint.sh...",
+          "command_all": "RUN ln -s usr/local/bin/docker-entrypoint.sh /entrypoint.sh # backwards compat (3.4)",
+          "system_commands": [
+            "ln -s usr/local/bin/docker-entrypoint.sh /entrypoint.sh # backwards compat (3.4)"
+          ]
+        },
+        {
+          "type": "ENTRYPOINT",
+          "time": "2020-01-25T02:28:07Z",
+          "is_nop": true,
+          "is_exec_form": true,
+          "local_image_exists": false,
+          "layer_index": 13,
+          "layer_id": "34435232724ed2a623a8e01911043d3e4312a2f301844718b978b3f965449ee3",
+          "layer_fsdiff_id": "sha256:712ebe3b2c448b08700befdb05195457e95b16816b65e282a320a20b06276b0f",
+          "size": 0,
+          "params": "[\"docker-entrypoint.sh\"]",
+          "command_snippet": "ENTRYPOINT [\"docker-entrypoint.sh\"]",
+          "command_all": "ENTRYPOINT [\"docker-entrypoint.sh\"]",
+          "empty_layer": true
+        },
+        {
+          "type": "EXPOSE",
+          "time": "2020-01-25T02:28:07Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 13,
+          "layer_id": "34435232724ed2a623a8e01911043d3e4312a2f301844718b978b3f965449ee3",
+          "layer_fsdiff_id": "sha256:712ebe3b2c448b08700befdb05195457e95b16816b65e282a320a20b06276b0f",
+          "size": 0,
+          "params": "27017",
+          "command_snippet": "EXPOSE 27017",
+          "command_all": "EXPOSE 27017",
+          "empty_layer": true
+        },
+        {
+          "type": "CMD",
+          "time": "2020-01-25T02:28:07Z",
+          "is_last_instruction": true,
+          "is_nop": true,
+          "is_exec_form": true,
+          "local_image_exists": true,
+          "layer_index": 13,
+          "layer_id": "34435232724ed2a623a8e01911043d3e4312a2f301844718b978b3f965449ee3",
+          "layer_fsdiff_id": "sha256:712ebe3b2c448b08700befdb05195457e95b16816b65e282a320a20b06276b0f",
+          "size": 0,
+          "params": "[\"mongod\"]",
+          "command_snippet": "CMD [\"mongod\"]",
+          "command_all": "CMD [\"mongod\"]",
+          "empty_layer": true,
+          "raw_tags": [
+            "mongo:3.4"
+          ]
+        }
+      ]
+    }
+  ],
+  "image_layers": [
+    {
+      "id": "c6753eee05fc07429305ee1bff808a6050fc17f10967cd067f4015163e8d807a",
+      "index": 0,
+      "path": "c6753eee05fc07429305ee1bff808a6050fc17f10967cd067f4015163e8d807a/layer.tar",
+      "fsdiff_id": "sha256:96eda0f553ba9988a216cea7cf016d18d5f036677d411883b642c4c8c70e301b",
+      "stats": {
+        "all_size": 123577184,
+        "object_count": 5550,
+        "dir_count": 696,
+        "file_count": 4289,
+        "link_count": 486,
+        "max_file_size": 7665165,
+        "max_dir_size": 0,
+        "deleted_count": 0,
+        "deleted_dir_content_count": 0,
+        "deleted_dir_count": 0,
+        "deleted_file_count": 0,
+        "deleted_link_count": 0,
+        "deleted_size": 0,
+        "added_size": 123577184,
+        "modified_size": 0,
+        "setuid_count": 8,
+        "setgid_count": 5,
+        "sticky_count": 3
+      },
+      "changes": {
+        "deleted": 0,
+        "added": 5550,
+        "modified": 0
+      },
+      "top": [
+        {
+          "change": "A",
+          "name": "/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_xenial-updates_main_binary-amd64_Packages",
+          "size": 7665165,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-14T17:01:38+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "D": {
+              "layer": 1
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_xenial_main_binary-amd64_Packages",
+          "size": 7228243,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-04-21T20:17:05+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "D": {
+              "layer": 1
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_xenial-updates_main_i18n_Translation-en",
+          "size": 6873763,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-06T20:54:24+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "D": {
+              "layer": 1
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/var/lib/apt/lists/security.ubuntu.com_ubuntu_dists_xenial-security_main_i18n_Translation-en",
+          "size": 5763274,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-07T15:35:43+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "D": {
+              "layer": 1
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/var/lib/apt/lists/security.ubuntu.com_ubuntu_dists_xenial-security_main_binary-amd64_Packages",
+          "size": 5731527,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-14T16:36:18+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "D": {
+              "layer": 1
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_xenial_main_i18n_Translation-en",
+          "size": 3600400,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-04-21T17:42:17+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "D": {
+              "layer": 1
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/bin/perl",
+          "size": 1911288,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2018-11-19T21:59:35+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/lib/x86_64-linux-gnu/libc-2.23.so",
+          "size": 1868984,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2019-02-05T23:41:22+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/lib/x86_64-linux-gnu/libdb-5.3.so",
+          "size": 1756696,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2019-06-03T21:02:26+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/lib/systemd/systemd",
+          "size": 1581360,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2019-11-27T02:04:14+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21",
+          "size": 1566440,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2019-10-04T22:30:52+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/lib/x86_64-linux-gnu/libapt-pkg.so.5.0.0",
+          "size": 1534952,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2019-05-22T00:43:33+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/lib/locale/C.UTF-8/LC_COLLATE",
+          "size": 1514422,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2019-02-05T23:27:03+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/bin/systemd-analyze",
+          "size": 1495200,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2019-11-27T02:04:17+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/lib/x86_64-linux-gnu/libm-2.23.so",
+          "size": 1088952,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2019-02-05T23:41:22+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/bin/bash",
+          "size": 1037528,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2019-07-12T23:56:41+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/bin/gpg",
+          "size": 1008632,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2018-08-06T05:41:19+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/sbin/ldconfig.real",
+          "size": 1000608,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2019-02-05T23:42:52+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/lib/x86_64-linux-gnu/libgcrypt.so.20.0.5",
+          "size": 919168,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-14T00:09:14+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/lib/systemd/systemd-networkd",
+          "size": 855296,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2019-11-27T02:04:16+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        }
+      ],
+      "change_instruction": {
+        "index": 0,
+        "image_index": 0,
+        "type": "ADD",
+        "all": "ADD file:4b2eb5cd0b37ca0154f3c5ad9212f5bc7244a35806395a9c76a96723d708b83a /",
+        "snippet": "ADD file:4b2eb5cd0b37ca0154f3c5ad9212f5bc724..."
+      }
+    },
+    {
+      "id": "62bfdab4ffc1423346f28c00dbb4c5b4fef66626c7d473a7721a3b89dfa668ac",
+      "index": 1,
+      "path": "62bfdab4ffc1423346f28c00dbb4c5b4fef66626c7d473a7721a3b89dfa668ac/layer.tar",
+      "fsdiff_id": "sha256:bd95983a8d99e89ec7c7558839a72a79e92ce8c5a6697ad704e341d0d3c43cd5",
+      "stats": {
+        "all_size": 0,
+        "object_count": 21,
+        "dir_count": 4,
+        "file_count": 17,
+        "link_count": 0,
+        "max_file_size": 0,
+        "max_dir_size": 0,
+        "deleted_count": 17,
+        "deleted_dir_content_count": 0,
+        "deleted_dir_count": 0,
+        "deleted_file_count": 17,
+        "deleted_link_count": 0,
+        "deleted_size": 37713637,
+        "added_size": 0,
+        "modified_size": 0
+      },
+      "changes": {
+        "deleted": 17,
+        "added": 0,
+        "modified": 4
+      },
+      "top": [
+        {
+          "change": "M",
+          "name": "/var/lib",
+          "mode": 2147484141,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-02-05T13:18:45+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 1
+              },
+              {
+                "layer": 2
+              },
+              {
+                "layer": 5
+              },
+              {
+                "layer": 6
+              },
+              {
+                "layer": 10
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/var/lib/apt",
+          "mode": 2147484141,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-14T20:22:13+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 1
+              },
+              {
+                "layer": 5
+              },
+              {
+                "layer": 6
+              },
+              {
+                "layer": 10
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/var/lib/apt/lists",
+          "mode": 2147484141,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-16T04:51:30+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 1
+              },
+              {
+                "layer": 5
+              },
+              {
+                "layer": 6
+              },
+              {
+                "layer": 10
+              }
+            ]
+          }
+        },
+        {
+          "change": "D",
+          "name": "/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_xenial-updates_InRelease",
+          "mode": 384,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-16T04:51:30+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "D": {
+              "layer": 1
+            }
+          }
+        },
+        {
+          "change": "D",
+          "name": "/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_xenial-updates_main_binary-amd64_Packages",
+          "mode": 384,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-16T04:51:30+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "D": {
+              "layer": 1
+            }
+          }
+        },
+        {
+          "change": "D",
+          "name": "/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_xenial-updates_main_i18n_Translation-en",
+          "mode": 384,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-16T04:51:30+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "D": {
+              "layer": 1
+            }
+          }
+        },
+        {
+          "change": "D",
+          "name": "/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_xenial-updates_restricted_binary-amd64_Packages",
+          "mode": 384,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-16T04:51:30+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "D": {
+              "layer": 1
+            }
+          }
+        },
+        {
+          "change": "D",
+          "name": "/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_xenial-updates_restricted_i18n_Translation-en",
+          "mode": 384,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-16T04:51:30+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "D": {
+              "layer": 1
+            }
+          }
+        },
+        {
+          "change": "D",
+          "name": "/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_xenial_InRelease",
+          "mode": 384,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-16T04:51:30+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "D": {
+              "layer": 1
+            }
+          }
+        },
+        {
+          "change": "D",
+          "name": "/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_xenial_main_binary-amd64_Packages",
+          "mode": 384,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-16T04:51:30+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "D": {
+              "layer": 1
+            }
+          }
+        },
+        {
+          "change": "D",
+          "name": "/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_xenial_main_i18n_Translation-en",
+          "mode": 384,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-16T04:51:30+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "D": {
+              "layer": 1
+            }
+          }
+        },
+        {
+          "change": "D",
+          "name": "/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_xenial_restricted_binary-amd64_Packages",
+          "mode": 384,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-16T04:51:30+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "D": {
+              "layer": 1
+            }
+          }
+        },
+        {
+          "change": "D",
+          "name": "/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_xenial_restricted_i18n_Translation-en",
+          "mode": 384,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-16T04:51:30+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "D": {
+              "layer": 1
+            }
+          }
+        },
+        {
+          "change": "D",
+          "name": "/var/lib/apt/lists/lock",
+          "mode": 384,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-16T04:51:30+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "D": {
+              "layer": 1
+            }
+          }
+        },
+        {
+          "change": "D",
+          "name": "/var/lib/apt/lists/partial",
+          "mode": 384,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-16T04:51:30+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "D": {
+              "layer": 1
+            }
+          }
+        },
+        {
+          "change": "D",
+          "name": "/var/lib/apt/lists/security.ubuntu.com_ubuntu_dists_xenial-security_InRelease",
+          "mode": 384,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-16T04:51:30+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "D": {
+              "layer": 1
+            }
+          }
+        },
+        {
+          "change": "D",
+          "name": "/var/lib/apt/lists/security.ubuntu.com_ubuntu_dists_xenial-security_main_binary-amd64_Packages",
+          "mode": 384,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-16T04:51:30+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "D": {
+              "layer": 1
+            }
+          }
+        },
+        {
+          "change": "D",
+          "name": "/var/lib/apt/lists/security.ubuntu.com_ubuntu_dists_xenial-security_main_i18n_Translation-en",
+          "mode": 384,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-16T04:51:30+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "D": {
+              "layer": 1
+            }
+          }
+        },
+        {
+          "change": "D",
+          "name": "/var/lib/apt/lists/security.ubuntu.com_ubuntu_dists_xenial-security_restricted_binary-amd64_Packages",
+          "mode": 384,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-16T04:51:30+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "D": {
+              "layer": 1
+            }
+          }
+        },
+        {
+          "change": "D",
+          "name": "/var/lib/apt/lists/security.ubuntu.com_ubuntu_dists_xenial-security_restricted_i18n_Translation-en",
+          "mode": 384,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-16T04:51:30+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "D": {
+              "layer": 1
+            }
+          }
+        }
+      ],
+      "change_instruction": {
+        "index": 1,
+        "image_index": 0,
+        "type": "RUN",
+        "all": "RUN rm -rf /var/lib/apt/lists/*",
+        "snippet": "RUN rm -rf /var/lib/apt/lists/*"
+      }
+    },
+    {
+      "id": "2e45020bd464de80621986a0a16ec65048501adbaa35dd0eb0d571eb13c1eede",
+      "index": 2,
+      "path": "2e45020bd464de80621986a0a16ec65048501adbaa35dd0eb0d571eb13c1eede/layer.tar",
+      "fsdiff_id": "sha256:293b479c17a5448de0814a3c614ac15a0d192a7c2c56f53478f6e3d5cc5cb345",
+      "stats": {
+        "all_size": 745,
+        "object_count": 20,
+        "dir_count": 11,
+        "file_count": 9,
+        "link_count": 0,
+        "max_file_size": 318,
+        "max_dir_size": 0,
+        "deleted_count": 0,
+        "deleted_dir_content_count": 0,
+        "deleted_dir_count": 0,
+        "deleted_file_count": 0,
+        "deleted_link_count": 0,
+        "deleted_size": 0,
+        "added_size": 609,
+        "modified_size": 136
+      },
+      "changes": {
+        "deleted": 0,
+        "added": 8,
+        "modified": 12
+      },
+      "top": [
+        {
+          "change": "A",
+          "name": "/etc/apt/apt.conf.d/docker-clean",
+          "size": 318,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-16T04:51:31+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 2
+            }
+          }
+        },
+        {
+          "change": "M",
+          "name": "/var/lib/dpkg/diversions",
+          "size": 136,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-16T04:51:31+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 2
+              },
+              {
+                "layer": 6
+              }
+            ]
+          }
+        },
+        {
+          "change": "A",
+          "name": "/var/lib/dpkg/diversions-old",
+          "size": 98,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-14T20:22:15+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 2
+            },
+            "M": [
+              {
+                "layer": 6
+              }
+            ]
+          }
+        },
+        {
+          "change": "A",
+          "name": "/etc/apt/apt.conf.d/docker-gzip-indexes",
+          "size": 70,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-16T04:51:31+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 2
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/etc/apt/apt.conf.d/docker-autoremove-suggests",
+          "size": 44,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-16T04:51:31+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 2
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/etc/apt/apt.conf.d/docker-no-languages",
+          "size": 27,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-16T04:51:31+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 2
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/sbin/policy-rc.d",
+          "size": 19,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-16T04:51:31+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 2
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/sbin/initctl",
+          "size": 17,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-16T04:51:31+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 2
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/etc/dpkg/dpkg.cfg.d/docker-apt-speedup",
+          "size": 16,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-16T04:51:31+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 2
+            }
+          }
+        },
+        {
+          "change": "M",
+          "name": "/usr/sbin",
+          "mode": 2147484141,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-16T04:51:31+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 2
+              },
+              {
+                "layer": 5
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/usr",
+          "mode": 2147484141,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-14T20:21:44+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 2
+              },
+              {
+                "layer": 5
+              },
+              {
+                "layer": 6
+              },
+              {
+                "layer": 10
+              },
+              {
+                "layer": 12
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/etc/apt/apt.conf.d",
+          "mode": 2147484141,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-16T04:51:31+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 2
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/sbin",
+          "mode": 2147484141,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-16T04:51:31+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 2
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/etc/dpkg/dpkg.cfg.d",
+          "mode": 2147484141,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-16T04:51:31+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 2
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/var/lib",
+          "mode": 2147484141,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-02-05T13:18:45+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 1
+              },
+              {
+                "layer": 2
+              },
+              {
+                "layer": 5
+              },
+              {
+                "layer": 6
+              },
+              {
+                "layer": 10
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/var",
+          "mode": 2147484141,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-14T20:22:13+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 1
+              },
+              {
+                "layer": 2
+              },
+              {
+                "layer": 4
+              },
+              {
+                "layer": 5
+              },
+              {
+                "layer": 6
+              },
+              {
+                "layer": 10
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/var/lib/dpkg",
+          "mode": 2147484141,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-16T04:51:31+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 2
+              },
+              {
+                "layer": 5
+              },
+              {
+                "layer": 6
+              },
+              {
+                "layer": 10
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/etc/dpkg",
+          "mode": 2147484141,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-14T20:22:05+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 2
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/etc/apt",
+          "mode": 2147484141,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-14T20:22:13+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 2
+              },
+              {
+                "layer": 8
+              },
+              {
+                "layer": 9
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/etc",
+          "mode": 2147484141,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-16T04:51:31+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 2
+              },
+              {
+                "layer": 4
+              },
+              {
+                "layer": 5
+              },
+              {
+                "layer": 6
+              },
+              {
+                "layer": 8
+              },
+              {
+                "layer": 9
+              },
+              {
+                "layer": 10
+              }
+            ]
+          }
+        }
+      ],
+      "change_instruction": {
+        "index": 2,
+        "image_index": 0,
+        "type": "RUN",
+        "all": "RUN set -xe && \\\n\techo '#!/bin/sh' > /usr/sbin/policy-rc.d && \\\n\techo 'exit 101' >> /usr/sbin/policy-rc.d && \\\n\tchmod +x /usr/sbin/policy-rc.d && \\\n\tdpkg-divert --local --rename --add /sbin/initctl && \\\n\tcp -a /usr/sbin/policy-rc.d /sbin/initctl && \\\n\tsed -i 's/^exit.*/exit 0/' /sbin/initctl && \\\n\techo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup && \\\n\techo 'DPkg::Post-Invoke { \"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\"; };' > /etc/apt/apt.conf.d/docker-clean && \\\n\techo 'APT::Update::Post-Invoke { \"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\"; };' >> /etc/apt/apt.conf.d/docker-clean && \\\n\techo 'Dir::Cache::pkgcache \"\"; Dir::Cache::srcpkgcache \"\";' >> /etc/apt/apt.conf.d/docker-clean && \\\n\techo 'Acquire::Languages \"none\";' > /etc/apt/apt.conf.d/docker-no-languages && \\\n\techo 'Acquire::GzipIndexes \"true\"; Acquire::CompressionTypes::Order:: \"gz\";' > /etc/apt/apt.conf.d/docker-gzip-indexes && \\\n\techo 'Apt::AutoRemove::SuggestsImportant \"false\";' > /etc/apt/apt.conf.d/docker-autoremove-suggests",
+        "snippet": "RUN set -xe && \\\n\techo '#!/bin/sh' > /usr/sb..."
+      }
+    },
+    {
+      "id": "8da83f9406f8a7fc35f8bbe795327e2d19613068e60dff44d7de5b131e32bfc1",
+      "index": 3,
+      "path": "8da83f9406f8a7fc35f8bbe795327e2d19613068e60dff44d7de5b131e32bfc1/layer.tar",
+      "fsdiff_id": "sha256:fa1693d66d0b743e6ef621392026f411dad99750ec16926ffd78104a82a123e7",
+      "stats": {
+        "all_size": 7,
+        "object_count": 3,
+        "dir_count": 2,
+        "file_count": 1,
+        "link_count": 0,
+        "max_file_size": 7,
+        "max_dir_size": 0,
+        "deleted_count": 0,
+        "deleted_dir_content_count": 0,
+        "deleted_dir_count": 0,
+        "deleted_file_count": 0,
+        "deleted_link_count": 0,
+        "deleted_size": 0,
+        "added_size": 7,
+        "modified_size": 0
+      },
+      "changes": {
+        "deleted": 0,
+        "added": 1,
+        "modified": 2
+      },
+      "top": [
+        {
+          "change": "A",
+          "name": "/run/systemd/container",
+          "size": 7,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-16T04:51:32+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 3
+            }
+          }
+        },
+        {
+          "change": "M",
+          "name": "/run/systemd",
+          "mode": 2147484141,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-16T04:51:32+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 3
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/run",
+          "mode": 2147484141,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-14T20:22:08+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 3
+              }
+            ]
+          }
+        }
+      ],
+      "change_instruction": {
+        "index": 3,
+        "image_index": 0,
+        "type": "RUN",
+        "all": "RUN mkdir -p /run/systemd && \\\n\techo 'docker' > /run/systemd/container",
+        "snippet": "RUN mkdir -p /run/systemd && \\\n\techo 'docker..."
+      },
+      "other_instructions": [
+        {
+          "index": 4,
+          "image_index": 0,
+          "type": "CMD",
+          "all": "CMD [\"/bin/bash\"]",
+          "snippet": "CMD [\"/bin/bash\"]"
+        }
+      ]
+    },
+    {
+      "id": "3348fe72414a3cd14417d248e0fc6ee1f9a802536aef306d01cda10b5bebed2c",
+      "index": 4,
+      "path": "3348fe72414a3cd14417d248e0fc6ee1f9a802536aef306d01cda10b5bebed2c/layer.tar",
+      "fsdiff_id": "sha256:57a3677d6b9d8c30c5b33294df4671ff2e2ea15ea8a51913cc581252c26f1e54",
+      "stats": {
+        "all_size": 329947,
+        "object_count": 14,
+        "dir_count": 3,
+        "file_count": 11,
+        "link_count": 0,
+        "max_file_size": 292000,
+        "max_dir_size": 0,
+        "deleted_count": 0,
+        "deleted_dir_content_count": 0,
+        "deleted_dir_count": 0,
+        "deleted_file_count": 0,
+        "deleted_link_count": 0,
+        "deleted_size": 0,
+        "added_size": 2932,
+        "modified_size": 327015
+      },
+      "changes": {
+        "deleted": 0,
+        "added": 4,
+        "modified": 10
+      },
+      "top": [
+        {
+          "change": "M",
+          "name": "/var/log/lastlog",
+          "size": 292000,
+          "mode": 436,
+          "uid": 0,
+          "gid": 43,
+          "mod_time": "2020-01-16T06:52:27+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 4
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/var/log/faillog",
+          "size": 32000,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-16T06:52:27+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 4
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/etc/passwd",
+          "size": 1273,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-16T06:52:27+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 4
+              }
+            ]
+          }
+        },
+        {
+          "change": "A",
+          "name": "/etc/passwd-",
+          "size": 1239,
+          "mode": 384,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-14T20:21:57+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 4
+            }
+          }
+        },
+        {
+          "change": "M",
+          "name": "/etc/shadow",
+          "size": 674,
+          "mode": 416,
+          "uid": 0,
+          "gid": 42,
+          "mod_time": "2020-01-16T06:52:27+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 4
+              }
+            ]
+          }
+        },
+        {
+          "change": "A",
+          "name": "/etc/shadow-",
+          "size": 652,
+          "mode": 384,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-14T20:21:57+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 4
+            }
+          }
+        },
+        {
+          "change": "M",
+          "name": "/etc/group",
+          "size": 579,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-16T06:52:27+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 4
+              }
+            ]
+          }
+        },
+        {
+          "change": "A",
+          "name": "/etc/group-",
+          "size": 564,
+          "mode": 384,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-14T20:21:56+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 4
+            }
+          }
+        },
+        {
+          "change": "M",
+          "name": "/etc/gshadow",
+          "size": 489,
+          "mode": 416,
+          "uid": 0,
+          "gid": 42,
+          "mod_time": "2020-01-16T06:52:27+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 4
+              }
+            ]
+          }
+        },
+        {
+          "change": "A",
+          "name": "/etc/gshadow-",
+          "size": 477,
+          "mode": 384,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-14T20:21:56+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 4
+            }
+          }
+        },
+        {
+          "change": "M",
+          "name": "/var/log",
+          "mode": 2147484141,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-14T20:21:57+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 4
+              },
+              {
+                "layer": 5
+              },
+              {
+                "layer": 6
+              },
+              {
+                "layer": 10
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/var",
+          "mode": 2147484141,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-14T20:22:13+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 1
+              },
+              {
+                "layer": 2
+              },
+              {
+                "layer": 4
+              },
+              {
+                "layer": 5
+              },
+              {
+                "layer": 6
+              },
+              {
+                "layer": 10
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/etc/.pwd.lock",
+          "mode": 384,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-14T20:21:55+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 4
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/etc",
+          "mode": 2147484141,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-16T06:52:27+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 2
+              },
+              {
+                "layer": 4
+              },
+              {
+                "layer": 5
+              },
+              {
+                "layer": 6
+              },
+              {
+                "layer": 8
+              },
+              {
+                "layer": 9
+              },
+              {
+                "layer": 10
+              }
+            ]
+          }
+        }
+      ],
+      "change_instruction": {
+        "index": 5,
+        "image_index": 0,
+        "type": "RUN",
+        "all": "RUN groupadd -r mongodb && \\\n\tuseradd -r -g mongodb mongodb",
+        "snippet": "RUN groupadd -r mongodb && \\\n\tuseradd -r -g ..."
+      }
+    },
+    {
+      "id": "d19accf312faa3e38b5f4253866c19944902ca046581d6a5f4a68a6acc1ba738",
+      "index": 5,
+      "path": "d19accf312faa3e38b5f4253866c19944902ca046581d6a5f4a68a6acc1ba738/layer.tar",
+      "fsdiff_id": "sha256:d7c4c69a27151657561a611055f7150bb5d2c769eaeaec9afa510819ad9ba5d2",
+      "stats": {
+        "all_size": 7005685,
+        "object_count": 854,
+        "dir_count": 59,
+        "file_count": 328,
+        "link_count": 467,
+        "max_file_size": 2365952,
+        "max_dir_size": 0,
+        "deleted_count": 0,
+        "deleted_dir_content_count": 0,
+        "deleted_dir_count": 0,
+        "deleted_file_count": 0,
+        "deleted_link_count": 0,
+        "deleted_size": 0,
+        "added_size": 6229418,
+        "modified_size": 776267,
+        "sticky_count": 1
+      },
+      "changes": {
+        "deleted": 0,
+        "added": 806,
+        "modified": 48
+      },
+      "top": [
+        {
+          "change": "A",
+          "name": "/lib/x86_64-linux-gnu/libcrypto.so.1.0.0",
+          "size": 2365952,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2019-02-27T16:25:52+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 5
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/bin/openssl",
+          "size": 559072,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2019-02-27T16:25:53+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 5
+            }
+          }
+        },
+        {
+          "change": "M",
+          "name": "/var/cache/debconf/templates.dat",
+          "size": 494781,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-16T06:52:33+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 5
+              },
+              {
+                "layer": 6
+              },
+              {
+                "layer": 10
+              }
+            ]
+          }
+        },
+        {
+          "change": "A",
+          "name": "/var/cache/debconf/templates.dat-old",
+          "size": 467742,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-16T06:52:33+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 5
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/lib/x86_64-linux-gnu/libssl.so.1.0.0",
+          "size": 428384,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2019-02-27T16:25:52+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 5
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/lib/x86_64-linux-gnu/libonig.so.2.0.1",
+          "size": 422648,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2018-07-27T23:17:15+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 5
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/bin/jq",
+          "size": 280720,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2018-09-07T23:07:31+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 5
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/etc/ssl/certs/ca-certificates.crt",
+          "size": 233394,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-16T06:52:34+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 5
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/var/lib/dpkg/info/libssl1.0.0:amd64.symbols",
+          "size": 162263,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2019-02-27T16:25:55+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 5
+            }
+          }
+        },
+        {
+          "change": "M",
+          "name": "/var/log/dpkg.log",
+          "size": 145026,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-16T06:52:35+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 5
+              },
+              {
+                "layer": 6
+              },
+              {
+                "layer": 10
+              }
+            ]
+          }
+        },
+        {
+          "change": "A",
+          "name": "/var/lib/dpkg/status-old",
+          "size": 103580,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-16T06:52:35+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 5
+            },
+            "M": [
+              {
+                "layer": 6
+              },
+              {
+                "layer": 10
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/var/lib/dpkg/status",
+          "size": 103580,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-16T06:52:35+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 5
+              },
+              {
+                "layer": 6
+              },
+              {
+                "layer": 10
+              }
+            ]
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/lib/x86_64-linux-gnu/openssl-1.0.0/engines/libgost.so",
+          "size": 93280,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2019-02-27T16:25:52+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 5
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/lib/x86_64-linux-gnu/libnuma.so.1.0.0",
+          "size": 43936,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2017-10-20T18:25:08+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 5
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/var/lib/dpkg/info/libssl1.0.0:amd64.templates",
+          "size": 33400,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2019-02-27T16:25:50+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 5
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/bin/numastat",
+          "size": 28344,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2017-10-20T18:25:07+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 5
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/bin/numactl",
+          "size": 28272,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2017-10-20T18:25:07+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 5
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/share/man/man1/jq.1.gz",
+          "size": 27579,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2018-09-07T23:07:30+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 5
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/var/lib/dpkg/info/ca-certificates.templates",
+          "size": 25009,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2018-12-13T17:45:58+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 5
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/lib/x86_64-linux-gnu/openssl-1.0.0/engines/libchil.so",
+          "size": 24176,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2019-02-27T16:25:51+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 5
+            }
+          }
+        }
+      ],
+      "change_instruction": {
+        "index": 6,
+        "image_index": 0,
+        "type": "RUN",
+        "all": "RUN set -eux; \tapt-get update; \tapt-get install -y --no-install-recommends \t\tca-certificates \t\tjq \t\tnumactl \t; \tif ! command -v ps > /dev/null; then \t\tapt-get install -y --no-install-recommends procps; \tfi; \trm -rf /var/lib/apt/lists/*",
+        "snippet": "RUN set -eux; \tapt-get update; \tapt-get inst..."
+      },
+      "other_instructions": [
+        {
+          "index": 7,
+          "image_index": 0,
+          "type": "ENV",
+          "all": "ENV GOSU_VERSION=1.11",
+          "snippet": "ENV GOSU_VERSION=1.11"
+        },
+        {
+          "index": 8,
+          "image_index": 0,
+          "type": "ENV",
+          "all": "ENV JSYAML_VERSION=3.13.0",
+          "snippet": "ENV JSYAML_VERSION=3.13.0"
+        }
+      ]
+    },
+    {
+      "id": "2290b6724e73d567651997153ed4d4705e6c164ac722a8858336957d3ce8d3b7",
+      "index": 6,
+      "path": "2290b6724e73d567651997153ed4d4705e6c164ac722a8858336957d3ce8d3b7/layer.tar",
+      "fsdiff_id": "sha256:b05527db08e47b5e8ba7c9c9b2f0d6c4dbccd24d53e4dac60a90828fda7d8da2",
+      "stats": {
+        "all_size": 3535319,
+        "object_count": 59,
+        "dir_count": 36,
+        "file_count": 23,
+        "link_count": 0,
+        "max_file_size": 2294944,
+        "max_dir_size": 0,
+        "deleted_count": 0,
+        "deleted_dir_content_count": 0,
+        "deleted_dir_count": 0,
+        "deleted_file_count": 0,
+        "deleted_link_count": 0,
+        "deleted_size": 0,
+        "added_size": 2403603,
+        "modified_size": 1131716,
+        "sticky_count": 1
+      },
+      "changes": {
+        "deleted": 0,
+        "added": 3,
+        "modified": 56
+      },
+      "top": [
+        {
+          "change": "A",
+          "name": "/usr/local/bin/gosu",
+          "size": 2294944,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2018-10-16T02:16:47+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 6
+            }
+          }
+        },
+        {
+          "change": "M",
+          "name": "/var/cache/debconf/templates.dat",
+          "size": 494781,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-16T06:52:33+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 5
+              },
+              {
+                "layer": 6
+              },
+              {
+                "layer": 10
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/var/log/dpkg.log",
+          "size": 188297,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-16T06:52:46+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 5
+              },
+              {
+                "layer": 6
+              },
+              {
+                "layer": 10
+              }
+            ]
+          }
+        },
+        {
+          "change": "A",
+          "name": "/js-yaml.js",
+          "size": 108442,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-16T06:52:45+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 6
+            }
+          }
+        },
+        {
+          "change": "M",
+          "name": "/var/lib/dpkg/status-old",
+          "size": 103580,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-16T06:52:46+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 5
+            },
+            "M": [
+              {
+                "layer": 6
+              },
+              {
+                "layer": 10
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/var/lib/dpkg/status",
+          "size": 103580,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-16T06:52:46+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 5
+              },
+              {
+                "layer": 6
+              },
+              {
+                "layer": 10
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/usr/lib/gnupg/gpgkeys_hkp",
+          "size": 93072,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2018-08-06T05:41:19+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 6
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/usr/lib/gnupg/gpgkeys_curl",
+          "size": 88960,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2018-08-06T05:41:19+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 6
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/var/log/apt/term.log",
+          "size": 16760,
+          "mode": 416,
+          "uid": 0,
+          "gid": 4,
+          "mod_time": "2020-01-16T06:52:46+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 5
+            },
+            "M": [
+              {
+                "layer": 6
+              },
+              {
+                "layer": 10
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/var/cache/debconf/config.dat",
+          "size": 16407,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-16T06:52:33+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 5
+              },
+              {
+                "layer": 6
+              },
+              {
+                "layer": 10
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/etc/ld.so.cache",
+          "size": 7462,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-16T06:52:46+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 5
+              },
+              {
+                "layer": 6
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/var/log/apt/history.log",
+          "size": 7193,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-16T06:52:46+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 5
+              },
+              {
+                "layer": 6
+              },
+              {
+                "layer": 10
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/var/lib/apt/extended_states",
+          "size": 6011,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-16T06:52:45+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 5
+              },
+              {
+                "layer": 6
+              },
+              {
+                "layer": 10
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/var/cache/ldconfig/aux-cache",
+          "size": 5267,
+          "mode": 384,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-16T06:52:46+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 5
+              },
+              {
+                "layer": 6
+              }
+            ]
+          }
+        },
+        {
+          "change": "A",
+          "name": "/root/.wget-hsts",
+          "size": 217,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-16T06:52:45+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 6
+            }
+          }
+        },
+        {
+          "change": "M",
+          "name": "/var/lib/dpkg/diversions-old",
+          "size": 210,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-16T06:52:45+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 2
+            },
+            "M": [
+              {
+                "layer": 6
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/var/lib/dpkg/diversions",
+          "size": 136,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-16T06:52:45+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 2
+              },
+              {
+                "layer": 6
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/usr/lib/x86_64-linux-gnu",
+          "mode": 2147484141,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-16T06:52:46+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 5
+              },
+              {
+                "layer": 6
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/usr/lib/gnupg",
+          "mode": 2147484141,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-16T06:52:45+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 6
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/root",
+          "mode": 2147484096,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-16T06:52:44+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 6
+              }
+            ]
+          }
+        }
+      ],
+      "change_instruction": {
+        "index": 9,
+        "image_index": 0,
+        "type": "RUN",
+        "all": "RUN set -ex; \t\tsavedAptMark=\"$(apt-mark showmanual)\"; \tapt-get update; \tapt-get install -y --no-install-recommends \t\twget \t; \tif ! command -v gpg > /dev/null; then \t\tapt-get install -y --no-install-recommends gnupg dirmngr; \t\tsavedAptMark=\"$savedAptMark gnupg dirmngr\"; \telif gpg --version | grep -q '^gpg (GnuPG) 1\\.'; then \t\tapt-get install -y --no-install-recommends gnupg-curl; \tfi; \trm -rf /var/lib/apt/lists/*; \t\tdpkgArch=\"$(dpkg --print-architecture | awk -F- '{ print $NF }')\"; \twget -O /usr/local/bin/gosu \"https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch\"; \twget -O /usr/local/bin/gosu.asc \"https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc\"; \texport GNUPGHOME=\"$(mktemp -d)\"; \tgpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; \tgpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; \tcommand -v gpgconf && \\\n\tgpgconf --kill all || :; \trm -r \"$GNUPGHOME\" /usr/local/bin/gosu.asc; \tchmod +x /usr/local/bin/gosu; \tgosu --version; \tgosu nobody true; \t\twget -O /js-yaml.js \"https://github.com/nodeca/js-yaml/raw/${JSYAML_VERSION}/dist/js-yaml.js\"; \t\tapt-mark auto '.*' > /dev/null; \tapt-mark manual $savedAptMark > /dev/null; \tapt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false",
+        "snippet": "RUN set -ex; \t\tsavedAptMark=\"$(apt-mark show..."
+      }
+    },
+    {
+      "id": "05059b2ec0f7422cff6942e30b51334abd29af6fa82a200876eabcf828ae9bbb",
+      "index": 7,
+      "path": "05059b2ec0f7422cff6942e30b51334abd29af6fa82a200876eabcf828ae9bbb/layer.tar",
+      "fsdiff_id": "sha256:49c1d54e8f00d7c15a6fc290685ad2025c92209e72a30fddb045c748ce93d542",
+      "stats": {
+        "all_size": 0,
+        "object_count": 1,
+        "dir_count": 1,
+        "file_count": 0,
+        "link_count": 0,
+        "max_file_size": 0,
+        "max_dir_size": 0,
+        "deleted_count": 0,
+        "deleted_dir_content_count": 0,
+        "deleted_dir_count": 0,
+        "deleted_file_count": 0,
+        "deleted_link_count": 0,
+        "deleted_size": 0,
+        "added_size": 0,
+        "modified_size": 0
+      },
+      "changes": {
+        "deleted": 0,
+        "added": 1,
+        "modified": 0
+      },
+      "top": [
+        {
+          "change": "A",
+          "name": "/docker-entrypoint-initdb.d",
+          "mode": 2147484141,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-16T06:52:47+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 7
+            }
+          }
+        }
+      ],
+      "change_instruction": {
+        "index": 10,
+        "image_index": 0,
+        "type": "RUN",
+        "all": "RUN mkdir /docker-entrypoint-initdb.d",
+        "snippet": "RUN mkdir /docker-entrypoint-initdb.d"
+      },
+      "other_instructions": [
+        {
+          "index": 11,
+          "image_index": 0,
+          "type": "ENV",
+          "all": "ENV GPG_KEYS=0C49F3730359A14518585931BC711F9BA15703C6",
+          "snippet": "ENV GPG_KEYS=0C49F3730359A14518585931BC711F9..."
+        }
+      ]
+    },
+    {
+      "id": "157156e2ef7575fffbf13c79a8435376ced0ad069cc3c77963cbc5d8f72c35f8",
+      "index": 8,
+      "path": "157156e2ef7575fffbf13c79a8435376ced0ad069cc3c77963cbc5d8f72c35f8/layer.tar",
+      "fsdiff_id": "sha256:e732b6f03772c1f08e9a05bf5bc3e8fdf08ea83b041f2a4db3e988c9a08bd9ee",
+      "stats": {
+        "all_size": 2316,
+        "object_count": 5,
+        "dir_count": 4,
+        "file_count": 1,
+        "link_count": 0,
+        "max_file_size": 2316,
+        "max_dir_size": 0,
+        "deleted_count": 0,
+        "deleted_dir_content_count": 0,
+        "deleted_dir_count": 0,
+        "deleted_file_count": 0,
+        "deleted_link_count": 0,
+        "deleted_size": 0,
+        "added_size": 2316,
+        "modified_size": 0,
+        "sticky_count": 1
+      },
+      "changes": {
+        "deleted": 0,
+        "added": 1,
+        "modified": 4
+      },
+      "top": [
+        {
+          "change": "A",
+          "name": "/etc/apt/trusted.gpg.d/mongodb.gpg",
+          "size": 2316,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-16T06:52:48+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 8
+            }
+          }
+        },
+        {
+          "change": "M",
+          "name": "/etc/apt/trusted.gpg.d",
+          "mode": 2147484141,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-16T06:52:48+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 8
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/etc/apt",
+          "mode": 2147484141,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-14T20:22:13+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 2
+              },
+              {
+                "layer": 8
+              },
+              {
+                "layer": 9
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/tmp",
+          "mode": 2148532735,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-16T06:52:48+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 5
+              },
+              {
+                "layer": 6
+              },
+              {
+                "layer": 8
+              },
+              {
+                "layer": 10
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/etc",
+          "mode": 2147484141,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-16T06:52:48+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 2
+              },
+              {
+                "layer": 4
+              },
+              {
+                "layer": 5
+              },
+              {
+                "layer": 6
+              },
+              {
+                "layer": 8
+              },
+              {
+                "layer": 9
+              },
+              {
+                "layer": 10
+              }
+            ]
+          }
+        }
+      ],
+      "change_instruction": {
+        "index": 12,
+        "image_index": 0,
+        "type": "RUN",
+        "all": "RUN set -ex; \texport GNUPGHOME=\"$(mktemp -d)\"; \tfor key in $GPG_KEYS; do \t\tgpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys \"$key\"; \tdone; \tgpg --batch --export $GPG_KEYS > /etc/apt/trusted.gpg.d/mongodb.gpg; \tcommand -v gpgconf && \\\n\tgpgconf --kill all || :; \trm -r \"$GNUPGHOME\"; \tapt-key list",
+        "snippet": "RUN set -ex; \texport GNUPGHOME=\"$(mktemp -d)..."
+      },
+      "other_instructions": [
+        {
+          "index": 13,
+          "image_index": 0,
+          "type": "ARG",
+          "all": "ARG MONGO_PACKAGE=mongodb-org",
+          "snippet": "ARG MONGO_PACKAGE=mongodb-org"
+        },
+        {
+          "index": 14,
+          "image_index": 0,
+          "type": "ARG",
+          "all": "ARG MONGO_REPO=repo.mongodb.org",
+          "snippet": "ARG MONGO_REPO=repo.mongodb.org"
+        },
+        {
+          "index": 15,
+          "image_index": 0,
+          "type": "ENV",
+          "all": "ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org",
+          "snippet": "ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=rep..."
+        },
+        {
+          "index": 16,
+          "image_index": 0,
+          "type": "ENV",
+          "all": "ENV MONGO_MAJOR=3.4",
+          "snippet": "ENV MONGO_MAJOR=3.4"
+        },
+        {
+          "index": 17,
+          "image_index": 0,
+          "type": "ENV",
+          "all": "ENV MONGO_VERSION=3.4.24",
+          "snippet": "ENV MONGO_VERSION=3.4.24"
+        }
+      ]
+    },
+    {
+      "id": "63365e1b69488aaacd5965928551d8a7ef513ff86c20a6e59b71eb615ad55381",
+      "index": 9,
+      "path": "63365e1b69488aaacd5965928551d8a7ef513ff86c20a6e59b71eb615ad55381/layer.tar",
+      "fsdiff_id": "sha256:1e4df39006a78db406e0cbfd622e546aca7d38dab2fa2763587d91d51d059b9d",
+      "stats": {
+        "all_size": 73,
+        "object_count": 4,
+        "dir_count": 3,
+        "file_count": 1,
+        "link_count": 0,
+        "max_file_size": 73,
+        "max_dir_size": 0,
+        "deleted_count": 0,
+        "deleted_dir_content_count": 0,
+        "deleted_dir_count": 0,
+        "deleted_file_count": 0,
+        "deleted_link_count": 0,
+        "deleted_size": 0,
+        "added_size": 73,
+        "modified_size": 0
+      },
+      "changes": {
+        "deleted": 0,
+        "added": 1,
+        "modified": 3
+      },
+      "top": [
+        {
+          "change": "A",
+          "name": "/etc/apt/sources.list.d/mongodb-org.list",
+          "size": 73,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-25T05:57:43+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 9
+            }
+          }
+        },
+        {
+          "change": "M",
+          "name": "/etc/apt/sources.list.d",
+          "mode": 2147484141,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-25T05:57:43+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 9
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/etc/apt",
+          "mode": 2147484141,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-14T20:22:13+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 2
+              },
+              {
+                "layer": 8
+              },
+              {
+                "layer": 9
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/etc",
+          "mode": 2147484141,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-25T05:57:43+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 2
+              },
+              {
+                "layer": 4
+              },
+              {
+                "layer": 5
+              },
+              {
+                "layer": 6
+              },
+              {
+                "layer": 8
+              },
+              {
+                "layer": 9
+              },
+              {
+                "layer": 10
+              }
+            ]
+          }
+        }
+      ],
+      "change_instruction": {
+        "index": 18,
+        "image_index": 0,
+        "type": "RUN",
+        "all": "RUN echo \"deb http://$MONGO_REPO/apt/ubuntu xenial/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse\" | tee \"/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list\"",
+        "snippet": "RUN echo \"deb http://$MONGO_REPO/apt/ubuntu ..."
+      }
+    },
+    {
+      "id": "3cace9d24c9aee069ab692f794ca2eb50f66065b0934385c9d8c871165f4ee08",
+      "index": 10,
+      "path": "3cace9d24c9aee069ab692f794ca2eb50f66065b0934385c9d8c871165f4ee08/layer.tar",
+      "fsdiff_id": "sha256:19986ace6d4a02016e180e5f8eefa9ac7c8f1cbec1bc0bc1fc19f353120b1c12",
+      "stats": {
+        "all_size": 296737697,
+        "object_count": 111,
+        "dir_count": 34,
+        "file_count": 77,
+        "link_count": 0,
+        "max_file_size": 54779760,
+        "max_dir_size": 0,
+        "deleted_count": 0,
+        "deleted_dir_content_count": 0,
+        "deleted_dir_count": 0,
+        "deleted_file_count": 0,
+        "deleted_link_count": 0,
+        "deleted_size": 0,
+        "added_size": 295764613,
+        "modified_size": 973084,
+        "sticky_count": 1
+      },
+      "changes": {
+        "deleted": 0,
+        "added": 70,
+        "modified": 41
+      },
+      "top": [
+        {
+          "change": "A",
+          "name": "/usr/bin/mongod",
+          "size": 54779760,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-24T09:33:31+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 10
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/bin/mongoperf",
+          "size": 54016392,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-24T09:33:31+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 10
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/bin/mongos",
+          "size": 31362064,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-24T09:33:31+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 10
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/bin/mongo",
+          "size": 29965000,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-24T09:33:31+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 10
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/bin/mongorestore",
+          "size": 14411072,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-24T09:33:31+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 10
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/bin/mongodump",
+          "size": 14380096,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-24T09:33:31+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 10
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/bin/mongostat",
+          "size": 14092864,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-24T09:33:31+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 10
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/bin/mongoimport",
+          "size": 14092024,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-24T09:33:31+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 10
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/bin/mongoexport",
+          "size": 13946592,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-24T09:33:31+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 10
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/bin/mongofiles",
+          "size": 13814512,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-24T09:33:31+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 10
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/bin/mongotop",
+          "size": 13719192,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-24T09:33:31+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 10
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/bin/mongooplog",
+          "size": 13528624,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-24T09:33:31+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 10
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/bin/bsondump",
+          "size": 13524840,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-24T09:33:31+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 10
+            }
+          }
+        },
+        {
+          "change": "M",
+          "name": "/var/cache/debconf/templates.dat",
+          "size": 494781,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-16T06:52:33+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 5
+              },
+              {
+                "layer": 6
+              },
+              {
+                "layer": 10
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/var/log/dpkg.log",
+          "size": 191221,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-25T05:58:03+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 5
+              },
+              {
+                "layer": 6
+              },
+              {
+                "layer": 10
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/var/lib/dpkg/status",
+          "size": 119304,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-25T05:58:03+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 5
+              },
+              {
+                "layer": 6
+              },
+              {
+                "layer": 10
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/var/lib/dpkg/status-old",
+          "size": 119304,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-25T05:58:03+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 5
+            },
+            "M": [
+              {
+                "layer": 6
+              },
+              {
+                "layer": 10
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/var/log/apt/term.log",
+          "size": 18471,
+          "mode": 416,
+          "uid": 0,
+          "gid": 4,
+          "mod_time": "2020-01-25T05:58:03+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 5
+            },
+            "M": [
+              {
+                "layer": 6
+              },
+              {
+                "layer": 10
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/var/cache/debconf/config.dat",
+          "size": 16407,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-16T06:52:33+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 5
+              },
+              {
+                "layer": 6
+              },
+              {
+                "layer": 10
+              }
+            ]
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/share/man/man1/mongod.1.gz",
+          "size": 12170,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-24T09:33:31+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 10
+            }
+          }
+        }
+      ],
+      "change_instruction": {
+        "index": 19,
+        "image_index": 0,
+        "type": "RUN",
+        "all": "RUN set -x && \\\n\texport DEBIAN_FRONTEND=noninteractive && \\\n\tapt-get update && \\\n\tapt-get install -y \t\t${MONGO_PACKAGE}=$MONGO_VERSION \t\t${MONGO_PACKAGE}-server=$MONGO_VERSION \t\t${MONGO_PACKAGE}-shell=$MONGO_VERSION \t\t${MONGO_PACKAGE}-mongos=$MONGO_VERSION \t\t${MONGO_PACKAGE}-tools=$MONGO_VERSION && \\\n\trm -rf /var/lib/apt/lists/* && \\\n\trm -rf /var/lib/mongodb && \\\n\tmv /etc/mongod.conf /etc/mongod.conf.orig",
+        "snippet": "RUN set -x && \\\n\texport DEBIAN_FRONTEND=noni..."
+      }
+    },
+    {
+      "id": "537ec36ec20e4591632e3a4830d1a0c8d80efbfd1b8e1182db635be4294b47a0",
+      "index": 11,
+      "path": "537ec36ec20e4591632e3a4830d1a0c8d80efbfd1b8e1182db635be4294b47a0/layer.tar",
+      "fsdiff_id": "sha256:1a3f11390cd84f88ddb0796125f893cadd7218f71228c3754c2967199fcd1e8e",
+      "stats": {
+        "all_size": 0,
+        "object_count": 3,
+        "dir_count": 3,
+        "file_count": 0,
+        "link_count": 0,
+        "max_file_size": 0,
+        "max_dir_size": 0,
+        "deleted_count": 0,
+        "deleted_dir_content_count": 0,
+        "deleted_dir_count": 0,
+        "deleted_file_count": 0,
+        "deleted_link_count": 0,
+        "deleted_size": 0,
+        "added_size": 0,
+        "modified_size": 0
+      },
+      "changes": {
+        "deleted": 0,
+        "added": 3,
+        "modified": 0
+      },
+      "top": [
+        {
+          "change": "A",
+          "name": "/data/configdb",
+          "mode": 2147484141,
+          "uid": 999,
+          "gid": 999,
+          "mod_time": "2020-01-25T05:58:05+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 11
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/data/db",
+          "mode": 2147484141,
+          "uid": 999,
+          "gid": 999,
+          "mod_time": "2020-01-25T05:58:05+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 11
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/data",
+          "mode": 2147484141,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-25T05:58:05+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 11
+            }
+          }
+        }
+      ],
+      "change_instruction": {
+        "index": 20,
+        "image_index": 0,
+        "type": "RUN",
+        "all": "RUN mkdir -p /data/db /data/configdb && \\\n\tchown -R mongodb:mongodb /data/db /data/configdb",
+        "snippet": "RUN mkdir -p /data/db /data/configdb && \\\n\tc..."
+      },
+      "other_instructions": [
+        {
+          "index": 21,
+          "image_index": 0,
+          "type": "VOLUME",
+          "all": "VOLUME [/data/db /data/configdb]",
+          "snippet": "VOLUME [/data/db /data/configdb]"
+        }
+      ]
+    },
+    {
+      "id": "320e292cdec680682f1d8a03e741bf239dab1b8f0250192f082e9feb287441ec",
+      "index": 12,
+      "path": "320e292cdec680682f1d8a03e741bf239dab1b8f0250192f082e9feb287441ec/layer.tar",
+      "fsdiff_id": "sha256:c363b53010e49e444dfc4924fc811566c8384487c984b1160e6742e13287a967",
+      "stats": {
+        "all_size": 11314,
+        "object_count": 4,
+        "dir_count": 3,
+        "file_count": 1,
+        "link_count": 0,
+        "max_file_size": 11314,
+        "max_dir_size": 0,
+        "deleted_count": 0,
+        "deleted_dir_content_count": 0,
+        "deleted_dir_count": 0,
+        "deleted_file_count": 0,
+        "deleted_link_count": 0,
+        "deleted_size": 0,
+        "added_size": 11314,
+        "modified_size": 0
+      },
+      "changes": {
+        "deleted": 0,
+        "added": 1,
+        "modified": 3
+      },
+      "top": [
+        {
+          "change": "A",
+          "name": "/usr/local/bin/docker-entrypoint.sh",
+          "size": 11314,
+          "mode": 509,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-25T05:57:42+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 12
+            }
+          }
+        },
+        {
+          "change": "M",
+          "name": "/usr/local/bin",
+          "mode": 2147484141,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-25T05:58:06+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 6
+              },
+              {
+                "layer": 12
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/usr/local",
+          "mode": 2147484141,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-14T20:21:44+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 5
+              },
+              {
+                "layer": 6
+              },
+              {
+                "layer": 12
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/usr",
+          "mode": 2147484141,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-14T20:21:44+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 2
+              },
+              {
+                "layer": 5
+              },
+              {
+                "layer": 6
+              },
+              {
+                "layer": 10
+              },
+              {
+                "layer": 12
+              }
+            ]
+          }
+        }
+      ],
+      "change_instruction": {
+        "index": 22,
+        "image_index": 0,
+        "type": "COPY",
+        "all": "COPY file:021686a669d0d1d1cbb99d6ca84ff8de10577b78ea985b8cdab9d75b347a3bd0 /usr/local/bin/",
+        "snippet": "COPY file:021686a669d0d1d1cbb99d6ca84ff8de10..."
+      }
+    },
+    {
+      "id": "34435232724ed2a623a8e01911043d3e4312a2f301844718b978b3f965449ee3",
+      "index": 13,
+      "path": "34435232724ed2a623a8e01911043d3e4312a2f301844718b978b3f965449ee3/layer.tar",
+      "fsdiff_id": "sha256:712ebe3b2c448b08700befdb05195457e95b16816b65e282a320a20b06276b0f",
+      "stats": {
+        "all_size": 0,
+        "object_count": 1,
+        "dir_count": 0,
+        "file_count": 0,
+        "link_count": 1,
+        "max_file_size": 0,
+        "max_dir_size": 0,
+        "deleted_count": 0,
+        "deleted_dir_content_count": 0,
+        "deleted_dir_count": 0,
+        "deleted_file_count": 0,
+        "deleted_link_count": 0,
+        "deleted_size": 0,
+        "added_size": 0,
+        "modified_size": 0
+      },
+      "changes": {
+        "deleted": 0,
+        "added": 1,
+        "modified": 0
+      },
+      "top": [
+        {
+          "change": "A",
+          "name": "/entrypoint.sh",
+          "mode": 134218239,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-25T05:58:07+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "link_target": "usr/local/bin/docker-entrypoint.sh",
+          "history": {
+            "A": {
+              "layer": 13
+            }
+          }
+        }
+      ],
+      "change_instruction": {
+        "index": 23,
+        "image_index": 0,
+        "type": "RUN",
+        "all": "RUN ln -s usr/local/bin/docker-entrypoint.sh /entrypoint.sh # backwards compat (3.4)",
+        "snippet": "RUN ln -s usr/local/bin/docker-entrypoint.sh..."
+      },
+      "other_instructions": [
+        {
+          "index": 24,
+          "image_index": 0,
+          "type": "ENTRYPOINT",
+          "all": "ENTRYPOINT [\"docker-entrypoint.sh\"]",
+          "snippet": "ENTRYPOINT [\"docker-entrypoint.sh\"]"
+        },
+        {
+          "index": 25,
+          "image_index": 0,
+          "type": "EXPOSE",
+          "all": "EXPOSE 27017",
+          "snippet": "EXPOSE 27017"
+        },
+        {
+          "index": 26,
+          "image_index": 0,
+          "type": "CMD",
+          "all": "CMD [\"mongod\"]",
+          "snippet": "CMD [\"mongod\"]"
+        }
+      ]
+    }
+  ],
+  "image_archive_location": "/tmp/docker-slim-state/.docker-slim-state/images/f76f959b2a4947330df7b5878e81dc268f19f3fa4cef9d1ac8a992d2776eab73/image/f76f959b2a4947330df7b5878e81dc268f19f3fa4cef9d1ac8a992d2776eab73.tar"
+}

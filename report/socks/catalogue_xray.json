@@ -1,0 +1,2079 @@
+{
+  "version": "1.2",
+  "engine": "linux|Transformer|1.37.0|70cc8acfcb733161ce7e685b81ad6c172643c222|2021-09-23_09:23:43AM",
+  "containerized": false,
+  "host_distro": {
+    "name": "Ubuntu",
+    "version": "20.04",
+    "display_name": "Ubuntu 20.04.3 LTS"
+  },
+  "type": "xray",
+  "state": "done",
+  "target_reference": "weaveworksdemos/catalogue:0.3.5",
+  "source_image": {
+    "identity": {
+      "id": "sha256:0bd359b6d6e803db58b0474e9b1fa78a5f9e4f0d4abf8cdc283037c586b3bbad",
+      "tags": [
+        "0.3.5"
+      ],
+      "names": [
+        "weaveworksdemos/catalogue:0.3.5"
+      ],
+      "digests": [
+        "sha256:0147a65b7116569439eefb1a6dbed455fe022464ef70e0c3cab75bc4a226b39b"
+      ],
+      "full_digests": [
+        "weaveworksdemos/catalogue@sha256:0147a65b7116569439eefb1a6dbed455fe022464ef70e0c3cab75bc4a226b39b"
+      ]
+    },
+    "size": 41221511,
+    "size_human": "41 MB",
+    "create_time": "2017-03-22T09:07:42Z",
+    "docker_version": "1.12.3",
+    "architecture": "amd64",
+    "user": "myuser",
+    "exposed_ports": [
+      "80/tcp"
+    ],
+    "os": "linux",
+    "labels": {
+      "org.label-schema.build-date": "2017-03-22T09:05:57+0000",
+      "org.label-schema.description": "REST API for Catalogue service",
+      "org.label-schema.name": "Socks Shop: Catalogue",
+      "org.label-schema.schema-version": "1.0",
+      "org.label-schema.url": "https://github.com/microservices-demo/catalogue",
+      "org.label-schema.vcs-ref": "93452255c62cac6e44f5d86376d7cb3c5409e162",
+      "org.label-schema.vcs-url": "github.com:microservices-demo/catalogue.git",
+      "org.label-schema.vendor": "Weaveworks",
+      "org.label-schema.version": "0.0.2-SNAPSHOT"
+    },
+    "env_vars": [
+      "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+      "SERVICE_USER=myuser",
+      "SERVICE_UID=10001",
+      "SERVICE_GROUP=mygroup",
+      "SERVICE_GID=10001"
+    ],
+    "workdir": "/",
+    "distro": {
+      "name": "Alpine Linux",
+      "version": "3.4.6",
+      "display_name": "Alpine Linux v3.4"
+    },
+    "container_entry": {
+      "cmd": [
+        "/app",
+        "-port=80"
+      ],
+      "exe_path": "/app",
+      "full_exe_path": {
+        "name": "/app",
+        "layer": 2
+      },
+      "exe_args": [
+        "-port=80"
+      ]
+    }
+  },
+  "artifact_location": "/tmp/docker-slim-state/.docker-slim-state/images/0bd359b6d6e803db58b0474e9b1fa78a5f9e4f0d4abf8cdc283037c586b3bbad/artifacts",
+  "image_report": {
+    "stats": {
+      "duplicate_file_count": 0,
+      "duplicate_file_total_count": 0,
+      "duplicate_file_size": 0,
+      "duplicate_file_total_size": 0,
+      "duplicate_file_wasted_size": 0,
+      "deleted_count": 0,
+      "deleted_dir_content_count": 0,
+      "deleted_dir_count": 0,
+      "deleted_file_count": 0,
+      "deleted_link_count": 0,
+      "deleted_file_size": 0,
+      "sticky_count": 2
+    },
+    "special_perms": {
+      "sticky": [
+        "/tmp",
+        "/var/tmp"
+      ]
+    },
+    "shells": [
+      {
+        "full_name": "Bourne shell",
+        "short_name": "sh",
+        "exe_path": "/bin/sh",
+        "link_path": "/bin/busybox",
+        "verified": true
+      },
+      {
+        "full_name": "Ash shell",
+        "short_name": "ash",
+        "exe_path": "/bin/ash",
+        "link_path": "/bin/busybox",
+        "verified": true
+      }
+    ],
+    "certs": {},
+    "ca_certs": {}
+  },
+  "image_stack": [
+    {
+      "is_top_image": true,
+      "id": "sha256:0bd359b6d6e803db58b0474e9b1fa78a5f9e4f0d4abf8cdc283037c586b3bbad",
+      "full_name": "weaveworksdemos/catalogue:0.3.5",
+      "repo_name": "weaveworksdemos/catalogue",
+      "version_tag": "0.3.5",
+      "raw_tags": [
+        "weaveworksdemos/catalogue:0.3.5"
+      ],
+      "create_time": "2017-03-22T09:07:42Z",
+      "new_size": 41221511,
+      "new_size_human": "41 MB",
+      "instructions": [
+        {
+          "type": "ADD",
+          "time": "2017-03-03T20:32:21Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "layer_id": "0c7db50c5ff19c23c81751dc21920dba6e143c981cfc11139c7baff7f26fc958",
+          "layer_fsdiff_id": "sha256:9f8566ee5135862dd980160c27bd7721448a6f7f385bbb81f7f001f1b78a5fbf",
+          "size": 4807124,
+          "size_human": "4.8 MB",
+          "params": "file:3df55c321c1c8d73f22bc69240c0764290d6cb293da46ba8f94ed25473fb5853 in /",
+          "command_snippet": "ADD file:3df55c321c1c8d73f22bc69240c0764290d...",
+          "command_all": "ADD file:3df55c321c1c8d73f22bc69240c0764290d6cb293da46ba8f94ed25473fb5853 /",
+          "target": "/",
+          "source_type": "file"
+        },
+        {
+          "type": "ENV",
+          "time": "2017-03-22T09:07:35Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "layer_id": "0c7db50c5ff19c23c81751dc21920dba6e143c981cfc11139c7baff7f26fc958",
+          "layer_fsdiff_id": "sha256:9f8566ee5135862dd980160c27bd7721448a6f7f385bbb81f7f001f1b78a5fbf",
+          "size": 0,
+          "params": "SERVICE_USER=myuser SERVICE_UID=10001 SERVICE_GROUP=mygroup SERVICE_GID=10001",
+          "command_snippet": "ENV SERVICE_USER=myuser SERVICE_UID=10001 SE...",
+          "command_all": "ENV SERVICE_USER=myuser SERVICE_UID=10001 SERVICE_GROUP=mygroup SERVICE_GID=10001",
+          "empty_layer": true
+        },
+        {
+          "type": "RUN",
+          "time": "2017-03-22T09:07:39Z",
+          "is_nop": false,
+          "local_image_exists": false,
+          "layer_index": 1,
+          "layer_id": "3363847a9338078aeb4e52a41a5c957555345c413b3ab86561edfcbe8a616abf",
+          "layer_fsdiff_id": "sha256:599fc8addc99ff87b1dff7d90dbdacfb293eb2059fa17f4fd84c6053d2bea986",
+          "size": 854525,
+          "size_human": "854 kB",
+          "command_snippet": "RUN addgroup -g ${SERVICE_GID} ${SERVICE_GRO...",
+          "command_all": "RUN addgroup -g ${SERVICE_GID} ${SERVICE_GROUP} && \\\n\tadduser -g \"${SERVICE_NAME} user\" -D -H -G ${SERVICE_GROUP} -s /sbin/nologin -u ${SERVICE_UID} ${SERVICE_USER} && \\\n\tapk add --update libcap",
+          "system_commands": [
+            "addgroup -g ${SERVICE_GID} ${SERVICE_GROUP}",
+            "adduser -g \"${SERVICE_NAME} user\" -D -H -G ${SERVICE_GROUP} -s /sbin/nologin -u ${SERVICE_UID} ${SERVICE_USER}",
+            "apk add --update libcap"
+          ]
+        },
+        {
+          "type": "WORKDIR",
+          "time": "2017-03-22T09:07:39Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 1,
+          "layer_id": "3363847a9338078aeb4e52a41a5c957555345c413b3ab86561edfcbe8a616abf",
+          "layer_fsdiff_id": "sha256:599fc8addc99ff87b1dff7d90dbdacfb293eb2059fa17f4fd84c6053d2bea986",
+          "size": 0,
+          "params": "/",
+          "command_snippet": "WORKDIR /",
+          "command_all": "WORKDIR /",
+          "system_commands": [
+            "mkdir -p /"
+          ],
+          "empty_layer": true
+        },
+        {
+          "type": "EXPOSE",
+          "time": "2017-03-22T09:07:40Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 1,
+          "layer_id": "3363847a9338078aeb4e52a41a5c957555345c413b3ab86561edfcbe8a616abf",
+          "layer_fsdiff_id": "sha256:599fc8addc99ff87b1dff7d90dbdacfb293eb2059fa17f4fd84c6053d2bea986",
+          "size": 0,
+          "params": "80/tcp",
+          "command_snippet": "EXPOSE 80/tcp",
+          "command_all": "EXPOSE 80/tcp",
+          "empty_layer": true
+        },
+        {
+          "type": "COPY",
+          "time": "2017-03-22T09:07:40Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 2,
+          "layer_id": "0cfc3fb41486d6d29492767b6c80fbc08d5601d708aa6c6ad331ccc639bc6682",
+          "layer_fsdiff_id": "sha256:da0d4ce517cdb6434581e7b1988cfd41301d9a34bfccac010e781fb3cd05e5e9",
+          "size": 14257173,
+          "size_human": "14 MB",
+          "params": "file:d9dd033a5b7bf40442aeb91d25e9f5b9de54843e8083dcdc5bdfb9ed0373792d in /",
+          "command_snippet": "COPY file:d9dd033a5b7bf40442aeb91d25e9f5b9de...",
+          "command_all": "COPY file:d9dd033a5b7bf40442aeb91d25e9f5b9de54843e8083dcdc5bdfb9ed0373792d /",
+          "target": "/",
+          "source_type": "file"
+        },
+        {
+          "type": "COPY",
+          "time": "2017-03-22T09:07:40Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 3,
+          "layer_id": "5787210d347774627b53ba64077242aa85ec0a6e1d4f717598ff429e5a417d7a",
+          "layer_fsdiff_id": "sha256:46b62514b375c2c4fc033d282e7c5f5392443f628d07b514ff40752bbb46fa8d",
+          "size": 3522758,
+          "size_human": "3.5 MB",
+          "params": "dir:e560da421c5fa4d36a6b8e59d5b52a7e8b053b8a06272f6fb124acdd7728d11b in /images/",
+          "command_snippet": "COPY dir:e560da421c5fa4d36a6b8e59d5b52a7e8b0...",
+          "command_all": "COPY dir:e560da421c5fa4d36a6b8e59d5b52a7e8b053b8a06272f6fb124acdd7728d11b /images/",
+          "target": "/images/",
+          "source_type": "dir"
+        },
+        {
+          "type": "RUN",
+          "time": "2017-03-22T09:07:41Z",
+          "is_nop": false,
+          "local_image_exists": false,
+          "layer_index": 4,
+          "layer_id": "bce0eb41fa94877a30997e4b91d3779f177441dcc4cdd48ee1753d57a8f7b886",
+          "layer_fsdiff_id": "sha256:e0d68dae20bf36d383a9839d9e6f1989d97982138686585bb8b3229f871300d7",
+          "size": 17779931,
+          "size_human": "18 MB",
+          "command_snippet": "RUN chmod +x /app && \\\n\tchown -R ${SERVICE_U...",
+          "command_all": "RUN chmod +x /app && \\\n\tchown -R ${SERVICE_USER}:${SERVICE_GROUP} /app /images && \\\n\tsetcap 'cap_net_bind_service=+ep' /app",
+          "system_commands": [
+            "chmod +x /app",
+            "chown -R ${SERVICE_USER}:${SERVICE_GROUP} /app /images",
+            "setcap 'cap_net_bind_service=+ep' /app"
+          ]
+        },
+        {
+          "type": "USER",
+          "time": "2017-03-22T09:07:41Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 4,
+          "layer_id": "bce0eb41fa94877a30997e4b91d3779f177441dcc4cdd48ee1753d57a8f7b886",
+          "layer_fsdiff_id": "sha256:e0d68dae20bf36d383a9839d9e6f1989d97982138686585bb8b3229f871300d7",
+          "size": 0,
+          "params": "[myuser]",
+          "command_snippet": "USER [myuser]",
+          "command_all": "USER [myuser]",
+          "empty_layer": true
+        },
+        {
+          "type": "ARG",
+          "time": "2017-03-22T09:07:41Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 4,
+          "layer_id": "bce0eb41fa94877a30997e4b91d3779f177441dcc4cdd48ee1753d57a8f7b886",
+          "layer_fsdiff_id": "sha256:e0d68dae20bf36d383a9839d9e6f1989d97982138686585bb8b3229f871300d7",
+          "size": 0,
+          "params": "BUILD_DATE",
+          "command_snippet": "ARG BUILD_DATE",
+          "command_all": "ARG BUILD_DATE",
+          "empty_layer": true
+        },
+        {
+          "type": "ARG",
+          "time": "2017-03-22T09:07:41Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 4,
+          "layer_id": "bce0eb41fa94877a30997e4b91d3779f177441dcc4cdd48ee1753d57a8f7b886",
+          "layer_fsdiff_id": "sha256:e0d68dae20bf36d383a9839d9e6f1989d97982138686585bb8b3229f871300d7",
+          "size": 0,
+          "params": "BUILD_VERSION",
+          "command_snippet": "ARG BUILD_VERSION",
+          "command_all": "ARG BUILD_VERSION",
+          "empty_layer": true
+        },
+        {
+          "type": "ARG",
+          "time": "2017-03-22T09:07:41Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 4,
+          "layer_id": "bce0eb41fa94877a30997e4b91d3779f177441dcc4cdd48ee1753d57a8f7b886",
+          "layer_fsdiff_id": "sha256:e0d68dae20bf36d383a9839d9e6f1989d97982138686585bb8b3229f871300d7",
+          "size": 0,
+          "params": "COMMIT",
+          "command_snippet": "ARG COMMIT",
+          "command_all": "ARG COMMIT",
+          "empty_layer": true
+        },
+        {
+          "type": "LABEL",
+          "time": "2017-03-22T09:07:42Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 4,
+          "layer_id": "bce0eb41fa94877a30997e4b91d3779f177441dcc4cdd48ee1753d57a8f7b886",
+          "layer_fsdiff_id": "sha256:e0d68dae20bf36d383a9839d9e6f1989d97982138686585bb8b3229f871300d7",
+          "size": 0,
+          "params": "org.label-schema.vendor=Weaveworks org.label-schema.build-date=2017-03-22T09:05:57+0000 org.label-schema.version=0.0.2-SNAPSHOT org.label-schema.name=Socks Shop: Catalogue org.label-schema.description=REST API for Catalogue service org.label-schema.url=https://github.com/microservices-demo/catalogue org.label-schema.vcs-url=github.com:microservices-demo/catalogue.git org.label-schema.vcs-ref=93452255c62cac6e44f5d86376d7cb3c5409e162 org.label-schema.schema-version=1.0",
+          "command_snippet": "LABEL org.label-schema.vendor=Weaveworks org...",
+          "command_all": "LABEL org.label-schema.vendor=Weaveworks org.label-schema.build-date=2017-03-22T09:05:57+0000 org.label-schema.version=0.0.2-SNAPSHOT org.label-schema.name=Socks Shop: Catalogue org.label-schema.description=REST API for Catalogue service org.label-schema.url=https://github.com/microservices-demo/catalogue org.label-schema.vcs-url=github.com:microservices-demo/catalogue.git org.label-schema.vcs-ref=93452255c62cac6e44f5d86376d7cb3c5409e162 org.label-schema.schema-version=1.0",
+          "empty_layer": true
+        },
+        {
+          "type": "CMD",
+          "time": "2017-03-22T09:07:42Z",
+          "is_last_instruction": true,
+          "is_nop": true,
+          "is_exec_form": true,
+          "local_image_exists": true,
+          "layer_index": 4,
+          "layer_id": "bce0eb41fa94877a30997e4b91d3779f177441dcc4cdd48ee1753d57a8f7b886",
+          "layer_fsdiff_id": "sha256:e0d68dae20bf36d383a9839d9e6f1989d97982138686585bb8b3229f871300d7",
+          "size": 0,
+          "params": "[\"/app\",\"-port=80\"]",
+          "command_snippet": "CMD [\"/app\",\"-port=80\"]",
+          "command_all": "CMD [\"/app\",\"-port=80\"]",
+          "empty_layer": true,
+          "raw_tags": [
+            "weaveworksdemos/catalogue:0.3.5"
+          ]
+        }
+      ]
+    }
+  ],
+  "image_layers": [
+    {
+      "id": "0c7db50c5ff19c23c81751dc21920dba6e143c981cfc11139c7baff7f26fc958",
+      "index": 0,
+      "path": "0c7db50c5ff19c23c81751dc21920dba6e143c981cfc11139c7baff7f26fc958/layer.tar",
+      "fsdiff_id": "sha256:9f8566ee5135862dd980160c27bd7721448a6f7f385bbb81f7f001f1b78a5fbf",
+      "stats": {
+        "all_size": 4803385,
+        "object_count": 452,
+        "dir_count": 78,
+        "file_count": 67,
+        "link_count": 307,
+        "max_file_size": 2209240,
+        "max_dir_size": 0,
+        "deleted_count": 0,
+        "deleted_dir_content_count": 0,
+        "deleted_dir_count": 0,
+        "deleted_file_count": 0,
+        "deleted_link_count": 0,
+        "deleted_size": 0,
+        "added_size": 4803385,
+        "modified_size": 0,
+        "sticky_count": 2
+      },
+      "changes": {
+        "deleted": 0,
+        "added": 452,
+        "modified": 0
+      },
+      "top": [
+        {
+          "change": "A",
+          "name": "/lib/libcrypto.so.1.0.0",
+          "size": 2209240,
+          "mode": 365,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2017-01-26T18:08:54+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/bin/busybox",
+          "size": 805032,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2017-01-18T17:44:10+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/lib/ld-musl-x86_64.so.1",
+          "size": 559568,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-11-01T16:48:32+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/lib/libssl.so.1.0.0",
+          "size": 424904,
+          "mode": 365,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2017-01-26T18:08:54+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/sbin/apk",
+          "size": 202240,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-05-27T13:55:38+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/lib/libz.so.1.2.8",
+          "size": 87976,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-04-29T16:29:11+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/lib/engines/libgost.so",
+          "size": 87208,
+          "mode": 365,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2017-01-26T18:08:54+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/bin/scanelf",
+          "size": 75512,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-04-29T17:22:21+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/bin/getent",
+          "size": 36608,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-11-01T16:48:32+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/etc/services",
+          "size": 36141,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-06-17T21:09:44+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/bin/getconf",
+          "size": 31464,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-11-01T16:48:32+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/lib/engines/libchil.so",
+          "size": 23096,
+          "mode": 365,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2017-01-26T18:08:54+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/lib/engines/libsureware.so",
+          "size": 22928,
+          "mode": 365,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2017-01-26T18:08:54+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/bin/iconv",
+          "size": 20416,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-11-01T16:48:32+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/lib/engines/libcswift.so",
+          "size": 18824,
+          "mode": 365,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2017-01-26T18:08:54+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/lib/engines/libubsec.so",
+          "size": 18808,
+          "mode": 365,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2017-01-26T18:08:54+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/lib/engines/libpadlock.so",
+          "size": 18688,
+          "mode": 365,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2017-01-26T18:08:54+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/lib/engines/lib4758cca.so",
+          "size": 18600,
+          "mode": 365,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2017-01-26T18:08:54+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/lib/engines/libaep.so",
+          "size": 14744,
+          "mode": 365,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2017-01-26T18:08:54+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/lib/engines/libatalla.so",
+          "size": 14600,
+          "mode": 365,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2017-01-26T18:08:54+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        }
+      ],
+      "change_instruction": {
+        "index": 0,
+        "image_index": 0,
+        "type": "ADD",
+        "all": "ADD file:3df55c321c1c8d73f22bc69240c0764290d6cb293da46ba8f94ed25473fb5853 /",
+        "snippet": "ADD file:3df55c321c1c8d73f22bc69240c0764290d..."
+      },
+      "other_instructions": [
+        {
+          "index": 1,
+          "image_index": 0,
+          "type": "ENV",
+          "all": "ENV SERVICE_USER=myuser SERVICE_UID=10001 SERVICE_GROUP=mygroup SERVICE_GID=10001",
+          "snippet": "ENV SERVICE_USER=myuser SERVICE_UID=10001 SE..."
+        }
+      ]
+    },
+    {
+      "id": "3363847a9338078aeb4e52a41a5c957555345c413b3ab86561edfcbe8a616abf",
+      "index": 1,
+      "path": "3363847a9338078aeb4e52a41a5c957555345c413b3ab86561edfcbe8a616abf/layer.tar",
+      "fsdiff_id": "sha256:599fc8addc99ff87b1dff7d90dbdacfb293eb2059fa17f4fd84c6053d2bea986",
+      "stats": {
+        "all_size": 854511,
+        "object_count": 30,
+        "dir_count": 12,
+        "file_count": 17,
+        "link_count": 1,
+        "max_file_size": 675596,
+        "max_dir_size": 0,
+        "deleted_count": 0,
+        "deleted_dir_content_count": 0,
+        "deleted_dir_count": 0,
+        "deleted_file_count": 0,
+        "deleted_link_count": 0,
+        "deleted_size": 0,
+        "added_size": 833617,
+        "modified_size": 20894
+      },
+      "changes": {
+        "deleted": 0,
+        "added": 11,
+        "modified": 19
+      },
+      "top": [
+        {
+          "change": "A",
+          "name": "/var/cache/apk/APKINDEX.167438ca.tar.gz",
+          "size": 675596,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2017-03-13T17:39:15+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 1
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/var/cache/apk/APKINDEX.a2e6dac0.tar.gz",
+          "size": 89586,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2017-03-13T18:19:40+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 1
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/lib/libcap.so.2.25",
+          "size": 18320,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-04-29T17:21:23+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 1
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/sbin/capsh",
+          "size": 18064,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-04-29T17:21:23+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 1
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/sbin/setcap",
+          "size": 9872,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-04-29T17:21:23+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 1
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/sbin/getcap",
+          "size": 9872,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-04-29T17:21:23+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 1
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/sbin/getpcaps",
+          "size": 9872,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-04-29T17:21:23+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 1
+            }
+          }
+        },
+        {
+          "change": "M",
+          "name": "/lib/apk/db/scripts.tar",
+          "size": 9216,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2017-03-22T13:37:39+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 1
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/lib/apk/db/installed",
+          "size": 9021,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2017-03-22T13:37:39+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 1
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/etc/passwd",
+          "size": 1323,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2017-03-22T13:37:35+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 1
+              }
+            ]
+          }
+        },
+        {
+          "change": "A",
+          "name": "/etc/passwd-",
+          "size": 1269,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-06-17T21:09:44+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 1
+            }
+          }
+        },
+        {
+          "change": "M",
+          "name": "/etc/group",
+          "size": 718,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2017-03-22T13:37:35+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 1
+              }
+            ]
+          }
+        },
+        {
+          "change": "A",
+          "name": "/etc/group-",
+          "size": 712,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2017-03-22T13:37:35+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 1
+            }
+          }
+        },
+        {
+          "change": "M",
+          "name": "/etc/shadow",
+          "size": 482,
+          "mode": 416,
+          "uid": 0,
+          "gid": 42,
+          "mod_time": "2017-03-22T13:37:35+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 1
+              }
+            ]
+          }
+        },
+        {
+          "change": "A",
+          "name": "/etc/shadow-",
+          "size": 454,
+          "mode": 416,
+          "uid": 0,
+          "gid": 42,
+          "mod_time": "2016-06-17T21:09:44+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 1
+            }
+          }
+        },
+        {
+          "change": "M",
+          "name": "/lib/apk/db/triggers",
+          "size": 76,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2017-03-22T13:37:39+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 1
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/etc/apk/world",
+          "size": 58,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2017-03-22T13:37:39+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 1
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/lib/apk/db",
+          "mode": 2147484141,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2017-03-22T13:37:39+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 1
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/var/cache/misc",
+          "mode": 2147484141,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2017-03-22T13:37:39+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 1
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/lib/apk",
+          "mode": 2147484141,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2017-03-22T13:37:39+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 1
+              }
+            ]
+          }
+        }
+      ],
+      "change_instruction": {
+        "index": 2,
+        "image_index": 0,
+        "type": "RUN",
+        "all": "RUN addgroup -g ${SERVICE_GID} ${SERVICE_GROUP} && \\\n\tadduser -g \"${SERVICE_NAME} user\" -D -H -G ${SERVICE_GROUP} -s /sbin/nologin -u ${SERVICE_UID} ${SERVICE_USER} && \\\n\tapk add --update libcap",
+        "snippet": "RUN addgroup -g ${SERVICE_GID} ${SERVICE_GRO..."
+      },
+      "other_instructions": [
+        {
+          "index": 3,
+          "image_index": 0,
+          "type": "WORKDIR",
+          "all": "WORKDIR /",
+          "snippet": "WORKDIR /"
+        },
+        {
+          "index": 4,
+          "image_index": 0,
+          "type": "EXPOSE",
+          "all": "EXPOSE 80/tcp",
+          "snippet": "EXPOSE 80/tcp"
+        }
+      ]
+    },
+    {
+      "id": "0cfc3fb41486d6d29492767b6c80fbc08d5601d708aa6c6ad331ccc639bc6682",
+      "index": 2,
+      "path": "0cfc3fb41486d6d29492767b6c80fbc08d5601d708aa6c6ad331ccc639bc6682/layer.tar",
+      "fsdiff_id": "sha256:da0d4ce517cdb6434581e7b1988cfd41301d9a34bfccac010e781fb3cd05e5e9",
+      "stats": {
+        "all_size": 14257173,
+        "object_count": 1,
+        "dir_count": 0,
+        "file_count": 1,
+        "link_count": 0,
+        "max_file_size": 14257173,
+        "max_dir_size": 0,
+        "deleted_count": 0,
+        "deleted_dir_content_count": 0,
+        "deleted_dir_count": 0,
+        "deleted_file_count": 0,
+        "deleted_link_count": 0,
+        "deleted_size": 0,
+        "added_size": 14257173,
+        "modified_size": 0
+      },
+      "changes": {
+        "deleted": 0,
+        "added": 1,
+        "modified": 0
+      },
+      "top": [
+        {
+          "change": "A",
+          "name": "/app",
+          "size": 14257173,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2017-03-22T13:37:33+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 2
+            },
+            "M": [
+              {
+                "layer": 4
+              }
+            ]
+          }
+        }
+      ],
+      "change_instruction": {
+        "index": 5,
+        "image_index": 0,
+        "type": "COPY",
+        "all": "COPY file:d9dd033a5b7bf40442aeb91d25e9f5b9de54843e8083dcdc5bdfb9ed0373792d /",
+        "snippet": "COPY file:d9dd033a5b7bf40442aeb91d25e9f5b9de..."
+      }
+    },
+    {
+      "id": "5787210d347774627b53ba64077242aa85ec0a6e1d4f717598ff429e5a417d7a",
+      "index": 3,
+      "path": "5787210d347774627b53ba64077242aa85ec0a6e1d4f717598ff429e5a417d7a/layer.tar",
+      "fsdiff_id": "sha256:46b62514b375c2c4fc033d282e7c5f5392443f628d07b514ff40752bbb46fa8d",
+      "stats": {
+        "all_size": 3522758,
+        "object_count": 21,
+        "dir_count": 1,
+        "file_count": 20,
+        "link_count": 0,
+        "max_file_size": 539433,
+        "max_dir_size": 0,
+        "deleted_count": 0,
+        "deleted_dir_content_count": 0,
+        "deleted_dir_count": 0,
+        "deleted_file_count": 0,
+        "deleted_link_count": 0,
+        "deleted_size": 0,
+        "added_size": 3522758,
+        "modified_size": 0
+      },
+      "changes": {
+        "deleted": 0,
+        "added": 21,
+        "modified": 0
+      },
+      "top": [
+        {
+          "change": "A",
+          "name": "/images/rugby_socks.jpg",
+          "size": 539433,
+          "mode": 436,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2017-03-22T13:35:57+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 3
+            },
+            "M": [
+              {
+                "layer": 4
+              }
+            ]
+          }
+        },
+        {
+          "change": "A",
+          "name": "/images/colourful_socks.jpg",
+          "size": 486192,
+          "mode": 436,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2017-03-22T13:35:57+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 3
+            },
+            "M": [
+              {
+                "layer": 4
+              }
+            ]
+          }
+        },
+        {
+          "change": "A",
+          "name": "/images/WAT2.jpg",
+          "size": 399224,
+          "mode": 509,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2017-03-22T13:35:57+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 3
+            },
+            "M": [
+              {
+                "layer": 4
+              }
+            ]
+          }
+        },
+        {
+          "change": "A",
+          "name": "/images/classic.jpg",
+          "size": 386242,
+          "mode": 509,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2017-03-22T13:35:57+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 3
+            },
+            "M": [
+              {
+                "layer": 4
+              }
+            ]
+          }
+        },
+        {
+          "change": "A",
+          "name": "/images/WAT.jpg",
+          "size": 381633,
+          "mode": 509,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2017-03-22T13:35:57+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 3
+            },
+            "M": [
+              {
+                "layer": 4
+              }
+            ]
+          }
+        },
+        {
+          "change": "A",
+          "name": "/images/catsocks2.jpg",
+          "size": 333305,
+          "mode": 436,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2017-03-22T13:35:57+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 3
+            },
+            "M": [
+              {
+                "layer": 4
+              }
+            ]
+          }
+        },
+        {
+          "change": "A",
+          "name": "/images/catsocks.jpg",
+          "size": 286025,
+          "mode": 436,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2017-03-22T13:35:57+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 3
+            },
+            "M": [
+              {
+                "layer": 4
+              }
+            ]
+          }
+        },
+        {
+          "change": "A",
+          "name": "/images/classic2.jpg",
+          "size": 246759,
+          "mode": 509,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2017-03-22T13:35:57+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 3
+            },
+            "M": [
+              {
+                "layer": 4
+              }
+            ]
+          }
+        },
+        {
+          "change": "A",
+          "name": "/images/holy_3.jpeg",
+          "size": 74891,
+          "mode": 436,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2017-03-22T13:35:57+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 3
+            },
+            "M": [
+              {
+                "layer": 4
+              }
+            ]
+          }
+        },
+        {
+          "change": "A",
+          "name": "/images/holy_2.jpeg",
+          "size": 43812,
+          "mode": 436,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2017-03-22T13:35:57+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 3
+            },
+            "M": [
+              {
+                "layer": 4
+              }
+            ]
+          }
+        },
+        {
+          "change": "A",
+          "name": "/images/youtube_2.jpeg",
+          "size": 42898,
+          "mode": 436,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2017-03-22T13:35:57+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 3
+            },
+            "M": [
+              {
+                "layer": 4
+              }
+            ]
+          }
+        },
+        {
+          "change": "A",
+          "name": "/images/holy_1.jpeg",
+          "size": 42201,
+          "mode": 436,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2017-03-22T13:35:57+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 3
+            },
+            "M": [
+              {
+                "layer": 4
+              }
+            ]
+          }
+        },
+        {
+          "change": "A",
+          "name": "/images/puma_2.jpeg",
+          "size": 41167,
+          "mode": 436,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2017-03-22T13:35:57+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 3
+            },
+            "M": [
+              {
+                "layer": 4
+              }
+            ]
+          }
+        },
+        {
+          "change": "A",
+          "name": "/images/cross_1.jpeg",
+          "size": 40511,
+          "mode": 436,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2017-03-22T13:35:57+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 3
+            },
+            "M": [
+              {
+                "layer": 4
+              }
+            ]
+          }
+        },
+        {
+          "change": "A",
+          "name": "/images/puma_1.jpeg",
+          "size": 39572,
+          "mode": 436,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2017-03-22T13:35:57+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 3
+            },
+            "M": [
+              {
+                "layer": 4
+              }
+            ]
+          }
+        },
+        {
+          "change": "A",
+          "name": "/images/youtube_1.jpeg",
+          "size": 37589,
+          "mode": 436,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2017-03-22T13:35:57+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 3
+            },
+            "M": [
+              {
+                "layer": 4
+              }
+            ]
+          }
+        },
+        {
+          "change": "A",
+          "name": "/images/cross_2.jpeg",
+          "size": 33687,
+          "mode": 436,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2017-03-22T13:35:57+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 3
+            },
+            "M": [
+              {
+                "layer": 4
+              }
+            ]
+          }
+        },
+        {
+          "change": "A",
+          "name": "/images/bit_of_leg_2.jpeg",
+          "size": 32606,
+          "mode": 436,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2017-03-22T13:35:57+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 3
+            },
+            "M": [
+              {
+                "layer": 4
+              }
+            ]
+          }
+        },
+        {
+          "change": "A",
+          "name": "/images/bit_of_leg_1.jpeg",
+          "size": 32388,
+          "mode": 436,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2017-03-22T13:35:57+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 3
+            },
+            "M": [
+              {
+                "layer": 4
+              }
+            ]
+          }
+        },
+        {
+          "change": "A",
+          "name": "/images/sock.jpeg",
+          "size": 2623,
+          "mode": 436,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2017-03-22T13:35:57+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 3
+            },
+            "M": [
+              {
+                "layer": 4
+              }
+            ]
+          }
+        }
+      ],
+      "change_instruction": {
+        "index": 6,
+        "image_index": 0,
+        "type": "COPY",
+        "all": "COPY dir:e560da421c5fa4d36a6b8e59d5b52a7e8b053b8a06272f6fb124acdd7728d11b /images/",
+        "snippet": "COPY dir:e560da421c5fa4d36a6b8e59d5b52a7e8b0..."
+      }
+    },
+    {
+      "id": "bce0eb41fa94877a30997e4b91d3779f177441dcc4cdd48ee1753d57a8f7b886",
+      "index": 4,
+      "path": "bce0eb41fa94877a30997e4b91d3779f177441dcc4cdd48ee1753d57a8f7b886/layer.tar",
+      "fsdiff_id": "sha256:e0d68dae20bf36d383a9839d9e6f1989d97982138686585bb8b3229f871300d7",
+      "stats": {
+        "all_size": 17779931,
+        "object_count": 22,
+        "dir_count": 1,
+        "file_count": 21,
+        "link_count": 0,
+        "max_file_size": 14257173,
+        "max_dir_size": 0,
+        "deleted_count": 0,
+        "deleted_dir_content_count": 0,
+        "deleted_dir_count": 0,
+        "deleted_file_count": 0,
+        "deleted_link_count": 0,
+        "deleted_size": 0,
+        "added_size": 0,
+        "modified_size": 17779931
+      },
+      "changes": {
+        "deleted": 0,
+        "added": 0,
+        "modified": 22
+      },
+      "top": [
+        {
+          "change": "M",
+          "name": "/app",
+          "size": 14257173,
+          "mode": 493,
+          "uid": 10001,
+          "gid": 10001,
+          "mod_time": "2017-03-22T13:37:33+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 2
+            },
+            "M": [
+              {
+                "layer": 4
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/images/rugby_socks.jpg",
+          "size": 539433,
+          "mode": 436,
+          "uid": 10001,
+          "gid": 10001,
+          "mod_time": "2017-03-22T13:35:57+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 3
+            },
+            "M": [
+              {
+                "layer": 4
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/images/colourful_socks.jpg",
+          "size": 486192,
+          "mode": 436,
+          "uid": 10001,
+          "gid": 10001,
+          "mod_time": "2017-03-22T13:35:57+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 3
+            },
+            "M": [
+              {
+                "layer": 4
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/images/WAT2.jpg",
+          "size": 399224,
+          "mode": 509,
+          "uid": 10001,
+          "gid": 10001,
+          "mod_time": "2017-03-22T13:35:57+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 3
+            },
+            "M": [
+              {
+                "layer": 4
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/images/classic.jpg",
+          "size": 386242,
+          "mode": 509,
+          "uid": 10001,
+          "gid": 10001,
+          "mod_time": "2017-03-22T13:35:57+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 3
+            },
+            "M": [
+              {
+                "layer": 4
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/images/WAT.jpg",
+          "size": 381633,
+          "mode": 509,
+          "uid": 10001,
+          "gid": 10001,
+          "mod_time": "2017-03-22T13:35:57+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 3
+            },
+            "M": [
+              {
+                "layer": 4
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/images/catsocks2.jpg",
+          "size": 333305,
+          "mode": 436,
+          "uid": 10001,
+          "gid": 10001,
+          "mod_time": "2017-03-22T13:35:57+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 3
+            },
+            "M": [
+              {
+                "layer": 4
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/images/catsocks.jpg",
+          "size": 286025,
+          "mode": 436,
+          "uid": 10001,
+          "gid": 10001,
+          "mod_time": "2017-03-22T13:35:57+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 3
+            },
+            "M": [
+              {
+                "layer": 4
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/images/classic2.jpg",
+          "size": 246759,
+          "mode": 509,
+          "uid": 10001,
+          "gid": 10001,
+          "mod_time": "2017-03-22T13:35:57+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 3
+            },
+            "M": [
+              {
+                "layer": 4
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/images/holy_3.jpeg",
+          "size": 74891,
+          "mode": 436,
+          "uid": 10001,
+          "gid": 10001,
+          "mod_time": "2017-03-22T13:35:57+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 3
+            },
+            "M": [
+              {
+                "layer": 4
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/images/holy_2.jpeg",
+          "size": 43812,
+          "mode": 436,
+          "uid": 10001,
+          "gid": 10001,
+          "mod_time": "2017-03-22T13:35:57+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 3
+            },
+            "M": [
+              {
+                "layer": 4
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/images/youtube_2.jpeg",
+          "size": 42898,
+          "mode": 436,
+          "uid": 10001,
+          "gid": 10001,
+          "mod_time": "2017-03-22T13:35:57+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 3
+            },
+            "M": [
+              {
+                "layer": 4
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/images/holy_1.jpeg",
+          "size": 42201,
+          "mode": 436,
+          "uid": 10001,
+          "gid": 10001,
+          "mod_time": "2017-03-22T13:35:57+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 3
+            },
+            "M": [
+              {
+                "layer": 4
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/images/puma_2.jpeg",
+          "size": 41167,
+          "mode": 436,
+          "uid": 10001,
+          "gid": 10001,
+          "mod_time": "2017-03-22T13:35:57+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 3
+            },
+            "M": [
+              {
+                "layer": 4
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/images/cross_1.jpeg",
+          "size": 40511,
+          "mode": 436,
+          "uid": 10001,
+          "gid": 10001,
+          "mod_time": "2017-03-22T13:35:57+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 3
+            },
+            "M": [
+              {
+                "layer": 4
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/images/puma_1.jpeg",
+          "size": 39572,
+          "mode": 436,
+          "uid": 10001,
+          "gid": 10001,
+          "mod_time": "2017-03-22T13:35:57+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 3
+            },
+            "M": [
+              {
+                "layer": 4
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/images/youtube_1.jpeg",
+          "size": 37589,
+          "mode": 436,
+          "uid": 10001,
+          "gid": 10001,
+          "mod_time": "2017-03-22T13:35:57+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 3
+            },
+            "M": [
+              {
+                "layer": 4
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/images/cross_2.jpeg",
+          "size": 33687,
+          "mode": 436,
+          "uid": 10001,
+          "gid": 10001,
+          "mod_time": "2017-03-22T13:35:57+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 3
+            },
+            "M": [
+              {
+                "layer": 4
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/images/bit_of_leg_2.jpeg",
+          "size": 32606,
+          "mode": 436,
+          "uid": 10001,
+          "gid": 10001,
+          "mod_time": "2017-03-22T13:35:57+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 3
+            },
+            "M": [
+              {
+                "layer": 4
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/images/bit_of_leg_1.jpeg",
+          "size": 32388,
+          "mode": 436,
+          "uid": 10001,
+          "gid": 10001,
+          "mod_time": "2017-03-22T13:35:57+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 3
+            },
+            "M": [
+              {
+                "layer": 4
+              }
+            ]
+          }
+        }
+      ],
+      "change_instruction": {
+        "index": 7,
+        "image_index": 0,
+        "type": "RUN",
+        "all": "RUN chmod +x /app && \\\n\tchown -R ${SERVICE_USER}:${SERVICE_GROUP} /app /images && \\\n\tsetcap 'cap_net_bind_service=+ep' /app",
+        "snippet": "RUN chmod +x /app && \\\n\tchown -R ${SERVICE_U..."
+      },
+      "other_instructions": [
+        {
+          "index": 8,
+          "image_index": 0,
+          "type": "USER",
+          "all": "USER [myuser]",
+          "snippet": "USER [myuser]"
+        },
+        {
+          "index": 9,
+          "image_index": 0,
+          "type": "ARG",
+          "all": "ARG BUILD_DATE",
+          "snippet": "ARG BUILD_DATE"
+        },
+        {
+          "index": 10,
+          "image_index": 0,
+          "type": "ARG",
+          "all": "ARG BUILD_VERSION",
+          "snippet": "ARG BUILD_VERSION"
+        },
+        {
+          "index": 11,
+          "image_index": 0,
+          "type": "ARG",
+          "all": "ARG COMMIT",
+          "snippet": "ARG COMMIT"
+        },
+        {
+          "index": 12,
+          "image_index": 0,
+          "type": "LABEL",
+          "all": "LABEL org.label-schema.vendor=Weaveworks org.label-schema.build-date=2017-03-22T09:05:57+0000 org.label-schema.version=0.0.2-SNAPSHOT org.label-schema.name=Socks Shop: Catalogue org.label-schema.description=REST API for Catalogue service org.label-schema.url=https://github.com/microservices-demo/catalogue org.label-schema.vcs-url=github.com:microservices-demo/catalogue.git org.label-schema.vcs-ref=93452255c62cac6e44f5d86376d7cb3c5409e162 org.label-schema.schema-version=1.0",
+          "snippet": "LABEL org.label-schema.vendor=Weaveworks org..."
+        },
+        {
+          "index": 13,
+          "image_index": 0,
+          "type": "CMD",
+          "all": "CMD [\"/app\",\"-port=80\"]",
+          "snippet": "CMD [\"/app\",\"-port=80\"]"
+        }
+      ]
+    }
+  ],
+  "image_archive_location": "/tmp/docker-slim-state/.docker-slim-state/images/0bd359b6d6e803db58b0474e9b1fa78a5f9e4f0d4abf8cdc283037c586b3bbad/image/0bd359b6d6e803db58b0474e9b1fa78a5f9e4f0d4abf8cdc283037c586b3bbad.tar"
+}

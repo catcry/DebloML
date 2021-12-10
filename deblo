@@ -1,0 +1,4 @@
+find docker-slim not reliable --> due to using jsut one slimmed container which is frontend
+
+many efforts have been applied:
+	> running it from compose-file --> a new feature in docker-slim

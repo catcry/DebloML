@@ -1,0 +1,68 @@
+% socks report
+
+In the following sections 
+
+\section {Microservice : Socks}
+\subsection{containers}
+This service needs 14 containers to run. Some of them are databases which use "MySQL" or "MongoDB". For every image in the docker-compose file "docker-slim" is run to build a smaller version of the image. In the following sub-sections every container and its slimmed version will be compared in details, nevertheless, some general challenges and finidings are listed below:
+
+\begin{itemize}
+	\item{
+	As it was mentioned in the DockerSlim documents\footnote{https://github.com/docker-slim/docker-slim#running-containerized}, some of the web applications written in languages such as python and Ruby, require service interaction to load everything in the application. Therefore, for our application, we need to have the "http-probe" enabled for almost all of the containers. 
+	}
+	\item{
+	On some containers running "http-probe" is failed with the error "connection reset by peer". Due to some research on the Internet, this error can be caused by several issues such as:
+	\begin{itemize}
+		\item{
+		The webserver is bound to "127.0.0.1", so it will be available only inside the container\footnote{https://nickjanetakis.com/blog/docker-tip-54-fixing-connection-reset-by-peer-or-similar-errors}. The general solution for this issue is to bind the web server to "0.0.0.0", so it can be accessible from outside of the container. But it is not the case here, because when we run the service via Docker-Compose, or run every container individually, the mapped address for the ports are accessible from outside and additionally the whole service works fine. However, the configuration files of the webservers have been checked individually.
+		}
+		\item{ It also can occur when there is no application on the exposed port \footnote{https://serverfault.com/questions/769578/curl-56-recv-failure-connection-reset-by-peer-when-hitting-docker-container}. This was also verfied by checking the used ports by the applicaiton inside the container. 
+		
+		}
+		\item {Firewall can be another cause for this problem. It was disabled on the machine running DockerSlim. Since I use my machine for other works, I though, the problem might stem from some other misconfiguration that I already done in the operating system. Hence, I installed new Ubuntu from scratch on my machine and one other machine and tried the docker-slim there. But still I was getting the same error.}
+		
+		\item{
+		This error seems to arise from the inside of the container because the "http-probe" is successfuly done for some other containers which also has web services running inside such as "mongoDB", "weavedemos/front-end"
+		}
+
+	\end{itemize}
+	
+	\item {
+	Applied solution for the "connection reset by peer" error: One way to deal with this error is to disable http-probe. However, disabling it ends in an container which has literaly nothing in it and obviously it fails to run the needed services. When "build" command runs in Docker-Slim to make the slimmed version of and image, it executes an interactive container of the image and, the build procedure pauses and let the user to interact with the container. In this stage, the user can start needed services inside of the container, so the slimmed image will contain that service. There is a  n "include" option in running the "build" command which can tell the DockerSlim to not remove a special file or path. For example, "weaveworksdemos/catalogue-db" (400 MB) , is one of the containers which does not allow "http-probe". When DockerSlim builds a slim version of it in "http-probe-off" mode, the slim docker image size would be 34 MB. When this slimmed version is included in the docker-compose where the original images are used for all the other containers, there is no catalouges of socks in the web application. In the interactive mode when the "MySql" service is started, the slimmed container size would be 52 MB. On the other hand, in some containers such as "weaveworksdemos/orders", there is not bash to interact with. 
+	}
+	
+	}
+	
+\subsection {weaveworksdemos/front-end}
+This container is minified with no error, the "http-probe" is accomplished successfully. According to the "xray" of the original and minified container, the followings can be considered:
+\begin{itemize}
+	\item{The "Ash Shell" and "Bourne Shell" has been removed. Hence, no "exec" interaction with "/bin/bash/" is available in slim container.}
+	\item{The tmp directory from the path "/var/tmp" has been removed}
+	\item{All includes such as "../include/node/v8.h", "../openssl/safestack.h", "openssl/obj_mac.h", "openssl/ssl.h"} has been removed.
+	\item {User folder : "/home/myuser" has been removed which apparently contains a cache folder}
+	\item{The only problem with slimmed front-end container is the login-register bar. I think a mistakly removed .js or a node.js script is responsible for that.}
+\end {itemize}
+Unfortunatelly, I had a busy days at work, besides, I spend more that $90%$ of my time trying to figure out the "connection reset by peer" problem. Therefore, I had a limited time to find the exact path for the script that is responsilbe for login bar and, exclude it from being processed by build procedure.  	
+
+\subsection {weaveworksdemos/edge-router}
+The edge-router can get minified without error with "http-probe" enabled, and no changes in the application performance was detected. The results of comparing slim and original containers are:
+\begin{itemize}
+	\item{Like front-end container all bashes has been removed. In addition, it deleted all of the "mozila" certeficate links and hashes}
+	\item{Apparently in slim mode DockerSlim removes all of the image layers and bring need binaries to a single layer}
+	\item{"libcrypto", "libssl", and certificate file has been removed. It may result in some security issues}
+	
+\subsection {weaveworksdemos/catalogue}
+The "catalogue" is one of those container which makes "connection reset by peer" error. All aformentioned efforts about this error has been applied to this container except it has no bashes, so I could not interact with it and cannot see if there are any critical paths services can be saved. However, apparently the application website operates with no error when the slimmed version is replaced in the docker-compose file.
+The following items can be concluded from comparing xrays : 
+\begin{itemize}
+	\item{Like others the temp folder on /var/temp and all bashes has been removed}
+	\item{Many libraries and binaries such as libcrypto and getcaps has been removed. I do not know what  can removing the ssl and libcrypto libraries can do when program runs in large scale. But the binaries such as getcap which indicates capabilities on pids are allowed to be removed, because they are not mandetory}
+	
+\sebsection {catalogue-db - MySQL}
+the catalogue-db container uses Mysql, this container also has the "connection reset by peer" problem. Although in the interaction mode the Mysql service was started, the container would not operate properly in the compose set. When all other containers set to the original images and only the catalogue-db.slim is used, the catalogues (socks in the website) do not appear in the application.
+\subsection {mongoDB}
+Two databases, cart-db and order-db use mongoDB. The mongoDB image is successfully built by DockerSlim using http-probe. It operates in the application without error.
+
+	
+
+

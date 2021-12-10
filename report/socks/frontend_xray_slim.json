@@ -1,0 +1,728 @@
+{
+  "version": "1.2",
+  "engine": "linux|Transformer|1.37.0|70cc8acfcb733161ce7e685b81ad6c172643c222|2021-09-23_09:23:43AM",
+  "containerized": false,
+  "host_distro": {
+    "name": "Ubuntu",
+    "version": "20.04",
+    "display_name": "Ubuntu 20.04.3 LTS"
+  },
+  "type": "xray",
+  "state": "done",
+  "target_reference": "catcry/front-end.slim:1.0.0",
+  "source_image": {
+    "identity": {
+      "id": "sha256:79ac10b8430f158bb25d6a1c4d5088bba47daa0e22f4e9deb792b69e48f90efe",
+      "tags": [
+        "1.0.0",
+        "1.0.0",
+        "latest",
+        "latest"
+      ],
+      "names": [
+        "catcry/front-end.slim:1.0.0",
+        "front-end.slim:1.0.0",
+        "weaveworksdemos/front-end.slim:latest",
+        "weaveworksdemos/front-end.slim_st:latest"
+      ],
+      "digests": [
+        "sha256:e47b8ba65a73cbb698257eea8f75ffc6d10fbb0e0a025de329d509e66468a8ad"
+      ],
+      "full_digests": [
+        "catcry/front-end.slim@sha256:e47b8ba65a73cbb698257eea8f75ffc6d10fbb0e0a025de329d509e66468a8ad"
+      ]
+    },
+    "size": 27831648,
+    "size_human": "28 MB",
+    "create_time": "2021-09-26T06:42:14Z",
+    "docker_version": "20.10.8",
+    "architecture": "amd64",
+    "user": "myuser",
+    "exposed_ports": [
+      "8079/tcp"
+    ],
+    "os": "linux",
+    "labels": {
+      "docker-slim.version": "linux|Transformer|1.37.0|70cc8acfcb733161ce7e685b81ad6c172643c222|2021-09-23_09:23:43AM"
+    },
+    "env_vars": [
+      "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+      "NPM_CONFIG_LOGLEVEL=info",
+      "NODE_VERSION=4.8.0",
+      "YARN_VERSION=0.21.3",
+      "NODE_ENV=production",
+      "PORT=8079"
+    ],
+    "workdir": "/usr/src/app",
+    "container_entry": {
+      "cmd": [
+        "/usr/local/bin/npm",
+        "start"
+      ],
+      "exe_path": "/usr/local/bin/npm",
+      "full_exe_path": {
+        "name": "/usr/local/bin/npm",
+        "layer": 0
+      },
+      "exe_args": [
+        "start"
+      ]
+    }
+  },
+  "artifact_location": "/tmp/docker-slim-state/.docker-slim-state/images/79ac10b8430f158bb25d6a1c4d5088bba47daa0e22f4e9deb792b69e48f90efe/artifacts",
+  "image_report": {
+    "stats": {
+      "duplicate_file_count": 0,
+      "duplicate_file_total_count": 0,
+      "duplicate_file_size": 0,
+      "duplicate_file_total_size": 0,
+      "duplicate_file_wasted_size": 0,
+      "deleted_count": 0,
+      "deleted_dir_content_count": 0,
+      "deleted_dir_count": 0,
+      "deleted_file_count": 0,
+      "deleted_link_count": 0,
+      "deleted_file_size": 0,
+      "sticky_count": 1
+    },
+    "special_perms": {
+      "sticky": [
+        "/tmp"
+      ]
+    },
+    "certs": {},
+    "ca_certs": {}
+  },
+  "image_stack": [
+    {
+      "is_top_image": true,
+      "id": "sha256:79ac10b8430f158bb25d6a1c4d5088bba47daa0e22f4e9deb792b69e48f90efe",
+      "full_name": "catcry/front-end.slim:1.0.0",
+      "repo_name": "catcry/front-end.slim",
+      "version_tag": "1.0.0",
+      "raw_tags": [
+        "catcry/front-end.slim:1.0.0",
+        "front-end.slim:1.0.0",
+        "weaveworksdemos/front-end.slim:latest",
+        "weaveworksdemos/front-end.slim_st:latest"
+      ],
+      "create_time": "2021-09-26T06:42:14Z",
+      "new_size": 27831648,
+      "new_size_human": "28 MB",
+      "instructions": [
+        {
+          "type": "LABEL",
+          "time": "2021-09-26T06:42:11Z",
+          "is_nop": true,
+          "local_image_exists": true,
+          "intermediate_image_id": "sha256:63b5bfd98351433ccb5acf3fd9d8d5f4bc259a85d2bc03fb67d22668f6659c3f",
+          "layer_index": 0,
+          "layer_id": "6e382f14e74900d8e507eb60aaec357c255cbdf33a05eb7ee4ce6cb764bcfb8d",
+          "layer_fsdiff_id": "sha256:328399d6ee310757d86d1ef794544ee2e504bd37a74d9f9723c31b4097a020ed",
+          "size": 0,
+          "params": "docker-slim.version=linux|Transformer|1.37.0|70cc8acfcb733161ce7e685b81ad6c172643c222|2021-09-23_09:23:43AM",
+          "command_snippet": "LABEL docker-slim.version=linux|Transformer|...",
+          "command_all": "LABEL docker-slim.version=linux|Transformer|1.37.0|70cc8acfcb733161ce7e685b81ad6c172643c222|2021-09-23_09:23:43AM",
+          "empty_layer": true
+        },
+        {
+          "type": "ENV",
+          "time": "2021-09-26T06:42:11Z",
+          "is_nop": true,
+          "local_image_exists": true,
+          "intermediate_image_id": "sha256:bbf5e45f38a459d6a495dd9f59c1bb5516ed1ab66282efd57b21a05d0456978d",
+          "layer_index": 0,
+          "layer_id": "6e382f14e74900d8e507eb60aaec357c255cbdf33a05eb7ee4ce6cb764bcfb8d",
+          "layer_fsdiff_id": "sha256:328399d6ee310757d86d1ef794544ee2e504bd37a74d9f9723c31b4097a020ed",
+          "size": 0,
+          "params": "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+          "command_snippet": "ENV PATH=/usr/local/sbin:/usr/local/bin:/usr...",
+          "command_all": "ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+          "empty_layer": true
+        },
+        {
+          "type": "ENV",
+          "time": "2021-09-26T06:42:11Z",
+          "is_nop": true,
+          "local_image_exists": true,
+          "intermediate_image_id": "sha256:a0e641e1ebb51558a9e7ffebfd89a6bb2cf2db91d16c21dbf03a2ae5cb858a56",
+          "layer_index": 0,
+          "layer_id": "6e382f14e74900d8e507eb60aaec357c255cbdf33a05eb7ee4ce6cb764bcfb8d",
+          "layer_fsdiff_id": "sha256:328399d6ee310757d86d1ef794544ee2e504bd37a74d9f9723c31b4097a020ed",
+          "size": 0,
+          "params": "NPM_CONFIG_LOGLEVEL=info",
+          "command_snippet": "ENV NPM_CONFIG_LOGLEVEL=info",
+          "command_all": "ENV NPM_CONFIG_LOGLEVEL=info",
+          "empty_layer": true
+        },
+        {
+          "type": "ENV",
+          "time": "2021-09-26T06:42:12Z",
+          "is_nop": true,
+          "local_image_exists": true,
+          "intermediate_image_id": "sha256:abd392ff60f6076a1259fe9867fd553669d36b5fd4c8c4d3c75a0bb3b3ba846c",
+          "layer_index": 0,
+          "layer_id": "6e382f14e74900d8e507eb60aaec357c255cbdf33a05eb7ee4ce6cb764bcfb8d",
+          "layer_fsdiff_id": "sha256:328399d6ee310757d86d1ef794544ee2e504bd37a74d9f9723c31b4097a020ed",
+          "size": 0,
+          "params": "NODE_VERSION=4.8.0",
+          "command_snippet": "ENV NODE_VERSION=4.8.0",
+          "command_all": "ENV NODE_VERSION=4.8.0",
+          "empty_layer": true
+        },
+        {
+          "type": "ENV",
+          "time": "2021-09-26T06:42:12Z",
+          "is_nop": true,
+          "local_image_exists": true,
+          "intermediate_image_id": "sha256:f05bc83632696486e52133a0f30e18fc17ba85cb8784a793d0ea7bc4e427c066",
+          "layer_index": 0,
+          "layer_id": "6e382f14e74900d8e507eb60aaec357c255cbdf33a05eb7ee4ce6cb764bcfb8d",
+          "layer_fsdiff_id": "sha256:328399d6ee310757d86d1ef794544ee2e504bd37a74d9f9723c31b4097a020ed",
+          "size": 0,
+          "params": "YARN_VERSION=0.21.3",
+          "command_snippet": "ENV YARN_VERSION=0.21.3",
+          "command_all": "ENV YARN_VERSION=0.21.3",
+          "empty_layer": true
+        },
+        {
+          "type": "ENV",
+          "time": "2021-09-26T06:42:12Z",
+          "is_nop": true,
+          "local_image_exists": true,
+          "intermediate_image_id": "sha256:eaa6fdff4e3c1ac5c1582d9a9ca6ff99ab57ce6c7cef4171410031bdbe770a35",
+          "layer_index": 0,
+          "layer_id": "6e382f14e74900d8e507eb60aaec357c255cbdf33a05eb7ee4ce6cb764bcfb8d",
+          "layer_fsdiff_id": "sha256:328399d6ee310757d86d1ef794544ee2e504bd37a74d9f9723c31b4097a020ed",
+          "size": 0,
+          "params": "NODE_ENV=production",
+          "command_snippet": "ENV NODE_ENV=production",
+          "command_all": "ENV NODE_ENV=production",
+          "empty_layer": true
+        },
+        {
+          "type": "ENV",
+          "time": "2021-09-26T06:42:12Z",
+          "is_nop": true,
+          "local_image_exists": true,
+          "intermediate_image_id": "sha256:68ce4c59ecc0bbed666e0cc2d34f051ed4259af4c5ff8588e4a8a2440fac7a2a",
+          "layer_index": 0,
+          "layer_id": "6e382f14e74900d8e507eb60aaec357c255cbdf33a05eb7ee4ce6cb764bcfb8d",
+          "layer_fsdiff_id": "sha256:328399d6ee310757d86d1ef794544ee2e504bd37a74d9f9723c31b4097a020ed",
+          "size": 0,
+          "params": "PORT=8079",
+          "command_snippet": "ENV PORT=8079",
+          "command_all": "ENV PORT=8079",
+          "empty_layer": true
+        },
+        {
+          "type": "ADD",
+          "time": "2021-09-26T06:42:13Z",
+          "is_nop": true,
+          "local_image_exists": true,
+          "intermediate_image_id": "sha256:76f487e698441f5fd2dd6a7ef9379dba39a3b1c49473a661ece6f2b1ff1bc5e5",
+          "layer_index": 0,
+          "layer_id": "6e382f14e74900d8e507eb60aaec357c255cbdf33a05eb7ee4ce6cb764bcfb8d",
+          "layer_fsdiff_id": "sha256:328399d6ee310757d86d1ef794544ee2e504bd37a74d9f9723c31b4097a020ed",
+          "size": 27831648,
+          "size_human": "28 MB",
+          "params": "file:8660c98aa935a247ef5c0ef45da40c72aca90f86d93b8d90def01e570a5799dd in /",
+          "command_snippet": "ADD file:8660c98aa935a247ef5c0ef45da40c72aca...",
+          "command_all": "ADD file:8660c98aa935a247ef5c0ef45da40c72aca90f86d93b8d90def01e570a5799dd /",
+          "target": "/",
+          "source_type": "file"
+        },
+        {
+          "type": "WORKDIR",
+          "time": "2021-09-26T06:42:13Z",
+          "is_nop": true,
+          "local_image_exists": true,
+          "intermediate_image_id": "sha256:e4247541c5c9623fd38fd9ded7724ed2855338082aa00f4b86f644d1da4b7346",
+          "layer_index": 0,
+          "layer_id": "6e382f14e74900d8e507eb60aaec357c255cbdf33a05eb7ee4ce6cb764bcfb8d",
+          "layer_fsdiff_id": "sha256:328399d6ee310757d86d1ef794544ee2e504bd37a74d9f9723c31b4097a020ed",
+          "size": 0,
+          "params": "/usr/src/app",
+          "command_snippet": "WORKDIR /usr/src/app",
+          "command_all": "WORKDIR /usr/src/app",
+          "system_commands": [
+            "mkdir -p /usr/src/app"
+          ],
+          "empty_layer": true
+        },
+        {
+          "type": "USER",
+          "time": "2021-09-26T06:42:13Z",
+          "is_nop": true,
+          "local_image_exists": true,
+          "intermediate_image_id": "sha256:e85d002bf7d3c7e6f87688ae665005fd71fe0a7745d7f3fff8479cbd3301e35f",
+          "layer_index": 0,
+          "layer_id": "6e382f14e74900d8e507eb60aaec357c255cbdf33a05eb7ee4ce6cb764bcfb8d",
+          "layer_fsdiff_id": "sha256:328399d6ee310757d86d1ef794544ee2e504bd37a74d9f9723c31b4097a020ed",
+          "size": 0,
+          "params": "myuser",
+          "command_snippet": "USER myuser",
+          "command_all": "USER myuser",
+          "empty_layer": true
+        },
+        {
+          "type": "EXPOSE",
+          "time": "2021-09-26T06:42:14Z",
+          "is_nop": true,
+          "local_image_exists": true,
+          "intermediate_image_id": "sha256:ec853b9dcbb8a3f0bdf528abd01d5f8366a31e95ee67c2885a0fbd7014667025",
+          "layer_index": 0,
+          "layer_id": "6e382f14e74900d8e507eb60aaec357c255cbdf33a05eb7ee4ce6cb764bcfb8d",
+          "layer_fsdiff_id": "sha256:328399d6ee310757d86d1ef794544ee2e504bd37a74d9f9723c31b4097a020ed",
+          "size": 0,
+          "params": "8079/tcp",
+          "command_snippet": "EXPOSE 8079/tcp",
+          "command_all": "EXPOSE 8079/tcp",
+          "empty_layer": true
+        },
+        {
+          "type": "CMD",
+          "time": "2021-09-26T06:42:14Z",
+          "is_last_instruction": true,
+          "is_nop": true,
+          "is_exec_form": true,
+          "local_image_exists": true,
+          "layer_index": 0,
+          "layer_id": "6e382f14e74900d8e507eb60aaec357c255cbdf33a05eb7ee4ce6cb764bcfb8d",
+          "layer_fsdiff_id": "sha256:328399d6ee310757d86d1ef794544ee2e504bd37a74d9f9723c31b4097a020ed",
+          "size": 0,
+          "params": "[\"/usr/local/bin/npm\",\"start\"]",
+          "command_snippet": "CMD [\"/usr/local/bin/npm\",\"start\"]",
+          "command_all": "CMD [\"/usr/local/bin/npm\",\"start\"]",
+          "empty_layer": true,
+          "raw_tags": [
+            "catcry/front-end.slim:1.0.0",
+            "front-end.slim:1.0.0",
+            "weaveworksdemos/front-end.slim:latest",
+            "weaveworksdemos/front-end.slim_st:latest"
+          ]
+        }
+      ]
+    }
+  ],
+  "image_layers": [
+    {
+      "id": "6e382f14e74900d8e507eb60aaec357c255cbdf33a05eb7ee4ce6cb764bcfb8d",
+      "index": 0,
+      "path": "6e382f14e74900d8e507eb60aaec357c255cbdf33a05eb7ee4ce6cb764bcfb8d/layer.tar",
+      "fsdiff_id": "sha256:328399d6ee310757d86d1ef794544ee2e504bd37a74d9f9723c31b4097a020ed",
+      "stats": {
+        "all_size": 27827943,
+        "object_count": 1822,
+        "dir_count": 505,
+        "file_count": 1013,
+        "link_count": 304,
+        "max_file_size": 19606912,
+        "max_dir_size": 0,
+        "deleted_count": 0,
+        "deleted_dir_content_count": 0,
+        "deleted_dir_count": 0,
+        "deleted_file_count": 0,
+        "deleted_link_count": 0,
+        "deleted_size": 0,
+        "added_size": 27827943,
+        "modified_size": 0,
+        "sticky_count": 1
+      },
+      "changes": {
+        "deleted": 0,
+        "added": 1822,
+        "modified": 0
+      },
+      "top": [
+        {
+          "change": "A",
+          "name": "/usr/local/bin/node",
+          "size": 19606912,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2017-03-04T01:40:54+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/lib/libstdc++.so.6.0.21",
+          "size": 1362736,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-04-29T17:20:10+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/bin/busybox",
+          "size": 805032,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2017-01-18T17:44:10+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/lib/ld-musl-x86_64.so.1",
+          "size": 559568,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-11-01T16:48:32+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/src/app/node_modules/request/node_modules/tough-cookie/lib/pubsuffix.js",
+          "size": 149627,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-07-22T01:17:32+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/local/lib/node_modules/npm/node_modules/request/node_modules/tough-cookie/lib/pubsuffix.js",
+          "size": 149627,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2017-02-22T03:14:46+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/src/app/node_modules/express/node_modules/accepts/node_modules/mime-types/node_modules/mime-db/db.json",
+          "size": 146464,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2017-01-15T07:24:59+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/src/app/node_modules/body-parser/node_modules/type-is/node_modules/mime-types/node_modules/mime-db/db.json",
+          "size": 146464,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2017-01-15T07:24:59+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/src/app/node_modules/request/node_modules/mime-types/node_modules/mime-db/db.json",
+          "size": 146464,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2017-01-15T07:24:59+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/src/app/node_modules/express/node_modules/type-is/node_modules/mime-types/node_modules/mime-db/db.json",
+          "size": 146464,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2017-01-15T07:24:59+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/local/lib/node_modules/npm/node_modules/request/node_modules/mime-types/node_modules/mime-db/db.json",
+          "size": 143991,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2017-02-22T03:14:46+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/src/app/public/css/bootstrap.min.css",
+          "size": 121200,
+          "mode": 509,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2017-03-21T15:01:47+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/src/app/public/js/jquery-1.11.0.min.js",
+          "size": 96381,
+          "mode": 509,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2017-03-21T15:01:47+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/src/app/public/img/rugby_socks_banner.jpg",
+          "size": 78991,
+          "mode": 436,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2017-03-21T15:01:47+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/src/app/public/img/colourful_socks_banner.jpg",
+          "size": 76450,
+          "mode": 436,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2017-03-21T15:01:47+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/lib/libgcc_s.so.1",
+          "size": 75576,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-04-29T17:20:10+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/local/lib/node_modules/npm/node_modules/request/node_modules/form-data/node_modules/async/package.json",
+          "size": 65174,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2017-02-22T03:14:46+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/src/app/public/img/holy_socks_banner.jpg",
+          "size": 63306,
+          "mode": 436,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2017-03-21T15:01:47+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/src/app/public/js/modernizr.js",
+          "size": 51351,
+          "mode": 509,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2017-03-21T15:01:47+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/src/app/public/css/animate.min.css",
+          "size": 47610,
+          "mode": 509,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2017-03-21T15:01:47+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        }
+      ],
+      "change_instruction": {
+        "index": 7,
+        "image_index": 0,
+        "type": "ADD",
+        "all": "ADD file:8660c98aa935a247ef5c0ef45da40c72aca90f86d93b8d90def01e570a5799dd /",
+        "snippet": "ADD file:8660c98aa935a247ef5c0ef45da40c72aca..."
+      },
+      "other_instructions": [
+        {
+          "index": 0,
+          "image_index": 0,
+          "type": "LABEL",
+          "all": "LABEL docker-slim.version=linux|Transformer|1.37.0|70cc8acfcb733161ce7e685b81ad6c172643c222|2021-09-23_09:23:43AM",
+          "snippet": "LABEL docker-slim.version=linux|Transformer|..."
+        },
+        {
+          "index": 1,
+          "image_index": 0,
+          "type": "ENV",
+          "all": "ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+          "snippet": "ENV PATH=/usr/local/sbin:/usr/local/bin:/usr..."
+        },
+        {
+          "index": 2,
+          "image_index": 0,
+          "type": "ENV",
+          "all": "ENV NPM_CONFIG_LOGLEVEL=info",
+          "snippet": "ENV NPM_CONFIG_LOGLEVEL=info"
+        },
+        {
+          "index": 3,
+          "image_index": 0,
+          "type": "ENV",
+          "all": "ENV NODE_VERSION=4.8.0",
+          "snippet": "ENV NODE_VERSION=4.8.0"
+        },
+        {
+          "index": 4,
+          "image_index": 0,
+          "type": "ENV",
+          "all": "ENV YARN_VERSION=0.21.3",
+          "snippet": "ENV YARN_VERSION=0.21.3"
+        },
+        {
+          "index": 5,
+          "image_index": 0,
+          "type": "ENV",
+          "all": "ENV NODE_ENV=production",
+          "snippet": "ENV NODE_ENV=production"
+        },
+        {
+          "index": 6,
+          "image_index": 0,
+          "type": "ENV",
+          "all": "ENV PORT=8079",
+          "snippet": "ENV PORT=8079"
+        },
+        {
+          "index": 8,
+          "image_index": 0,
+          "type": "WORKDIR",
+          "all": "WORKDIR /usr/src/app",
+          "snippet": "WORKDIR /usr/src/app"
+        },
+        {
+          "index": 9,
+          "image_index": 0,
+          "type": "USER",
+          "all": "USER myuser",
+          "snippet": "USER myuser"
+        },
+        {
+          "index": 10,
+          "image_index": 0,
+          "type": "EXPOSE",
+          "all": "EXPOSE 8079/tcp",
+          "snippet": "EXPOSE 8079/tcp"
+        },
+        {
+          "index": 11,
+          "image_index": 0,
+          "type": "CMD",
+          "all": "CMD [\"/usr/local/bin/npm\",\"start\"]",
+          "snippet": "CMD [\"/usr/local/bin/npm\",\"start\"]"
+        }
+      ]
+    }
+  ],
+  "image_archive_location": "/tmp/docker-slim-state/.docker-slim-state/images/79ac10b8430f158bb25d6a1c4d5088bba47daa0e22f4e9deb792b69e48f90efe/image/79ac10b8430f158bb25d6a1c4d5088bba47daa0e22f4e9deb792b69e48f90efe.tar"
+}

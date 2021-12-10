@@ -1,0 +1,24 @@
+{
+  "version": "1.0",
+  "engine": "linux|Transformer|1.37.0|70cc8acfcb733161ce7e685b81ad6c172643c222|2021-09-23_09:23:43AM",
+  "containerized": false,
+  "host_distro": {
+    "name": "Ubuntu",
+    "version": "20.04",
+    "display_name": "Ubuntu 20.04.3 LTS"
+  },
+  "type": "profile",
+  "state": "done",
+  "original_image": "catcry/front-end.slim:1.0.0",
+  "original_image_size": 0,
+  "original_image_size_human": "",
+  "minified_image_size": 0,
+  "minified_image_size_human": "",
+  "minified_image": "",
+  "minified_image_has_data": false,
+  "minified_by": 0,
+  "artifact_location": "",
+  "container_report_name": "",
+  "seccomp_profile_name": "",
+  "apparmor_profile_name": ""
+}

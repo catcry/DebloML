@@ -1,0 +1,726 @@
+{
+  "version": "1.2",
+  "engine": "linux|Transformer|1.37.0|70cc8acfcb733161ce7e685b81ad6c172643c222|2021-09-23_09:23:43AM",
+  "containerized": false,
+  "host_distro": {
+    "name": "Ubuntu",
+    "version": "20.04",
+    "display_name": "Ubuntu 20.04.3 LTS"
+  },
+  "type": "xray",
+  "state": "done",
+  "target_reference": "weaveworksdemos/catalogue.slim:latest",
+  "source_image": {
+    "identity": {
+      "id": "sha256:7ed800ccbdc6904b694af1c319076d3f39aaea6e729bbf046abe295ac66ae9c1",
+      "tags": [
+        "latest",
+        "latest"
+      ],
+      "names": [
+        "catcry/weave_catalogue.slim:latest",
+        "weaveworksdemos/catalogue.slim:latest"
+      ],
+      "digests": [
+        "sha256:7a451bd150b5e1a6f538c4554818ba494bad5bb75528c7f5b52b7c96efb390ad"
+      ],
+      "full_digests": [
+        "catcry/weave_catalogue.slim@sha256:7a451bd150b5e1a6f538c4554818ba494bad5bb75528c7f5b52b7c96efb390ad"
+      ]
+    },
+    "size": 14259490,
+    "size_human": "14 MB",
+    "create_time": "2021-09-26T17:48:21Z",
+    "docker_version": "20.10.8",
+    "architecture": "amd64",
+    "user": "myuser",
+    "exposed_ports": [
+      "80/tcp"
+    ],
+    "os": "linux",
+    "labels": {
+      "docker-slim.version": "linux|Transformer|1.37.0|70cc8acfcb733161ce7e685b81ad6c172643c222|2021-09-23_09:23:43AM",
+      "org.label-schema.build-date": "2017-03-22T09:05:57+0000",
+      "org.label-schema.description": "REST API for Catalogue service",
+      "org.label-schema.name": "Socks Shop: Catalogue",
+      "org.label-schema.schema-version": "1.0",
+      "org.label-schema.url": "https://github.com/microservices-demo/catalogue",
+      "org.label-schema.vcs-ref": "93452255c62cac6e44f5d86376d7cb3c5409e162",
+      "org.label-schema.vcs-url": "github.com:microservices-demo/catalogue.git",
+      "org.label-schema.vendor": "Weaveworks",
+      "org.label-schema.version": "0.0.2-SNAPSHOT"
+    },
+    "env_vars": [
+      "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+      "SERVICE_USER=myuser",
+      "SERVICE_UID=10001",
+      "SERVICE_GROUP=mygroup",
+      "SERVICE_GID=10001"
+    ],
+    "workdir": "/",
+    "distro": {
+      "name": "Alpine Linux",
+      "version": "3.4.6",
+      "display_name": "Alpine Linux v3.4"
+    },
+    "container_entry": {
+      "cmd": [
+        "/app",
+        "-port=80"
+      ],
+      "exe_path": "/app",
+      "full_exe_path": {
+        "name": "/app",
+        "layer": 0
+      },
+      "exe_args": [
+        "-port=80"
+      ]
+    }
+  },
+  "artifact_location": "/tmp/docker-slim-state/.docker-slim-state/images/7ed800ccbdc6904b694af1c319076d3f39aaea6e729bbf046abe295ac66ae9c1/artifacts",
+  "image_report": {
+    "stats": {
+      "duplicate_file_count": 0,
+      "duplicate_file_total_count": 0,
+      "duplicate_file_size": 0,
+      "duplicate_file_total_size": 0,
+      "duplicate_file_wasted_size": 0,
+      "deleted_count": 0,
+      "deleted_dir_content_count": 0,
+      "deleted_dir_count": 0,
+      "deleted_file_count": 0,
+      "deleted_link_count": 0,
+      "deleted_file_size": 0,
+      "sticky_count": 1
+    },
+    "special_perms": {
+      "sticky": [
+        "/tmp"
+      ]
+    },
+    "certs": {},
+    "ca_certs": {}
+  },
+  "image_stack": [
+    {
+      "is_top_image": true,
+      "id": "sha256:7ed800ccbdc6904b694af1c319076d3f39aaea6e729bbf046abe295ac66ae9c1",
+      "full_name": "catcry/weave_catalogue.slim:latest",
+      "repo_name": "catcry/weave_catalogue.slim",
+      "version_tag": "latest",
+      "raw_tags": [
+        "catcry/weave_catalogue.slim:latest",
+        "weaveworksdemos/catalogue.slim:latest"
+      ],
+      "create_time": "2021-09-26T17:48:21Z",
+      "new_size": 14259490,
+      "new_size_human": "14 MB",
+      "instructions": [
+        {
+          "type": "LABEL",
+          "time": "2021-09-26T06:42:11Z",
+          "is_nop": true,
+          "local_image_exists": true,
+          "intermediate_image_id": "sha256:63b5bfd98351433ccb5acf3fd9d8d5f4bc259a85d2bc03fb67d22668f6659c3f",
+          "layer_index": 0,
+          "layer_id": "4541de1bbc232e9a9cff8081c3ea0b4fd35cad99ae563faf896d294a92c36cbd",
+          "layer_fsdiff_id": "sha256:96c56a7b3a59516dd096c4c9b5e0839b592e70b41f8cc48ee8a5378c1cc26657",
+          "size": 0,
+          "params": "docker-slim.version=linux|Transformer|1.37.0|70cc8acfcb733161ce7e685b81ad6c172643c222|2021-09-23_09:23:43AM",
+          "command_snippet": "LABEL docker-slim.version=linux|Transformer|...",
+          "command_all": "LABEL docker-slim.version=linux|Transformer|1.37.0|70cc8acfcb733161ce7e685b81ad6c172643c222|2021-09-23_09:23:43AM",
+          "empty_layer": true
+        },
+        {
+          "type": "LABEL",
+          "time": "2021-09-26T17:48:17Z",
+          "is_nop": true,
+          "local_image_exists": true,
+          "intermediate_image_id": "sha256:160fda5b0cb78cd21e31088ba0cf9bf84f10090fc7801910d450cb6faad69def",
+          "layer_index": 0,
+          "layer_id": "4541de1bbc232e9a9cff8081c3ea0b4fd35cad99ae563faf896d294a92c36cbd",
+          "layer_fsdiff_id": "sha256:96c56a7b3a59516dd096c4c9b5e0839b592e70b41f8cc48ee8a5378c1cc26657",
+          "size": 0,
+          "params": "org.label-schema.url=https://github.com/microservices-demo/catalogue",
+          "command_snippet": "LABEL org.label-schema.url=https://github.co...",
+          "command_all": "LABEL org.label-schema.url=https://github.com/microservices-demo/catalogue",
+          "empty_layer": true
+        },
+        {
+          "type": "LABEL",
+          "time": "2021-09-26T17:48:17Z",
+          "is_nop": true,
+          "local_image_exists": true,
+          "intermediate_image_id": "sha256:67b008bcc25a1b178f4c23d21ab59ec3f7cb27af3c6579d2ede18424fa1bd23a",
+          "layer_index": 0,
+          "layer_id": "4541de1bbc232e9a9cff8081c3ea0b4fd35cad99ae563faf896d294a92c36cbd",
+          "layer_fsdiff_id": "sha256:96c56a7b3a59516dd096c4c9b5e0839b592e70b41f8cc48ee8a5378c1cc26657",
+          "size": 0,
+          "params": "org.label-schema.version=0.0.2-SNAPSHOT",
+          "command_snippet": "LABEL org.label-schema.version=0.0.2-SNAPSHO...",
+          "command_all": "LABEL org.label-schema.version=0.0.2-SNAPSHOT",
+          "empty_layer": true
+        },
+        {
+          "type": "LABEL",
+          "time": "2021-09-26T17:48:17Z",
+          "is_nop": true,
+          "local_image_exists": true,
+          "intermediate_image_id": "sha256:8a98a3079aad53968bcfee5b5b863f9ec71d207ff66448ed0481ff924386dd6a",
+          "layer_index": 0,
+          "layer_id": "4541de1bbc232e9a9cff8081c3ea0b4fd35cad99ae563faf896d294a92c36cbd",
+          "layer_fsdiff_id": "sha256:96c56a7b3a59516dd096c4c9b5e0839b592e70b41f8cc48ee8a5378c1cc26657",
+          "size": 0,
+          "params": "org.label-schema.description=REST API for Catalogue service",
+          "command_snippet": "LABEL org.label-schema.description=REST API ...",
+          "command_all": "LABEL org.label-schema.description=REST API for Catalogue service",
+          "empty_layer": true
+        },
+        {
+          "type": "LABEL",
+          "time": "2021-09-26T17:48:18Z",
+          "is_nop": true,
+          "local_image_exists": true,
+          "intermediate_image_id": "sha256:ebae4f903a5542ba6224f0bf0ef0567c53120afb861e8f859026a5779dae4159",
+          "layer_index": 0,
+          "layer_id": "4541de1bbc232e9a9cff8081c3ea0b4fd35cad99ae563faf896d294a92c36cbd",
+          "layer_fsdiff_id": "sha256:96c56a7b3a59516dd096c4c9b5e0839b592e70b41f8cc48ee8a5378c1cc26657",
+          "size": 0,
+          "params": "org.label-schema.name=Socks Shop: Catalogue",
+          "command_snippet": "LABEL org.label-schema.name=Socks Shop: Cata...",
+          "command_all": "LABEL org.label-schema.name=Socks Shop: Catalogue",
+          "empty_layer": true
+        },
+        {
+          "type": "LABEL",
+          "time": "2021-09-26T17:48:18Z",
+          "is_nop": true,
+          "local_image_exists": true,
+          "intermediate_image_id": "sha256:0d1cd49862813cfb6612331dc473c7769db04e97cd513ee82c1f2f2989d76625",
+          "layer_index": 0,
+          "layer_id": "4541de1bbc232e9a9cff8081c3ea0b4fd35cad99ae563faf896d294a92c36cbd",
+          "layer_fsdiff_id": "sha256:96c56a7b3a59516dd096c4c9b5e0839b592e70b41f8cc48ee8a5378c1cc26657",
+          "size": 0,
+          "params": "org.label-schema.build-date=2017-03-22T09:05:57+0000",
+          "command_snippet": "LABEL org.label-schema.build-date=2017-03-22...",
+          "command_all": "LABEL org.label-schema.build-date=2017-03-22T09:05:57+0000",
+          "empty_layer": true
+        },
+        {
+          "type": "LABEL",
+          "time": "2021-09-26T17:48:18Z",
+          "is_nop": true,
+          "local_image_exists": true,
+          "intermediate_image_id": "sha256:d9eaf0eced9b51b7cd6b9bed37d3fda18c780174e3c84c420c272cde45ae0fd6",
+          "layer_index": 0,
+          "layer_id": "4541de1bbc232e9a9cff8081c3ea0b4fd35cad99ae563faf896d294a92c36cbd",
+          "layer_fsdiff_id": "sha256:96c56a7b3a59516dd096c4c9b5e0839b592e70b41f8cc48ee8a5378c1cc26657",
+          "size": 0,
+          "params": "org.label-schema.vendor=Weaveworks",
+          "command_snippet": "LABEL org.label-schema.vendor=Weaveworks",
+          "command_all": "LABEL org.label-schema.vendor=Weaveworks",
+          "empty_layer": true
+        },
+        {
+          "type": "LABEL",
+          "time": "2021-09-26T17:48:18Z",
+          "is_nop": true,
+          "local_image_exists": true,
+          "intermediate_image_id": "sha256:001d2f0ac422c33c02280e94c4587f6f4ab2f6ce051bb137cacbd2327eb6d2d4",
+          "layer_index": 0,
+          "layer_id": "4541de1bbc232e9a9cff8081c3ea0b4fd35cad99ae563faf896d294a92c36cbd",
+          "layer_fsdiff_id": "sha256:96c56a7b3a59516dd096c4c9b5e0839b592e70b41f8cc48ee8a5378c1cc26657",
+          "size": 0,
+          "params": "org.label-schema.vcs-ref=93452255c62cac6e44f5d86376d7cb3c5409e162",
+          "command_snippet": "LABEL org.label-schema.vcs-ref=93452255c62ca...",
+          "command_all": "LABEL org.label-schema.vcs-ref=93452255c62cac6e44f5d86376d7cb3c5409e162",
+          "empty_layer": true
+        },
+        {
+          "type": "LABEL",
+          "time": "2021-09-26T17:48:18Z",
+          "is_nop": true,
+          "local_image_exists": true,
+          "intermediate_image_id": "sha256:f35c13aa3c850fca85dec2bb4aa74b5b2c917c1d54350147e17ad78778822cd1",
+          "layer_index": 0,
+          "layer_id": "4541de1bbc232e9a9cff8081c3ea0b4fd35cad99ae563faf896d294a92c36cbd",
+          "layer_fsdiff_id": "sha256:96c56a7b3a59516dd096c4c9b5e0839b592e70b41f8cc48ee8a5378c1cc26657",
+          "size": 0,
+          "params": "org.label-schema.schema-version=1.0",
+          "command_snippet": "LABEL org.label-schema.schema-version=1.0",
+          "command_all": "LABEL org.label-schema.schema-version=1.0",
+          "empty_layer": true
+        },
+        {
+          "type": "LABEL",
+          "time": "2021-09-26T17:48:19Z",
+          "is_nop": true,
+          "local_image_exists": true,
+          "intermediate_image_id": "sha256:5f48d8e3079a725e4af12bbc1506a22fe5710f28a283724eaa78d3c42b69abae",
+          "layer_index": 0,
+          "layer_id": "4541de1bbc232e9a9cff8081c3ea0b4fd35cad99ae563faf896d294a92c36cbd",
+          "layer_fsdiff_id": "sha256:96c56a7b3a59516dd096c4c9b5e0839b592e70b41f8cc48ee8a5378c1cc26657",
+          "size": 0,
+          "params": "org.label-schema.vcs-url=github.com:microservices-demo/catalogue.git",
+          "command_snippet": "LABEL org.label-schema.vcs-url=github.com:mi...",
+          "command_all": "LABEL org.label-schema.vcs-url=github.com:microservices-demo/catalogue.git",
+          "empty_layer": true
+        },
+        {
+          "type": "ENV",
+          "time": "2021-09-26T17:48:19Z",
+          "is_nop": true,
+          "local_image_exists": true,
+          "intermediate_image_id": "sha256:e55e63328482b2003d4c4212a5c3b54a01b6c55541928a9789a26e28463234c4",
+          "layer_index": 0,
+          "layer_id": "4541de1bbc232e9a9cff8081c3ea0b4fd35cad99ae563faf896d294a92c36cbd",
+          "layer_fsdiff_id": "sha256:96c56a7b3a59516dd096c4c9b5e0839b592e70b41f8cc48ee8a5378c1cc26657",
+          "size": 0,
+          "params": "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+          "command_snippet": "ENV PATH=/usr/local/sbin:/usr/local/bin:/usr...",
+          "command_all": "ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+          "empty_layer": true
+        },
+        {
+          "type": "ENV",
+          "time": "2021-09-26T17:48:19Z",
+          "is_nop": true,
+          "local_image_exists": true,
+          "intermediate_image_id": "sha256:39678d6e699fa9eb2e8adec594fd5cd03b616096b3397be40d011449d8f4bc83",
+          "layer_index": 0,
+          "layer_id": "4541de1bbc232e9a9cff8081c3ea0b4fd35cad99ae563faf896d294a92c36cbd",
+          "layer_fsdiff_id": "sha256:96c56a7b3a59516dd096c4c9b5e0839b592e70b41f8cc48ee8a5378c1cc26657",
+          "size": 0,
+          "params": "SERVICE_USER=myuser",
+          "command_snippet": "ENV SERVICE_USER=myuser",
+          "command_all": "ENV SERVICE_USER=myuser",
+          "empty_layer": true
+        },
+        {
+          "type": "ENV",
+          "time": "2021-09-26T17:48:19Z",
+          "is_nop": true,
+          "local_image_exists": true,
+          "intermediate_image_id": "sha256:2bf72f8c3b0101d1303cbc6a99c8f0cb1447013269070f1e6bea8198115d972b",
+          "layer_index": 0,
+          "layer_id": "4541de1bbc232e9a9cff8081c3ea0b4fd35cad99ae563faf896d294a92c36cbd",
+          "layer_fsdiff_id": "sha256:96c56a7b3a59516dd096c4c9b5e0839b592e70b41f8cc48ee8a5378c1cc26657",
+          "size": 0,
+          "params": "SERVICE_UID=10001",
+          "command_snippet": "ENV SERVICE_UID=10001",
+          "command_all": "ENV SERVICE_UID=10001",
+          "empty_layer": true
+        },
+        {
+          "type": "ENV",
+          "time": "2021-09-26T17:48:19Z",
+          "is_nop": true,
+          "local_image_exists": true,
+          "intermediate_image_id": "sha256:3d777b3e66a6f7f16b73f366ed43b1fb411f64b4469dae235726b7b3c2adf133",
+          "layer_index": 0,
+          "layer_id": "4541de1bbc232e9a9cff8081c3ea0b4fd35cad99ae563faf896d294a92c36cbd",
+          "layer_fsdiff_id": "sha256:96c56a7b3a59516dd096c4c9b5e0839b592e70b41f8cc48ee8a5378c1cc26657",
+          "size": 0,
+          "params": "SERVICE_GROUP=mygroup",
+          "command_snippet": "ENV SERVICE_GROUP=mygroup",
+          "command_all": "ENV SERVICE_GROUP=mygroup",
+          "empty_layer": true
+        },
+        {
+          "type": "ENV",
+          "time": "2021-09-26T17:48:19Z",
+          "is_nop": true,
+          "local_image_exists": true,
+          "intermediate_image_id": "sha256:6ec93e3c8a3915d245a33489e2f3f7d1ee3b7d3bd88fe4d652c506dad247220a",
+          "layer_index": 0,
+          "layer_id": "4541de1bbc232e9a9cff8081c3ea0b4fd35cad99ae563faf896d294a92c36cbd",
+          "layer_fsdiff_id": "sha256:96c56a7b3a59516dd096c4c9b5e0839b592e70b41f8cc48ee8a5378c1cc26657",
+          "size": 0,
+          "params": "SERVICE_GID=10001",
+          "command_snippet": "ENV SERVICE_GID=10001",
+          "command_all": "ENV SERVICE_GID=10001",
+          "empty_layer": true
+        },
+        {
+          "type": "ADD",
+          "time": "2021-09-26T17:48:20Z",
+          "is_nop": true,
+          "local_image_exists": true,
+          "intermediate_image_id": "sha256:d56d8e0e8664d8c8a3134d98e87cb3173bad64c855676766522c815b7a59b3c8",
+          "layer_index": 0,
+          "layer_id": "4541de1bbc232e9a9cff8081c3ea0b4fd35cad99ae563faf896d294a92c36cbd",
+          "layer_fsdiff_id": "sha256:96c56a7b3a59516dd096c4c9b5e0839b592e70b41f8cc48ee8a5378c1cc26657",
+          "size": 14259490,
+          "size_human": "14 MB",
+          "params": "file:c5be583f66b7df522360034d3c5bd1ad38bd13b7b2d6c2eef90d14968ad85dce in /",
+          "command_snippet": "ADD file:c5be583f66b7df522360034d3c5bd1ad38b...",
+          "command_all": "ADD file:c5be583f66b7df522360034d3c5bd1ad38bd13b7b2d6c2eef90d14968ad85dce /",
+          "target": "/",
+          "source_type": "file"
+        },
+        {
+          "type": "WORKDIR",
+          "time": "2021-09-26T17:48:20Z",
+          "is_nop": true,
+          "local_image_exists": true,
+          "intermediate_image_id": "sha256:80b2f55510a883942efae7a5be9d2f90adf4788d235875e9aafdb9232684d806",
+          "layer_index": 0,
+          "layer_id": "4541de1bbc232e9a9cff8081c3ea0b4fd35cad99ae563faf896d294a92c36cbd",
+          "layer_fsdiff_id": "sha256:96c56a7b3a59516dd096c4c9b5e0839b592e70b41f8cc48ee8a5378c1cc26657",
+          "size": 0,
+          "params": "/",
+          "command_snippet": "WORKDIR /",
+          "command_all": "WORKDIR /",
+          "system_commands": [
+            "mkdir -p /"
+          ],
+          "empty_layer": true
+        },
+        {
+          "type": "USER",
+          "time": "2021-09-26T17:48:20Z",
+          "is_nop": true,
+          "local_image_exists": true,
+          "intermediate_image_id": "sha256:8e06264f44582aa96873bb8be5689b749882f74534955273deaeaa4c38ca33eb",
+          "layer_index": 0,
+          "layer_id": "4541de1bbc232e9a9cff8081c3ea0b4fd35cad99ae563faf896d294a92c36cbd",
+          "layer_fsdiff_id": "sha256:96c56a7b3a59516dd096c4c9b5e0839b592e70b41f8cc48ee8a5378c1cc26657",
+          "size": 0,
+          "params": "myuser",
+          "command_snippet": "USER myuser",
+          "command_all": "USER myuser",
+          "empty_layer": true
+        },
+        {
+          "type": "EXPOSE",
+          "time": "2021-09-26T17:48:20Z",
+          "is_nop": true,
+          "local_image_exists": true,
+          "intermediate_image_id": "sha256:ab2830be377844ae4c63dd775cef855008a16a81e732021f7ef53d4ba06e0aba",
+          "layer_index": 0,
+          "layer_id": "4541de1bbc232e9a9cff8081c3ea0b4fd35cad99ae563faf896d294a92c36cbd",
+          "layer_fsdiff_id": "sha256:96c56a7b3a59516dd096c4c9b5e0839b592e70b41f8cc48ee8a5378c1cc26657",
+          "size": 0,
+          "params": "80/tcp",
+          "command_snippet": "EXPOSE 80/tcp",
+          "command_all": "EXPOSE 80/tcp",
+          "empty_layer": true
+        },
+        {
+          "type": "CMD",
+          "time": "2021-09-26T17:48:21Z",
+          "is_last_instruction": true,
+          "is_nop": true,
+          "is_exec_form": true,
+          "local_image_exists": true,
+          "layer_index": 0,
+          "layer_id": "4541de1bbc232e9a9cff8081c3ea0b4fd35cad99ae563faf896d294a92c36cbd",
+          "layer_fsdiff_id": "sha256:96c56a7b3a59516dd096c4c9b5e0839b592e70b41f8cc48ee8a5378c1cc26657",
+          "size": 0,
+          "params": "[\"/app\",\"-port=80\"]",
+          "command_snippet": "CMD [\"/app\",\"-port=80\"]",
+          "command_all": "CMD [\"/app\",\"-port=80\"]",
+          "empty_layer": true,
+          "raw_tags": [
+            "catcry/weave_catalogue.slim:latest",
+            "weaveworksdemos/catalogue.slim:latest"
+          ]
+        }
+      ]
+    }
+  ],
+  "image_layers": [
+    {
+      "id": "4541de1bbc232e9a9cff8081c3ea0b4fd35cad99ae563faf896d294a92c36cbd",
+      "index": 0,
+      "path": "4541de1bbc232e9a9cff8081c3ea0b4fd35cad99ae563faf896d294a92c36cbd/layer.tar",
+      "fsdiff_id": "sha256:96c56a7b3a59516dd096c4c9b5e0839b592e70b41f8cc48ee8a5378c1cc26657",
+      "stats": {
+        "all_size": 14259490,
+        "object_count": 8,
+        "dir_count": 3,
+        "file_count": 5,
+        "link_count": 0,
+        "max_file_size": 14257173,
+        "max_dir_size": 0,
+        "deleted_count": 0,
+        "deleted_dir_content_count": 0,
+        "deleted_dir_count": 0,
+        "deleted_file_count": 0,
+        "deleted_link_count": 0,
+        "deleted_size": 0,
+        "added_size": 14259490,
+        "modified_size": 0,
+        "sticky_count": 1
+      },
+      "changes": {
+        "deleted": 0,
+        "added": 8,
+        "modified": 0
+      },
+      "top": [
+        {
+          "change": "A",
+          "name": "/app",
+          "size": 14257173,
+          "mode": 493,
+          "uid": 10001,
+          "gid": 10001,
+          "mod_time": "2017-03-22T13:37:33+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/etc/passwd",
+          "size": 1323,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2017-03-22T13:37:35+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/etc/group",
+          "size": 718,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2017-03-22T13:37:35+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/etc/os-release",
+          "size": 158,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-11-08T22:58:30+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/etc/localtime",
+          "size": 118,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2017-03-03T14:50:18+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/run",
+          "mode": 2147484141,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2021-09-26T21:18:16+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/tmp",
+          "mode": 2148532735,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2021-09-26T21:18:16+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/etc",
+          "mode": 2147484141,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2021-09-26T21:18:16+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        }
+      ],
+      "change_instruction": {
+        "index": 15,
+        "image_index": 0,
+        "type": "ADD",
+        "all": "ADD file:c5be583f66b7df522360034d3c5bd1ad38bd13b7b2d6c2eef90d14968ad85dce /",
+        "snippet": "ADD file:c5be583f66b7df522360034d3c5bd1ad38b..."
+      },
+      "other_instructions": [
+        {
+          "index": 0,
+          "image_index": 0,
+          "type": "LABEL",
+          "all": "LABEL docker-slim.version=linux|Transformer|1.37.0|70cc8acfcb733161ce7e685b81ad6c172643c222|2021-09-23_09:23:43AM",
+          "snippet": "LABEL docker-slim.version=linux|Transformer|..."
+        },
+        {
+          "index": 1,
+          "image_index": 0,
+          "type": "LABEL",
+          "all": "LABEL org.label-schema.url=https://github.com/microservices-demo/catalogue",
+          "snippet": "LABEL org.label-schema.url=https://github.co..."
+        },
+        {
+          "index": 2,
+          "image_index": 0,
+          "type": "LABEL",
+          "all": "LABEL org.label-schema.version=0.0.2-SNAPSHOT",
+          "snippet": "LABEL org.label-schema.version=0.0.2-SNAPSHO..."
+        },
+        {
+          "index": 3,
+          "image_index": 0,
+          "type": "LABEL",
+          "all": "LABEL org.label-schema.description=REST API for Catalogue service",
+          "snippet": "LABEL org.label-schema.description=REST API ..."
+        },
+        {
+          "index": 4,
+          "image_index": 0,
+          "type": "LABEL",
+          "all": "LABEL org.label-schema.name=Socks Shop: Catalogue",
+          "snippet": "LABEL org.label-schema.name=Socks Shop: Cata..."
+        },
+        {
+          "index": 5,
+          "image_index": 0,
+          "type": "LABEL",
+          "all": "LABEL org.label-schema.build-date=2017-03-22T09:05:57+0000",
+          "snippet": "LABEL org.label-schema.build-date=2017-03-22..."
+        },
+        {
+          "index": 6,
+          "image_index": 0,
+          "type": "LABEL",
+          "all": "LABEL org.label-schema.vendor=Weaveworks",
+          "snippet": "LABEL org.label-schema.vendor=Weaveworks"
+        },
+        {
+          "index": 7,
+          "image_index": 0,
+          "type": "LABEL",
+          "all": "LABEL org.label-schema.vcs-ref=93452255c62cac6e44f5d86376d7cb3c5409e162",
+          "snippet": "LABEL org.label-schema.vcs-ref=93452255c62ca..."
+        },
+        {
+          "index": 8,
+          "image_index": 0,
+          "type": "LABEL",
+          "all": "LABEL org.label-schema.schema-version=1.0",
+          "snippet": "LABEL org.label-schema.schema-version=1.0"
+        },
+        {
+          "index": 9,
+          "image_index": 0,
+          "type": "LABEL",
+          "all": "LABEL org.label-schema.vcs-url=github.com:microservices-demo/catalogue.git",
+          "snippet": "LABEL org.label-schema.vcs-url=github.com:mi..."
+        },
+        {
+          "index": 10,
+          "image_index": 0,
+          "type": "ENV",
+          "all": "ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+          "snippet": "ENV PATH=/usr/local/sbin:/usr/local/bin:/usr..."
+        },
+        {
+          "index": 11,
+          "image_index": 0,
+          "type": "ENV",
+          "all": "ENV SERVICE_USER=myuser",
+          "snippet": "ENV SERVICE_USER=myuser"
+        },
+        {
+          "index": 12,
+          "image_index": 0,
+          "type": "ENV",
+          "all": "ENV SERVICE_UID=10001",
+          "snippet": "ENV SERVICE_UID=10001"
+        },
+        {
+          "index": 13,
+          "image_index": 0,
+          "type": "ENV",
+          "all": "ENV SERVICE_GROUP=mygroup",
+          "snippet": "ENV SERVICE_GROUP=mygroup"
+        },
+        {
+          "index": 14,
+          "image_index": 0,
+          "type": "ENV",
+          "all": "ENV SERVICE_GID=10001",
+          "snippet": "ENV SERVICE_GID=10001"
+        },
+        {
+          "index": 16,
+          "image_index": 0,
+          "type": "WORKDIR",
+          "all": "WORKDIR /",
+          "snippet": "WORKDIR /"
+        },
+        {
+          "index": 17,
+          "image_index": 0,
+          "type": "USER",
+          "all": "USER myuser",
+          "snippet": "USER myuser"
+        },
+        {
+          "index": 18,
+          "image_index": 0,
+          "type": "EXPOSE",
+          "all": "EXPOSE 80/tcp",
+          "snippet": "EXPOSE 80/tcp"
+        },
+        {
+          "index": 19,
+          "image_index": 0,
+          "type": "CMD",
+          "all": "CMD [\"/app\",\"-port=80\"]",
+          "snippet": "CMD [\"/app\",\"-port=80\"]"
+        }
+      ]
+    }
+  ],
+  "image_archive_location": "/tmp/docker-slim-state/.docker-slim-state/images/7ed800ccbdc6904b694af1c319076d3f39aaea6e729bbf046abe295ac66ae9c1/image/7ed800ccbdc6904b694af1c319076d3f39aaea6e729bbf046abe295ac66ae9c1.tar"
+}

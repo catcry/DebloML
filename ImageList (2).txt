@@ -1,0 +1,84 @@
+weaveworksdemos/front-end:0.3.12 --> no error with http-probe --> slimmed in compose mode and 	noraml mode --> no differences in results 
+
+
+weaveworksdemos/edge-router:0.1.1 --> no erro with http-probe
+
+
+weaveworksdemos/catalogue:0.3.5  --> peer reset error on http-probe : no bash no interaction 	available in http-probe-off mode, just localhost:<mapped port on 80> has been tried --> no 		response from the web service
+
+
+weaveworksdemos/catalogue-db:0.3.0  --> error in http-probe mode
+	> interaction --> service mysql is started 52.6 MB
+	> no interaction --> 34.6MB
+
+weaveworksdemos/carts:0.4.8 --> cannot run without --http-probe-off
+	>no interaction available on bash 
+
+mongo:3.4	-->> worked with http-probe enabled
+
+weaveworksdemos/orders:0.4.7
+		-->> No interaction allowed (no bash)
+		-->> no changes in the compose file with all-dependency mode
+		
+weaveworksdemos/shipping:0.4.8
+		-->. no interaction available
+
+weaveworksdemos/queue-master:0.3.1
+		-->> no interaction available
+
+rabbitmq:3.6.8
+	>> ERROR ON RUNNING WITH HTTP-PROBE ENABLED 
+	>> Interaction : starting rabbitmq-server
+	
+weaveworksdemos/payment:0.4.3
+	>> no interaction available
+	
+weaveworksdemos/user:0.4.4
+	>> no interaction available
+
+weaveworksdemos/user-db:0.4.0
+		>> successfully done with http-probe enabled
+		
+weaveworksdemos/load-test:0.1.1
+#___________________________________________________________
+
+#===========================#
+#<with all slimmed versions>#
+#===========================#
+	>> no gui loaded 
+	
+#===========================#
+#<with all slimmed versions but frontend>#
+#===========================#
+	>> register and login bar appeared but registering makes error
+	
+
+#===========================#
+#<with all original versions but frontend>#
+#===========================#
+	>> no gui just like all slimmed
+	
+	
+#===========================#
+#<with all original versions but two mongos>#
+#===========================#
+	>> no apparent change ---> login and register works fine
+	
+
+#===========================#
+#<with all original versions +slimmed  two mongos adn edge router>#
+#===========================#
+	>> no apparent change ---> login and register works fine
+	
+
+#===========================#
+#<with all original versions +slimmed  two mongos  + edge router  +  user>#
+#===========================#
+	>> no apparent change ---> login and register works fine
+	
+	#===========================#
+#<with all original versions +slimmed  two mongos  + edge router  +  user-db>#
+#===========================#
+	>> no apparent change ---> login and register (DOES NOT) work
+
+

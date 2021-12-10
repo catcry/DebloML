@@ -1,0 +1,768 @@
+{
+  "version": "1.2",
+  "engine": "linux|Transformer|1.37.0|70cc8acfcb733161ce7e685b81ad6c172643c222|2021-09-23_09:23:43AM",
+  "containerized": false,
+  "host_distro": {
+    "name": "Ubuntu",
+    "version": "20.04",
+    "display_name": "Ubuntu 20.04.3 LTS"
+  },
+  "type": "xray",
+  "state": "done",
+  "target_reference": "mongo.slim:latest",
+  "source_image": {
+    "identity": {
+      "id": "sha256:56b87154c8c7e974ea1811deb8ef47529e8a3e4022ebf9a73c6e6399652bbd84",
+      "tags": [
+        "latest",
+        "latest"
+      ],
+      "names": [
+        "catcry/weave_mongo.slim:latest",
+        "mongo.slim:latest"
+      ],
+      "digests": [
+        "sha256:303bb5dc63eafd2d93e8c96a4a8fe5c741900acb72d10e4a87668448af94b90d"
+      ],
+      "full_digests": [
+        "catcry/weave_mongo.slim@sha256:303bb5dc63eafd2d93e8c96a4a8fe5c741900acb72d10e4a87668448af94b90d"
+      ]
+    },
+    "size": 65998387,
+    "size_human": "66 MB",
+    "create_time": "2021-09-26T18:39:45Z",
+    "docker_version": "20.10.8",
+    "architecture": "amd64",
+    "exposed_ports": [
+      "27017/tcp"
+    ],
+    "os": "linux",
+    "volumes": [
+      "/data/configdb",
+      "/data/db"
+    ],
+    "labels": {
+      "docker-slim.version": "linux|Transformer|1.37.0|70cc8acfcb733161ce7e685b81ad6c172643c222|2021-09-23_09:23:43AM"
+    },
+    "env_vars": [
+      "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+      "GOSU_VERSION=1.11",
+      "JSYAML_VERSION=3.13.0",
+      "GPG_KEYS=0C49F3730359A14518585931BC711F9BA15703C6",
+      "MONGO_PACKAGE=mongodb-org",
+      "MONGO_REPO=repo.mongodb.org",
+      "MONGO_MAJOR=3.4",
+      "MONGO_VERSION=3.4.24"
+    ],
+    "container_entry": {
+      "entrypoint": [
+        "docker-entrypoint.sh"
+      ],
+      "cmd": [
+        "mongod"
+      ],
+      "exe_path": "docker-entrypoint.sh",
+      "full_exe_path": {
+        "name": "/usr/local/bin/docker-entrypoint.sh",
+        "layer": 0
+      },
+      "exe_args": [
+        "mongod"
+      ]
+    }
+  },
+  "artifact_location": "/tmp/docker-slim-state/.docker-slim-state/images/56b87154c8c7e974ea1811deb8ef47529e8a3e4022ebf9a73c6e6399652bbd84/artifacts",
+  "image_report": {
+    "stats": {
+      "duplicate_file_count": 0,
+      "duplicate_file_total_count": 0,
+      "duplicate_file_size": 0,
+      "duplicate_file_total_size": 0,
+      "duplicate_file_wasted_size": 0,
+      "deleted_count": 0,
+      "deleted_dir_content_count": 0,
+      "deleted_dir_count": 0,
+      "deleted_file_count": 0,
+      "deleted_link_count": 0,
+      "deleted_file_size": 0,
+      "sticky_count": 1
+    },
+    "special_perms": {
+      "sticky": [
+        "/tmp"
+      ]
+    },
+    "certs": {},
+    "ca_certs": {}
+  },
+  "image_stack": [
+    {
+      "is_top_image": true,
+      "id": "sha256:56b87154c8c7e974ea1811deb8ef47529e8a3e4022ebf9a73c6e6399652bbd84",
+      "full_name": "catcry/weave_mongo.slim:latest",
+      "repo_name": "catcry/weave_mongo.slim",
+      "version_tag": "latest",
+      "raw_tags": [
+        "catcry/weave_mongo.slim:latest",
+        "mongo.slim:latest"
+      ],
+      "create_time": "2021-09-26T18:39:45Z",
+      "new_size": 65998387,
+      "new_size_human": "66 MB",
+      "instructions": [
+        {
+          "type": "LABEL",
+          "time": "2021-09-26T06:42:11Z",
+          "is_nop": true,
+          "local_image_exists": true,
+          "intermediate_image_id": "sha256:63b5bfd98351433ccb5acf3fd9d8d5f4bc259a85d2bc03fb67d22668f6659c3f",
+          "layer_index": 0,
+          "layer_id": "e8fd584d8a321dc6b308baeca5620d1223f5957fec984fa9ae72c2f48266cc42",
+          "layer_fsdiff_id": "sha256:604c39d2148bd89a324dad51b534d589d9e183f45f2c637723e868ccf5dd8847",
+          "size": 0,
+          "params": "docker-slim.version=linux|Transformer|1.37.0|70cc8acfcb733161ce7e685b81ad6c172643c222|2021-09-23_09:23:43AM",
+          "command_snippet": "LABEL docker-slim.version=linux|Transformer|...",
+          "command_all": "LABEL docker-slim.version=linux|Transformer|1.37.0|70cc8acfcb733161ce7e685b81ad6c172643c222|2021-09-23_09:23:43AM",
+          "empty_layer": true
+        },
+        {
+          "type": "ENV",
+          "time": "2021-09-26T06:42:11Z",
+          "is_nop": true,
+          "local_image_exists": true,
+          "intermediate_image_id": "sha256:bbf5e45f38a459d6a495dd9f59c1bb5516ed1ab66282efd57b21a05d0456978d",
+          "layer_index": 0,
+          "layer_id": "e8fd584d8a321dc6b308baeca5620d1223f5957fec984fa9ae72c2f48266cc42",
+          "layer_fsdiff_id": "sha256:604c39d2148bd89a324dad51b534d589d9e183f45f2c637723e868ccf5dd8847",
+          "size": 0,
+          "params": "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+          "command_snippet": "ENV PATH=/usr/local/sbin:/usr/local/bin:/usr...",
+          "command_all": "ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+          "empty_layer": true
+        },
+        {
+          "type": "ENV",
+          "time": "2021-09-26T18:39:43Z",
+          "is_nop": true,
+          "local_image_exists": true,
+          "intermediate_image_id": "sha256:a859771950234d28a4f5de5c6fc74f15bc32c1c25eb391f827a3a3240d063589",
+          "layer_index": 0,
+          "layer_id": "e8fd584d8a321dc6b308baeca5620d1223f5957fec984fa9ae72c2f48266cc42",
+          "layer_fsdiff_id": "sha256:604c39d2148bd89a324dad51b534d589d9e183f45f2c637723e868ccf5dd8847",
+          "size": 0,
+          "params": "GOSU_VERSION=1.11",
+          "command_snippet": "ENV GOSU_VERSION=1.11",
+          "command_all": "ENV GOSU_VERSION=1.11",
+          "empty_layer": true
+        },
+        {
+          "type": "ENV",
+          "time": "2021-09-26T18:39:43Z",
+          "is_nop": true,
+          "local_image_exists": true,
+          "intermediate_image_id": "sha256:1d6b7a8ca983b5e328b8761a4f691b38dd6fe834eb97cb108a0a123a8e42c7f7",
+          "layer_index": 0,
+          "layer_id": "e8fd584d8a321dc6b308baeca5620d1223f5957fec984fa9ae72c2f48266cc42",
+          "layer_fsdiff_id": "sha256:604c39d2148bd89a324dad51b534d589d9e183f45f2c637723e868ccf5dd8847",
+          "size": 0,
+          "params": "JSYAML_VERSION=3.13.0",
+          "command_snippet": "ENV JSYAML_VERSION=3.13.0",
+          "command_all": "ENV JSYAML_VERSION=3.13.0",
+          "empty_layer": true
+        },
+        {
+          "type": "ENV",
+          "time": "2021-09-26T18:39:43Z",
+          "is_nop": true,
+          "local_image_exists": true,
+          "intermediate_image_id": "sha256:5151600eec7062d9a47038957251131a72d94f4984712b2b012b41f0b6ab6317",
+          "layer_index": 0,
+          "layer_id": "e8fd584d8a321dc6b308baeca5620d1223f5957fec984fa9ae72c2f48266cc42",
+          "layer_fsdiff_id": "sha256:604c39d2148bd89a324dad51b534d589d9e183f45f2c637723e868ccf5dd8847",
+          "size": 0,
+          "params": "GPG_KEYS=0C49F3730359A14518585931BC711F9BA15703C6",
+          "command_snippet": "ENV GPG_KEYS=0C49F3730359A14518585931BC711F9...",
+          "command_all": "ENV GPG_KEYS=0C49F3730359A14518585931BC711F9BA15703C6",
+          "empty_layer": true
+        },
+        {
+          "type": "ENV",
+          "time": "2021-09-26T18:39:43Z",
+          "is_nop": true,
+          "local_image_exists": true,
+          "intermediate_image_id": "sha256:c44b0a428e6b88a6cae941a01d06de185975dbd22b5e62cc6954087eac87947a",
+          "layer_index": 0,
+          "layer_id": "e8fd584d8a321dc6b308baeca5620d1223f5957fec984fa9ae72c2f48266cc42",
+          "layer_fsdiff_id": "sha256:604c39d2148bd89a324dad51b534d589d9e183f45f2c637723e868ccf5dd8847",
+          "size": 0,
+          "params": "MONGO_PACKAGE=mongodb-org",
+          "command_snippet": "ENV MONGO_PACKAGE=mongodb-org",
+          "command_all": "ENV MONGO_PACKAGE=mongodb-org",
+          "empty_layer": true
+        },
+        {
+          "type": "ENV",
+          "time": "2021-09-26T18:39:43Z",
+          "is_nop": true,
+          "local_image_exists": true,
+          "intermediate_image_id": "sha256:83bbcea930f8d13c45f9b5962b67b256e6c4b511a2aae5f5abd9f81759a7115f",
+          "layer_index": 0,
+          "layer_id": "e8fd584d8a321dc6b308baeca5620d1223f5957fec984fa9ae72c2f48266cc42",
+          "layer_fsdiff_id": "sha256:604c39d2148bd89a324dad51b534d589d9e183f45f2c637723e868ccf5dd8847",
+          "size": 0,
+          "params": "MONGO_REPO=repo.mongodb.org",
+          "command_snippet": "ENV MONGO_REPO=repo.mongodb.org",
+          "command_all": "ENV MONGO_REPO=repo.mongodb.org",
+          "empty_layer": true
+        },
+        {
+          "type": "ENV",
+          "time": "2021-09-26T18:39:43Z",
+          "is_nop": true,
+          "local_image_exists": true,
+          "intermediate_image_id": "sha256:c081b4ad7ea9d21d8c51ddcb7908e6d80d8b1be77efddfaaaab3ae2166cb0a08",
+          "layer_index": 0,
+          "layer_id": "e8fd584d8a321dc6b308baeca5620d1223f5957fec984fa9ae72c2f48266cc42",
+          "layer_fsdiff_id": "sha256:604c39d2148bd89a324dad51b534d589d9e183f45f2c637723e868ccf5dd8847",
+          "size": 0,
+          "params": "MONGO_MAJOR=3.4",
+          "command_snippet": "ENV MONGO_MAJOR=3.4",
+          "command_all": "ENV MONGO_MAJOR=3.4",
+          "empty_layer": true
+        },
+        {
+          "type": "ENV",
+          "time": "2021-09-26T18:39:44Z",
+          "is_nop": true,
+          "local_image_exists": true,
+          "intermediate_image_id": "sha256:b5f0936940db6714594f694d4ff5f77b9fbdb642b3bd1cd1449d313700e0e143",
+          "layer_index": 0,
+          "layer_id": "e8fd584d8a321dc6b308baeca5620d1223f5957fec984fa9ae72c2f48266cc42",
+          "layer_fsdiff_id": "sha256:604c39d2148bd89a324dad51b534d589d9e183f45f2c637723e868ccf5dd8847",
+          "size": 0,
+          "params": "MONGO_VERSION=3.4.24",
+          "command_snippet": "ENV MONGO_VERSION=3.4.24",
+          "command_all": "ENV MONGO_VERSION=3.4.24",
+          "empty_layer": true
+        },
+        {
+          "type": "VOLUME",
+          "time": "2021-09-26T18:39:44Z",
+          "is_nop": true,
+          "local_image_exists": true,
+          "intermediate_image_id": "sha256:3005c973db82df3b3ac2dd8c89b841668f7d1b40a90f45cc54105036a104dd55",
+          "layer_index": 0,
+          "layer_id": "e8fd584d8a321dc6b308baeca5620d1223f5957fec984fa9ae72c2f48266cc42",
+          "layer_fsdiff_id": "sha256:604c39d2148bd89a324dad51b534d589d9e183f45f2c637723e868ccf5dd8847",
+          "size": 0,
+          "params": "[/data/configdb /data/db]",
+          "command_snippet": "VOLUME [/data/configdb /data/db]",
+          "command_all": "VOLUME [/data/configdb /data/db]",
+          "empty_layer": true
+        },
+        {
+          "type": "ADD",
+          "time": "2021-09-26T18:39:45Z",
+          "is_nop": true,
+          "local_image_exists": true,
+          "intermediate_image_id": "sha256:ed480e7d8e9eee801d3e5f91aeaebf8ddc9b90414ae2c1b3c750a4b847b272c7",
+          "layer_index": 0,
+          "layer_id": "e8fd584d8a321dc6b308baeca5620d1223f5957fec984fa9ae72c2f48266cc42",
+          "layer_fsdiff_id": "sha256:604c39d2148bd89a324dad51b534d589d9e183f45f2c637723e868ccf5dd8847",
+          "size": 65998387,
+          "size_human": "66 MB",
+          "params": "file:82d3270337a3d1b984b8895cd22f99594cd627f1074db74f67a6836005f33b97 in /",
+          "command_snippet": "ADD file:82d3270337a3d1b984b8895cd22f99594cd...",
+          "command_all": "ADD file:82d3270337a3d1b984b8895cd22f99594cd627f1074db74f67a6836005f33b97 /",
+          "target": "/",
+          "source_type": "file"
+        },
+        {
+          "type": "EXPOSE",
+          "time": "2021-09-26T18:39:45Z",
+          "is_nop": true,
+          "local_image_exists": true,
+          "intermediate_image_id": "sha256:f0e39fc60d7520ce49f2adf79c080acee9ce4fdd2fa1ce5b33f602e14ab42554",
+          "layer_index": 0,
+          "layer_id": "e8fd584d8a321dc6b308baeca5620d1223f5957fec984fa9ae72c2f48266cc42",
+          "layer_fsdiff_id": "sha256:604c39d2148bd89a324dad51b534d589d9e183f45f2c637723e868ccf5dd8847",
+          "size": 0,
+          "params": "27017/tcp",
+          "command_snippet": "EXPOSE 27017/tcp",
+          "command_all": "EXPOSE 27017/tcp",
+          "empty_layer": true
+        },
+        {
+          "type": "ENTRYPOINT",
+          "time": "2021-09-26T18:39:45Z",
+          "is_nop": true,
+          "is_exec_form": true,
+          "local_image_exists": true,
+          "intermediate_image_id": "sha256:b78a1a88d823ba268b5bb4013d556619f394b51755328087f2a0a80693d666d6",
+          "layer_index": 0,
+          "layer_id": "e8fd584d8a321dc6b308baeca5620d1223f5957fec984fa9ae72c2f48266cc42",
+          "layer_fsdiff_id": "sha256:604c39d2148bd89a324dad51b534d589d9e183f45f2c637723e868ccf5dd8847",
+          "size": 0,
+          "params": "[\"docker-entrypoint.sh\"]",
+          "command_snippet": "ENTRYPOINT [\"docker-entrypoint.sh\"]",
+          "command_all": "ENTRYPOINT [\"docker-entrypoint.sh\"]",
+          "empty_layer": true
+        },
+        {
+          "type": "CMD",
+          "time": "2021-09-26T18:39:45Z",
+          "is_last_instruction": true,
+          "is_nop": true,
+          "is_exec_form": true,
+          "local_image_exists": true,
+          "layer_index": 0,
+          "layer_id": "e8fd584d8a321dc6b308baeca5620d1223f5957fec984fa9ae72c2f48266cc42",
+          "layer_fsdiff_id": "sha256:604c39d2148bd89a324dad51b534d589d9e183f45f2c637723e868ccf5dd8847",
+          "size": 0,
+          "params": "[\"mongod\"]",
+          "command_snippet": "CMD [\"mongod\"]",
+          "command_all": "CMD [\"mongod\"]",
+          "empty_layer": true,
+          "raw_tags": [
+            "catcry/weave_mongo.slim:latest",
+            "mongo.slim:latest"
+          ]
+        }
+      ]
+    }
+  ],
+  "image_layers": [
+    {
+      "id": "e8fd584d8a321dc6b308baeca5620d1223f5957fec984fa9ae72c2f48266cc42",
+      "index": 0,
+      "path": "e8fd584d8a321dc6b308baeca5620d1223f5957fec984fa9ae72c2f48266cc42/layer.tar",
+      "fsdiff_id": "sha256:604c39d2148bd89a324dad51b534d589d9e183f45f2c637723e868ccf5dd8847",
+      "stats": {
+        "all_size": 65998118,
+        "object_count": 62,
+        "dir_count": 13,
+        "file_count": 33,
+        "link_count": 16,
+        "max_file_size": 54779760,
+        "max_dir_size": 0,
+        "deleted_count": 0,
+        "deleted_dir_content_count": 0,
+        "deleted_dir_count": 0,
+        "deleted_file_count": 0,
+        "deleted_link_count": 0,
+        "deleted_size": 0,
+        "added_size": 65998118,
+        "modified_size": 0,
+        "sticky_count": 1
+      },
+      "changes": {
+        "deleted": 0,
+        "added": 62,
+        "modified": 0
+      },
+      "top": [
+        {
+          "change": "A",
+          "name": "/usr/bin/mongod",
+          "size": 54779760,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-24T09:33:31+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/lib/x86_64-linux-gnu/libcrypto.so.1.0.0",
+          "size": 2365952,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2019-02-27T16:25:52+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/local/bin/gosu",
+          "size": 2294944,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2018-10-16T02:16:47+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/lib/x86_64-linux-gnu/libc-2.23.so",
+          "size": 1868984,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2019-02-05T23:41:22+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/lib/x86_64-linux-gnu/libm-2.23.so",
+          "size": 1088952,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2019-02-05T23:41:22+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/bin/bash",
+          "size": 1037528,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2019-07-12T23:56:41+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/lib/x86_64-linux-gnu/libpcre.so.3.13.2",
+          "size": 456632,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-03-25T08:42:16+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/lib/x86_64-linux-gnu/libssl.so.1.0.0",
+          "size": 428384,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2019-02-27T16:25:52+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/bin/find",
+          "size": 221768,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-02-08T02:48:24+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/bin/grep",
+          "size": 211224,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-04-29T17:28:23+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/lib/x86_64-linux-gnu/libtinfo.so.5.9",
+          "size": 167240,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-02-19T11:53:00+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/lib/x86_64-linux-gnu/ld-2.23.so",
+          "size": 162632,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2019-02-05T23:41:21+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/lib/x86_64-linux-gnu/libpthread-2.23.so",
+          "size": 138696,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2019-02-05T23:41:22+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/lib/x86_64-linux-gnu/libselinux.so.1",
+          "size": 130224,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-03-16T14:25:51+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/lib/x86_64-linux-gnu/libnsl-2.23.so",
+          "size": 93128,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2019-02-05T23:41:21+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/lib/x86_64-linux-gnu/libgcc_s.so.1",
+          "size": 89696,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-04-16T04:13:51+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/bin/chown",
+          "size": 64368,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2017-03-02T21:37:22+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/bin/rm",
+          "size": 60272,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2017-03-02T21:37:22+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/lib/x86_64-linux-gnu/libnss_nis-2.23.so",
+          "size": 47648,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2019-02-05T23:41:21+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/lib/x86_64-linux-gnu/libnss_files-2.23.so",
+          "size": 47600,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2019-02-05T23:41:22+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        }
+      ],
+      "change_instruction": {
+        "index": 10,
+        "image_index": 0,
+        "type": "ADD",
+        "all": "ADD file:82d3270337a3d1b984b8895cd22f99594cd627f1074db74f67a6836005f33b97 /",
+        "snippet": "ADD file:82d3270337a3d1b984b8895cd22f99594cd..."
+      },
+      "other_instructions": [
+        {
+          "index": 0,
+          "image_index": 0,
+          "type": "LABEL",
+          "all": "LABEL docker-slim.version=linux|Transformer|1.37.0|70cc8acfcb733161ce7e685b81ad6c172643c222|2021-09-23_09:23:43AM",
+          "snippet": "LABEL docker-slim.version=linux|Transformer|..."
+        },
+        {
+          "index": 1,
+          "image_index": 0,
+          "type": "ENV",
+          "all": "ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+          "snippet": "ENV PATH=/usr/local/sbin:/usr/local/bin:/usr..."
+        },
+        {
+          "index": 2,
+          "image_index": 0,
+          "type": "ENV",
+          "all": "ENV GOSU_VERSION=1.11",
+          "snippet": "ENV GOSU_VERSION=1.11"
+        },
+        {
+          "index": 3,
+          "image_index": 0,
+          "type": "ENV",
+          "all": "ENV JSYAML_VERSION=3.13.0",
+          "snippet": "ENV JSYAML_VERSION=3.13.0"
+        },
+        {
+          "index": 4,
+          "image_index": 0,
+          "type": "ENV",
+          "all": "ENV GPG_KEYS=0C49F3730359A14518585931BC711F9BA15703C6",
+          "snippet": "ENV GPG_KEYS=0C49F3730359A14518585931BC711F9..."
+        },
+        {
+          "index": 5,
+          "image_index": 0,
+          "type": "ENV",
+          "all": "ENV MONGO_PACKAGE=mongodb-org",
+          "snippet": "ENV MONGO_PACKAGE=mongodb-org"
+        },
+        {
+          "index": 6,
+          "image_index": 0,
+          "type": "ENV",
+          "all": "ENV MONGO_REPO=repo.mongodb.org",
+          "snippet": "ENV MONGO_REPO=repo.mongodb.org"
+        },
+        {
+          "index": 7,
+          "image_index": 0,
+          "type": "ENV",
+          "all": "ENV MONGO_MAJOR=3.4",
+          "snippet": "ENV MONGO_MAJOR=3.4"
+        },
+        {
+          "index": 8,
+          "image_index": 0,
+          "type": "ENV",
+          "all": "ENV MONGO_VERSION=3.4.24",
+          "snippet": "ENV MONGO_VERSION=3.4.24"
+        },
+        {
+          "index": 9,
+          "image_index": 0,
+          "type": "VOLUME",
+          "all": "VOLUME [/data/configdb /data/db]",
+          "snippet": "VOLUME [/data/configdb /data/db]"
+        },
+        {
+          "index": 11,
+          "image_index": 0,
+          "type": "EXPOSE",
+          "all": "EXPOSE 27017/tcp",
+          "snippet": "EXPOSE 27017/tcp"
+        },
+        {
+          "index": 12,
+          "image_index": 0,
+          "type": "ENTRYPOINT",
+          "all": "ENTRYPOINT [\"docker-entrypoint.sh\"]",
+          "snippet": "ENTRYPOINT [\"docker-entrypoint.sh\"]"
+        },
+        {
+          "index": 13,
+          "image_index": 0,
+          "type": "CMD",
+          "all": "CMD [\"mongod\"]",
+          "snippet": "CMD [\"mongod\"]"
+        }
+      ]
+    }
+  ],
+  "image_archive_location": "/tmp/docker-slim-state/.docker-slim-state/images/56b87154c8c7e974ea1811deb8ef47529e8a3e4022ebf9a73c6e6399652bbd84/image/56b87154c8c7e974ea1811deb8ef47529e8a3e4022ebf9a73c6e6399652bbd84.tar"
+}

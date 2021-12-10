@@ -1,0 +1,14 @@
+docker tag weaveworksdemos/user-db.slim:latest catcry/weave_user-db.slim:latest
+docker tag weaveworksdemos/user.slim:latest catcry/weave_user.slim:latest
+docker tag weaveworksdemos/payment.slim:latest catcry/weave_payment.slim:latest
+docker tag rabbitmq.slim:latest catcry/weave_rabbitmq:latest
+docker tag weaveworksdemos/queue-master.slim:latest catcry/weave_queue-master.slim:latest
+docker tag weaveworksdemos/shipping.slim:latest catcry/weave_shipping.slim:latest
+docker tag weaveworksdemos/carts.slim:latest catcry/weave_carts.slim:latest
+docker tag weaveworksdemos/orders.slim:latest catcry/weave_orders.slim:latest
+docker tag mongo.slim:latest catcry/weave_mongo.slim:latest
+docker tag weaveworksdemos/catalogue.slim:latest catcry/weave_catalogue.slim:latest
+docker tag weaveworksdemos/catalogue-db.slim:latest catcry/weave_catalogue-db.slim:latest
+docker tag weaveworksdemos/edge-router.slim:latest catcry/weave_edge-router.slim:latest
+docker tag weaveworksdemos/front-end.slim_comp:latest catcry/weave_front-end.slim:latest
+

@@ -1,0 +1,3291 @@
+{
+  "version": "1.2",
+  "engine": "linux|Transformer|1.37.0|70cc8acfcb733161ce7e685b81ad6c172643c222|2021-09-23_09:23:43AM",
+  "containerized": false,
+  "host_distro": {
+    "name": "Ubuntu",
+    "version": "20.04",
+    "display_name": "Ubuntu 20.04.3 LTS"
+  },
+  "type": "xray",
+  "state": "done",
+  "target_reference": "weaveworksdemos/catalogue-db:0.3.0",
+  "source_image": {
+    "identity": {
+      "id": "sha256:9d0c5eb88949dc8a8896db19330770f109fae9c9426d3c2fa9cf84e68b40ac2e",
+      "tags": [
+        "0.3.0"
+      ],
+      "names": [
+        "weaveworksdemos/catalogue-db:0.3.0"
+      ],
+      "digests": [
+        "sha256:7ba74ec9adf88f6625b8d85d3323d1ee5232b39877e1590021ea485cf9457251"
+      ],
+      "full_digests": [
+        "weaveworksdemos/catalogue-db@sha256:7ba74ec9adf88f6625b8d85d3323d1ee5232b39877e1590021ea485cf9457251"
+      ]
+    },
+    "size": 400161654,
+    "size_human": "400 MB",
+    "create_time": "2016-12-23T10:54:01Z",
+    "docker_version": "1.12.3",
+    "architecture": "amd64",
+    "exposed_ports": [
+      "3306/tcp"
+    ],
+    "os": "linux",
+    "volumes": [
+      "/var/lib/mysql"
+    ],
+    "env_vars": [
+      "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+      "GOSU_VERSION=1.7",
+      "MYSQL_MAJOR=5.7",
+      "MYSQL_VERSION=5.7.17-1debian8"
+    ],
+    "distro": {
+      "name": "Debian GNU/Linux",
+      "version": "8",
+      "display_name": "Debian GNU/Linux 8 (jessie)"
+    },
+    "container_entry": {
+      "entrypoint": [
+        "docker-entrypoint.sh"
+      ],
+      "cmd": [
+        "mysqld"
+      ],
+      "exe_path": "docker-entrypoint.sh",
+      "full_exe_path": {
+        "name": "/usr/local/bin/docker-entrypoint.sh",
+        "layer": 9
+      },
+      "exe_args": [
+        "mysqld"
+      ]
+    }
+  },
+  "artifact_location": "/tmp/docker-slim-state/.docker-slim-state/images/9d0c5eb88949dc8a8896db19330770f109fae9c9426d3c2fa9cf84e68b40ac2e/artifacts",
+  "image_report": {
+    "stats": {
+      "duplicate_file_count": 0,
+      "duplicate_file_total_count": 0,
+      "duplicate_file_size": 0,
+      "duplicate_file_total_size": 0,
+      "duplicate_file_wasted_size": 0,
+      "deleted_count": 13,
+      "deleted_dir_content_count": 1,
+      "deleted_dir_count": 0,
+      "deleted_file_count": 3,
+      "deleted_link_count": 11,
+      "deleted_file_size": 0,
+      "setuid_count": 10,
+      "setgid_count": 4,
+      "sticky_count": 7
+    },
+    "special_perms": {
+      "setuid": [
+        "/bin/ping6",
+        "/bin/su",
+        "/usr/bin/chsh",
+        "/usr/bin/gpasswd",
+        "/usr/bin/newgrp",
+        "/bin/mount",
+        "/bin/ping",
+        "/usr/bin/passwd",
+        "/bin/umount",
+        "/usr/bin/chfn"
+      ],
+      "setgid": [
+        "/sbin/unix_chkpwd",
+        "/usr/bin/chage",
+        "/usr/bin/expiry",
+        "/usr/bin/wall"
+      ],
+      "sticky": [
+        "/tmp",
+        "/run/lock",
+        "/var/tmp"
+      ]
+    },
+    "shells": [
+      {
+        "full_name": "Bourne shell",
+        "short_name": "sh",
+        "exe_path": "/bin/sh",
+        "link_path": "dash",
+        "verified": true
+      },
+      {
+        "full_name": "Dash shell",
+        "short_name": "dash",
+        "exe_path": "/bin/dash",
+        "verified": true
+      },
+      {
+        "full_name": "Bash shell",
+        "short_name": "bash",
+        "exe_path": "/bin/bash",
+        "verified": true
+      },
+      {
+        "full_name": "Bash shell",
+        "short_name": "bash",
+        "exe_path": "/bin/bash",
+        "reference": "/bin/rbash",
+        "verified": true
+      }
+    ],
+    "certs": {},
+    "ca_certs": {}
+  },
+  "image_stack": [
+    {
+      "is_top_image": true,
+      "id": "sha256:9d0c5eb88949dc8a8896db19330770f109fae9c9426d3c2fa9cf84e68b40ac2e",
+      "full_name": "weaveworksdemos/catalogue-db:0.3.0",
+      "repo_name": "weaveworksdemos/catalogue-db",
+      "version_tag": "0.3.0",
+      "raw_tags": [
+        "weaveworksdemos/catalogue-db:0.3.0"
+      ],
+      "create_time": "2016-12-23T10:54:01Z",
+      "new_size": 400161654,
+      "new_size_human": "400 MB",
+      "instructions": [
+        {
+          "type": "ADD",
+          "time": "2016-12-13T22:10:59Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "layer_id": "9af9755d31d05bd0064a6cd9f485d91083807fd76d6b276c01159b8709772e57",
+          "layer_fsdiff_id": "sha256:b6ca02dfe5e62c58dacb1dec16eb42ed35761c15562485f9da9364bb7c90b9b3",
+          "size": 123057319,
+          "size_human": "123 MB",
+          "params": "file:1d214d2782eaccc743b8d683ccecf2f87f12a0ecdfbcd6fdf4943ce616f23870 in /",
+          "command_snippet": "ADD file:1d214d2782eaccc743b8d683ccecf2f87f1...",
+          "command_all": "ADD file:1d214d2782eaccc743b8d683ccecf2f87f12a0ecdfbcd6fdf4943ce616f23870 /",
+          "target": "/",
+          "source_type": "file"
+        },
+        {
+          "type": "CMD",
+          "time": "2016-12-13T22:10:59Z",
+          "is_nop": true,
+          "is_exec_form": true,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "layer_id": "9af9755d31d05bd0064a6cd9f485d91083807fd76d6b276c01159b8709772e57",
+          "layer_fsdiff_id": "sha256:b6ca02dfe5e62c58dacb1dec16eb42ed35761c15562485f9da9364bb7c90b9b3",
+          "size": 0,
+          "params": "[\"/bin/bash\"]",
+          "command_snippet": "CMD [\"/bin/bash\"]",
+          "command_all": "CMD [\"/bin/bash\"]",
+          "empty_layer": true
+        },
+        {
+          "type": "RUN",
+          "time": "2016-12-14T01:00:10Z",
+          "is_nop": false,
+          "local_image_exists": false,
+          "layer_index": 1,
+          "layer_id": "000a9094da25dea5b54cd569f971928d7cb0a49dee91f9139e41498f8c68b284",
+          "layer_fsdiff_id": "sha256:20e71edbd6a5193fdaf631d20d1f5eb0abc463efb436a269f08ecfd3ef2b0964",
+          "size": 330368,
+          "size_human": "330 kB",
+          "command_snippet": "RUN groupadd -r mysql && \\\n\tuseradd -r -g my...",
+          "command_all": "RUN groupadd -r mysql && \\\n\tuseradd -r -g mysql mysql",
+          "system_commands": [
+            "groupadd -r mysql",
+            "useradd -r -g mysql mysql"
+          ]
+        },
+        {
+          "type": "ENV",
+          "time": "2016-12-14T01:00:11Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 1,
+          "layer_id": "000a9094da25dea5b54cd569f971928d7cb0a49dee91f9139e41498f8c68b284",
+          "layer_fsdiff_id": "sha256:20e71edbd6a5193fdaf631d20d1f5eb0abc463efb436a269f08ecfd3ef2b0964",
+          "size": 0,
+          "params": "GOSU_VERSION=1.7",
+          "command_snippet": "ENV GOSU_VERSION=1.7",
+          "command_all": "ENV GOSU_VERSION=1.7",
+          "empty_layer": true
+        },
+        {
+          "type": "RUN",
+          "time": "2016-12-14T01:00:29Z",
+          "is_nop": false,
+          "local_image_exists": false,
+          "layer_index": 2,
+          "layer_id": "6784d0a7d9418c738cfa9250aab43a6f942ab9db48fd6bf96e109027edfcfe55",
+          "layer_fsdiff_id": "sha256:d2a9ee6026001c955164bd7c8c78a2f39bff60c0368564cf380fb6e248b0dcde",
+          "size": 4255294,
+          "size_human": "4.3 MB",
+          "command_snippet": "RUN set -x && \\\n\tapt-get update && \\\n\tapt-ge...",
+          "command_all": "RUN set -x && \\\n\tapt-get update && \\\n\tapt-get install -y --no-install-recommends ca-certificates wget && \\\n\trm -rf /var/lib/apt/lists/* && \\\n\twget -O /usr/local/bin/gosu \"https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)\" && \\\n\twget -O /usr/local/bin/gosu.asc \"https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc\" && \\\n\texport GNUPGHOME=\"$(mktemp -d)\" && \\\n\tgpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 && \\\n\tgpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu && \\\n\trm -r \"$GNUPGHOME\" /usr/local/bin/gosu.asc && \\\n\tchmod +x /usr/local/bin/gosu && \\\n\tgosu nobody true && \\\n\tapt-get purge -y --auto-remove ca-certificates wget",
+          "system_commands": [
+            "set -x",
+            "apt-get update",
+            "apt-get install -y --no-install-recommends ca-certificates wget",
+            "rm -rf /var/lib/apt/lists/*",
+            "wget -O /usr/local/bin/gosu \"https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)\"",
+            "wget -O /usr/local/bin/gosu.asc \"https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc\"",
+            "export GNUPGHOME=\"$(mktemp -d)\"",
+            "gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4",
+            "gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu",
+            "rm -r \"$GNUPGHOME\" /usr/local/bin/gosu.asc",
+            "chmod +x /usr/local/bin/gosu",
+            "gosu nobody true",
+            "apt-get purge -y --auto-remove ca-certificates wget"
+          ]
+        },
+        {
+          "type": "RUN",
+          "time": "2016-12-14T01:00:30Z",
+          "is_nop": false,
+          "local_image_exists": false,
+          "layer_index": 3,
+          "layer_id": "cb3b282699eb1850795bf9e44cf291a67342d6bf49ef635c250626f39e6df92b",
+          "layer_fsdiff_id": "sha256:8fd4d9b65d85a81c0c0888d0ba7a3507433d4c939b4992a1d89fa74430d804d6",
+          "size": 0,
+          "command_snippet": "RUN mkdir /docker-entrypoint-initdb.d",
+          "command_all": "RUN mkdir /docker-entrypoint-initdb.d",
+          "system_commands": [
+            "mkdir /docker-entrypoint-initdb.d"
+          ]
+        },
+        {
+          "type": "RUN",
+          "time": "2016-12-14T02:47:50Z",
+          "is_nop": false,
+          "local_image_exists": false,
+          "layer_index": 4,
+          "layer_id": "f65b6b734863d6c2dbf3279e4b3b165a936fdfdf6e8cc72047568a543cff2435",
+          "layer_fsdiff_id": "sha256:2fe96b666276305f4f1d2dbda88a4bae2dcab2a4def8f640fcb7da49983be093",
+          "size": 32920718,
+          "size_human": "33 MB",
+          "command_snippet": "RUN apt-get update && \\\n\tapt-get install -y ...",
+          "command_all": "RUN apt-get update && \\\n\tapt-get install -y perl pwgen --no-install-recommends && \\\n\trm -rf /var/lib/apt/lists/*",
+          "system_commands": [
+            "apt-get update",
+            "apt-get install -y perl pwgen --no-install-recommends",
+            "rm -rf /var/lib/apt/lists/*"
+          ]
+        },
+        {
+          "type": "RUN",
+          "time": "2016-12-14T02:47:52Z",
+          "is_nop": false,
+          "local_image_exists": false,
+          "layer_index": 5,
+          "layer_id": "a3297cef8cd23910008fd35fa31da39f57b743a877ef9d61f5cd27e10880d6ab",
+          "layer_fsdiff_id": "sha256:490b111a544bfae96b6f0dc80e0ab683e1b9839a8259811e66dc94732b84c970",
+          "size": 20809,
+          "size_human": "21 kB",
+          "command_snippet": "RUN apt-key adv --keyserver ha.pool.sks-keys...",
+          "command_all": "RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys A4A9406876FCBD3C456770C88C718D3B5072E1F5",
+          "system_commands": [
+            "apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys A4A9406876FCBD3C456770C88C718D3B5072E1F5"
+          ]
+        },
+        {
+          "type": "ENV",
+          "time": "2016-12-14T02:47:53Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 5,
+          "layer_id": "a3297cef8cd23910008fd35fa31da39f57b743a877ef9d61f5cd27e10880d6ab",
+          "layer_fsdiff_id": "sha256:490b111a544bfae96b6f0dc80e0ab683e1b9839a8259811e66dc94732b84c970",
+          "size": 0,
+          "params": "MYSQL_MAJOR=5.7",
+          "command_snippet": "ENV MYSQL_MAJOR=5.7",
+          "command_all": "ENV MYSQL_MAJOR=5.7",
+          "empty_layer": true
+        },
+        {
+          "type": "ENV",
+          "time": "2016-12-14T02:47:53Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 5,
+          "layer_id": "a3297cef8cd23910008fd35fa31da39f57b743a877ef9d61f5cd27e10880d6ab",
+          "layer_fsdiff_id": "sha256:490b111a544bfae96b6f0dc80e0ab683e1b9839a8259811e66dc94732b84c970",
+          "size": 0,
+          "params": "MYSQL_VERSION=5.7.17-1debian8",
+          "command_snippet": "ENV MYSQL_VERSION=5.7.17-1debian8",
+          "command_all": "ENV MYSQL_VERSION=5.7.17-1debian8",
+          "empty_layer": true
+        },
+        {
+          "type": "RUN",
+          "time": "2016-12-14T02:47:54Z",
+          "is_nop": false,
+          "local_image_exists": false,
+          "layer_index": 6,
+          "layer_id": "6333889de8b95e0c89d0efd191f27149ea49ef4c864412d9bd5087246681bfed",
+          "layer_fsdiff_id": "sha256:0ebca704a37f9c9be0f4cf4b690507936666e088f7771df6693d186a13720782",
+          "size": 55,
+          "size_human": "55 B",
+          "command_snippet": "RUN echo \"deb http://repo.mysql.com/apt/debi...",
+          "command_all": "RUN echo \"deb http://repo.mysql.com/apt/debian/ jessie mysql-${MYSQL_MAJOR}\" > /etc/apt/sources.list.d/mysql.list",
+          "system_commands": [
+            "echo \"deb http://repo.mysql.com/apt/debian/ jessie mysql-${MYSQL_MAJOR}\" > /etc/apt/sources.list.d/mysql.list"
+          ]
+        },
+        {
+          "type": "RUN",
+          "time": "2016-12-14T02:48:17Z",
+          "is_nop": false,
+          "local_image_exists": false,
+          "layer_index": 7,
+          "layer_id": "de9da8244ec7553b65b6e6987a5a5adfae83b94c157d0a30158d0f42993353c9",
+          "layer_fsdiff_id": "sha256:42832ba5c0f5d05e4e2c56570e02977cad0f38fdb2c3ebeed97476d6b627ef46",
+          "size": 239565962,
+          "size_human": "240 MB",
+          "command_snippet": "RUN { \t\techo mysql-community-server mysql-co...",
+          "command_all": "RUN { \t\techo mysql-community-server mysql-community-server/data-dir select ''; \t\techo mysql-community-server mysql-community-server/root-pass password ''; \t\techo mysql-community-server mysql-community-server/re-root-pass password ''; \t\techo mysql-community-server mysql-community-server/remove-test-db select false; \t} | debconf-set-selections && \\\n\tapt-get update && \\\n\tapt-get install -y mysql-server=\"${MYSQL_VERSION}\" && \\\n\trm -rf /var/lib/apt/lists/* && \\\n\trm -rf /var/lib/mysql && \\\n\tmkdir -p /var/lib/mysql /var/run/mysqld && \\\n\tchown -R mysql:mysql /var/lib/mysql /var/run/mysqld && \\\n\tchmod 777 /var/run/mysqld",
+          "system_commands": [
+            "{ echo mysql-community-server mysql-community-server/data-dir select ''; echo mysql-community-server mysql-community-server/root-pass password ''; echo mysql-community-server mysql-community-server/re-root-pass password ''; echo mysql-community-server mysql-community-server/remove-test-db select false; } | debconf-set-selections",
+            "apt-get update",
+            "apt-get install -y mysql-server=\"${MYSQL_VERSION}\"",
+            "rm -rf /var/lib/apt/lists/*",
+            "rm -rf /var/lib/mysql",
+            "mkdir -p /var/lib/mysql /var/run/mysqld",
+            "chown -R mysql:mysql /var/lib/mysql /var/run/mysqld",
+            "chmod 777 /var/run/mysqld"
+          ]
+        },
+        {
+          "type": "RUN",
+          "time": "2016-12-14T02:48:23Z",
+          "is_nop": false,
+          "local_image_exists": false,
+          "layer_index": 8,
+          "layer_id": "3148dfda14ba44eca5f80f25d272b768ecb0201af454bc1a219496d3a58069e0",
+          "layer_fsdiff_id": "sha256:f61f97e5ac1dbda28152bf6f142f8e299e9597b7c2c9d2fb35f587a10a59d611",
+          "size": 1234,
+          "size_human": "1.2 kB",
+          "command_snippet": "RUN sed -Ei 's/^(bind-address|log)/#&/' /etc...",
+          "command_all": "RUN sed -Ei 's/^(bind-address|log)/#&/' /etc/mysql/mysql.conf.d/mysqld.cnf && \\\n\techo '[mysqld]\\nskip-host-cache\\nskip-name-resolve' > /etc/mysql/conf.d/docker.cnf",
+          "system_commands": [
+            "sed -Ei 's/^(bind-address|log)/#&/' /etc/mysql/mysql.conf.d/mysqld.cnf",
+            "echo '[mysqld]nskip-host-cachenskip-name-resolve' > /etc/mysql/conf.d/docker.cnf"
+          ]
+        },
+        {
+          "type": "VOLUME",
+          "time": "2016-12-14T02:48:24Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 8,
+          "layer_id": "3148dfda14ba44eca5f80f25d272b768ecb0201af454bc1a219496d3a58069e0",
+          "layer_fsdiff_id": "sha256:f61f97e5ac1dbda28152bf6f142f8e299e9597b7c2c9d2fb35f587a10a59d611",
+          "size": 0,
+          "params": "[/var/lib/mysql]",
+          "command_snippet": "VOLUME [/var/lib/mysql]",
+          "command_all": "VOLUME [/var/lib/mysql]",
+          "empty_layer": true
+        },
+        {
+          "type": "COPY",
+          "time": "2016-12-14T02:48:24Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 9,
+          "layer_id": "1edcd621cb2b9f0b85dfddbdf7f5e053a50591d95e8ff7d0ea61a0e323178a9c",
+          "layer_fsdiff_id": "sha256:5e10625e4803db76b68fa4fd0c054ad768e8c2480fadc7f296fb946704e6447d",
+          "size": 4685,
+          "size_human": "4.7 kB",
+          "params": "file:fc6fa63e59403864ccd3dc0d09d92a9b3feb07f725587a6f97309cf96bb52a6b in /usr/local/bin/",
+          "command_snippet": "COPY file:fc6fa63e59403864ccd3dc0d09d92a9b3f...",
+          "command_all": "COPY file:fc6fa63e59403864ccd3dc0d09d92a9b3feb07f725587a6f97309cf96bb52a6b /usr/local/bin/",
+          "target": "/usr/local/bin/",
+          "source_type": "file"
+        },
+        {
+          "type": "RUN",
+          "time": "2016-12-14T02:48:25Z",
+          "is_nop": false,
+          "local_image_exists": false,
+          "layer_index": 10,
+          "layer_id": "8216b9192edbf531b0de76d9f27e74e76658c97d86b781b8db2e5e3a99df2bc5",
+          "layer_fsdiff_id": "sha256:eab32140cb6cadf794be4a9d68fa66097bc6be8e761d7cae97a46f149e90cbd4",
+          "size": 34,
+          "size_human": "34 B",
+          "command_snippet": "RUN ln -s usr/local/bin/docker-entrypoint.sh...",
+          "command_all": "RUN ln -s usr/local/bin/docker-entrypoint.sh /entrypoint.sh # backwards compat",
+          "system_commands": [
+            "ln -s usr/local/bin/docker-entrypoint.sh /entrypoint.sh # backwards compat"
+          ]
+        },
+        {
+          "type": "ENTRYPOINT",
+          "time": "2016-12-14T02:48:26Z",
+          "is_nop": true,
+          "is_exec_form": true,
+          "local_image_exists": false,
+          "layer_index": 10,
+          "layer_id": "8216b9192edbf531b0de76d9f27e74e76658c97d86b781b8db2e5e3a99df2bc5",
+          "layer_fsdiff_id": "sha256:eab32140cb6cadf794be4a9d68fa66097bc6be8e761d7cae97a46f149e90cbd4",
+          "size": 0,
+          "params": "[\"docker-entrypoint.sh\"]",
+          "command_snippet": "ENTRYPOINT [\"docker-entrypoint.sh\"]",
+          "command_all": "ENTRYPOINT [\"docker-entrypoint.sh\"]",
+          "empty_layer": true
+        },
+        {
+          "type": "EXPOSE",
+          "time": "2016-12-14T02:48:26Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 10,
+          "layer_id": "8216b9192edbf531b0de76d9f27e74e76658c97d86b781b8db2e5e3a99df2bc5",
+          "layer_fsdiff_id": "sha256:eab32140cb6cadf794be4a9d68fa66097bc6be8e761d7cae97a46f149e90cbd4",
+          "size": 0,
+          "params": "3306/tcp",
+          "command_snippet": "EXPOSE 3306/tcp",
+          "command_all": "EXPOSE 3306/tcp",
+          "empty_layer": true
+        },
+        {
+          "type": "CMD",
+          "time": "2016-12-14T02:48:27Z",
+          "is_nop": true,
+          "is_exec_form": true,
+          "local_image_exists": false,
+          "layer_index": 10,
+          "layer_id": "8216b9192edbf531b0de76d9f27e74e76658c97d86b781b8db2e5e3a99df2bc5",
+          "layer_fsdiff_id": "sha256:eab32140cb6cadf794be4a9d68fa66097bc6be8e761d7cae97a46f149e90cbd4",
+          "size": 0,
+          "params": "[\"mysqld\"]",
+          "command_snippet": "CMD [\"mysqld\"]",
+          "command_all": "CMD [\"mysqld\"]",
+          "empty_layer": true
+        },
+        {
+          "type": "COPY",
+          "time": "2016-12-23T10:54:01Z",
+          "is_last_instruction": true,
+          "is_nop": true,
+          "local_image_exists": true,
+          "layer_index": 11,
+          "layer_id": "76f9baa75adcc9e0eb3b4d3a52d6dafbccc783d39ed4a872db03fa60d1d1a489",
+          "layer_fsdiff_id": "sha256:8f81f3c62cead1b9cbc94a6cd787a666ed57af388b00ee79696db1934bf8593f",
+          "size": 5176,
+          "size_human": "5.2 kB",
+          "params": "file:b9ed7d886ea2cca2fd16b10b4344aa12306be20eba64dc24bf189e79c8f5de68 in /docker-entrypoint-initdb.d/",
+          "command_snippet": "COPY file:b9ed7d886ea2cca2fd16b10b4344aa1230...",
+          "command_all": "COPY file:b9ed7d886ea2cca2fd16b10b4344aa12306be20eba64dc24bf189e79c8f5de68 /docker-entrypoint-initdb.d/",
+          "raw_tags": [
+            "weaveworksdemos/catalogue-db:0.3.0"
+          ],
+          "target": "/docker-entrypoint-initdb.d/",
+          "source_type": "file"
+        }
+      ]
+    }
+  ],
+  "image_layers": [
+    {
+      "id": "9af9755d31d05bd0064a6cd9f485d91083807fd76d6b276c01159b8709772e57",
+      "index": 0,
+      "path": "9af9755d31d05bd0064a6cd9f485d91083807fd76d6b276c01159b8709772e57/layer.tar",
+      "fsdiff_id": "sha256:b6ca02dfe5e62c58dacb1dec16eb42ed35761c15562485f9da9364bb7c90b9b3",
+      "stats": {
+        "all_size": 123032475,
+        "object_count": 8259,
+        "dir_count": 841,
+        "file_count": 5889,
+        "link_count": 1529,
+        "max_file_size": 6449966,
+        "max_dir_size": 0,
+        "deleted_count": 0,
+        "deleted_dir_content_count": 0,
+        "deleted_dir_count": 0,
+        "deleted_file_count": 0,
+        "deleted_link_count": 0,
+        "deleted_size": 0,
+        "added_size": 123032475,
+        "modified_size": 0,
+        "setuid_count": 10,
+        "setgid_count": 4,
+        "sticky_count": 3
+      },
+      "changes": {
+        "deleted": 0,
+        "added": 8259,
+        "modified": 0
+      },
+      "top": [
+        {
+          "change": "A",
+          "name": "/lib/udev/hwdb.bin",
+          "size": 6449966,
+          "mode": 292,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-12-13T22:38:45+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/lib/udev/hwdb.d/20-pci-vendor-model.hwdb",
+          "size": 2466209,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-09-03T02:32:46+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/lib/x86_64-linux-gnu/libdb-5.3.so",
+          "size": 1840496,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2014-12-31T13:21:32+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/lib/x86_64-linux-gnu/libperl.so.5.20.2",
+          "size": 1840056,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-07-22T20:29:37+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/lib/x86_64-linux-gnu/libc-2.19.so",
+          "size": 1738176,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-09-05T10:39:23+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/lib/x86_64-linux-gnu/libapt-pkg.so.4.12.0",
+          "size": 1506128,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-12-11T13:19:10+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/lib/locale/C.UTF-8/LC_COLLATE",
+          "size": 1501202,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-09-05T09:33:04+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/lib/udev/hwdb.d/20-OUI.hwdb",
+          "size": 1371311,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-09-03T02:32:46+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/lib/systemd/systemd",
+          "size": 1309072,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-09-03T02:33:00+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/lib/x86_64-linux-gnu/libslang.so.2.3.0",
+          "size": 1295296,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2014-10-24T11:55:39+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/lib/udev/hwdb.d/20-usb-vendor-model.hwdb",
+          "size": 1066264,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-09-03T02:32:46+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/lib/x86_64-linux-gnu/libm-2.19.so",
+          "size": 1051056,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-09-05T10:39:23+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/bin/bash",
+          "size": 1029624,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2014-11-13T02:38:51+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/bin/gpg",
+          "size": 1016784,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-09-04T02:58:05+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.20",
+          "size": 1008120,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2014-12-25T23:54:29+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/lib/x86_64-linux-gnu/libgcrypt.so.20.0.3",
+          "size": 924096,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-08-18T00:58:58+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/sbin/ldconfig.real",
+          "size": 887944,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-09-05T10:40:05+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/share/doc/dpkg/changelog.gz",
+          "size": 618300,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-04-26T02:01:14+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/var/cache/debconf/templates.dat",
+          "size": 604520,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-12-13T22:39:18+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 2
+              },
+              {
+                "layer": 7
+              }
+            ]
+          }
+        },
+        {
+          "change": "A",
+          "name": "/var/cache/debconf/templates.dat-old",
+          "size": 601120,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-12-13T22:38:41+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 2
+              },
+              {
+                "layer": 7
+              }
+            ]
+          }
+        }
+      ],
+      "change_instruction": {
+        "index": 0,
+        "image_index": 0,
+        "type": "ADD",
+        "all": "ADD file:1d214d2782eaccc743b8d683ccecf2f87f12a0ecdfbcd6fdf4943ce616f23870 /",
+        "snippet": "ADD file:1d214d2782eaccc743b8d683ccecf2f87f1..."
+      },
+      "other_instructions": [
+        {
+          "index": 1,
+          "image_index": 0,
+          "type": "CMD",
+          "all": "CMD [\"/bin/bash\"]",
+          "snippet": "CMD [\"/bin/bash\"]"
+        }
+      ]
+    },
+    {
+      "id": "000a9094da25dea5b54cd569f971928d7cb0a49dee91f9139e41498f8c68b284",
+      "index": 1,
+      "path": "000a9094da25dea5b54cd569f971928d7cb0a49dee91f9139e41498f8c68b284/layer.tar",
+      "fsdiff_id": "sha256:20e71edbd6a5193fdaf631d20d1f5eb0abc463efb436a269f08ecfd3ef2b0964",
+      "stats": {
+        "all_size": 330368,
+        "object_count": 17,
+        "dir_count": 3,
+        "file_count": 14,
+        "link_count": 0,
+        "max_file_size": 292000,
+        "max_dir_size": 0,
+        "deleted_count": 0,
+        "deleted_dir_content_count": 0,
+        "deleted_dir_count": 0,
+        "deleted_file_count": 0,
+        "deleted_link_count": 0,
+        "deleted_size": 0,
+        "added_size": 0,
+        "modified_size": 330368
+      },
+      "changes": {
+        "deleted": 0,
+        "added": 0,
+        "modified": 17
+      },
+      "top": [
+        {
+          "change": "M",
+          "name": "/var/log/lastlog",
+          "size": 292000,
+          "mode": 436,
+          "uid": 0,
+          "gid": 43,
+          "mod_time": "2016-12-14T04:30:10+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 1
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/var/log/faillog",
+          "size": 32000,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-12-14T04:30:10+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 1
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/etc/passwd",
+          "size": 1234,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-12-14T04:30:10+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 1
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/etc/passwd-",
+          "size": 1197,
+          "mode": 384,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-12-13T22:38:48+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 1
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/etc/shadow",
+          "size": 646,
+          "mode": 416,
+          "uid": 0,
+          "gid": 42,
+          "mod_time": "2016-12-14T04:30:10+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 1
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/etc/shadow-",
+          "size": 626,
+          "mode": 384,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-12-13T22:38:48+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 1
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/etc/group",
+          "size": 590,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-12-14T04:30:10+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 1
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/etc/group-",
+          "size": 577,
+          "mode": 384,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-12-13T22:38:48+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 1
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/etc/gshadow",
+          "size": 497,
+          "mode": 416,
+          "uid": 0,
+          "gid": 42,
+          "mod_time": "2016-12-14T04:30:10+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 1
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/etc/gshadow-",
+          "size": 487,
+          "mode": 384,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-12-13T22:38:48+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 1
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/etc/subuid",
+          "size": 138,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-12-14T04:30:10+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 1
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/etc/subgid",
+          "size": 138,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-12-14T04:30:10+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 1
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/etc/subuid-",
+          "size": 119,
+          "mode": 384,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-12-13T22:38:48+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 1
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/etc/subgid-",
+          "size": 119,
+          "mode": 384,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-12-13T22:38:48+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 1
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/var/log",
+          "mode": 2147484141,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-12-14T04:30:10+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 1
+              },
+              {
+                "layer": 2
+              },
+              {
+                "layer": 4
+              },
+              {
+                "layer": 7
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/var",
+          "mode": 2147484141,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-12-14T04:30:10+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 1
+              },
+              {
+                "layer": 2
+              },
+              {
+                "layer": 4
+              },
+              {
+                "layer": 7
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/etc",
+          "mode": 2147484141,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-12-14T04:30:10+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 1
+              },
+              {
+                "layer": 2
+              },
+              {
+                "layer": 4
+              },
+              {
+                "layer": 5
+              },
+              {
+                "layer": 6
+              },
+              {
+                "layer": 7
+              },
+              {
+                "layer": 8
+              }
+            ]
+          }
+        }
+      ],
+      "change_instruction": {
+        "index": 2,
+        "image_index": 0,
+        "type": "RUN",
+        "all": "RUN groupadd -r mysql && \\\n\tuseradd -r -g mysql mysql",
+        "snippet": "RUN groupadd -r mysql && \\\n\tuseradd -r -g my..."
+      },
+      "other_instructions": [
+        {
+          "index": 3,
+          "image_index": 0,
+          "type": "ENV",
+          "all": "ENV GOSU_VERSION=1.7",
+          "snippet": "ENV GOSU_VERSION=1.7"
+        }
+      ]
+    },
+    {
+      "id": "6784d0a7d9418c738cfa9250aab43a6f942ab9db48fd6bf96e109027edfcfe55",
+      "index": 2,
+      "path": "6784d0a7d9418c738cfa9250aab43a6f942ab9db48fd6bf96e109027edfcfe55/layer.tar",
+      "fsdiff_id": "sha256:d2a9ee6026001c955164bd7c8c78a2f39bff60c0368564cf380fb6e248b0dcde",
+      "stats": {
+        "all_size": 4255294,
+        "object_count": 139,
+        "dir_count": 122,
+        "file_count": 17,
+        "link_count": 0,
+        "max_file_size": 2698808,
+        "max_dir_size": 0,
+        "deleted_count": 0,
+        "deleted_dir_content_count": 1,
+        "deleted_dir_count": 0,
+        "deleted_file_count": 1,
+        "deleted_link_count": 0,
+        "deleted_size": 0,
+        "added_size": 2698808,
+        "modified_size": 1556486,
+        "sticky_count": 1
+      },
+      "changes": {
+        "deleted": 1,
+        "added": 1,
+        "modified": 137
+      },
+      "top": [
+        {
+          "change": "A",
+          "name": "/usr/local/bin/gosu",
+          "size": 2698808,
+          "mode": 493,
+          "uid": 0,
+          "gid": 50,
+          "mod_time": "2015-11-09T00:34:34+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 2
+            }
+          }
+        },
+        {
+          "change": "M",
+          "name": "/var/cache/debconf/templates.dat-old",
+          "size": 639450,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-12-14T04:30:27+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 2
+              },
+              {
+                "layer": 7
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/var/cache/debconf/templates.dat",
+          "size": 604520,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-12-14T04:30:28+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 2
+              },
+              {
+                "layer": 7
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/var/lib/dpkg/status",
+          "size": 93796,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-12-14T04:30:28+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 2
+              },
+              {
+                "layer": 4
+              },
+              {
+                "layer": 7
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/var/lib/dpkg/status-old",
+          "size": 93796,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-12-14T04:30:28+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 2
+              },
+              {
+                "layer": 4
+              },
+              {
+                "layer": 7
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/var/log/dpkg.log",
+          "size": 93153,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-12-14T04:30:28+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 2
+              },
+              {
+                "layer": 4
+              },
+              {
+                "layer": 7
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/var/log/apt/term.log",
+          "size": 9012,
+          "mode": 416,
+          "uid": 0,
+          "gid": 4,
+          "mod_time": "2016-12-14T04:30:28+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 2
+              },
+              {
+                "layer": 4
+              },
+              {
+                "layer": 7
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/etc/ld.so.cache",
+          "size": 6938,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-12-14T04:30:28+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 2
+              },
+              {
+                "layer": 4
+              },
+              {
+                "layer": 7
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/var/cache/ldconfig/aux-cache",
+          "size": 4829,
+          "mode": 384,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-12-14T04:30:28+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 2
+              },
+              {
+                "layer": 4
+              },
+              {
+                "layer": 7
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/var/cache/debconf/config.dat-old",
+          "size": 4786,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-12-14T04:30:27+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 2
+              },
+              {
+                "layer": 7
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/var/cache/debconf/config.dat",
+          "size": 4588,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-12-14T04:30:28+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 2
+              },
+              {
+                "layer": 7
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/var/log/apt/history.log",
+          "size": 1618,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-12-14T04:30:28+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 2
+              },
+              {
+                "layer": 4
+              },
+              {
+                "layer": 7
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/usr/share/info",
+          "mode": 2147484157,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-12-14T04:30:27+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 2
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/usr/share/doc",
+          "mode": 2147484141,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-12-14T04:30:28+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 2
+              },
+              {
+                "layer": 4
+              },
+              {
+                "layer": 7
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/usr/lib/x86_64-linux-gnu",
+          "mode": 2147484141,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-12-14T04:30:28+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 2
+              },
+              {
+                "layer": 4
+              },
+              {
+                "layer": 7
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/usr/share",
+          "mode": 2147484141,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-12-14T04:30:27+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 2
+              },
+              {
+                "layer": 4
+              },
+              {
+                "layer": 7
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/usr/sbin",
+          "mode": 2147484141,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-12-14T04:30:27+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 2
+              },
+              {
+                "layer": 7
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/usr/lib",
+          "mode": 2147484141,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-12-14T04:30:28+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 2
+              },
+              {
+                "layer": 4
+              },
+              {
+                "layer": 7
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/tmp",
+          "mode": 2148532735,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-12-14T04:30:27+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 2
+              },
+              {
+                "layer": 4
+              },
+              {
+                "layer": 5
+              },
+              {
+                "layer": 7
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/usr/local/share",
+          "mode": 2151678461,
+          "uid": 0,
+          "gid": 50,
+          "mod_time": "2016-12-14T04:30:27+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 2
+              }
+            ]
+          }
+        }
+      ],
+      "change_instruction": {
+        "index": 4,
+        "image_index": 0,
+        "type": "RUN",
+        "all": "RUN set -x && \\\n\tapt-get update && \\\n\tapt-get install -y --no-install-recommends ca-certificates wget && \\\n\trm -rf /var/lib/apt/lists/* && \\\n\twget -O /usr/local/bin/gosu \"https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)\" && \\\n\twget -O /usr/local/bin/gosu.asc \"https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc\" && \\\n\texport GNUPGHOME=\"$(mktemp -d)\" && \\\n\tgpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 && \\\n\tgpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu && \\\n\trm -r \"$GNUPGHOME\" /usr/local/bin/gosu.asc && \\\n\tchmod +x /usr/local/bin/gosu && \\\n\tgosu nobody true && \\\n\tapt-get purge -y --auto-remove ca-certificates wget",
+        "snippet": "RUN set -x && \\\n\tapt-get update && \\\n\tapt-ge..."
+      }
+    },
+    {
+      "id": "cb3b282699eb1850795bf9e44cf291a67342d6bf49ef635c250626f39e6df92b",
+      "index": 3,
+      "path": "cb3b282699eb1850795bf9e44cf291a67342d6bf49ef635c250626f39e6df92b/layer.tar",
+      "fsdiff_id": "sha256:8fd4d9b65d85a81c0c0888d0ba7a3507433d4c939b4992a1d89fa74430d804d6",
+      "stats": {
+        "all_size": 0,
+        "object_count": 1,
+        "dir_count": 1,
+        "file_count": 0,
+        "link_count": 0,
+        "max_file_size": 0,
+        "max_dir_size": 0,
+        "deleted_count": 0,
+        "deleted_dir_content_count": 0,
+        "deleted_dir_count": 0,
+        "deleted_file_count": 0,
+        "deleted_link_count": 0,
+        "deleted_size": 0,
+        "added_size": 0,
+        "modified_size": 0
+      },
+      "changes": {
+        "deleted": 0,
+        "added": 1,
+        "modified": 0
+      },
+      "top": [
+        {
+          "change": "A",
+          "name": "/docker-entrypoint-initdb.d",
+          "mode": 2147484141,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-12-14T04:30:29+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 3
+            },
+            "M": [
+              {
+                "layer": 11
+              }
+            ]
+          }
+        }
+      ],
+      "change_instruction": {
+        "index": 5,
+        "image_index": 0,
+        "type": "RUN",
+        "all": "RUN mkdir /docker-entrypoint-initdb.d",
+        "snippet": "RUN mkdir /docker-entrypoint-initdb.d"
+      }
+    },
+    {
+      "id": "f65b6b734863d6c2dbf3279e4b3b165a936fdfdf6e8cc72047568a543cff2435",
+      "index": 4,
+      "path": "f65b6b734863d6c2dbf3279e4b3b165a936fdfdf6e8cc72047568a543cff2435/layer.tar",
+      "fsdiff_id": "sha256:2fe96b666276305f4f1d2dbda88a4bae2dcab2a4def8f640fcb7da49983be093",
+      "stats": {
+        "all_size": 32920537,
+        "object_count": 1295,
+        "dir_count": 263,
+        "file_count": 1019,
+        "link_count": 13,
+        "max_file_size": 2787440,
+        "max_dir_size": 0,
+        "deleted_count": 1,
+        "deleted_dir_content_count": 0,
+        "deleted_dir_count": 0,
+        "deleted_file_count": 1,
+        "deleted_link_count": 0,
+        "deleted_size": 0,
+        "added_size": 32590483,
+        "modified_size": 330054,
+        "sticky_count": 1
+      },
+      "changes": {
+        "deleted": 1,
+        "added": 1232,
+        "modified": 62
+      },
+      "top": [
+        {
+          "change": "A",
+          "name": "/usr/lib/x86_64-linux-gnu/perl/5.20.2/auto/Encode/JP/JP.so",
+          "size": 2787440,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-07-22T20:29:37+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 4
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/lib/x86_64-linux-gnu/perl/5.20.2/auto/Encode/KR/KR.so",
+          "size": 2451568,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-07-22T20:29:37+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 4
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/lib/x86_64-linux-gnu/perl/5.20.2/auto/Encode/CN/CN.so",
+          "size": 2127984,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-07-22T20:29:37+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 4
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/lib/x86_64-linux-gnu/perl/5.20.2/auto/Encode/TW/TW.so",
+          "size": 2078832,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-07-22T20:29:37+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 4
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/share/perl/5.20.2/Locale/Codes/Language_Codes.pm",
+          "size": 1563126,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-07-22T20:29:19+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 4
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/share/perl/5.20.2/Unicode/Collate/allkeys.txt",
+          "size": 1492794,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-07-22T20:29:19+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 4
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/lib/x86_64-linux-gnu/perl/5.20.2/auto/Unicode/Collate/Collate.so",
+          "size": 1212432,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-07-22T20:29:37+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 4
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/share/perl/5.20.2/unicore/Name.pl",
+          "size": 781088,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-07-22T20:29:19+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 4
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/share/perl/5.20.2/Module/CoreList.pm",
+          "size": 568641,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-07-22T20:29:19+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 4
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/lib/x86_64-linux-gnu/perl/5.20.2/auto/Unicode/Normalize/Normalize.so",
+          "size": 551120,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-07-22T20:29:37+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 4
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/lib/x86_64-linux-gnu/perl/5.20.2/auto/Encode/Byte/Byte.so",
+          "size": 383088,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-07-22T20:29:37+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 4
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/share/perl/5.20.2/perl5db.pl",
+          "size": 314587,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-07-22T20:29:19+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 4
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/lib/x86_64-linux-gnu/perl/5.20.2/CORE/proto.h",
+          "size": 282451,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-07-22T20:29:19+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 4
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/share/perl/5.20.2/CGI.pm",
+          "size": 261357,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-07-22T20:29:19+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 4
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/share/perl/5.20.2/pod/perldiag.pod",
+          "size": 251876,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-07-22T20:29:19+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 4
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/lib/x86_64-linux-gnu/perl/5.20.2/Config.pod",
+          "size": 234845,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-07-22T20:29:19+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 4
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/lib/x86_64-linux-gnu/perl/5.20.2/Devel/PPPort.pm",
+          "size": 214025,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-07-22T20:29:19+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 4
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/share/perl/5.20.2/Unicode/Collate/Locale/ja.pl",
+          "size": 201379,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-07-22T20:29:19+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 4
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/lib/x86_64-linux-gnu/perl/5.20.2/CORE/perl.h",
+          "size": 181454,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-07-22T20:29:19+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 4
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/share/perl/5.20.2/Module/Build/Base.pm",
+          "size": 166870,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-07-22T20:29:19+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 4
+            }
+          }
+        }
+      ],
+      "change_instruction": {
+        "index": 6,
+        "image_index": 0,
+        "type": "RUN",
+        "all": "RUN apt-get update && \\\n\tapt-get install -y perl pwgen --no-install-recommends && \\\n\trm -rf /var/lib/apt/lists/*",
+        "snippet": "RUN apt-get update && \\\n\tapt-get install -y ..."
+      }
+    },
+    {
+      "id": "a3297cef8cd23910008fd35fa31da39f57b743a877ef9d61f5cd27e10880d6ab",
+      "index": 5,
+      "path": "a3297cef8cd23910008fd35fa31da39f57b743a877ef9d61f5cd27e10880d6ab/layer.tar",
+      "fsdiff_id": "sha256:490b111a544bfae96b6f0dc80e0ab683e1b9839a8259811e66dc94732b84c970",
+      "stats": {
+        "all_size": 20809,
+        "object_count": 6,
+        "dir_count": 4,
+        "file_count": 2,
+        "link_count": 0,
+        "max_file_size": 20809,
+        "max_dir_size": 0,
+        "deleted_count": 0,
+        "deleted_dir_content_count": 0,
+        "deleted_dir_count": 0,
+        "deleted_file_count": 0,
+        "deleted_link_count": 0,
+        "deleted_size": 0,
+        "added_size": 20809,
+        "modified_size": 0,
+        "sticky_count": 1
+      },
+      "changes": {
+        "deleted": 0,
+        "added": 2,
+        "modified": 4
+      },
+      "top": [
+        {
+          "change": "A",
+          "name": "/etc/apt/trusted.gpg",
+          "size": 20809,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-12-14T06:17:52+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 5
+            }
+          }
+        },
+        {
+          "change": "M",
+          "name": "/tmp",
+          "mode": 2148532735,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-12-14T06:17:52+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 2
+              },
+              {
+                "layer": 4
+              },
+              {
+                "layer": 5
+              },
+              {
+                "layer": 7
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/etc/apt/trusted.gpg.d",
+          "mode": 2147484141,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-12-14T06:17:52+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 5
+              }
+            ]
+          }
+        },
+        {
+          "change": "A",
+          "name": "/etc/apt/trusted.gpg~",
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-12-14T06:17:50+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 5
+            }
+          }
+        },
+        {
+          "change": "M",
+          "name": "/etc/apt",
+          "mode": 2147484141,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-12-14T06:17:52+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 5
+              },
+              {
+                "layer": 6
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/etc",
+          "mode": 2147484141,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-12-14T06:17:50+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 1
+              },
+              {
+                "layer": 2
+              },
+              {
+                "layer": 4
+              },
+              {
+                "layer": 5
+              },
+              {
+                "layer": 6
+              },
+              {
+                "layer": 7
+              },
+              {
+                "layer": 8
+              }
+            ]
+          }
+        }
+      ],
+      "change_instruction": {
+        "index": 7,
+        "image_index": 0,
+        "type": "RUN",
+        "all": "RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys A4A9406876FCBD3C456770C88C718D3B5072E1F5",
+        "snippet": "RUN apt-key adv --keyserver ha.pool.sks-keys..."
+      },
+      "other_instructions": [
+        {
+          "index": 8,
+          "image_index": 0,
+          "type": "ENV",
+          "all": "ENV MYSQL_MAJOR=5.7",
+          "snippet": "ENV MYSQL_MAJOR=5.7"
+        },
+        {
+          "index": 9,
+          "image_index": 0,
+          "type": "ENV",
+          "all": "ENV MYSQL_VERSION=5.7.17-1debian8",
+          "snippet": "ENV MYSQL_VERSION=5.7.17-1debian8"
+        }
+      ]
+    },
+    {
+      "id": "6333889de8b95e0c89d0efd191f27149ea49ef4c864412d9bd5087246681bfed",
+      "index": 6,
+      "path": "6333889de8b95e0c89d0efd191f27149ea49ef4c864412d9bd5087246681bfed/layer.tar",
+      "fsdiff_id": "sha256:0ebca704a37f9c9be0f4cf4b690507936666e088f7771df6693d186a13720782",
+      "stats": {
+        "all_size": 55,
+        "object_count": 4,
+        "dir_count": 3,
+        "file_count": 1,
+        "link_count": 0,
+        "max_file_size": 55,
+        "max_dir_size": 0,
+        "deleted_count": 0,
+        "deleted_dir_content_count": 0,
+        "deleted_dir_count": 0,
+        "deleted_file_count": 0,
+        "deleted_link_count": 0,
+        "deleted_size": 0,
+        "added_size": 55,
+        "modified_size": 0
+      },
+      "changes": {
+        "deleted": 0,
+        "added": 1,
+        "modified": 3
+      },
+      "top": [
+        {
+          "change": "A",
+          "name": "/etc/apt/sources.list.d/mysql.list",
+          "size": 55,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-12-14T06:17:54+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 6
+            }
+          }
+        },
+        {
+          "change": "M",
+          "name": "/etc/apt/sources.list.d",
+          "mode": 2147484141,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-12-14T06:17:54+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 6
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/etc/apt",
+          "mode": 2147484141,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-12-14T06:17:54+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 5
+              },
+              {
+                "layer": 6
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/etc",
+          "mode": 2147484141,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-12-14T06:17:54+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 1
+              },
+              {
+                "layer": 2
+              },
+              {
+                "layer": 4
+              },
+              {
+                "layer": 5
+              },
+              {
+                "layer": 6
+              },
+              {
+                "layer": 7
+              },
+              {
+                "layer": 8
+              }
+            ]
+          }
+        }
+      ],
+      "change_instruction": {
+        "index": 10,
+        "image_index": 0,
+        "type": "RUN",
+        "all": "RUN echo \"deb http://repo.mysql.com/apt/debian/ jessie mysql-${MYSQL_MAJOR}\" > /etc/apt/sources.list.d/mysql.list",
+        "snippet": "RUN echo \"deb http://repo.mysql.com/apt/debi..."
+      }
+    },
+    {
+      "id": "de9da8244ec7553b65b6e6987a5a5adfae83b94c157d0a30158d0f42993353c9",
+      "index": 7,
+      "path": "de9da8244ec7553b65b6e6987a5a5adfae83b94c157d0a30158d0f42993353c9/layer.tar",
+      "fsdiff_id": "sha256:42832ba5c0f5d05e4e2c56570e02977cad0f38fdb2c3ebeed97476d6b627ef46",
+      "stats": {
+        "all_size": 239565479,
+        "object_count": 544,
+        "dir_count": 159,
+        "file_count": 346,
+        "link_count": 39,
+        "max_file_size": 41400272,
+        "max_dir_size": 0,
+        "deleted_count": 12,
+        "deleted_dir_content_count": 0,
+        "deleted_dir_count": 0,
+        "deleted_file_count": 1,
+        "deleted_link_count": 11,
+        "deleted_size": 0,
+        "added_size": 237979956,
+        "modified_size": 1585523,
+        "sticky_count": 1
+      },
+      "changes": {
+        "deleted": 12,
+        "added": 403,
+        "modified": 129
+      },
+      "top": [
+        {
+          "change": "A",
+          "name": "/usr/sbin/mysqld-debug",
+          "size": 41400272,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-11-28T23:10:47+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 7
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/sbin/mysqld",
+          "size": 25011664,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-11-28T23:10:47+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 7
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/bin/mysql_embedded",
+          "size": 23255032,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-11-28T23:10:47+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 7
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/lib/mysql/plugin/debug/mysqlx.so",
+          "size": 13885608,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-11-28T23:10:14+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 7
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/lib/mysql/plugin/debug/group_replication.so",
+          "size": 12046744,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-11-28T23:10:14+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 7
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/bin/mysql_install_db",
+          "size": 5444008,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-11-28T23:10:47+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 7
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/bin/mysql_upgrade",
+          "size": 4839256,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-11-28T23:10:47+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 7
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/bin/mysqlpump",
+          "size": 4708136,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-11-28T23:10:47+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 7
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/bin/mysql",
+          "size": 4494504,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-11-28T23:10:47+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 7
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/bin/mysqlbinlog",
+          "size": 4436824,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-11-28T23:10:47+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 7
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/bin/mysqldump",
+          "size": 4271952,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-11-28T23:10:47+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 7
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/bin/mysqlcheck",
+          "size": 4218064,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-11-28T23:10:47+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 7
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/bin/mysqlslap",
+          "size": 4210448,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-11-28T23:10:47+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 7
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/bin/mysqladmin",
+          "size": 4200656,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-11-28T23:10:47+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 7
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/bin/mysqlimport",
+          "size": 4192784,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-11-28T23:10:47+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 7
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/bin/mysqlshow",
+          "size": 4191312,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-11-28T23:10:47+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 7
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/bin/mysql_secure_installation",
+          "size": 4189584,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-11-28T23:10:47+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 7
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/bin/innochecksum",
+          "size": 4075472,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-11-28T23:10:47+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 7
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/bin/myisamchk",
+          "size": 4063888,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-11-28T23:10:47+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 7
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/bin/myisampack",
+          "size": 3989968,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-11-28T23:10:47+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 7
+            }
+          }
+        }
+      ],
+      "change_instruction": {
+        "index": 11,
+        "image_index": 0,
+        "type": "RUN",
+        "all": "RUN { \t\techo mysql-community-server mysql-community-server/data-dir select ''; \t\techo mysql-community-server mysql-community-server/root-pass password ''; \t\techo mysql-community-server mysql-community-server/re-root-pass password ''; \t\techo mysql-community-server mysql-community-server/remove-test-db select false; \t} | debconf-set-selections && \\\n\tapt-get update && \\\n\tapt-get install -y mysql-server=\"${MYSQL_VERSION}\" && \\\n\trm -rf /var/lib/apt/lists/* && \\\n\trm -rf /var/lib/mysql && \\\n\tmkdir -p /var/lib/mysql /var/run/mysqld && \\\n\tchown -R mysql:mysql /var/lib/mysql /var/run/mysqld && \\\n\tchmod 777 /var/run/mysqld",
+        "snippet": "RUN { \t\techo mysql-community-server mysql-co..."
+      }
+    },
+    {
+      "id": "3148dfda14ba44eca5f80f25d272b768ecb0201af454bc1a219496d3a58069e0",
+      "index": 8,
+      "path": "3148dfda14ba44eca5f80f25d272b768ecb0201af454bc1a219496d3a58069e0/layer.tar",
+      "fsdiff_id": "sha256:f61f97e5ac1dbda28152bf6f142f8e299e9597b7c2c9d2fb35f587a10a59d611",
+      "stats": {
+        "all_size": 1234,
+        "object_count": 6,
+        "dir_count": 4,
+        "file_count": 2,
+        "link_count": 0,
+        "max_file_size": 1191,
+        "max_dir_size": 0,
+        "deleted_count": 0,
+        "deleted_dir_content_count": 0,
+        "deleted_dir_count": 0,
+        "deleted_file_count": 0,
+        "deleted_link_count": 0,
+        "deleted_size": 0,
+        "added_size": 43,
+        "modified_size": 1191
+      },
+      "changes": {
+        "deleted": 0,
+        "added": 1,
+        "modified": 5
+      },
+      "top": [
+        {
+          "change": "M",
+          "name": "/etc/mysql/mysql.conf.d/mysqld.cnf",
+          "size": 1191,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-12-14T06:18:23+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 7
+            },
+            "M": [
+              {
+                "layer": 8
+              }
+            ]
+          }
+        },
+        {
+          "change": "A",
+          "name": "/etc/mysql/conf.d/docker.cnf",
+          "size": 43,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-12-14T06:18:23+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 8
+            }
+          }
+        },
+        {
+          "change": "M",
+          "name": "/etc/mysql/conf.d",
+          "mode": 2147484141,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-12-14T06:18:23+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 7
+            },
+            "M": [
+              {
+                "layer": 8
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/etc/mysql/mysql.conf.d",
+          "mode": 2147484141,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-12-14T06:18:23+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 7
+            },
+            "M": [
+              {
+                "layer": 8
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/etc/mysql",
+          "mode": 2147484141,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-12-14T06:18:23+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 7
+            },
+            "M": [
+              {
+                "layer": 8
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/etc",
+          "mode": 2147484141,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-12-14T06:18:23+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 1
+              },
+              {
+                "layer": 2
+              },
+              {
+                "layer": 4
+              },
+              {
+                "layer": 5
+              },
+              {
+                "layer": 6
+              },
+              {
+                "layer": 7
+              },
+              {
+                "layer": 8
+              }
+            ]
+          }
+        }
+      ],
+      "change_instruction": {
+        "index": 12,
+        "image_index": 0,
+        "type": "RUN",
+        "all": "RUN sed -Ei 's/^(bind-address|log)/#&/' /etc/mysql/mysql.conf.d/mysqld.cnf && \\\n\techo '[mysqld]\\nskip-host-cache\\nskip-name-resolve' > /etc/mysql/conf.d/docker.cnf",
+        "snippet": "RUN sed -Ei 's/^(bind-address|log)/#&/' /etc..."
+      },
+      "other_instructions": [
+        {
+          "index": 13,
+          "image_index": 0,
+          "type": "VOLUME",
+          "all": "VOLUME [/var/lib/mysql]",
+          "snippet": "VOLUME [/var/lib/mysql]"
+        }
+      ]
+    },
+    {
+      "id": "1edcd621cb2b9f0b85dfddbdf7f5e053a50591d95e8ff7d0ea61a0e323178a9c",
+      "index": 9,
+      "path": "1edcd621cb2b9f0b85dfddbdf7f5e053a50591d95e8ff7d0ea61a0e323178a9c/layer.tar",
+      "fsdiff_id": "sha256:5e10625e4803db76b68fa4fd0c054ad768e8c2480fadc7f296fb946704e6447d",
+      "stats": {
+        "all_size": 4685,
+        "object_count": 4,
+        "dir_count": 3,
+        "file_count": 1,
+        "link_count": 0,
+        "max_file_size": 4685,
+        "max_dir_size": 0,
+        "deleted_count": 0,
+        "deleted_dir_content_count": 0,
+        "deleted_dir_count": 0,
+        "deleted_file_count": 0,
+        "deleted_link_count": 0,
+        "deleted_size": 0,
+        "added_size": 4685,
+        "modified_size": 0
+      },
+      "changes": {
+        "deleted": 0,
+        "added": 1,
+        "modified": 3
+      },
+      "top": [
+        {
+          "change": "A",
+          "name": "/usr/local/bin/docker-entrypoint.sh",
+          "size": 4685,
+          "mode": 509,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-12-14T06:17:38+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 9
+            }
+          }
+        },
+        {
+          "change": "M",
+          "name": "/usr/local/bin",
+          "mode": 2151678461,
+          "uid": 0,
+          "gid": 50,
+          "mod_time": "2016-12-14T06:18:24+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 2
+              },
+              {
+                "layer": 9
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/usr/local",
+          "mode": 2151678461,
+          "uid": 0,
+          "gid": 50,
+          "mod_time": "2016-12-14T06:18:24+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 2
+              },
+              {
+                "layer": 9
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/usr",
+          "mode": 2147484141,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-12-14T06:18:24+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 2
+              },
+              {
+                "layer": 4
+              },
+              {
+                "layer": 7
+              },
+              {
+                "layer": 9
+              }
+            ]
+          }
+        }
+      ],
+      "change_instruction": {
+        "index": 14,
+        "image_index": 0,
+        "type": "COPY",
+        "all": "COPY file:fc6fa63e59403864ccd3dc0d09d92a9b3feb07f725587a6f97309cf96bb52a6b /usr/local/bin/",
+        "snippet": "COPY file:fc6fa63e59403864ccd3dc0d09d92a9b3f..."
+      }
+    },
+    {
+      "id": "8216b9192edbf531b0de76d9f27e74e76658c97d86b781b8db2e5e3a99df2bc5",
+      "index": 10,
+      "path": "8216b9192edbf531b0de76d9f27e74e76658c97d86b781b8db2e5e3a99df2bc5/layer.tar",
+      "fsdiff_id": "sha256:eab32140cb6cadf794be4a9d68fa66097bc6be8e761d7cae97a46f149e90cbd4",
+      "stats": {
+        "all_size": 0,
+        "object_count": 1,
+        "dir_count": 0,
+        "file_count": 0,
+        "link_count": 1,
+        "max_file_size": 0,
+        "max_dir_size": 0,
+        "deleted_count": 0,
+        "deleted_dir_content_count": 0,
+        "deleted_dir_count": 0,
+        "deleted_file_count": 0,
+        "deleted_link_count": 0,
+        "deleted_size": 0,
+        "added_size": 0,
+        "modified_size": 0
+      },
+      "changes": {
+        "deleted": 0,
+        "added": 1,
+        "modified": 0
+      },
+      "top": [
+        {
+          "change": "A",
+          "name": "/entrypoint.sh",
+          "mode": 134218239,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-12-14T06:18:25+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "link_target": "usr/local/bin/docker-entrypoint.sh",
+          "history": {
+            "A": {
+              "layer": 10
+            }
+          }
+        }
+      ],
+      "change_instruction": {
+        "index": 15,
+        "image_index": 0,
+        "type": "RUN",
+        "all": "RUN ln -s usr/local/bin/docker-entrypoint.sh /entrypoint.sh # backwards compat",
+        "snippet": "RUN ln -s usr/local/bin/docker-entrypoint.sh..."
+      },
+      "other_instructions": [
+        {
+          "index": 16,
+          "image_index": 0,
+          "type": "ENTRYPOINT",
+          "all": "ENTRYPOINT [\"docker-entrypoint.sh\"]",
+          "snippet": "ENTRYPOINT [\"docker-entrypoint.sh\"]"
+        },
+        {
+          "index": 17,
+          "image_index": 0,
+          "type": "EXPOSE",
+          "all": "EXPOSE 3306/tcp",
+          "snippet": "EXPOSE 3306/tcp"
+        },
+        {
+          "index": 18,
+          "image_index": 0,
+          "type": "CMD",
+          "all": "CMD [\"mysqld\"]",
+          "snippet": "CMD [\"mysqld\"]"
+        }
+      ]
+    },
+    {
+      "id": "76f9baa75adcc9e0eb3b4d3a52d6dafbccc783d39ed4a872db03fa60d1d1a489",
+      "index": 11,
+      "path": "76f9baa75adcc9e0eb3b4d3a52d6dafbccc783d39ed4a872db03fa60d1d1a489/layer.tar",
+      "fsdiff_id": "sha256:8f81f3c62cead1b9cbc94a6cd787a666ed57af388b00ee79696db1934bf8593f",
+      "stats": {
+        "all_size": 5176,
+        "object_count": 2,
+        "dir_count": 1,
+        "file_count": 1,
+        "link_count": 0,
+        "max_file_size": 5176,
+        "max_dir_size": 0,
+        "deleted_count": 0,
+        "deleted_dir_content_count": 0,
+        "deleted_dir_count": 0,
+        "deleted_file_count": 0,
+        "deleted_link_count": 0,
+        "deleted_size": 0,
+        "added_size": 5176,
+        "modified_size": 0
+      },
+      "changes": {
+        "deleted": 0,
+        "added": 1,
+        "modified": 1
+      },
+      "top": [
+        {
+          "change": "A",
+          "name": "/docker-entrypoint-initdb.d/dump.sql",
+          "size": 5176,
+          "mode": 436,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-12-23T14:21:39+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 11
+            }
+          }
+        },
+        {
+          "change": "M",
+          "name": "/docker-entrypoint-initdb.d",
+          "mode": 2147484141,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-12-23T14:24:00+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 3
+            },
+            "M": [
+              {
+                "layer": 11
+              }
+            ]
+          }
+        }
+      ],
+      "change_instruction": {
+        "index": 19,
+        "image_index": 0,
+        "type": "COPY",
+        "all": "COPY file:b9ed7d886ea2cca2fd16b10b4344aa12306be20eba64dc24bf189e79c8f5de68 /docker-entrypoint-initdb.d/",
+        "snippet": "COPY file:b9ed7d886ea2cca2fd16b10b4344aa1230..."
+      }
+    }
+  ],
+  "image_archive_location": "/tmp/docker-slim-state/.docker-slim-state/images/9d0c5eb88949dc8a8896db19330770f109fae9c9426d3c2fa9cf84e68b40ac2e/image/9d0c5eb88949dc8a8896db19330770f109fae9c9426d3c2fa9cf84e68b40ac2e.tar"
+}

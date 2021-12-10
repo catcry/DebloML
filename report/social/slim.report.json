@@ -1,0 +1,3100 @@
+{
+  "version": "1.0",
+  "engine": "linux|Transformer|1.35.2|186f87fbee28f404a96e2204ea2b51014f32cff4|2021-05-03_02:30:01AM",
+  "containerized": false,
+  "host_distro": {
+    "name": "Ubuntu",
+    "version": "20.04",
+    "display_name": "Ubuntu 20.04.3 LTS"
+  },
+  "type": "xray",
+  "state": "done",
+  "target_reference": "yg397/social-network-microservices:latest",
+  "source_image": {
+    "identity": {
+      "id": "sha256:6faef786a52223e6912d9027a1310891ac892f673e2d4bcc352e4854faf87271",
+      "tags": [
+        "latest"
+      ],
+      "names": [
+        "yg397/social-network-microservices:latest"
+      ],
+      "digests": [
+        "sha256:bafeeccb00a0143b4bcdee3d45ef0286214844a882073a6297b87a3e61b60190"
+      ],
+      "full_digests": [
+        "yg397/social-network-microservices@sha256:bafeeccb00a0143b4bcdee3d45ef0286214844a882073a6297b87a3e61b60190"
+      ]
+    },
+    "size": 1497293295,
+    "size_human": "1.5 GB",
+    "create_time": "2021-09-08T19:23:31Z",
+    "docker_version": "20.10.0",
+    "architecture": "amd64",
+    "distro": {
+      "name": "Ubuntu",
+      "version": "16.04",
+      "display_name": "Ubuntu 16.04.7 LTS"
+    },
+    "os": "linux",
+    "env_vars": [
+      "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+      "LD_LIBRARY_PATH=/usr/local/lib:"
+    ]
+  },
+  "artifact_location": "/tmp/docker-slim-state/.docker-slim-state/images/6faef786a52223e6912d9027a1310891ac892f673e2d4bcc352e4854faf87271/artifacts",
+  "image_stack": [
+    {
+      "is_top_image": true,
+      "id": "sha256:6faef786a52223e6912d9027a1310891ac892f673e2d4bcc352e4854faf87271",
+      "full_name": "yg397/social-network-microservices:latest",
+      "repo_name": "yg397/social-network-microservices",
+      "version_tag": "latest",
+      "raw_tags": [
+        "yg397/social-network-microservices:latest"
+      ],
+      "create_time": "2021-09-08T19:23:31Z",
+      "new_size": 1497293295,
+      "new_size_human": "1.5 GB",
+      "instructions": [
+        {
+          "type": "ADD",
+          "time": "2020-09-25T22:36:27Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "layer_id": "5a4842bb98991bc39fdf797df509527410a81e909c81e97e5efc78af0dd61049",
+          "layer_fsdiff_id": "sha256:f577d0e0bf7011714547f1ea1e3536cad7d8575a4a6357fae65b7e8a42914889",
+          "size": 127483145,
+          "size_human": "128 MB",
+          "params": "file:23a55d7e93b396e490b6d0893137e5c13e3e0a234e0feaea8b1cfd4079fb1882 in /",
+          "command_snippet": "ADD file:23a55d7e93b396e490b6d0893137e5c13e3...",
+          "command_all": "ADD file:23a55d7e93b396e490b6d0893137e5c13e3e0a234e0feaea8b1cfd4079fb1882 /",
+          "target": "/",
+          "source_type": "file"
+        },
+        {
+          "type": "RUN",
+          "time": "2020-09-25T22:36:28Z",
+          "is_nop": false,
+          "local_image_exists": false,
+          "layer_index": 1,
+          "layer_id": "e0c52c0ff595443013b2ff96bd6c2aa36738292d44ef2ef4d0487aa31e9da343",
+          "layer_fsdiff_id": "sha256:06859de2f3e3d883d9084ce20cc5fa30f2922cd747a092450d4dc8cb6de3f757",
+          "size": 745,
+          "size_human": "745 B",
+          "command_snippet": "RUN set -xe && \\\n\techo '#!/bin/sh' > /usr/sb...",
+          "command_all": "RUN set -xe && \\\n\techo '#!/bin/sh' > /usr/sbin/policy-rc.d && \\\n\techo 'exit 101' >> /usr/sbin/policy-rc.d && \\\n\tchmod +x /usr/sbin/policy-rc.d && \\\n\tdpkg-divert --local --rename --add /sbin/initctl && \\\n\tcp -a /usr/sbin/policy-rc.d /sbin/initctl && \\\n\tsed -i 's/^exit.*/exit 0/' /sbin/initctl && \\\n\techo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup && \\\n\techo 'DPkg::Post-Invoke { \"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\"; };' > /etc/apt/apt.conf.d/docker-clean && \\\n\techo 'APT::Update::Post-Invoke { \"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\"; };' >> /etc/apt/apt.conf.d/docker-clean && \\\n\techo 'Dir::Cache::pkgcache \"\"; Dir::Cache::srcpkgcache \"\";' >> /etc/apt/apt.conf.d/docker-clean && \\\n\techo 'Acquire::Languages \"none\";' > /etc/apt/apt.conf.d/docker-no-languages && \\\n\techo 'Acquire::GzipIndexes \"true\"; Acquire::CompressionTypes::Order:: \"gz\";' > /etc/apt/apt.conf.d/docker-gzip-indexes && \\\n\techo 'Apt::AutoRemove::SuggestsImportant \"false\";' > /etc/apt/apt.conf.d/docker-autoremove-suggests",
+          "system_commands": [
+            "set -xe",
+            "echo '#!/bin/sh' > /usr/sbin/policy-rc.d",
+            "echo 'exit 101' >> /usr/sbin/policy-rc.d",
+            "chmod +x /usr/sbin/policy-rc.d",
+            "dpkg-divert --local --rename --add /sbin/initctl",
+            "cp -a /usr/sbin/policy-rc.d /sbin/initctl",
+            "sed -i 's/^exit.*/exit 0/' /sbin/initctl",
+            "echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup",
+            "echo 'DPkg::Post-Invoke { \"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\"; };' > /etc/apt/apt.conf.d/docker-clean",
+            "echo 'APT::Update::Post-Invoke { \"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\"; };' >> /etc/apt/apt.conf.d/docker-clean",
+            "echo 'Dir::Cache::pkgcache \"\"; Dir::Cache::srcpkgcache \"\";' >> /etc/apt/apt.conf.d/docker-clean",
+            "echo 'Acquire::Languages \"none\";' > /etc/apt/apt.conf.d/docker-no-languages",
+            "echo 'Acquire::GzipIndexes \"true\"; Acquire::CompressionTypes::Order:: \"gz\";' > /etc/apt/apt.conf.d/docker-gzip-indexes",
+            "echo 'Apt::AutoRemove::SuggestsImportant \"false\";' > /etc/apt/apt.conf.d/docker-autoremove-suggests"
+          ]
+        },
+        {
+          "type": "RUN",
+          "time": "2020-09-25T22:36:28Z",
+          "is_nop": false,
+          "local_image_exists": false,
+          "layer_index": 2,
+          "layer_id": "cd7b7e7704d1056257a6532c390c83f483b36326dc3fadd5dd775f1cf17df351",
+          "layer_fsdiff_id": "sha256:c4d7b15878d053813c138d72c06f0935000d7606e289de34929449258ef8efe4",
+          "size": 0,
+          "command_snippet": "RUN rm -rf /var/lib/apt/lists/*",
+          "command_all": "RUN rm -rf /var/lib/apt/lists/*",
+          "system_commands": [
+            "rm -rf /var/lib/apt/lists/*"
+          ]
+        },
+        {
+          "type": "RUN",
+          "time": "2020-09-25T22:36:29Z",
+          "is_nop": false,
+          "local_image_exists": false,
+          "layer_index": 3,
+          "layer_id": "9150b209e69f87f8c761573805062e801f8b222379679de3a7f48e9613edd7a9",
+          "layer_fsdiff_id": "sha256:e27729ee6e59f1aa0d0ad3a9740842630347cd51e1555306af7d85eef746d921",
+          "size": 7,
+          "size_human": "7 B",
+          "command_snippet": "RUN mkdir -p /run/systemd && \\\n\techo 'docker...",
+          "command_all": "RUN mkdir -p /run/systemd && \\\n\techo 'docker' > /run/systemd/container",
+          "system_commands": [
+            "mkdir -p /run/systemd",
+            "echo 'docker' > /run/systemd/container"
+          ]
+        },
+        {
+          "type": "CMD",
+          "time": "2020-09-25T22:36:29Z",
+          "is_nop": true,
+          "is_exec_form": true,
+          "local_image_exists": false,
+          "layer_index": 3,
+          "layer_id": "9150b209e69f87f8c761573805062e801f8b222379679de3a7f48e9613edd7a9",
+          "layer_fsdiff_id": "sha256:e27729ee6e59f1aa0d0ad3a9740842630347cd51e1555306af7d85eef746d921",
+          "size": 0,
+          "params": "[\"/bin/bash\"]",
+          "command_snippet": "CMD [\"/bin/bash\"]",
+          "command_all": "CMD [\"/bin/bash\"]",
+          "empty_layer": true
+        },
+        {
+          "type": "ARG",
+          "time": "2021-07-10T00:33:34Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 3,
+          "layer_id": "9150b209e69f87f8c761573805062e801f8b222379679de3a7f48e9613edd7a9",
+          "layer_fsdiff_id": "sha256:e27729ee6e59f1aa0d0ad3a9740842630347cd51e1555306af7d85eef746d921",
+          "size": 0,
+          "params": "LIB_MONGOC_VERSION=1.15.0",
+          "command_snippet": "ARG LIB_MONGOC_VERSION=1.15.0",
+          "command_all": "ARG LIB_MONGOC_VERSION=1.15.0",
+          "empty_layer": true
+        },
+        {
+          "type": "ARG",
+          "time": "2021-07-10T00:33:34Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 3,
+          "layer_id": "9150b209e69f87f8c761573805062e801f8b222379679de3a7f48e9613edd7a9",
+          "layer_fsdiff_id": "sha256:e27729ee6e59f1aa0d0ad3a9740842630347cd51e1555306af7d85eef746d921",
+          "size": 0,
+          "params": "LIB_THRIFT_VERSION=0.12.0",
+          "command_snippet": "ARG LIB_THRIFT_VERSION=0.12.0",
+          "command_all": "ARG LIB_THRIFT_VERSION=0.12.0",
+          "empty_layer": true
+        },
+        {
+          "type": "ARG",
+          "time": "2021-07-10T00:33:34Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 3,
+          "layer_id": "9150b209e69f87f8c761573805062e801f8b222379679de3a7f48e9613edd7a9",
+          "layer_fsdiff_id": "sha256:e27729ee6e59f1aa0d0ad3a9740842630347cd51e1555306af7d85eef746d921",
+          "size": 0,
+          "params": "LIB_JSON_VERSION=3.6.1",
+          "command_snippet": "ARG LIB_JSON_VERSION=3.6.1",
+          "command_all": "ARG LIB_JSON_VERSION=3.6.1",
+          "empty_layer": true
+        },
+        {
+          "type": "ARG",
+          "time": "2021-07-10T00:33:34Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 3,
+          "layer_id": "9150b209e69f87f8c761573805062e801f8b222379679de3a7f48e9613edd7a9",
+          "layer_fsdiff_id": "sha256:e27729ee6e59f1aa0d0ad3a9740842630347cd51e1555306af7d85eef746d921",
+          "size": 0,
+          "params": "LIB_JAEGER_VERSION=0.4.2",
+          "command_snippet": "ARG LIB_JAEGER_VERSION=0.4.2",
+          "command_all": "ARG LIB_JAEGER_VERSION=0.4.2",
+          "empty_layer": true
+        },
+        {
+          "type": "ARG",
+          "time": "2021-07-10T00:33:34Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 3,
+          "layer_id": "9150b209e69f87f8c761573805062e801f8b222379679de3a7f48e9613edd7a9",
+          "layer_fsdiff_id": "sha256:e27729ee6e59f1aa0d0ad3a9740842630347cd51e1555306af7d85eef746d921",
+          "size": 0,
+          "params": "LIB_YAML_VERSION=0.6.2",
+          "command_snippet": "ARG LIB_YAML_VERSION=0.6.2",
+          "command_all": "ARG LIB_YAML_VERSION=0.6.2",
+          "empty_layer": true
+        },
+        {
+          "type": "ARG",
+          "time": "2021-07-10T00:33:34Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 3,
+          "layer_id": "9150b209e69f87f8c761573805062e801f8b222379679de3a7f48e9613edd7a9",
+          "layer_fsdiff_id": "sha256:e27729ee6e59f1aa0d0ad3a9740842630347cd51e1555306af7d85eef746d921",
+          "size": 0,
+          "params": "LIB_OPENTRACING_VERSION=1.5.1",
+          "command_snippet": "ARG LIB_OPENTRACING_VERSION=1.5.1",
+          "command_all": "ARG LIB_OPENTRACING_VERSION=1.5.1",
+          "empty_layer": true
+        },
+        {
+          "type": "ARG",
+          "time": "2021-07-10T00:33:34Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 3,
+          "layer_id": "9150b209e69f87f8c761573805062e801f8b222379679de3a7f48e9613edd7a9",
+          "layer_fsdiff_id": "sha256:e27729ee6e59f1aa0d0ad3a9740842630347cd51e1555306af7d85eef746d921",
+          "size": 0,
+          "params": "LIB_CPP_JWT_VERSION=1.1.1",
+          "command_snippet": "ARG LIB_CPP_JWT_VERSION=1.1.1",
+          "command_all": "ARG LIB_CPP_JWT_VERSION=1.1.1",
+          "empty_layer": true
+        },
+        {
+          "type": "ARG",
+          "time": "2021-07-10T00:33:34Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 3,
+          "layer_id": "9150b209e69f87f8c761573805062e801f8b222379679de3a7f48e9613edd7a9",
+          "layer_fsdiff_id": "sha256:e27729ee6e59f1aa0d0ad3a9740842630347cd51e1555306af7d85eef746d921",
+          "size": 0,
+          "params": "LIB_CPP_REDIS_VERSION=4.3.1",
+          "command_snippet": "ARG LIB_CPP_REDIS_VERSION=4.3.1",
+          "command_all": "ARG LIB_CPP_REDIS_VERSION=4.3.1",
+          "empty_layer": true
+        },
+        {
+          "type": "ARG",
+          "time": "2021-07-10T00:33:34Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 3,
+          "layer_id": "9150b209e69f87f8c761573805062e801f8b222379679de3a7f48e9613edd7a9",
+          "layer_fsdiff_id": "sha256:e27729ee6e59f1aa0d0ad3a9740842630347cd51e1555306af7d85eef746d921",
+          "size": 0,
+          "params": "LIB_AMQP_CPP_VERSION=4.1.4",
+          "command_snippet": "ARG LIB_AMQP_CPP_VERSION=4.1.4",
+          "command_all": "ARG LIB_AMQP_CPP_VERSION=4.1.4",
+          "empty_layer": true
+        },
+        {
+          "type": "ARG",
+          "time": "2021-07-10T00:33:34Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 3,
+          "layer_id": "9150b209e69f87f8c761573805062e801f8b222379679de3a7f48e9613edd7a9",
+          "layer_fsdiff_id": "sha256:e27729ee6e59f1aa0d0ad3a9740842630347cd51e1555306af7d85eef746d921",
+          "size": 0,
+          "params": "LIB_SIMPLEAMQPCLIENT_VERSION=2.4.0",
+          "command_snippet": "ARG LIB_SIMPLEAMQPCLIENT_VERSION=2.4.0",
+          "command_all": "ARG LIB_SIMPLEAMQPCLIENT_VERSION=2.4.0",
+          "empty_layer": true
+        },
+        {
+          "type": "ARG",
+          "time": "2021-07-10T00:33:35Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 3,
+          "layer_id": "9150b209e69f87f8c761573805062e801f8b222379679de3a7f48e9613edd7a9",
+          "layer_fsdiff_id": "sha256:e27729ee6e59f1aa0d0ad3a9740842630347cd51e1555306af7d85eef746d921",
+          "size": 0,
+          "params": "LIB_HIREDIS_VERSION=1.0.0",
+          "command_snippet": "ARG LIB_HIREDIS_VERSION=1.0.0",
+          "command_all": "ARG LIB_HIREDIS_VERSION=1.0.0",
+          "empty_layer": true
+        },
+        {
+          "type": "ARG",
+          "time": "2021-07-10T00:33:35Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 3,
+          "layer_id": "9150b209e69f87f8c761573805062e801f8b222379679de3a7f48e9613edd7a9",
+          "layer_fsdiff_id": "sha256:e27729ee6e59f1aa0d0ad3a9740842630347cd51e1555306af7d85eef746d921",
+          "size": 0,
+          "params": "LIB_REDIS_PLUS_PLUS_VERSION=1.2.3",
+          "command_snippet": "ARG LIB_REDIS_PLUS_PLUS_VERSION=1.2.3",
+          "command_all": "ARG LIB_REDIS_PLUS_PLUS_VERSION=1.2.3",
+          "empty_layer": true
+        },
+        {
+          "type": "ARG",
+          "time": "2021-07-10T00:33:35Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 3,
+          "layer_id": "9150b209e69f87f8c761573805062e801f8b222379679de3a7f48e9613edd7a9",
+          "layer_fsdiff_id": "sha256:e27729ee6e59f1aa0d0ad3a9740842630347cd51e1555306af7d85eef746d921",
+          "size": 0,
+          "params": "NUM_CPUS=40",
+          "command_snippet": "ARG NUM_CPUS=40",
+          "command_all": "ARG NUM_CPUS=40",
+          "empty_layer": true
+        },
+        {
+          "type": "ARG",
+          "time": "2021-07-10T00:33:35Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 3,
+          "layer_id": "9150b209e69f87f8c761573805062e801f8b222379679de3a7f48e9613edd7a9",
+          "layer_fsdiff_id": "sha256:e27729ee6e59f1aa0d0ad3a9740842630347cd51e1555306af7d85eef746d921",
+          "size": 0,
+          "params": "BUILD_DEPS=ca-certificates g++ cmake wget git libmemcached-dev automake bison flex libboost-all-dev libevent-dev libssl-dev libtool make pkg-config librabbitmq-dev python3-dev python3-pip python3-setuptools python3-wheel",
+          "command_snippet": "ARG BUILD_DEPS=ca-certificates g++ cmake wge...",
+          "command_all": "ARG BUILD_DEPS=ca-certificates g++ cmake wget git libmemcached-dev automake bison flex libboost-all-dev libevent-dev libssl-dev libtool make pkg-config librabbitmq-dev python3-dev python3-pip python3-setuptools python3-wheel",
+          "empty_layer": true
+        },
+        {
+          "type": "RUN",
+          "time": "2021-07-10T00:38:32Z",
+          "is_nop": false,
+          "is_exec_form": true,
+          "local_image_exists": false,
+          "layer_index": 4,
+          "layer_id": "0b945590b8d60e42ccda4c0968d88b671f69ee1c6de21ed24301a09f62bf64d4",
+          "layer_fsdiff_id": "sha256:034eea6300f6cb22a077cd734b4c35f63a8de5caeaac510810cec830b9bbe295",
+          "size": 775958112,
+          "size_human": "776 MB",
+          "command_snippet": "RUN [\"|14\",\"BUILD_DEPS=ca-certificates\",\"g++...",
+          "command_all": "RUN [\"|14\",\"BUILD_DEPS=ca-certificates\",\"g++\",\"cmake\",\"wget\",\"git\",\"libmemcached-dev\",\"automake\",\"bison\",\"flex\",\"libboost-all-dev\",\"libevent-dev\",\"libssl-dev\",\"libtool\",\"make\",\"pkg-config\",\"librabbitmq-dev\",\"python3-dev\",\"python3-pip\",\"python3-setuptools\",\"python3-wheel\",\"LIB_AMQP_CPP_VERSION=4.1.4\",\"LIB_CPP_JWT_VERSION=1.1.1\",\"LIB_CPP_REDIS_VERSION=4.3.1\",\"LIB_HIREDIS_VERSION=1.0.0\",\"LIB_JAEGER_VERSION=0.4.2\",\"LIB_JSON_VERSION=3.6.1\",\"LIB_MONGOC_VERSION=1.15.0\",\"LIB_OPENTRACING_VERSION=1.5.1\",\"LIB_REDIS_PLUS_PLUS_VERSION=1.2.3\",\"LIB_SIMPLEAMQPCLIENT_VERSION=2.4.0\",\"LIB_THRIFT_VERSION=0.12.0\",\"LIB_YAML_VERSION=0.6.2\",\"NUM_CPUS=40\",\"/bin/sh\",\"-c\",\"apt-get\",\"update\",\"\\u0026\\u0026\",\"apt-get\",\"install\",\"-y\",\"${BUILD_DEPS}\",\"--no-install-recommends\",\"\\u0026\\u0026\",\"cd\",\"/tmp\",\"\\u0026\\u0026\",\"wget\",\"https://github.com/mongodb/mongo-c-driver/releases/download/${LIB_MONGOC_VERSION}/mongo-c-driver-${LIB_MONGOC_VERSION}.tar.gz\",\"\\u0026\\u0026\",\"tar\",\"-zxf\",\"mongo-c-driver-${LIB_MONGOC_VERSION}.tar.gz\",\"\\u0026\\u0026\",\"cd\",\"mongo-c-driver-${LIB_MONGOC_VERSION}\",\"\\u0026\\u0026\",\"mkdir\",\"-p\",\"cmake-build\",\"\\u0026\\u0026\",\"cd\",\"cmake-build\",\"\\u0026\\u0026\",\"cmake\",\"-DCMAKE_BUILD_TYPE=Release\",\"-DENABLE_TESTS=0\",\"-DENABLE_EXAMPLES=0\",\"..\",\"\\u0026\\u0026\",\"make\",\"-j${NUM_CPUS}\",\"\\u0026\\u0026\",\"make\",\"install\",\"\\u0026\\u0026\",\"cd\",\"/tmp\",\"\\u0026\\u0026\",\"wget\",\"-O\",\"thrift-${LIB_THRIFT_VERSION}.tar.gz\",\"https://github.com/apache/thrift/archive/v${LIB_THRIFT_VERSION}.tar.gz\",\"\\u0026\\u0026\",\"tar\",\"-zxf\",\"thrift-${LIB_THRIFT_VERSION}.tar.gz\",\"\\u0026\\u0026\",\"cd\",\"thrift-${LIB_THRIFT_VERSION}\",\"\\u0026\\u0026\",\"mkdir\",\"-p\",\"cmake-build\",\"\\u0026\\u0026\",\"cd\",\"cmake-build\",\"\\u0026\\u0026\",\"cmake\",\"-DCMAKE_BUILD_TYPE=Release\",\"-DBUILD_TESTING=0\",\"..\",\"\\u0026\\u0026\",\"make\",\"-j${NUM_CPUS}\",\"\\u0026\\u0026\",\"make\",\"install\",\"\\u0026\\u0026\",\"cd\",\"/tmp\",\"\\u0026\\u0026\",\"wget\",\"-O\",\"json-${LIB_JSON_VERSION}.tar.gz\",\"https://github.com/nlohmann/json/archive/v${LIB_JSON_VERSION}.tar.gz\",\"\\u0026\\u0026\",\"tar\",\"-zxf\",\"json-${LIB_JSON_VERSION}.tar.gz\",\"\\u0026\\u0026\",\"cd\",\"json-${LIB_JSON_VERSION}\",\"\\u0026\\u0026\",\"mkdir\",\"-p\",\"cmake-build\",\"\\u0026\\u0026\",\"cd\",\"cmake-build\",\"\\u0026\\u0026\",\"cmake\",\"-DCMAKE_BUILD_TYPE=Release\",\"-DBUILD_TESTING=0\",\"..\",\"\\u0026\\u0026\",\"make\",\"-j${NUM_CPUS}\",\"\\u0026\\u0026\",\"make\",\"install\",\"\\u0026\\u0026\",\"cd\",\"/tmp\",\"\\u0026\\u0026\",\"wget\",\"-O\",\"yaml-cpp-${LIB_YAML_VERSION}.tar.gz\",\"https://github.com/jbeder/yaml-cpp/archive/yaml-cpp-${LIB_YAML_VERSION}.tar.gz\",\"\\u0026\\u0026\",\"tar\",\"-zxf\",\"yaml-cpp-${LIB_YAML_VERSION}.tar.gz\",\"\\u0026\\u0026\",\"cd\",\"yaml-cpp-yaml-cpp-${LIB_YAML_VERSION}\",\"\\u0026\\u0026\",\"mkdir\",\"-p\",\"cmake-build\",\"\\u0026\\u0026\",\"cd\",\"cmake-build\",\"\\u0026\\u0026\",\"cmake\",\"-DCMAKE_BUILD_TYPE=Release\",\"-DCMAKE_CXX_FLAGS=-fPIC\",\"-DYAML_CPP_BUILD_TESTS=0\",\"..\",\"\\u0026\\u0026\",\"make\",\"-j${NUM_CPUS}\",\"\\u0026\\u0026\",\"make\",\"install\",\"\\u0026\\u0026\",\"cd\",\"/tmp\",\"\\u0026\\u0026\",\"wget\",\"-O\",\"opentracing-cpp-${LIB_OPENTRACING_VERSION}.tar.gz\",\"https://github.com/opentracing/opentracing-cpp/archive/v${LIB_OPENTRACING_VERSION}.tar.gz\",\"\\u0026\\u0026\",\"tar\",\"-zxf\",\"opentracing-cpp-${LIB_OPENTRACING_VERSION}.tar.gz\",\"\\u0026\\u0026\",\"cd\",\"opentracing-cpp-${LIB_OPENTRACING_VERSION}\",\"\\u0026\\u0026\",\"mkdir\",\"-p\",\"cmake-build\",\"\\u0026\\u0026\",\"cd\",\"cmake-build\",\"\\u0026\\u0026\",\"cmake\",\"-DCMAKE_BUILD_TYPE=Release\",\"-DCMAKE_CXX_FLAGS=-fPIC\",\"-DBUILD_TESTING=0\",\"..\",\"\\u0026\\u0026\",\"make\",\"-j${NUM_CPUS}\",\"\\u0026\\u0026\",\"make\",\"install\",\"\\u0026\\u0026\",\"cd\",\"/tmp\",\"\\u0026\\u0026\",\"wget\",\"-O\",\"jaeger-client-cpp-${LIB_JAEGER_VERSION}.tar.gz\",\"https://github.com/jaegertracing/jaeger-client-cpp/archive/v${LIB_JAEGER_VERSION}.tar.gz\",\"\\u0026\\u0026\",\"tar\",\"-zxf\",\"jaeger-client-cpp-${LIB_JAEGER_VERSION}.tar.gz\",\"\\u0026\\u0026\",\"cd\",\"jaeger-client-cpp-${LIB_JAEGER_VERSION}\",\"\\u0026\\u0026\",\"mkdir\",\"-p\",\"cmake-build\",\"\\u0026\\u0026\",\"cd\",\"cmake-build\",\"\\u0026\\u0026\",\"cmake\",\"-DCMAKE_BUILD_TYPE=Release\",\"-DCMAKE_CXX_FLAGS=-fPIC\",\"-DHUNTER_ENABLED=0\",\"-DBUILD_TESTING=0\",\"-DJAEGERTRACING_WITH_YAML_CPP=1\",\"-DJAEGERTRACING_BUILD_EXAMPLES=0\",\"..\",\"\\u0026\\u0026\",\"make\",\"-j${NUM_CPUS}\",\"\\u0026\\u0026\",\"make\",\"install\",\"\\u0026\\u0026\",\"cd\",\"/tmp\",\"\\u0026\\u0026\",\"wget\",\"-O\",\"cpp-jwt-${LIB_CPP_JWT_VERSION}.tar.gz\",\"https://github.com/arun11299/cpp-jwt/archive/v${LIB_CPP_JWT_VERSION}.tar.gz\",\"\\u0026\\u0026\",\"tar\",\"-zxf\",\"cpp-jwt-${LIB_CPP_JWT_VERSION}.tar.gz\",\"\\u0026\\u0026\",\"cd\",\"cpp-jwt-${LIB_CPP_JWT_VERSION}\",\"\\u0026\\u0026\",\"cp\",\"-R\",\"include/jwt\",\"/usr/local/include\",\"\\u0026\\u0026\",\"rm\",\"-rf\",\"/usr/local/include/jwt/json\",\"\\u0026\\u0026\",\"sed\",\"-i\",\"s/\\\\#include \\\\\\\"jwt\\\\/json\\\\/json.hpp\\\\\\\"/\\\\#include \\\\\\u003cnlohmann\\\\/json\\\\.hpp\\\\\\u003e/g\",\"/usr/local/include/jwt/jwt.hpp\",\"\\u0026\\u0026\",\"cd\",\"/tmp\",\"\\u0026\\u0026\",\"git\",\"clone\",\"https://github.com/cpp-redis/cpp_redis.git\",\"\\u0026\\u0026\",\"cd\",\"cpp_redis\",\"\\u0026\\u0026\",\"git\",\"checkout\",\"${LIB_CPP_REDIS_VERSION}\",\"\\u0026\\u0026\",\"git\",\"submodule\",\"init\",\"\\u0026\\u0026\",\"git\",\"submodule\",\"update\",\"\\u0026\\u0026\",\"mkdir\",\"cmake-build\",\"\\u0026\\u0026\",\"cd\",\"cmake-build\",\"\\u0026\\u0026\",\"cmake\",\"..\",\"-DCMAKE_BUILD_TYPE=Release\",\"\\u0026\\u0026\",\"make\",\"-j${NUM_CPUS}\",\"\\u0026\\u0026\",\"make\",\"install\",\"\\u0026\\u0026\",\"cd\",\"/tmp\",\"\\u0026\\u0026\",\"git\",\"clone\",\"https://github.com/CopernicaMarketingSoftware/AMQP-CPP.git\",\"\\u0026\\u0026\",\"cd\",\"AMQP-CPP\",\"\\u0026\\u0026\",\"git\",\"checkout\",\"v${LIB_AMQP_CPP_VERSION}\",\"\\u0026\\u0026\",\"mkdir\",\"cmake-build\",\"\\u0026\\u0026\",\"cd\",\"cmake-build\",\"\\u0026\\u0026\",\"cmake\",\"..\",\"-DCMAKE_BUILD_TYPE=Release\",\"-DAMQP-CPP_BUILD_SHARED=on\",\"-DAMQP-CPP_LINUX_TCP=on\",\"\\u0026\\u0026\",\"make\",\"-j${NUM_CPUS}\",\"\\u0026\\u0026\",\"make\",\"install\",\"\\u0026\\u0026\",\"cd\",\"/tmp\",\"\\u0026\\u0026\",\"git\",\"clone\",\"https://github.com/alanxz/SimpleAmqpClient.git\",\"\\u0026\\u0026\",\"cd\",\"SimpleAmqpClient\",\"\\u0026\\u0026\",\"git\",\"checkout\",\"v${LIB_SIMPLEAMQPCLIENT_VERSION}\",\"\\u0026\\u0026\",\"mkdir\",\"cmake-build\",\"\\u0026\\u0026\",\"cd\",\"cmake-build\",\"\\u0026\\u0026\",\"cmake\",\"..\",\"-DCMAKE_BUILD_TYPE=Release\",\"\\u0026\\u0026\",\"make\",\"-j${NUM_CPUS}\",\"\\u0026\\u0026\",\"make\",\"install\",\"\\u0026\\u0026\",\"cd\",\"/tmp\",\"\\u0026\\u0026\",\"git\",\"clone\",\"https://github.com/redis/hiredis.git\",\"\\u0026\\u0026\",\"cd\",\"hiredis\",\"\\u0026\\u0026\",\"git\",\"checkout\",\"v${LIB_HIREDIS_VERSION}\",\"\\u0026\\u0026\",\"make\",\"-j${NUM_CPUS}\",\"USE_SSL=1\",\"\\u0026\\u0026\",\"make\",\"USE_SSL=1\",\"install\",\"\\u0026\\u0026\",\"cd\",\"/tmp\",\"\\u0026\\u0026\",\"git\",\"clone\",\"https://github.com/sewenew/redis-plus-plus.git\",\"\\u0026\\u0026\",\"cd\",\"redis-plus-plus\",\"\\u0026\\u0026\",\"git\",\"checkout\",\"${LIB_REDIS_PLUS_PLUS_VERSION}\",\"\\u0026\\u0026\",\"cmake\",\"-DREDIS_PLUS_PLUS_USE_TLS=ON\",\".\",\"\\u0026\\u0026\",\"make\",\"-j${NUM_CPUS}\",\"\\u0026\\u0026\",\"make\",\"install\",\"\\u0026\\u0026\",\"pip3\",\"install\",\"PyYAML\",\"\\u0026\\u0026\",\"cd\",\"/tmp\",\"\\u0026\\u0026\",\"rm\",\"-rf\",\"mongo-c-driver-${LIB_MONGOC_VERSION}.tar.gz\",\"mongo-c-driver-${LIB_MONGOC_VERSION}\",\"thrift-${LIB_THRIFT_VERSION}.tar.gz\",\"thrift-${LIB_THRIFT_VERSION}\",\"json-${LIB_JSON_VERSION}.tar.gz\",\"json-${LIB_JSON_VERSION}\",\"jaeger-client-cpp-${LIB_JAEGER_VERSION}.tar.gz\",\"jaeger-client-cpp-${LIB_JAEGER_VERSION}\",\"yaml-cpp-${LIB_YAML_VERSION}.tar.gz\",\"yaml-cpp-yaml-cpp-${LIB_YAML_VERSION}\",\"opentracing-cpp-${LIB_OPENTRACING_VERSION}.tar.gz\",\"opentracing-cpp-${LIB_OPENTRACING_VERSION}\",\"cpp-jwt-${LIB_CPP_JWT_VERSION}.tar.gz\",\"cpp-jwt-${LIB_CPP_JWT_VERSION}\",\"cpp_redis\",\"AMQP-CPP\",\"SimpleAmqpClient\"]",
+          "system_commands": [
+            "[\"|14\",\"BUILD_DEPS=ca-certificates\",\"g++\",\"cmake\",\"wget\",\"git\",\"libmemcached-dev\",\"automake\",\"bison\",\"flex\",\"libboost-all-dev\",\"libevent-dev\",\"libssl-dev\",\"libtool\",\"make\",\"pkg-config\",\"librabbitmq-dev\",\"python3-dev\",\"python3-pip\",\"python3-setuptools\",\"python3-wheel\",\"LIB_AMQP_CPP_VERSION=4.1.4\",\"LIB_CPP_JWT_VERSION=1.1.1\",\"LIB_CPP_REDIS_VERSION=4.3.1\",\"LIB_HIREDIS_VERSION=1.0.0\",\"LIB_JAEGER_VERSION=0.4.2\",\"LIB_JSON_VERSION=3.6.1\",\"LIB_MONGOC_VERSION=1.15.0\",\"LIB_OPENTRACING_VERSION=1.5.1\",\"LIB_REDIS_PLUS_PLUS_VERSION=1.2.3\",\"LIB_SIMPLEAMQPCLIENT_VERSION=2.4.0\",\"LIB_THRIFT_VERSION=0.12.0\",\"LIB_YAML_VERSION=0.6.2\",\"NUM_CPUS=40\",\"/bin/sh\",\"-c\",\"apt-get\",\"update\",\"u0026u0026\",\"apt-get\",\"install\",\"-y\",\"${BUILD_DEPS}\",\"--no-install-recommends\",\"u0026u0026\",\"cd\",\"/tmp\",\"u0026u0026\",\"wget\",\"https://github.com/mongodb/mongo-c-driver/releases/download/${LIB_MONGOC_VERSION}/mongo-c-driver-${LIB_MONGOC_VERSION}.tar.gz\",\"u0026u0026\",\"tar\",\"-zxf\",\"mongo-c-driver-${LIB_MONGOC_VERSION}.tar.gz\",\"u0026u0026\",\"cd\",\"mongo-c-driver-${LIB_MONGOC_VERSION}\",\"u0026u0026\",\"mkdir\",\"-p\",\"cmake-build\",\"u0026u0026\",\"cd\",\"cmake-build\",\"u0026u0026\",\"cmake\",\"-DCMAKE_BUILD_TYPE=Release\",\"-DENABLE_TESTS=0\",\"-DENABLE_EXAMPLES=0\",\"..\",\"u0026u0026\",\"make\",\"-j${NUM_CPUS}\",\"u0026u0026\",\"make\",\"install\",\"u0026u0026\",\"cd\",\"/tmp\",\"u0026u0026\",\"wget\",\"-O\",\"thrift-${LIB_THRIFT_VERSION}.tar.gz\",\"https://github.com/apache/thrift/archive/v${LIB_THRIFT_VERSION}.tar.gz\",\"u0026u0026\",\"tar\",\"-zxf\",\"thrift-${LIB_THRIFT_VERSION}.tar.gz\",\"u0026u0026\",\"cd\",\"thrift-${LIB_THRIFT_VERSION}\",\"u0026u0026\",\"mkdir\",\"-p\",\"cmake-build\",\"u0026u0026\",\"cd\",\"cmake-build\",\"u0026u0026\",\"cmake\",\"-DCMAKE_BUILD_TYPE=Release\",\"-DBUILD_TESTING=0\",\"..\",\"u0026u0026\",\"make\",\"-j${NUM_CPUS}\",\"u0026u0026\",\"make\",\"install\",\"u0026u0026\",\"cd\",\"/tmp\",\"u0026u0026\",\"wget\",\"-O\",\"json-${LIB_JSON_VERSION}.tar.gz\",\"https://github.com/nlohmann/json/archive/v${LIB_JSON_VERSION}.tar.gz\",\"u0026u0026\",\"tar\",\"-zxf\",\"json-${LIB_JSON_VERSION}.tar.gz\",\"u0026u0026\",\"cd\",\"json-${LIB_JSON_VERSION}\",\"u0026u0026\",\"mkdir\",\"-p\",\"cmake-build\",\"u0026u0026\",\"cd\",\"cmake-build\",\"u0026u0026\",\"cmake\",\"-DCMAKE_BUILD_TYPE=Release\",\"-DBUILD_TESTING=0\",\"..\",\"u0026u0026\",\"make\",\"-j${NUM_CPUS}\",\"u0026u0026\",\"make\",\"install\",\"u0026u0026\",\"cd\",\"/tmp\",\"u0026u0026\",\"wget\",\"-O\",\"yaml-cpp-${LIB_YAML_VERSION}.tar.gz\",\"https://github.com/jbeder/yaml-cpp/archive/yaml-cpp-${LIB_YAML_VERSION}.tar.gz\",\"u0026u0026\",\"tar\",\"-zxf\",\"yaml-cpp-${LIB_YAML_VERSION}.tar.gz\",\"u0026u0026\",\"cd\",\"yaml-cpp-yaml-cpp-${LIB_YAML_VERSION}\",\"u0026u0026\",\"mkdir\",\"-p\",\"cmake-build\",\"u0026u0026\",\"cd\",\"cmake-build\",\"u0026u0026\",\"cmake\",\"-DCMAKE_BUILD_TYPE=Release\",\"-DCMAKE_CXX_FLAGS=-fPIC\",\"-DYAML_CPP_BUILD_TESTS=0\",\"..\",\"u0026u0026\",\"make\",\"-j${NUM_CPUS}\",\"u0026u0026\",\"make\",\"install\",\"u0026u0026\",\"cd\",\"/tmp\",\"u0026u0026\",\"wget\",\"-O\",\"opentracing-cpp-${LIB_OPENTRACING_VERSION}.tar.gz\",\"https://github.com/opentracing/opentracing-cpp/archive/v${LIB_OPENTRACING_VERSION}.tar.gz\",\"u0026u0026\",\"tar\",\"-zxf\",\"opentracing-cpp-${LIB_OPENTRACING_VERSION}.tar.gz\",\"u0026u0026\",\"cd\",\"opentracing-cpp-${LIB_OPENTRACING_VERSION}\",\"u0026u0026\",\"mkdir\",\"-p\",\"cmake-build\",\"u0026u0026\",\"cd\",\"cmake-build\",\"u0026u0026\",\"cmake\",\"-DCMAKE_BUILD_TYPE=Release\",\"-DCMAKE_CXX_FLAGS=-fPIC\",\"-DBUILD_TESTING=0\",\"..\",\"u0026u0026\",\"make\",\"-j${NUM_CPUS}\",\"u0026u0026\",\"make\",\"install\",\"u0026u0026\",\"cd\",\"/tmp\",\"u0026u0026\",\"wget\",\"-O\",\"jaeger-client-cpp-${LIB_JAEGER_VERSION}.tar.gz\",\"https://github.com/jaegertracing/jaeger-client-cpp/archive/v${LIB_JAEGER_VERSION}.tar.gz\",\"u0026u0026\",\"tar\",\"-zxf\",\"jaeger-client-cpp-${LIB_JAEGER_VERSION}.tar.gz\",\"u0026u0026\",\"cd\",\"jaeger-client-cpp-${LIB_JAEGER_VERSION}\",\"u0026u0026\",\"mkdir\",\"-p\",\"cmake-build\",\"u0026u0026\",\"cd\",\"cmake-build\",\"u0026u0026\",\"cmake\",\"-DCMAKE_BUILD_TYPE=Release\",\"-DCMAKE_CXX_FLAGS=-fPIC\",\"-DHUNTER_ENABLED=0\",\"-DBUILD_TESTING=0\",\"-DJAEGERTRACING_WITH_YAML_CPP=1\",\"-DJAEGERTRACING_BUILD_EXAMPLES=0\",\"..\",\"u0026u0026\",\"make\",\"-j${NUM_CPUS}\",\"u0026u0026\",\"make\",\"install\",\"u0026u0026\",\"cd\",\"/tmp\",\"u0026u0026\",\"wget\",\"-O\",\"cpp-jwt-${LIB_CPP_JWT_VERSION}.tar.gz\",\"https://github.com/arun11299/cpp-jwt/archive/v${LIB_CPP_JWT_VERSION}.tar.gz\",\"u0026u0026\",\"tar\",\"-zxf\",\"cpp-jwt-${LIB_CPP_JWT_VERSION}.tar.gz\",\"u0026u0026\",\"cd\",\"cpp-jwt-${LIB_CPP_JWT_VERSION}\",\"u0026u0026\",\"cp\",\"-R\",\"include/jwt\",\"/usr/local/include\",\"u0026u0026\",\"rm\",\"-rf\",\"/usr/local/include/jwt/json\",\"u0026u0026\",\"sed\",\"-i\",\"s/#include \"jwt/json/json.hpp\"/#include u003cnlohmann/json.hppu003e/g\",\"/usr/local/include/jwt/jwt.hpp\",\"u0026u0026\",\"cd\",\"/tmp\",\"u0026u0026\",\"git\",\"clone\",\"https://github.com/cpp-redis/cpp_redis.git\",\"u0026u0026\",\"cd\",\"cpp_redis\",\"u0026u0026\",\"git\",\"checkout\",\"${LIB_CPP_REDIS_VERSION}\",\"u0026u0026\",\"git\",\"submodule\",\"init\",\"u0026u0026\",\"git\",\"submodule\",\"update\",\"u0026u0026\",\"mkdir\",\"cmake-build\",\"u0026u0026\",\"cd\",\"cmake-build\",\"u0026u0026\",\"cmake\",\"..\",\"-DCMAKE_BUILD_TYPE=Release\",\"u0026u0026\",\"make\",\"-j${NUM_CPUS}\",\"u0026u0026\",\"make\",\"install\",\"u0026u0026\",\"cd\",\"/tmp\",\"u0026u0026\",\"git\",\"clone\",\"https://github.com/CopernicaMarketingSoftware/AMQP-CPP.git\",\"u0026u0026\",\"cd\",\"AMQP-CPP\",\"u0026u0026\",\"git\",\"checkout\",\"v${LIB_AMQP_CPP_VERSION}\",\"u0026u0026\",\"mkdir\",\"cmake-build\",\"u0026u0026\",\"cd\",\"cmake-build\",\"u0026u0026\",\"cmake\",\"..\",\"-DCMAKE_BUILD_TYPE=Release\",\"-DAMQP-CPP_BUILD_SHARED=on\",\"-DAMQP-CPP_LINUX_TCP=on\",\"u0026u0026\",\"make\",\"-j${NUM_CPUS}\",\"u0026u0026\",\"make\",\"install\",\"u0026u0026\",\"cd\",\"/tmp\",\"u0026u0026\",\"git\",\"clone\",\"https://github.com/alanxz/SimpleAmqpClient.git\",\"u0026u0026\",\"cd\",\"SimpleAmqpClient\",\"u0026u0026\",\"git\",\"checkout\",\"v${LIB_SIMPLEAMQPCLIENT_VERSION}\",\"u0026u0026\",\"mkdir\",\"cmake-build\",\"u0026u0026\",\"cd\",\"cmake-build\",\"u0026u0026\",\"cmake\",\"..\",\"-DCMAKE_BUILD_TYPE=Release\",\"u0026u0026\",\"make\",\"-j${NUM_CPUS}\",\"u0026u0026\",\"make\",\"install\",\"u0026u0026\",\"cd\",\"/tmp\",\"u0026u0026\",\"git\",\"clone\",\"https://github.com/redis/hiredis.git\",\"u0026u0026\",\"cd\",\"hiredis\",\"u0026u0026\",\"git\",\"checkout\",\"v${LIB_HIREDIS_VERSION}\",\"u0026u0026\",\"make\",\"-j${NUM_CPUS}\",\"USE_SSL=1\",\"u0026u0026\",\"make\",\"USE_SSL=1\",\"install\",\"u0026u0026\",\"cd\",\"/tmp\",\"u0026u0026\",\"git\",\"clone\",\"https://github.com/sewenew/redis-plus-plus.git\",\"u0026u0026\",\"cd\",\"redis-plus-plus\",\"u0026u0026\",\"git\",\"checkout\",\"${LIB_REDIS_PLUS_PLUS_VERSION}\",\"u0026u0026\",\"cmake\",\"-DREDIS_PLUS_PLUS_USE_TLS=ON\",\".\",\"u0026u0026\",\"make\",\"-j${NUM_CPUS}\",\"u0026u0026\",\"make\",\"install\",\"u0026u0026\",\"pip3\",\"install\",\"PyYAML\",\"u0026u0026\",\"cd\",\"/tmp\",\"u0026u0026\",\"rm\",\"-rf\",\"mongo-c-driver-${LIB_MONGOC_VERSION}.tar.gz\",\"mongo-c-driver-${LIB_MONGOC_VERSION}\",\"thrift-${LIB_THRIFT_VERSION}.tar.gz\",\"thrift-${LIB_THRIFT_VERSION}\",\"json-${LIB_JSON_VERSION}.tar.gz\",\"json-${LIB_JSON_VERSION}\",\"jaeger-client-cpp-${LIB_JAEGER_VERSION}.tar.gz\",\"jaeger-client-cpp-${LIB_JAEGER_VERSION}\",\"yaml-cpp-${LIB_YAML_VERSION}.tar.gz\",\"yaml-cpp-yaml-cpp-${LIB_YAML_VERSION}\",\"opentracing-cpp-${LIB_OPENTRACING_VERSION}.tar.gz\",\"opentracing-cpp-${LIB_OPENTRACING_VERSION}\",\"cpp-jwt-${LIB_CPP_JWT_VERSION}.tar.gz\",\"cpp-jwt-${LIB_CPP_JWT_VERSION}\",\"cpp_redis\",\"AMQP-CPP\",\"SimpleAmqpClient\"]"
+          ]
+        },
+        {
+          "type": "ENV",
+          "time": "2021-07-10T00:38:35Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 4,
+          "layer_id": "0b945590b8d60e42ccda4c0968d88b671f69ee1c6de21ed24301a09f62bf64d4",
+          "layer_fsdiff_id": "sha256:034eea6300f6cb22a077cd734b4c35f63a8de5caeaac510810cec830b9bbe295",
+          "size": 0,
+          "params": "LD_LIBRARY_PATH=/usr/local/lib:",
+          "command_snippet": "ENV LD_LIBRARY_PATH=/usr/local/lib:",
+          "command_all": "ENV LD_LIBRARY_PATH=/usr/local/lib:",
+          "empty_layer": true
+        },
+        {
+          "type": "RUN",
+          "time": "2021-07-10T00:38:36Z",
+          "is_nop": false,
+          "is_exec_form": true,
+          "local_image_exists": false,
+          "layer_index": 5,
+          "layer_id": "aeae8565821a1a27bd44b24027d82929daa4108a5f1727535a947f1d1af16434",
+          "layer_fsdiff_id": "sha256:84a062073c10c1fb7e14385a96f4db4f5b872cf620cc2a98666bcfec628654cc",
+          "size": 45841,
+          "size_human": "46 kB",
+          "command_snippet": "RUN [\"|14\",\"BUILD_DEPS=ca-certificates\",\"g++...",
+          "command_all": "RUN [\"|14\",\"BUILD_DEPS=ca-certificates\",\"g++\",\"cmake\",\"wget\",\"git\",\"libmemcached-dev\",\"automake\",\"bison\",\"flex\",\"libboost-all-dev\",\"libevent-dev\",\"libssl-dev\",\"libtool\",\"make\",\"pkg-config\",\"librabbitmq-dev\",\"python3-dev\",\"python3-pip\",\"python3-setuptools\",\"python3-wheel\",\"LIB_AMQP_CPP_VERSION=4.1.4\",\"LIB_CPP_JWT_VERSION=1.1.1\",\"LIB_CPP_REDIS_VERSION=4.3.1\",\"LIB_HIREDIS_VERSION=1.0.0\",\"LIB_JAEGER_VERSION=0.4.2\",\"LIB_JSON_VERSION=3.6.1\",\"LIB_MONGOC_VERSION=1.15.0\",\"LIB_OPENTRACING_VERSION=1.5.1\",\"LIB_REDIS_PLUS_PLUS_VERSION=1.2.3\",\"LIB_SIMPLEAMQPCLIENT_VERSION=2.4.0\",\"LIB_THRIFT_VERSION=0.12.0\",\"LIB_YAML_VERSION=0.6.2\",\"NUM_CPUS=40\",\"/bin/sh\",\"-c\",\"ldconfig\"]",
+          "system_commands": [
+            "[\"|14\",\"BUILD_DEPS=ca-certificates\",\"g++\",\"cmake\",\"wget\",\"git\",\"libmemcached-dev\",\"automake\",\"bison\",\"flex\",\"libboost-all-dev\",\"libevent-dev\",\"libssl-dev\",\"libtool\",\"make\",\"pkg-config\",\"librabbitmq-dev\",\"python3-dev\",\"python3-pip\",\"python3-setuptools\",\"python3-wheel\",\"LIB_AMQP_CPP_VERSION=4.1.4\",\"LIB_CPP_JWT_VERSION=1.1.1\",\"LIB_CPP_REDIS_VERSION=4.3.1\",\"LIB_HIREDIS_VERSION=1.0.0\",\"LIB_JAEGER_VERSION=0.4.2\",\"LIB_JSON_VERSION=3.6.1\",\"LIB_MONGOC_VERSION=1.15.0\",\"LIB_OPENTRACING_VERSION=1.5.1\",\"LIB_REDIS_PLUS_PLUS_VERSION=1.2.3\",\"LIB_SIMPLEAMQPCLIENT_VERSION=2.4.0\",\"LIB_THRIFT_VERSION=0.12.0\",\"LIB_YAML_VERSION=0.6.2\",\"NUM_CPUS=40\",\"/bin/sh\",\"-c\",\"ldconfig\"]"
+          ]
+        },
+        {
+          "type": "ARG",
+          "time": "2021-07-10T00:39:50Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 5,
+          "layer_id": "aeae8565821a1a27bd44b24027d82929daa4108a5f1727535a947f1d1af16434",
+          "layer_fsdiff_id": "sha256:84a062073c10c1fb7e14385a96f4db4f5b872cf620cc2a98666bcfec628654cc",
+          "size": 0,
+          "params": "NUM_CPUS=40",
+          "command_snippet": "ARG NUM_CPUS=40",
+          "command_all": "ARG NUM_CPUS=40",
+          "empty_layer": true
+        },
+        {
+          "type": "COPY",
+          "time": "2021-09-08T19:22:55Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 6,
+          "layer_id": "599654fc55e4b77da9057f7f36b65bd7e0e7c070ba1d2b4d6e2d34ec858cb8b3",
+          "layer_fsdiff_id": "sha256:e8be8819cc48e3f09db70c7d5caa1713cad32ca028be9f5063982dafada7f8e7",
+          "size": 93344049,
+          "size_human": "93 MB",
+          "params": "dir:9c0eefad576fb99eb7bb0d5d6ba080859cc28dd954a77571054e2f5fa52fa4d0 in /social-network-microservices",
+          "command_snippet": "COPY dir:9c0eefad576fb99eb7bb0d5d6ba080859cc...",
+          "command_all": "COPY dir:9c0eefad576fb99eb7bb0d5d6ba080859cc28dd954a77571054e2f5fa52fa4d0 /social-network-microservices",
+          "target": "/social-network-microservices",
+          "source_type": "dir"
+        },
+        {
+          "type": "RUN",
+          "time": "2021-09-08T19:23:30Z",
+          "is_nop": false,
+          "is_exec_form": true,
+          "local_image_exists": false,
+          "layer_index": 7,
+          "layer_id": "cd517a5e6b494937241a800869ce567087c9e199f4bf9f75114186220304f28d",
+          "layer_fsdiff_id": "sha256:2b0b75ce1974549dfa31399919db7ffb2bac681eaec97284a16a662c6f446a05",
+          "size": 500461396,
+          "size_human": "500 MB",
+          "command_snippet": "RUN [\"|1\",\"NUM_CPUS=40\",\"/bin/sh\",\"-c\",\"cd\",...",
+          "command_all": "RUN [\"|1\",\"NUM_CPUS=40\",\"/bin/sh\",\"-c\",\"cd\",\"/social-network-microservices\",\"\\u0026\\u0026\",\"mkdir\",\"-p\",\"build\",\"\\u0026\\u0026\",\"cd\",\"build\",\"\\u0026\\u0026\",\"cmake\",\"-DCMAKE_BUILD_TYPE=Debug\",\"..\",\"\\u0026\\u0026\",\"make\",\"-j${NUM_CPUS}\",\"\\u0026\\u0026\",\"make\",\"install\"]",
+          "system_commands": [
+            "[\"|1\",\"NUM_CPUS=40\",\"/bin/sh\",\"-c\",\"cd\",\"/social-network-microservices\",\"u0026u0026\",\"mkdir\",\"-p\",\"build\",\"u0026u0026\",\"cd\",\"build\",\"u0026u0026\",\"cmake\",\"-DCMAKE_BUILD_TYPE=Debug\",\"..\",\"u0026u0026\",\"make\",\"-j${NUM_CPUS}\",\"u0026u0026\",\"make\",\"install\"]"
+          ]
+        },
+        {
+          "type": "WORKDIR",
+          "time": "2021-09-08T19:23:31Z",
+          "is_last_instruction": true,
+          "is_nop": true,
+          "local_image_exists": true,
+          "layer_index": 6,
+          "layer_id": "599654fc55e4b77da9057f7f36b65bd7e0e7c070ba1d2b4d6e2d34ec858cb8b3",
+          "layer_fsdiff_id": "sha256:e8be8819cc48e3f09db70c7d5caa1713cad32ca028be9f5063982dafada7f8e7",
+          "size": 0,
+          "params": "/social-network-microservices",
+          "command_snippet": "WORKDIR /social-network-microservices",
+          "command_all": "WORKDIR /social-network-microservices",
+          "system_commands": [
+            "mkdir -p /social-network-microservices"
+          ],
+          "empty_layer": true,
+          "raw_tags": [
+            "yg397/social-network-microservices:latest"
+          ]
+        }
+      ]
+    }
+  ],
+  "image_layers": [
+    {
+      "id": "5a4842bb98991bc39fdf797df509527410a81e909c81e97e5efc78af0dd61049",
+      "index": 0,
+      "path": "5a4842bb98991bc39fdf797df509527410a81e909c81e97e5efc78af0dd61049/layer.tar",
+      "fsdiff_id": "sha256:f577d0e0bf7011714547f1ea1e3536cad7d8575a4a6357fae65b7e8a42914889",
+      "stats": {
+        "all_size": 127474075,
+        "object_count": 5552,
+        "dir_count": 696,
+        "file_count": 4291,
+        "link_count": 486,
+        "max_file_size": 8544849,
+        "max_dir_size": 0,
+        "deleted_count": 0,
+        "deleted_dir_content_count": 0,
+        "deleted_dir_count": 0,
+        "deleted_file_count": 0,
+        "deleted_link_count": 0,
+        "deleted_size": 0,
+        "added_size": 127474075,
+        "modified_size": 0
+      },
+      "changes": {
+        "deleted": 0,
+        "added": 5552,
+        "modified": 0
+      },
+      "top": [
+        {
+          "change": "A",
+          "name": "/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_xenial-updates_main_binary-amd64_Packages",
+          "size": 8544849,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-09-16T19:08:28+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "D": {
+              "layer": 2
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_xenial-updates_main_i18n_Translation-en",
+          "size": 7847134,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-09-16T18:34:22+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "D": {
+              "layer": 2
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_xenial_main_binary-amd64_Packages",
+          "size": 7228243,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-04-21T20:17:05+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "D": {
+              "layer": 2
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/var/lib/apt/lists/security.ubuntu.com_ubuntu_dists_xenial-security_main_i18n_Translation-en",
+          "size": 6783961,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-09-16T17:49:29+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "D": {
+              "layer": 2
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/var/lib/apt/lists/security.ubuntu.com_ubuntu_dists_xenial-security_main_binary-amd64_Packages",
+          "size": 6697251,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-09-16T18:45:23+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "D": {
+              "layer": 2
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_xenial_main_i18n_Translation-en",
+          "size": 3600400,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-04-21T17:42:17+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "D": {
+              "layer": 2
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/bin/perl",
+          "size": 1911288,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2018-11-19T21:59:35+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 4
+              }
+            ]
+          }
+        },
+        {
+          "change": "A",
+          "name": "/lib/x86_64-linux-gnu/libc-2.23.so",
+          "size": 1868984,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-06-05T19:58:17+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 4
+              }
+            ]
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/lib/x86_64-linux-gnu/libdb-5.3.so",
+          "size": 1756696,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2019-06-03T21:02:26+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/lib/systemd/systemd",
+          "size": 1589552,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-09-04T14:01:35+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21",
+          "size": 1566440,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2019-10-04T22:30:52+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/lib/x86_64-linux-gnu/libapt-pkg.so.5.0.0",
+          "size": 1534952,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-05-13T17:49:43+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/lib/locale/C.UTF-8/LC_COLLATE",
+          "size": 1514422,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-06-05T19:51:03+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/bin/systemd-analyze",
+          "size": 1499296,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-09-04T14:01:40+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/lib/x86_64-linux-gnu/libm-2.23.so",
+          "size": 1088952,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-06-05T19:58:17+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 4
+              }
+            ]
+          }
+        },
+        {
+          "change": "A",
+          "name": "/bin/bash",
+          "size": 1037528,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2019-07-12T23:56:41+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/bin/gpg",
+          "size": 1008632,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2018-08-06T05:41:19+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/sbin/ldconfig.real",
+          "size": 1000608,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-06-05T19:59:12+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/lib/x86_64-linux-gnu/libgcrypt.so.20.0.5",
+          "size": 919168,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-01-14T00:09:14+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/lib/systemd/systemd-networkd",
+          "size": 855296,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-09-04T14:01:37+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            }
+          }
+        }
+      ],
+      "change_instruction": {
+        "index": 0,
+        "image_index": 0,
+        "type": "ADD",
+        "all": "ADD file:23a55d7e93b396e490b6d0893137e5c13e3e0a234e0feaea8b1cfd4079fb1882 /",
+        "snippet": "ADD file:23a55d7e93b396e490b6d0893137e5c13e3..."
+      }
+    },
+    {
+      "id": "e0c52c0ff595443013b2ff96bd6c2aa36738292d44ef2ef4d0487aa31e9da343",
+      "index": 1,
+      "path": "e0c52c0ff595443013b2ff96bd6c2aa36738292d44ef2ef4d0487aa31e9da343/layer.tar",
+      "fsdiff_id": "sha256:06859de2f3e3d883d9084ce20cc5fa30f2922cd747a092450d4dc8cb6de3f757",
+      "stats": {
+        "all_size": 745,
+        "object_count": 20,
+        "dir_count": 11,
+        "file_count": 9,
+        "link_count": 0,
+        "max_file_size": 318,
+        "max_dir_size": 0,
+        "deleted_count": 0,
+        "deleted_dir_content_count": 0,
+        "deleted_dir_count": 0,
+        "deleted_file_count": 0,
+        "deleted_link_count": 0,
+        "deleted_size": 0,
+        "added_size": 609,
+        "modified_size": 136
+      },
+      "changes": {
+        "deleted": 0,
+        "added": 8,
+        "modified": 12
+      },
+      "top": [
+        {
+          "change": "A",
+          "name": "/etc/apt/apt.conf.d/docker-clean",
+          "size": 318,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-09-26T02:06:27+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 1
+            }
+          }
+        },
+        {
+          "change": "M",
+          "name": "/var/lib/dpkg/diversions",
+          "size": 136,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-09-26T02:06:27+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 1
+              }
+            ]
+          }
+        },
+        {
+          "change": "A",
+          "name": "/var/lib/dpkg/diversions-old",
+          "size": 98,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-09-16T19:30:56+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 1
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/etc/apt/apt.conf.d/docker-gzip-indexes",
+          "size": 70,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-09-26T02:06:27+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 1
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/etc/apt/apt.conf.d/docker-autoremove-suggests",
+          "size": 44,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-09-26T02:06:27+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 1
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/etc/apt/apt.conf.d/docker-no-languages",
+          "size": 27,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-09-26T02:06:27+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 1
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/sbin/policy-rc.d",
+          "size": 19,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-09-26T02:06:27+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 1
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/sbin/initctl",
+          "size": 17,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-09-26T02:06:27+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 1
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/etc/dpkg/dpkg.cfg.d/docker-apt-speedup",
+          "size": 16,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-09-26T02:06:27+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 1
+            }
+          }
+        },
+        {
+          "change": "M",
+          "name": "/usr/sbin",
+          "mode": 2147484141,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-09-26T02:06:27+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 1
+              },
+              {
+                "layer": 4
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/usr",
+          "mode": 2147484141,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-09-16T19:30:27+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 1
+              },
+              {
+                "layer": 4
+              },
+              {
+                "layer": 7
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/etc/apt/apt.conf.d",
+          "mode": 2147484141,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-09-26T02:06:27+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 1
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/sbin",
+          "mode": 2147484141,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-09-26T02:06:27+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 1
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/etc/dpkg/dpkg.cfg.d",
+          "mode": 2147484141,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-09-26T02:06:27+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 1
+              },
+              {
+                "layer": 4
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/var/lib",
+          "mode": 2147484141,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-02-05T13:18:45+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 1
+              },
+              {
+                "layer": 2
+              },
+              {
+                "layer": 4
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/var",
+          "mode": 2147484141,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-09-16T19:30:54+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 1
+              },
+              {
+                "layer": 2
+              },
+              {
+                "layer": 4
+              },
+              {
+                "layer": 5
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/var/lib/dpkg",
+          "mode": 2147484141,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-09-26T02:06:27+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 1
+              },
+              {
+                "layer": 4
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/etc/dpkg",
+          "mode": 2147484141,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-09-16T19:30:47+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 1
+              },
+              {
+                "layer": 4
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/etc/apt",
+          "mode": 2147484141,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-09-16T19:30:54+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 1
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/etc",
+          "mode": 2147484141,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-09-26T02:06:27+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 1
+              },
+              {
+                "layer": 4
+              },
+              {
+                "layer": 5
+              }
+            ]
+          }
+        }
+      ],
+      "change_instruction": {
+        "index": 1,
+        "image_index": 0,
+        "type": "RUN",
+        "all": "RUN set -xe && \\\n\techo '#!/bin/sh' > /usr/sbin/policy-rc.d && \\\n\techo 'exit 101' >> /usr/sbin/policy-rc.d && \\\n\tchmod +x /usr/sbin/policy-rc.d && \\\n\tdpkg-divert --local --rename --add /sbin/initctl && \\\n\tcp -a /usr/sbin/policy-rc.d /sbin/initctl && \\\n\tsed -i 's/^exit.*/exit 0/' /sbin/initctl && \\\n\techo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup && \\\n\techo 'DPkg::Post-Invoke { \"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\"; };' > /etc/apt/apt.conf.d/docker-clean && \\\n\techo 'APT::Update::Post-Invoke { \"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\"; };' >> /etc/apt/apt.conf.d/docker-clean && \\\n\techo 'Dir::Cache::pkgcache \"\"; Dir::Cache::srcpkgcache \"\";' >> /etc/apt/apt.conf.d/docker-clean && \\\n\techo 'Acquire::Languages \"none\";' > /etc/apt/apt.conf.d/docker-no-languages && \\\n\techo 'Acquire::GzipIndexes \"true\"; Acquire::CompressionTypes::Order:: \"gz\";' > /etc/apt/apt.conf.d/docker-gzip-indexes && \\\n\techo 'Apt::AutoRemove::SuggestsImportant \"false\";' > /etc/apt/apt.conf.d/docker-autoremove-suggests",
+        "snippet": "RUN set -xe && \\\n\techo '#!/bin/sh' > /usr/sb..."
+      }
+    },
+    {
+      "id": "cd7b7e7704d1056257a6532c390c83f483b36326dc3fadd5dd775f1cf17df351",
+      "index": 2,
+      "path": "cd7b7e7704d1056257a6532c390c83f483b36326dc3fadd5dd775f1cf17df351/layer.tar",
+      "fsdiff_id": "sha256:c4d7b15878d053813c138d72c06f0935000d7606e289de34929449258ef8efe4",
+      "stats": {
+        "all_size": 0,
+        "object_count": 21,
+        "dir_count": 4,
+        "file_count": 17,
+        "link_count": 0,
+        "max_file_size": 0,
+        "max_dir_size": 0,
+        "deleted_count": 17,
+        "deleted_dir_content_count": 0,
+        "deleted_dir_count": 0,
+        "deleted_file_count": 17,
+        "deleted_link_count": 0,
+        "deleted_size": 0,
+        "added_size": 0,
+        "modified_size": 0
+      },
+      "changes": {
+        "deleted": 17,
+        "added": 0,
+        "modified": 4
+      },
+      "top": [
+        {
+          "change": "M",
+          "name": "/var/lib",
+          "mode": 2147484141,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-02-05T13:18:45+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 1
+              },
+              {
+                "layer": 2
+              },
+              {
+                "layer": 4
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/var/lib/apt",
+          "mode": 2147484141,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-09-16T19:30:54+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 2
+              },
+              {
+                "layer": 4
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/var/lib/apt/lists",
+          "mode": 2147484141,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-09-26T02:06:28+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 2
+              },
+              {
+                "layer": 4
+              }
+            ]
+          }
+        },
+        {
+          "change": "D",
+          "name": "/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_xenial-updates_InRelease",
+          "mode": 384,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-09-26T02:06:28+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 4
+              }
+            ],
+            "D": {
+              "layer": 2
+            }
+          }
+        },
+        {
+          "change": "D",
+          "name": "/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_xenial-updates_main_binary-amd64_Packages",
+          "mode": 384,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-09-26T02:06:28+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "D": {
+              "layer": 2
+            }
+          }
+        },
+        {
+          "change": "D",
+          "name": "/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_xenial-updates_main_i18n_Translation-en",
+          "mode": 384,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-09-26T02:06:28+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "D": {
+              "layer": 2
+            }
+          }
+        },
+        {
+          "change": "D",
+          "name": "/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_xenial-updates_restricted_binary-amd64_Packages",
+          "mode": 384,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-09-26T02:06:28+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "D": {
+              "layer": 2
+            }
+          }
+        },
+        {
+          "change": "D",
+          "name": "/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_xenial-updates_restricted_i18n_Translation-en",
+          "mode": 384,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-09-26T02:06:28+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "D": {
+              "layer": 2
+            }
+          }
+        },
+        {
+          "change": "D",
+          "name": "/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_xenial_InRelease",
+          "mode": 384,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-09-26T02:06:28+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 4
+              }
+            ],
+            "D": {
+              "layer": 2
+            }
+          }
+        },
+        {
+          "change": "D",
+          "name": "/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_xenial_main_binary-amd64_Packages",
+          "mode": 384,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-09-26T02:06:28+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "D": {
+              "layer": 2
+            }
+          }
+        },
+        {
+          "change": "D",
+          "name": "/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_xenial_main_i18n_Translation-en",
+          "mode": 384,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-09-26T02:06:28+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "D": {
+              "layer": 2
+            }
+          }
+        },
+        {
+          "change": "D",
+          "name": "/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_xenial_restricted_binary-amd64_Packages",
+          "mode": 384,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-09-26T02:06:28+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "D": {
+              "layer": 2
+            }
+          }
+        },
+        {
+          "change": "D",
+          "name": "/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_xenial_restricted_i18n_Translation-en",
+          "mode": 384,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-09-26T02:06:28+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "D": {
+              "layer": 2
+            }
+          }
+        },
+        {
+          "change": "D",
+          "name": "/var/lib/apt/lists/lock",
+          "mode": 384,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-09-26T02:06:28+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 4
+              }
+            ],
+            "D": {
+              "layer": 2
+            }
+          }
+        },
+        {
+          "change": "D",
+          "name": "/var/lib/apt/lists/partial",
+          "mode": 384,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-09-26T02:06:28+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 4
+              }
+            ],
+            "D": {
+              "layer": 2
+            }
+          }
+        },
+        {
+          "change": "D",
+          "name": "/var/lib/apt/lists/security.ubuntu.com_ubuntu_dists_xenial-security_InRelease",
+          "mode": 384,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-09-26T02:06:28+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 4
+              }
+            ],
+            "D": {
+              "layer": 2
+            }
+          }
+        },
+        {
+          "change": "D",
+          "name": "/var/lib/apt/lists/security.ubuntu.com_ubuntu_dists_xenial-security_main_binary-amd64_Packages",
+          "mode": 384,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-09-26T02:06:28+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "D": {
+              "layer": 2
+            }
+          }
+        },
+        {
+          "change": "D",
+          "name": "/var/lib/apt/lists/security.ubuntu.com_ubuntu_dists_xenial-security_main_i18n_Translation-en",
+          "mode": 384,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-09-26T02:06:28+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "D": {
+              "layer": 2
+            }
+          }
+        },
+        {
+          "change": "D",
+          "name": "/var/lib/apt/lists/security.ubuntu.com_ubuntu_dists_xenial-security_restricted_binary-amd64_Packages",
+          "mode": 384,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-09-26T02:06:28+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "D": {
+              "layer": 2
+            }
+          }
+        },
+        {
+          "change": "D",
+          "name": "/var/lib/apt/lists/security.ubuntu.com_ubuntu_dists_xenial-security_restricted_i18n_Translation-en",
+          "mode": 384,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-09-26T02:06:28+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "D": {
+              "layer": 2
+            }
+          }
+        }
+      ],
+      "change_instruction": {
+        "index": 2,
+        "image_index": 0,
+        "type": "RUN",
+        "all": "RUN rm -rf /var/lib/apt/lists/*",
+        "snippet": "RUN rm -rf /var/lib/apt/lists/*"
+      }
+    },
+    {
+      "id": "9150b209e69f87f8c761573805062e801f8b222379679de3a7f48e9613edd7a9",
+      "index": 3,
+      "path": "9150b209e69f87f8c761573805062e801f8b222379679de3a7f48e9613edd7a9/layer.tar",
+      "fsdiff_id": "sha256:e27729ee6e59f1aa0d0ad3a9740842630347cd51e1555306af7d85eef746d921",
+      "stats": {
+        "all_size": 7,
+        "object_count": 3,
+        "dir_count": 2,
+        "file_count": 1,
+        "link_count": 0,
+        "max_file_size": 7,
+        "max_dir_size": 0,
+        "deleted_count": 0,
+        "deleted_dir_content_count": 0,
+        "deleted_dir_count": 0,
+        "deleted_file_count": 0,
+        "deleted_link_count": 0,
+        "deleted_size": 0,
+        "added_size": 7,
+        "modified_size": 0
+      },
+      "changes": {
+        "deleted": 0,
+        "added": 1,
+        "modified": 2
+      },
+      "top": [
+        {
+          "change": "A",
+          "name": "/run/systemd/container",
+          "size": 7,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-09-26T02:06:29+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 3
+            }
+          }
+        },
+        {
+          "change": "M",
+          "name": "/run/systemd",
+          "mode": 2147484141,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-09-26T02:06:29+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 3
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/run",
+          "mode": 2147484141,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-09-16T19:30:49+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 3
+              }
+            ]
+          }
+        }
+      ],
+      "change_instruction": {
+        "index": 3,
+        "image_index": 0,
+        "type": "RUN",
+        "all": "RUN mkdir -p /run/systemd && \\\n\techo 'docker' > /run/systemd/container",
+        "snippet": "RUN mkdir -p /run/systemd && \\\n\techo 'docker..."
+      },
+      "other_instructions": [
+        {
+          "index": 4,
+          "image_index": 0,
+          "type": "CMD",
+          "all": "CMD [\"/bin/bash\"]",
+          "snippet": "CMD [\"/bin/bash\"]"
+        },
+        {
+          "index": 5,
+          "image_index": 0,
+          "type": "ARG",
+          "all": "ARG LIB_MONGOC_VERSION=1.15.0",
+          "snippet": "ARG LIB_MONGOC_VERSION=1.15.0"
+        },
+        {
+          "index": 6,
+          "image_index": 0,
+          "type": "ARG",
+          "all": "ARG LIB_THRIFT_VERSION=0.12.0",
+          "snippet": "ARG LIB_THRIFT_VERSION=0.12.0"
+        },
+        {
+          "index": 7,
+          "image_index": 0,
+          "type": "ARG",
+          "all": "ARG LIB_JSON_VERSION=3.6.1",
+          "snippet": "ARG LIB_JSON_VERSION=3.6.1"
+        },
+        {
+          "index": 8,
+          "image_index": 0,
+          "type": "ARG",
+          "all": "ARG LIB_JAEGER_VERSION=0.4.2",
+          "snippet": "ARG LIB_JAEGER_VERSION=0.4.2"
+        },
+        {
+          "index": 9,
+          "image_index": 0,
+          "type": "ARG",
+          "all": "ARG LIB_YAML_VERSION=0.6.2",
+          "snippet": "ARG LIB_YAML_VERSION=0.6.2"
+        },
+        {
+          "index": 10,
+          "image_index": 0,
+          "type": "ARG",
+          "all": "ARG LIB_OPENTRACING_VERSION=1.5.1",
+          "snippet": "ARG LIB_OPENTRACING_VERSION=1.5.1"
+        },
+        {
+          "index": 11,
+          "image_index": 0,
+          "type": "ARG",
+          "all": "ARG LIB_CPP_JWT_VERSION=1.1.1",
+          "snippet": "ARG LIB_CPP_JWT_VERSION=1.1.1"
+        },
+        {
+          "index": 12,
+          "image_index": 0,
+          "type": "ARG",
+          "all": "ARG LIB_CPP_REDIS_VERSION=4.3.1",
+          "snippet": "ARG LIB_CPP_REDIS_VERSION=4.3.1"
+        },
+        {
+          "index": 13,
+          "image_index": 0,
+          "type": "ARG",
+          "all": "ARG LIB_AMQP_CPP_VERSION=4.1.4",
+          "snippet": "ARG LIB_AMQP_CPP_VERSION=4.1.4"
+        },
+        {
+          "index": 14,
+          "image_index": 0,
+          "type": "ARG",
+          "all": "ARG LIB_SIMPLEAMQPCLIENT_VERSION=2.4.0",
+          "snippet": "ARG LIB_SIMPLEAMQPCLIENT_VERSION=2.4.0"
+        },
+        {
+          "index": 15,
+          "image_index": 0,
+          "type": "ARG",
+          "all": "ARG LIB_HIREDIS_VERSION=1.0.0",
+          "snippet": "ARG LIB_HIREDIS_VERSION=1.0.0"
+        },
+        {
+          "index": 16,
+          "image_index": 0,
+          "type": "ARG",
+          "all": "ARG LIB_REDIS_PLUS_PLUS_VERSION=1.2.3",
+          "snippet": "ARG LIB_REDIS_PLUS_PLUS_VERSION=1.2.3"
+        },
+        {
+          "index": 17,
+          "image_index": 0,
+          "type": "ARG",
+          "all": "ARG NUM_CPUS=40",
+          "snippet": "ARG NUM_CPUS=40"
+        },
+        {
+          "index": 18,
+          "image_index": 0,
+          "type": "ARG",
+          "all": "ARG BUILD_DEPS=ca-certificates g++ cmake wget git libmemcached-dev automake bison flex libboost-all-dev libevent-dev libssl-dev libtool make pkg-config librabbitmq-dev python3-dev python3-pip python3-setuptools python3-wheel",
+          "snippet": "ARG BUILD_DEPS=ca-certificates g++ cmake wge..."
+        }
+      ]
+    },
+    {
+      "id": "0b945590b8d60e42ccda4c0968d88b671f69ee1c6de21ed24301a09f62bf64d4",
+      "index": 4,
+      "path": "0b945590b8d60e42ccda4c0968d88b671f69ee1c6de21ed24301a09f62bf64d4/layer.tar",
+      "fsdiff_id": "sha256:034eea6300f6cb22a077cd734b4c35f63a8de5caeaac510810cec830b9bbe295",
+      "stats": {
+        "all_size": 775919926,
+        "object_count": 31190,
+        "dir_count": 2629,
+        "file_count": 27125,
+        "link_count": 1436,
+        "max_file_size": 26834774,
+        "max_dir_size": 0,
+        "deleted_count": 0,
+        "deleted_dir_content_count": 396,
+        "deleted_dir_count": 0,
+        "deleted_file_count": 396,
+        "deleted_link_count": 0,
+        "deleted_size": 0,
+        "added_size": 758387576,
+        "modified_size": 17532350
+      },
+      "changes": {
+        "deleted": 396,
+        "added": 29775,
+        "modified": 1019
+      },
+      "top": [
+        {
+          "change": "A",
+          "name": "/usr/lib/python3.5/config-3.5m-x86_64-linux-gnu/libpython3.5m.a",
+          "size": 26834774,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2021-01-26T22:19:00+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 4
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/lib/x86_64-linux-gnu/libicudata.so.55.1",
+          "size": 25913104,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-03-16T23:19:32+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 4
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/lib/x86_64-linux-gnu/libicudata.a",
+          "size": 25909460,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-03-16T23:19:35+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 4
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/lib/python3.5/config-3.5m-x86_64-linux-gnu/libpython3.5m-pic.a",
+          "size": 25880262,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2021-01-26T22:19:00+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 4
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/lib/gcc/x86_64-linux-gnu/5/cc1plus",
+          "size": 22444288,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2019-10-04T22:30:23+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 4
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/lib/gcc/x86_64-linux-gnu/5/cc1",
+          "size": 20879552,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2019-10-04T22:19:50+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 4
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/lib/python2.7/config-x86_64-linux-gnu/libpython2.7.a",
+          "size": 20411692,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2021-03-02T00:17:09+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 4
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/lib/gcc/x86_64-linux-gnu/5/lto1",
+          "size": 20026752,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2019-10-04T22:53:54+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 4
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/lib/python2.7/config-x86_64-linux-gnu/libpython2.7-pic.a",
+          "size": 19760236,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2021-03-02T00:17:09+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 4
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_xenial_universe_binary-amd64_Packages.lz4",
+          "size": 15707199,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-04-22T03:54:48+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 4
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/bin/ctest",
+          "size": 5529904,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-09-27T12:54:52+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 4
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/lib/gcc/x86_64-linux-gnu/5/libstdc++.a",
+          "size": 5280586,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2019-10-04T22:35:44+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 4
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/lib/x86_64-linux-gnu/libicui18n.a",
+          "size": 5225740,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-03-16T23:19:35+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 4
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/lib/x86_64-linux-gnu/libboost_math_tr1.a",
+          "size": 5143286,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-06-14T13:27:25+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 4
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/lib/x86_64-linux-gnu/libboost_math_tr1f.a",
+          "size": 5131364,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-06-14T13:27:25+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 4
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/lib/x86_64-linux-gnu/libboost_math_tr1l.a",
+          "size": 5116854,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2016-06-14T13:27:26+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 4
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/lib/x86_64-linux-gnu/libc.a",
+          "size": 5047134,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2021-04-21T22:44:31+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 4
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/local/lib/libjaegertracing.a",
+          "size": 5042678,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2021-07-10T05:06:53+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 4
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/local/bin/thrift",
+          "size": 4963824,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2021-07-10T05:06:02+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 4
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/lib/x86_64-linux-gnu/libcrypto.a",
+          "size": 4701042,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2021-02-17T18:52:01+03:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 4
+            }
+          }
+        }
+      ],
+      "change_instruction": {
+        "index": 19,
+        "image_index": 0,
+        "type": "RUN",
+        "all": "RUN [\"|14\",\"BUILD_DEPS=ca-certificates\",\"g++\",\"cmake\",\"wget\",\"git\",\"libmemcached-dev\",\"automake\",\"bison\",\"flex\",\"libboost-all-dev\",\"libevent-dev\",\"libssl-dev\",\"libtool\",\"make\",\"pkg-config\",\"librabbitmq-dev\",\"python3-dev\",\"python3-pip\",\"python3-setuptools\",\"python3-wheel\",\"LIB_AMQP_CPP_VERSION=4.1.4\",\"LIB_CPP_JWT_VERSION=1.1.1\",\"LIB_CPP_REDIS_VERSION=4.3.1\",\"LIB_HIREDIS_VERSION=1.0.0\",\"LIB_JAEGER_VERSION=0.4.2\",\"LIB_JSON_VERSION=3.6.1\",\"LIB_MONGOC_VERSION=1.15.0\",\"LIB_OPENTRACING_VERSION=1.5.1\",\"LIB_REDIS_PLUS_PLUS_VERSION=1.2.3\",\"LIB_SIMPLEAMQPCLIENT_VERSION=2.4.0\",\"LIB_THRIFT_VERSION=0.12.0\",\"LIB_YAML_VERSION=0.6.2\",\"NUM_CPUS=40\",\"/bin/sh\",\"-c\",\"apt-get\",\"update\",\"\\u0026\\u0026\",\"apt-get\",\"install\",\"-y\",\"${BUILD_DEPS}\",\"--no-install-recommends\",\"\\u0026\\u0026\",\"cd\",\"/tmp\",\"\\u0026\\u0026\",\"wget\",\"https://github.com/mongodb/mongo-c-driver/releases/download/${LIB_MONGOC_VERSION}/mongo-c-driver-${LIB_MONGOC_VERSION}.tar.gz\",\"\\u0026\\u0026\",\"tar\",\"-zxf\",\"mongo-c-driver-${LIB_MONGOC_VERSION}.tar.gz\",\"\\u0026\\u0026\",\"cd\",\"mongo-c-driver-${LIB_MONGOC_VERSION}\",\"\\u0026\\u0026\",\"mkdir\",\"-p\",\"cmake-build\",\"\\u0026\\u0026\",\"cd\",\"cmake-build\",\"\\u0026\\u0026\",\"cmake\",\"-DCMAKE_BUILD_TYPE=Release\",\"-DENABLE_TESTS=0\",\"-DENABLE_EXAMPLES=0\",\"..\",\"\\u0026\\u0026\",\"make\",\"-j${NUM_CPUS}\",\"\\u0026\\u0026\",\"make\",\"install\",\"\\u0026\\u0026\",\"cd\",\"/tmp\",\"\\u0026\\u0026\",\"wget\",\"-O\",\"thrift-${LIB_THRIFT_VERSION}.tar.gz\",\"https://github.com/apache/thrift/archive/v${LIB_THRIFT_VERSION}.tar.gz\",\"\\u0026\\u0026\",\"tar\",\"-zxf\",\"thrift-${LIB_THRIFT_VERSION}.tar.gz\",\"\\u0026\\u0026\",\"cd\",\"thrift-${LIB_THRIFT_VERSION}\",\"\\u0026\\u0026\",\"mkdir\",\"-p\",\"cmake-build\",\"\\u0026\\u0026\",\"cd\",\"cmake-build\",\"\\u0026\\u0026\",\"cmake\",\"-DCMAKE_BUILD_TYPE=Release\",\"-DBUILD_TESTING=0\",\"..\",\"\\u0026\\u0026\",\"make\",\"-j${NUM_CPUS}\",\"\\u0026\\u0026\",\"make\",\"install\",\"\\u0026\\u0026\",\"cd\",\"/tmp\",\"\\u0026\\u0026\",\"wget\",\"-O\",\"json-${LIB_JSON_VERSION}.tar.gz\",\"https://github.com/nlohmann/json/archive/v${LIB_JSON_VERSION}.tar.gz\",\"\\u0026\\u0026\",\"tar\",\"-zxf\",\"json-${LIB_JSON_VERSION}.tar.gz\",\"\\u0026\\u0026\",\"cd\",\"json-${LIB_JSON_VERSION}\",\"\\u0026\\u0026\",\"mkdir\",\"-p\",\"cmake-build\",\"\\u0026\\u0026\",\"cd\",\"cmake-build\",\"\\u0026\\u0026\",\"cmake\",\"-DCMAKE_BUILD_TYPE=Release\",\"-DBUILD_TESTING=0\",\"..\",\"\\u0026\\u0026\",\"make\",\"-j${NUM_CPUS}\",\"\\u0026\\u0026\",\"make\",\"install\",\"\\u0026\\u0026\",\"cd\",\"/tmp\",\"\\u0026\\u0026\",\"wget\",\"-O\",\"yaml-cpp-${LIB_YAML_VERSION}.tar.gz\",\"https://github.com/jbeder/yaml-cpp/archive/yaml-cpp-${LIB_YAML_VERSION}.tar.gz\",\"\\u0026\\u0026\",\"tar\",\"-zxf\",\"yaml-cpp-${LIB_YAML_VERSION}.tar.gz\",\"\\u0026\\u0026\",\"cd\",\"yaml-cpp-yaml-cpp-${LIB_YAML_VERSION}\",\"\\u0026\\u0026\",\"mkdir\",\"-p\",\"cmake-build\",\"\\u0026\\u0026\",\"cd\",\"cmake-build\",\"\\u0026\\u0026\",\"cmake\",\"-DCMAKE_BUILD_TYPE=Release\",\"-DCMAKE_CXX_FLAGS=-fPIC\",\"-DYAML_CPP_BUILD_TESTS=0\",\"..\",\"\\u0026\\u0026\",\"make\",\"-j${NUM_CPUS}\",\"\\u0026\\u0026\",\"make\",\"install\",\"\\u0026\\u0026\",\"cd\",\"/tmp\",\"\\u0026\\u0026\",\"wget\",\"-O\",\"opentracing-cpp-${LIB_OPENTRACING_VERSION}.tar.gz\",\"https://github.com/opentracing/opentracing-cpp/archive/v${LIB_OPENTRACING_VERSION}.tar.gz\",\"\\u0026\\u0026\",\"tar\",\"-zxf\",\"opentracing-cpp-${LIB_OPENTRACING_VERSION}.tar.gz\",\"\\u0026\\u0026\",\"cd\",\"opentracing-cpp-${LIB_OPENTRACING_VERSION}\",\"\\u0026\\u0026\",\"mkdir\",\"-p\",\"cmake-build\",\"\\u0026\\u0026\",\"cd\",\"cmake-build\",\"\\u0026\\u0026\",\"cmake\",\"-DCMAKE_BUILD_TYPE=Release\",\"-DCMAKE_CXX_FLAGS=-fPIC\",\"-DBUILD_TESTING=0\",\"..\",\"\\u0026\\u0026\",\"make\",\"-j${NUM_CPUS}\",\"\\u0026\\u0026\",\"make\",\"install\",\"\\u0026\\u0026\",\"cd\",\"/tmp\",\"\\u0026\\u0026\",\"wget\",\"-O\",\"jaeger-client-cpp-${LIB_JAEGER_VERSION}.tar.gz\",\"https://github.com/jaegertracing/jaeger-client-cpp/archive/v${LIB_JAEGER_VERSION}.tar.gz\",\"\\u0026\\u0026\",\"tar\",\"-zxf\",\"jaeger-client-cpp-${LIB_JAEGER_VERSION}.tar.gz\",\"\\u0026\\u0026\",\"cd\",\"jaeger-client-cpp-${LIB_JAEGER_VERSION}\",\"\\u0026\\u0026\",\"mkdir\",\"-p\",\"cmake-build\",\"\\u0026\\u0026\",\"cd\",\"cmake-build\",\"\\u0026\\u0026\",\"cmake\",\"-DCMAKE_BUILD_TYPE=Release\",\"-DCMAKE_CXX_FLAGS=-fPIC\",\"-DHUNTER_ENABLED=0\",\"-DBUILD_TESTING=0\",\"-DJAEGERTRACING_WITH_YAML_CPP=1\",\"-DJAEGERTRACING_BUILD_EXAMPLES=0\",\"..\",\"\\u0026\\u0026\",\"make\",\"-j${NUM_CPUS}\",\"\\u0026\\u0026\",\"make\",\"install\",\"\\u0026\\u0026\",\"cd\",\"/tmp\",\"\\u0026\\u0026\",\"wget\",\"-O\",\"cpp-jwt-${LIB_CPP_JWT_VERSION}.tar.gz\",\"https://github.com/arun11299/cpp-jwt/archive/v${LIB_CPP_JWT_VERSION}.tar.gz\",\"\\u0026\\u0026\",\"tar\",\"-zxf\",\"cpp-jwt-${LIB_CPP_JWT_VERSION}.tar.gz\",\"\\u0026\\u0026\",\"cd\",\"cpp-jwt-${LIB_CPP_JWT_VERSION}\",\"\\u0026\\u0026\",\"cp\",\"-R\",\"include/jwt\",\"/usr/local/include\",\"\\u0026\\u0026\",\"rm\",\"-rf\",\"/usr/local/include/jwt/json\",\"\\u0026\\u0026\",\"sed\",\"-i\",\"s/\\\\#include \\\\\\\"jwt\\\\/json\\\\/json.hpp\\\\\\\"/\\\\#include \\\\\\u003cnlohmann\\\\/json\\\\.hpp\\\\\\u003e/g\",\"/usr/local/include/jwt/jwt.hpp\",\"\\u0026\\u0026\",\"cd\",\"/tmp\",\"\\u0026\\u0026\",\"git\",\"clone\",\"https://github.com/cpp-redis/cpp_redis.git\",\"\\u0026\\u0026\",\"cd\",\"cpp_redis\",\"\\u0026\\u0026\",\"git\",\"checkout\",\"${LIB_CPP_REDIS_VERSION}\",\"\\u0026\\u0026\",\"git\",\"submodule\",\"init\",\"\\u0026\\u0026\",\"git\",\"submodule\",\"update\",\"\\u0026\\u0026\",\"mkdir\",\"cmake-build\",\"\\u0026\\u0026\",\"cd\",\"cmake-build\",\"\\u0026\\u0026\",\"cmake\",\"..\",\"-DCMAKE_BUILD_TYPE=Release\",\"\\u0026\\u0026\",\"make\",\"-j${NUM_CPUS}\",\"\\u0026\\u0026\",\"make\",\"install\",\"\\u0026\\u0026\",\"cd\",\"/tmp\",\"\\u0026\\u0026\",\"git\",\"clone\",\"https://github.com/CopernicaMarketingSoftware/AMQP-CPP.git\",\"\\u0026\\u0026\",\"cd\",\"AMQP-CPP\",\"\\u0026\\u0026\",\"git\",\"checkout\",\"v${LIB_AMQP_CPP_VERSION}\",\"\\u0026\\u0026\",\"mkdir\",\"cmake-build\",\"\\u0026\\u0026\",\"cd\",\"cmake-build\",\"\\u0026\\u0026\",\"cmake\",\"..\",\"-DCMAKE_BUILD_TYPE=Release\",\"-DAMQP-CPP_BUILD_SHARED=on\",\"-DAMQP-CPP_LINUX_TCP=on\",\"\\u0026\\u0026\",\"make\",\"-j${NUM_CPUS}\",\"\\u0026\\u0026\",\"make\",\"install\",\"\\u0026\\u0026\",\"cd\",\"/tmp\",\"\\u0026\\u0026\",\"git\",\"clone\",\"https://github.com/alanxz/SimpleAmqpClient.git\",\"\\u0026\\u0026\",\"cd\",\"SimpleAmqpClient\",\"\\u0026\\u0026\",\"git\",\"checkout\",\"v${LIB_SIMPLEAMQPCLIENT_VERSION}\",\"\\u0026\\u0026\",\"mkdir\",\"cmake-build\",\"\\u0026\\u0026\",\"cd\",\"cmake-build\",\"\\u0026\\u0026\",\"cmake\",\"..\",\"-DCMAKE_BUILD_TYPE=Release\",\"\\u0026\\u0026\",\"make\",\"-j${NUM_CPUS}\",\"\\u0026\\u0026\",\"make\",\"install\",\"\\u0026\\u0026\",\"cd\",\"/tmp\",\"\\u0026\\u0026\",\"git\",\"clone\",\"https://github.com/redis/hiredis.git\",\"\\u0026\\u0026\",\"cd\",\"hiredis\",\"\\u0026\\u0026\",\"git\",\"checkout\",\"v${LIB_HIREDIS_VERSION}\",\"\\u0026\\u0026\",\"make\",\"-j${NUM_CPUS}\",\"USE_SSL=1\",\"\\u0026\\u0026\",\"make\",\"USE_SSL=1\",\"install\",\"\\u0026\\u0026\",\"cd\",\"/tmp\",\"\\u0026\\u0026\",\"git\",\"clone\",\"https://github.com/sewenew/redis-plus-plus.git\",\"\\u0026\\u0026\",\"cd\",\"redis-plus-plus\",\"\\u0026\\u0026\",\"git\",\"checkout\",\"${LIB_REDIS_PLUS_PLUS_VERSION}\",\"\\u0026\\u0026\",\"cmake\",\"-DREDIS_PLUS_PLUS_USE_TLS=ON\",\".\",\"\\u0026\\u0026\",\"make\",\"-j${NUM_CPUS}\",\"\\u0026\\u0026\",\"make\",\"install\",\"\\u0026\\u0026\",\"pip3\",\"install\",\"PyYAML\",\"\\u0026\\u0026\",\"cd\",\"/tmp\",\"\\u0026\\u0026\",\"rm\",\"-rf\",\"mongo-c-driver-${LIB_MONGOC_VERSION}.tar.gz\",\"mongo-c-driver-${LIB_MONGOC_VERSION}\",\"thrift-${LIB_THRIFT_VERSION}.tar.gz\",\"thrift-${LIB_THRIFT_VERSION}\",\"json-${LIB_JSON_VERSION}.tar.gz\",\"json-${LIB_JSON_VERSION}\",\"jaeger-client-cpp-${LIB_JAEGER_VERSION}.tar.gz\",\"jaeger-client-cpp-${LIB_JAEGER_VERSION}\",\"yaml-cpp-${LIB_YAML_VERSION}.tar.gz\",\"yaml-cpp-yaml-cpp-${LIB_YAML_VERSION}\",\"opentracing-cpp-${LIB_OPENTRACING_VERSION}.tar.gz\",\"opentracing-cpp-${LIB_OPENTRACING_VERSION}\",\"cpp-jwt-${LIB_CPP_JWT_VERSION}.tar.gz\",\"cpp-jwt-${LIB_CPP_JWT_VERSION}\",\"cpp_redis\",\"AMQP-CPP\",\"SimpleAmqpClient\"]",
+        "snippet": "RUN [\"|14\",\"BUILD_DEPS=ca-certificates\",\"g++..."
+      },
+      "other_instructions": [
+        {
+          "index": 20,
+          "image_index": 0,
+          "type": "ENV",
+          "all": "ENV LD_LIBRARY_PATH=/usr/local/lib:",
+          "snippet": "ENV LD_LIBRARY_PATH=/usr/local/lib:"
+        }
+      ]
+    },
+    {
+      "id": "aeae8565821a1a27bd44b24027d82929daa4108a5f1727535a947f1d1af16434",
+      "index": 5,
+      "path": "aeae8565821a1a27bd44b24027d82929daa4108a5f1727535a947f1d1af16434/layer.tar",
+      "fsdiff_id": "sha256:84a062073c10c1fb7e14385a96f4db4f5b872cf620cc2a98666bcfec628654cc",
+      "stats": {
+        "all_size": 45841,
+        "object_count": 6,
+        "dir_count": 4,
+        "file_count": 2,
+        "link_count": 0,
+        "max_file_size": 30831,
+        "max_dir_size": 0,
+        "deleted_count": 0,
+        "deleted_dir_content_count": 0,
+        "deleted_dir_count": 0,
+        "deleted_file_count": 0,
+        "deleted_link_count": 0,
+        "deleted_size": 0,
+        "added_size": 0,
+        "modified_size": 45841
+      },
+      "changes": {
+        "deleted": 0,
+        "added": 0,
+        "modified": 6
+      },
+      "top": [
+        {
+          "change": "M",
+          "name": "/etc/ld.so.cache",
+          "size": 30831,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2021-07-10T05:08:36+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 4
+              },
+              {
+                "layer": 5
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/var/cache/ldconfig/aux-cache",
+          "size": 15010,
+          "mode": 384,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2021-07-10T05:08:36+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 4
+              },
+              {
+                "layer": 5
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/var",
+          "mode": 2147484141,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-09-16T19:30:54+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 1
+              },
+              {
+                "layer": 2
+              },
+              {
+                "layer": 4
+              },
+              {
+                "layer": 5
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/var/cache/ldconfig",
+          "mode": 2147484096,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2021-07-10T05:08:36+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 4
+              },
+              {
+                "layer": 5
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/var/cache",
+          "mode": 2147484141,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2020-09-16T19:30:56+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 4
+              },
+              {
+                "layer": 5
+              }
+            ]
+          }
+        },
+        {
+          "change": "M",
+          "name": "/etc",
+          "mode": 2147484141,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2021-07-10T05:08:36+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 0
+            },
+            "M": [
+              {
+                "layer": 1
+              },
+              {
+                "layer": 4
+              },
+              {
+                "layer": 5
+              }
+            ]
+          }
+        }
+      ],
+      "change_instruction": {
+        "index": 21,
+        "image_index": 0,
+        "type": "RUN",
+        "all": "RUN [\"|14\",\"BUILD_DEPS=ca-certificates\",\"g++\",\"cmake\",\"wget\",\"git\",\"libmemcached-dev\",\"automake\",\"bison\",\"flex\",\"libboost-all-dev\",\"libevent-dev\",\"libssl-dev\",\"libtool\",\"make\",\"pkg-config\",\"librabbitmq-dev\",\"python3-dev\",\"python3-pip\",\"python3-setuptools\",\"python3-wheel\",\"LIB_AMQP_CPP_VERSION=4.1.4\",\"LIB_CPP_JWT_VERSION=1.1.1\",\"LIB_CPP_REDIS_VERSION=4.3.1\",\"LIB_HIREDIS_VERSION=1.0.0\",\"LIB_JAEGER_VERSION=0.4.2\",\"LIB_JSON_VERSION=3.6.1\",\"LIB_MONGOC_VERSION=1.15.0\",\"LIB_OPENTRACING_VERSION=1.5.1\",\"LIB_REDIS_PLUS_PLUS_VERSION=1.2.3\",\"LIB_SIMPLEAMQPCLIENT_VERSION=2.4.0\",\"LIB_THRIFT_VERSION=0.12.0\",\"LIB_YAML_VERSION=0.6.2\",\"NUM_CPUS=40\",\"/bin/sh\",\"-c\",\"ldconfig\"]",
+        "snippet": "RUN [\"|14\",\"BUILD_DEPS=ca-certificates\",\"g++..."
+      },
+      "other_instructions": [
+        {
+          "index": 22,
+          "image_index": 0,
+          "type": "ARG",
+          "all": "ARG NUM_CPUS=40",
+          "snippet": "ARG NUM_CPUS=40"
+        }
+      ]
+    },
+    {
+      "id": "599654fc55e4b77da9057f7f36b65bd7e0e7c070ba1d2b4d6e2d34ec858cb8b3",
+      "index": 6,
+      "path": "599654fc55e4b77da9057f7f36b65bd7e0e7c070ba1d2b4d6e2d34ec858cb8b3/layer.tar",
+      "fsdiff_id": "sha256:e8be8819cc48e3f09db70c7d5caa1713cad32ca028be9f5063982dafada7f8e7",
+      "stats": {
+        "all_size": 93344049,
+        "object_count": 858,
+        "dir_count": 110,
+        "file_count": 748,
+        "link_count": 0,
+        "max_file_size": 44550129,
+        "max_dir_size": 0,
+        "deleted_count": 0,
+        "deleted_dir_content_count": 1,
+        "deleted_dir_count": 0,
+        "deleted_file_count": 1,
+        "deleted_link_count": 0,
+        "deleted_size": 0,
+        "added_size": 93344049,
+        "modified_size": 0
+      },
+      "changes": {
+        "deleted": 1,
+        "added": 857,
+        "modified": 0
+      },
+      "top": [
+        {
+          "change": "A",
+          "name": "/social-network-microservices/datasets/social-graph/ego-twitter/ego-twitter-original.txt",
+          "size": 44550129,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2021-09-08T00:37:39+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 6
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/social-network-microservices/datasets/social-graph/ego-twitter/ego-twitter.edges",
+          "size": 26633408,
+          "mode": 436,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2021-09-08T00:46:28+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 6
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/social-network-microservices/datasets/social-graph/soc-twitter-follows-mun/soc-twitter-follows-mun.edges",
+          "size": 10598240,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2021-09-08T01:16:53+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 6
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/social-network-microservices/wrk2/deps/luajit/src/libluajit.a",
+          "size": 792252,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2021-07-24T01:32:18+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 6
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/social-network-microservices/wrk2/wrk",
+          "size": 607728,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2021-07-24T01:32:19+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 6
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/social-network-microservices/figures/socialNet_jaeger.png",
+          "size": 490769,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2021-05-05T07:00:19+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 6
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/social-network-microservices/wrk2/deps/luajit/src/luajit",
+          "size": 456856,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2021-07-24T01:32:19+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 6
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/social-network-microservices/figures/socialNet_arch.png",
+          "size": 418224,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2021-05-05T07:00:19+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 6
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/social-network-microservices/figures/user_timeline.png",
+          "size": 319105,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2021-05-05T07:00:19+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 6
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/social-network-microservices/wrk2/deps/luajit/src/host/buildvm_arch.h",
+          "size": 273140,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2021-07-24T01:32:17+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 6
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/social-network-microservices/wrk2/deps/luajit/src/host/minilua.c",
+          "size": 174364,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2021-05-05T07:00:20+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 6
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/social-network-microservices/wrk2/deps/luajit/src/vm_x86.dasc",
+          "size": 169692,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2021-05-05T07:00:20+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 6
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/social-network-microservices/wrk2/deps/luajit/src/host/minilua.o",
+          "size": 157456,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2021-07-24T01:32:17+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 6
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/social-network-microservices/datasets/social-graph/socfb-Reed98/socfb-Reed98.edges",
+          "size": 146967,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2021-09-08T01:15:45+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 6
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/social-network-microservices/wrk2/deps/luajit/src/vm_ppc.dasc",
+          "size": 138458,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2021-05-05T07:00:20+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 6
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/social-network-microservices/wrk2/deps/luajit/src/host/minilua",
+          "size": 136688,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2021-07-24T01:32:17+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 6
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/social-network-microservices/wrk2/deps/luajit/src/vm_arm.dasc",
+          "size": 122956,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2021-05-05T07:00:20+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 6
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/social-network-microservices/figures/home_timeline.png",
+          "size": 120679,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2021-05-05T07:00:19+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 6
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/social-network-microservices/wrk2/deps/luajit/src/vm_mips.dasc",
+          "size": 118591,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2021-05-05T07:00:20+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 6
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/social-network-microservices/gen-cpp/SocialGraphService.cpp",
+          "size": 107412,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2021-05-05T07:00:19+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 6
+            }
+          }
+        }
+      ],
+      "change_instruction": {
+        "index": 23,
+        "image_index": 0,
+        "type": "COPY",
+        "all": "COPY dir:9c0eefad576fb99eb7bb0d5d6ba080859cc28dd954a77571054e2f5fa52fa4d0 /social-network-microservices",
+        "snippet": "COPY dir:9c0eefad576fb99eb7bb0d5d6ba080859cc..."
+      },
+      "other_instructions": [
+        {
+          "index": 25,
+          "image_index": 0,
+          "type": "WORKDIR",
+          "all": "WORKDIR /social-network-microservices",
+          "snippet": "WORKDIR /social-network-microservices"
+        }
+      ]
+    },
+    {
+      "id": "cd517a5e6b494937241a800869ce567087c9e199f4bf9f75114186220304f28d",
+      "index": 7,
+      "path": "cd517a5e6b494937241a800869ce567087c9e199f4bf9f75114186220304f28d/layer.tar",
+      "fsdiff_id": "sha256:2b0b75ce1974549dfa31399919db7ffb2bac681eaec97284a16a662c6f446a05",
+      "stats": {
+        "all_size": 500461396,
+        "object_count": 321,
+        "dir_count": 79,
+        "file_count": 242,
+        "link_count": 0,
+        "max_file_size": 19122032,
+        "max_dir_size": 0,
+        "deleted_count": 0,
+        "deleted_dir_content_count": 1,
+        "deleted_dir_count": 0,
+        "deleted_file_count": 1,
+        "deleted_link_count": 0,
+        "deleted_size": 0,
+        "added_size": 500461396,
+        "modified_size": 0
+      },
+      "changes": {
+        "deleted": 1,
+        "added": 315,
+        "modified": 5
+      },
+      "top": [
+        {
+          "change": "A",
+          "name": "/usr/local/bin/ComposePostService",
+          "size": 19122032,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2021-09-08T23:53:22+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 7
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/social-network-microservices/build/src/ComposePostService/ComposePostService",
+          "size": 19122032,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2021-09-08T23:53:22+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 7
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/social-network-microservices/build/src/ComposePostService/CMakeFiles/ComposePostService.dir/ComposePostService.cpp.o",
+          "size": 19066984,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2021-09-08T23:53:21+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 7
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/social-network-microservices/build/src/SocialGraphService/CMakeFiles/SocialGraphService.dir/SocialGraphService.cpp.o",
+          "size": 17461496,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2021-09-08T23:53:22+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 7
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/social-network-microservices/build/src/TextService/CMakeFiles/TextService.dir/TextService.cpp.o",
+          "size": 15915944,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2021-09-08T23:53:20+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 7
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/social-network-microservices/build/src/UserTimelineService/CMakeFiles/UserTimelineService.dir/UserTimelineService.cpp.o",
+          "size": 14849296,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2021-09-08T23:53:19+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 7
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/social-network-microservices/build/src/UserService/CMakeFiles/UserService.dir/UserService.cpp.o",
+          "size": 14768264,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2021-09-08T23:53:19+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 7
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/local/bin/SocialGraphService",
+          "size": 14596520,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2021-09-08T23:53:23+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 7
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/social-network-microservices/build/src/SocialGraphService/SocialGraphService",
+          "size": 14596520,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2021-09-08T23:53:23+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 7
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/social-network-microservices/build/src/HomeTimelineService/CMakeFiles/HomeTimelineService.dir/HomeTimelineService.cpp.o",
+          "size": 14507104,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2021-09-08T23:53:19+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 7
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/local/bin/HomeTimelineService",
+          "size": 13657520,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2021-09-08T23:53:19+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 7
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/social-network-microservices/build/src/HomeTimelineService/HomeTimelineService",
+          "size": 13657520,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2021-09-08T23:53:19+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 7
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/social-network-microservices/build/src/PostStorageSerivce/CMakeFiles/PostStorageService.dir/PostStorageService.cpp.o",
+          "size": 13380792,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2021-09-08T23:53:17+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 7
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/social-network-microservices/build/src/UserTimelineService/UserTimelineService",
+          "size": 12598408,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2021-09-08T23:53:20+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 7
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/local/bin/UserTimelineService",
+          "size": 12598408,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2021-09-08T23:53:20+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 7
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/local/bin/TextService",
+          "size": 12453552,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2021-09-08T23:53:21+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 7
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/social-network-microservices/build/src/TextService/TextService",
+          "size": 12453552,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2021-09-08T23:53:21+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 7
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/social-network-microservices/build/src/UrlShortenService/CMakeFiles/UrlShortenService.dir/UrlShortenService.cpp.o",
+          "size": 12079928,
+          "mode": 420,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2021-09-08T23:53:16+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 7
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/usr/local/bin/UserService",
+          "size": 11889400,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2021-09-08T23:53:20+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 7
+            }
+          }
+        },
+        {
+          "change": "A",
+          "name": "/social-network-microservices/build/src/UserService/UserService",
+          "size": 11889400,
+          "mode": 493,
+          "uid": 0,
+          "gid": 0,
+          "mod_time": "2021-09-08T23:53:20+04:30",
+          "change_time": "0001-01-01T00:00:00Z",
+          "history": {
+            "A": {
+              "layer": 7
+            }
+          }
+        }
+      ],
+      "change_instruction": {
+        "index": 24,
+        "image_index": 0,
+        "type": "RUN",
+        "all": "RUN [\"|1\",\"NUM_CPUS=40\",\"/bin/sh\",\"-c\",\"cd\",\"/social-network-microservices\",\"\\u0026\\u0026\",\"mkdir\",\"-p\",\"build\",\"\\u0026\\u0026\",\"cd\",\"build\",\"\\u0026\\u0026\",\"cmake\",\"-DCMAKE_BUILD_TYPE=Debug\",\"..\",\"\\u0026\\u0026\",\"make\",\"-j${NUM_CPUS}\",\"\\u0026\\u0026\",\"make\",\"install\"]",
+        "snippet": "RUN [\"|1\",\"NUM_CPUS=40\",\"/bin/sh\",\"-c\",\"cd\",..."
+      }
+    }
+  ],
+  "image_archive_location": "/tmp/docker-slim-state/.docker-slim-state/images/6faef786a52223e6912d9027a1310891ac892f673e2d4bcc352e4854faf87271/image/6faef786a52223e6912d9027a1310891ac892f673e2d4bcc352e4854faf87271.tar"
+}
